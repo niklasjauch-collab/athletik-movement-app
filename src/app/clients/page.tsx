@@ -2,6 +2,14 @@ import Link from "next/link";
 import { prisma } from "@/lib/db";
 import { getActiveProvider } from "@/lib/tenant";
 
+// Hits the database directly and doesn't itself call cookies()/headers(),
+// so Next's automatic dynamic-API detection won't defer it — without this,
+// `next build` tries to prerender it statically, which fails hard (not a
+// graceful dynamic fallback) if the database isn't reachable from the
+// build environment (as on Railway, where the build container can't
+// reach the private-network Postgres instance).
+export const dynamic = "force-dynamic";
+
 // Coach-facing client list. Clients get here by self-registering via
 // /register (see the product brief) — there is deliberately no
 // "Kunde anlegen" form here, since the coach doesn't create accounts on a

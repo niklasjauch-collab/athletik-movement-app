@@ -5,6 +5,13 @@ import { getActiveProvider } from "@/lib/tenant";
 import { CorrectivePlanCard } from "@/components/CorrectivePlanCard";
 import UploadForm from "./UploadForm";
 
+// Hits the database directly and doesn't itself call cookies()/headers(),
+// so Next's automatic dynamic-API detection won't defer it — without this,
+// `next build` tries to prerender it statically, which fails hard (not a
+// graceful dynamic fallback) if the database isn't reachable from the
+// build environment. See same note on ../page.tsx.
+export const dynamic = "force-dynamic";
+
 const COMPENSATION_LABELS: Record<string, string> = {
   FEET_TURN_OUT: "Füße drehen nach außen",
   FEET_FLATTEN: "Füße flachen ab",
