@@ -274,6 +274,7 @@ model Exercise {
   planItems TrainingPlanExercise[]
   correctivePlanItems CorrectivePlanItem[]
   programSessionItems ProgramSessionExercise[]
+  trainingSessionItems TrainingSessionExercise[]
 
   // The SmartMotion Master-Spec's "verbindliche" exercise registry ID
   // (E001-E116, see SmartMotion_App_22_Programme_Claude_MasterSpec.md
