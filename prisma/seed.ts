@@ -309,33 +309,61 @@ async function main() {
       continue;
     }
     if (match.smartMotionCode === code) continue; // already linked from a prior run
-    await prisma.exercise.update({ where: { id: match.id }, data: { smartMotionCode: code } });
-    smartMotionLinked++;
+    try {
+      await prisma.exercise.update({ where: { id: match.id }, data: { smartMotionCode: code } });
+      smartMotionLinked++;
+    } catch (err) {
+      // P2002 (unique constraint on smartMotionCode) happens when two
+      // registry codes resolve to the same exercise `name` (an ambiguous
+      // 1:many mapping the schema can't represent, since smartMotionCode
+      // is 1:1 per Exercise) — a data issue in the registry/matching
+      // step, not something that should crash the whole boot sequence
+      // (this loop is best-effort metadata enrichment, not required for
+      // the app to run). Log and move on; see scripts/match_smartmotion_
+      // exercises.py for where to fix the underlying ambiguity.
+      if ((err as { code?: string })?.code === "P2002") {
+        console.warn(
+          `  SmartMotion: could not set smartMotionCode=${code} on ${JSON.stringify(ref.name)} — that code (or that exercise) is already linked elsewhere. Skipping.`,
+        );
+        continue;
+      }
+      throw err;
+    }
   }
 
   let smartMotionStubsCreated = 0;
   for (const stub of smartMotionStubExercisesData as SmartMotionStubExercise[]) {
     const existing = await prisma.exercise.findUnique({ where: { smartMotionCode: stub.smartMotionCode } });
     if (existing) continue;
-    await prisma.exercise.create({
-      data: {
-        providerId: provider.id,
-        smartMotionCode: stub.smartMotionCode,
-        name: stub.name,
-        correctivePhase: stub.correctivePhase as CorrectivePhase,
-        unit: stub.unit,
-        sets: stub.sets,
-        pauseSeconds: stub.pauseSeconds,
-        intensity: stub.intensity,
-        muscleGroups: stub.muscleGroups,
-        equipment: stub.equipment,
-        targetMuscles: stub.targetMuscles,
-        taggingSource: stub.taggingSource ?? undefined,
-        isPublished: stub.isPublished,
-        notes: stub.notes,
-      },
-    });
-    smartMotionStubsCreated++;
+    try {
+      await prisma.exercise.create({
+        data: {
+          providerId: provider.id,
+          smartMotionCode: stub.smartMotionCode,
+          name: stub.name,
+          correctivePhase: stub.correctivePhase as CorrectivePhase,
+          unit: stub.unit,
+          sets: stub.sets,
+          pauseSeconds: stub.pauseSeconds,
+          intensity: stub.intensity,
+          muscleGroups: stub.muscleGroups,
+          equipment: stub.equipment,
+          targetMuscles: stub.targetMuscles,
+          taggingSource: stub.taggingSource ?? undefined,
+          isPublished: stub.isPublished,
+          notes: stub.notes,
+        },
+      });
+      smartMotionStubsCreated++;
+    } catch (err) {
+      // Same defensive handling as the linking loop above — don't let a
+      // registry data ambiguity crash the boot sequence.
+      if ((err as { code?: string })?.code === "P2002") {
+        console.warn(`  SmartMotion: stub for ${stub.smartMotionCode} already exists (race with linking above) — skipping.`);
+        continue;
+      }
+      throw err;
+    }
   }
   console.log(`SmartMotion exercises: ${smartMotionLinked} linked to smartMotionCode, ${smartMotionStubsCreated} placeholder(s) created.`);
 
