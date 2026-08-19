@@ -32,42 +32,74 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
 
   return (
     <html lang="de" className="h-full antialiased">
-      <body className="min-h-full flex flex-col">
-        <header className="border-b border-slate-200 px-6 py-4 flex flex-wrap items-center justify-between gap-4">
-          <Link href="/" className="flex items-center gap-2">
+      <body className="min-h-full flex flex-col bg-cream">
+        <header className="border-b border-ink-900/10 px-6 py-4 flex flex-wrap items-center justify-between gap-4 bg-cream">
+          <Link href={client ? "/portal" : "/"} className="flex items-center gap-2">
             {branding.logoUrl ? (
               <Image src={branding.logoUrl} alt={branding.appName} width={168} height={44} priority className="h-9 w-auto" />
             ) : (
-              <span className="font-bold">{branding.appName}</span>
+              <span className="font-serif font-bold text-ink-900">{branding.appName}</span>
             )}
           </Link>
-          <nav className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-slate-600">
-            <Link href="/">Book</Link>
-            <Link href="/shop">Training plans</Link>
-            <Link href="/exercises">Exercises</Link>
-            <span className="h-4 w-px bg-slate-200" aria-hidden />
-            <Link href="/clients">Kunden</Link>
-            <Link href="/scans">SmartMotionScan</Link>
-            <Link href="/training">Training</Link>
-            <Link href="/progress">Fortschritt</Link>
-            <span className="h-4 w-px bg-slate-200" aria-hidden />
+          {/* Two distinct nav sets, not a toggle: a logged-in client only ever
+              sees their own booking/portal/shop — coach tooling (Kunden,
+              SmartMotionScan, Exercises, the /training + /progress demo
+              logging tools) is a separate, deliberately smaller set of
+              links. There's no coach login yet (single-operator beta, see
+              project status doc), so those coach links stay reachable to
+              anyone who isn't logged in as a client; the routes themselves
+              also redirect a logged-in client away (see each page). */}
+          <nav className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm font-medium text-ink-700">
             {client ? (
               <>
-                <Link href="/portal" className="font-medium text-ink-900">
-                  {client.firstName}
+                <Link href="/" className="hover:text-brand-700">
+                  Termin buchen
                 </Link>
+                <Link href="/portal" className="hover:text-brand-700">
+                  Mein Portal
+                </Link>
+                <Link href="/shop" className="hover:text-brand-700">
+                  Trainingspläne
+                </Link>
+                <span className="h-4 w-px bg-ink-900/10" aria-hidden />
+                <span className="text-ink-900">{client.firstName}</span>
                 <form action="/api/auth/logout" method="POST">
-                  <button type="submit" className="text-slate-500 hover:text-ink-900">
+                  <button type="submit" className="text-ink-700/70 hover:text-ink-900">
                     Logout
                   </button>
                 </form>
               </>
             ) : (
               <>
-                <Link href="/login">Login</Link>
+                <Link href="/" className="hover:text-brand-700">
+                  Buchen
+                </Link>
+                <Link href="/shop" className="hover:text-brand-700">
+                  Trainingspläne
+                </Link>
+                <Link href="/exercises" className="hover:text-brand-700">
+                  Übungen
+                </Link>
+                <span className="h-4 w-px bg-ink-900/10" aria-hidden />
+                <Link href="/clients" className="hover:text-brand-700">
+                  Kunden
+                </Link>
+                <Link href="/scans" className="hover:text-brand-700">
+                  SmartMotionScan
+                </Link>
+                <Link href="/training" className="hover:text-brand-700">
+                  Training
+                </Link>
+                <Link href="/progress" className="hover:text-brand-700">
+                  Fortschritt
+                </Link>
+                <span className="h-4 w-px bg-ink-900/10" aria-hidden />
+                <Link href="/login" className="hover:text-brand-700">
+                  Login
+                </Link>
                 <Link
                   href="/register"
-                  className="rounded-lg bg-brand-600 text-white px-3 py-1.5 font-medium hover:bg-brand-700"
+                  className="rounded-lg bg-brand-600 text-white px-3 py-1.5 font-semibold hover:bg-brand-700"
                 >
                   Registrieren
                 </Link>

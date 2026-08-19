@@ -1,8 +1,15 @@
 @import "tailwindcss";
 
+/* Cream/ink palette matching the real athletik-movement.de marketing site
+ * (sampled from screenshots of the live site, 2026-08-19). This app is a
+ * single branded product, not a utility tool, so it intentionally does
+ * NOT follow prefers-color-scheme — athletik-movement.de itself stays on
+ * this light editorial look regardless of OS theme, and flipping to a
+ * near-black scheme (the old default) made the app look broken/unbranded
+ * whenever a visitor's OS was in dark mode. */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f5f5f0;
+  --foreground: #00111b;
 }
 
 /* Athletik Movement brand palette, sampled from the provided logo files
@@ -19,7 +26,15 @@
   --color-foreground: var(--foreground);
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif;
+  /* Bold editorial serif for headlines, matching the real site's display
+   * type. Deliberately a system/web-safe stack (no next/font/Google Fonts
+   * dependency) — Georgia/Times are close visual matches and this avoids
+   * any build-time font-fetch risk. */
+  --font-serif: Georgia, "Times New Roman", "Noto Serif", serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --color-cream: #f5f5f0;
+  --color-cream-dim: #ececE5;
 
   --color-brand-50: #f4faec;
   --color-brand-100: #e6f4d2;
@@ -37,15 +52,8 @@
   --color-ink-700: #1c3040;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
 }
