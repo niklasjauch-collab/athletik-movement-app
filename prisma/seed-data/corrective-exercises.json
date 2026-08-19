@@ -1,0 +1,1024 @@
+[
+  {
+    "legacyId": null,
+    "name": "SMR Wadenmuskulatur",
+    "description": "Faszienrolle unter die Wade legen, Körpergewicht langsam über die Rolle bewegen und auf druckempfindlichen Stellen kurz verweilen.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Faszienrolle"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      30,
+      30
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "INHIBIT",
+    "targetMuscles": [
+      "Gastrocnemius",
+      "Soleus",
+      "Lateral Gastrocnemius"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "SMR Peroneus",
+    "description": "Faszienrolle seitlich am Unterschenkel positionieren und die Peroneusmuskulatur langsam ausrollen.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Faszienrolle"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      30,
+      30
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "INHIBIT",
+    "targetMuscles": [
+      "Peroneal Complex",
+      "Peroneals"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "SMR Adduktoren",
+    "description": "In Bauchlage die Innenseite des Oberschenkels auf der Faszienrolle ausrollen.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Faszienrolle"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      30,
+      30
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "INHIBIT",
+    "targetMuscles": [
+      "Adductors",
+      "Adductor Magnus"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "SMR Bizeps femoris / Hamstrings",
+    "description": "Im Sitzen die rückseitige Oberschenkelmuskulatur über die Faszienrolle ausrollen.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Faszienrolle"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      30,
+      30
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "INHIBIT",
+    "targetMuscles": [
+      "Biceps Femoris",
+      "Biceps Femoris (short head)",
+      "Hamstrings"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "SMR Hüftbeuger",
+    "description": "In Bauchlage die Hüftbeugemuskulatur (Rectus femoris) auf der Faszienrolle ausrollen.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Faszienrolle"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      30,
+      30
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "INHIBIT",
+    "targetMuscles": [
+      "Hip Flexor Complex"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "SMR IT-Band / TFL",
+    "description": "Seitlich auf der Faszienrolle liegend den Iliotibialtrakt von der Hüfte bis knapp über das Knie ausrollen.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Faszienrolle"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      30,
+      30
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "INHIBIT",
+    "targetMuscles": [
+      "IT-Band",
+      "Tensor Fasciae Latae"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "SMR Latissimus",
+    "description": "Seitlich liegend den Latissimus dorsi zwischen Achsel und Rippenbogen auf der Faszienrolle ausrollen.",
+    "language": "de",
+    "muscleGroups": [
+      "Rücken"
+    ],
+    "equipment": [
+      "Faszienrolle"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      30,
+      30
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "INHIBIT",
+    "targetMuscles": [
+      "Latissimus Dorsi"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "SMR Levator Scapulae",
+    "description": "Mit einem Ball gezielten Druck auf den Ansatz des Levator scapulae am oberen Schulterblattrand ausüben.",
+    "language": "de",
+    "muscleGroups": [
+      "Schultern"
+    ],
+    "equipment": [
+      "Faszienrolle"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      30,
+      30
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "INHIBIT",
+    "targetMuscles": [
+      "Levator Scapulae"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "SMR Piriformis",
+    "description": "Im Sitzen auf einem Ball die Gesäßmuskulatur seitlich der Kreuzbeinregion ausrollen.",
+    "language": "de",
+    "muscleGroups": [
+      "Po"
+    ],
+    "equipment": [
+      "Faszienrolle"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      30,
+      30
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "INHIBIT",
+    "targetMuscles": [
+      "Piriformis"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "SMR Brustwirbelsäule",
+    "description": "Faszienrolle quer unter die Brustwirbelsäule legen und in kontrollierter Streckbewegung ausrollen.",
+    "language": "de",
+    "muscleGroups": [
+      "Rücken"
+    ],
+    "equipment": [
+      "Faszienrolle"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      30,
+      30
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "INHIBIT",
+    "targetMuscles": [
+      "Thoracic Spine"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "SMR Oberer Trapezius",
+    "description": "Mit einem Ball punktuellen Druck auf die oberen Trapeziusfasern zwischen Nacken und Schulter ausüben.",
+    "language": "de",
+    "muscleGroups": [
+      "Schultern"
+    ],
+    "equipment": [
+      "Faszienrolle"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      30,
+      30
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "INHIBIT",
+    "targetMuscles": [
+      "Upper Trapezius"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "Selbstmassage Nackenmuskulatur",
+    "description": "Mit den Fingerspitzen sanften Druck auf die seitliche Halsmuskulatur (Kopfwender, Skalenusmuskeln) ausüben.",
+    "language": "de",
+    "muscleGroups": [
+      "Schultern"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      30,
+      30
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "INHIBIT",
+    "targetMuscles": [
+      "Sternocleidomastoid",
+      "Scalenes"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "Dehnung Wadenmuskulatur",
+    "description": "Im Ausfallschritt an der Wand die hintere Wade bei gestrecktem Knie dehnen.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      30,
+      30
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Gastrocnemius",
+      "Soleus"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "Dehnung Adduktoren",
+    "description": "Im Sitzen mit angewinkelten Beinen und den Fußsohlen zueinander die Innenseite der Oberschenkel dehnen.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      30,
+      30
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Adductors",
+      "Adductor Magnus"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "Dehnung Bizeps femoris / Hamstrings",
+    "description": "Im Stand oder Sitzen ein Bein gestreckt aufstellen und den Oberkörper kontrolliert nach vorne beugen.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      30,
+      30
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Biceps Femoris",
+      "Biceps Femoris (short head)",
+      "Hamstrings"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "Dehnung Hüftbeuger",
+    "description": "Im tiefen Ausfallschritt das Becken nach vorne schieben, bis eine Dehnung an der Vorderseite der Hüfte spürbar ist.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      30,
+      30
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Hip Flexor Complex"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "Dehnung TFL / IT-Band",
+    "description": "Im Stand die Beine überkreuzen und den Oberkörper zur Seite neigen, um die seitliche Hüfte zu dehnen.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      30,
+      30
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Tensor Fasciae Latae",
+      "IT-Band"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "Dehnung Latissimus",
+    "description": "Im Sitzen oder Stehen einen Arm über den Kopf führen und den Oberkörper zur Gegenseite neigen.",
+    "language": "de",
+    "muscleGroups": [
+      "Rücken"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      30,
+      30
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Latissimus Dorsi"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "Dehnung Brustmuskulatur",
+    "description": "Im Türrahmen oder an der Wand den Arm anlehnen und den Oberkörper leicht von der Wand wegdrehen.",
+    "language": "de",
+    "muscleGroups": [
+      "Brust"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      30,
+      30
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Pectoralis Major",
+      "Pectorals"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "Dehnung Nacken / Levator Scapulae",
+    "description": "Im Sitzen den Kopf sanft zur Seite und leicht nach vorne unten neigen, um die seitliche Nackenmuskulatur zu dehnen.",
+    "language": "de",
+    "muscleGroups": [
+      "Schultern"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      30,
+      30
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Levator Scapulae",
+      "Upper Trapezius",
+      "Sternocleidomastoid",
+      "Scalenes"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "Dehnung Piriformis",
+    "description": "In Rückenlage ein Knie zur Gegenseite über den Körper ziehen, um die Gesäßmuskulatur zu dehnen.",
+    "language": "de",
+    "muscleGroups": [
+      "Po"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      30,
+      30
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Piriformis"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "Dehnung Bauchmuskulatur",
+    "description": "In Bauchlage den Oberkörper über die gestreckten Arme anheben, Becken bleibt am Boden.",
+    "language": "de",
+    "muscleGroups": [
+      "Bauch"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      30,
+      30
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Abdominal Complex"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "Dehnung Serratus anterior",
+    "description": "Im Sitzen die Arme nach vorne verschränken und den oberen Rücken rund machen, um den seitlichen Rumpf zu dehnen.",
+    "language": "de",
+    "muscleGroups": [
+      "Rücken"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      30,
+      30
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Serratus Anterior"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "Dehnung Rückenstrecker",
+    "description": "Im Sitzen den Oberkörper über die Knie nach vorne rollen lassen, Arme locker hängen lassen.",
+    "language": "de",
+    "muscleGroups": [
+      "Rücken"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      30,
+      30
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Erector Spinae"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "Aktivierung Tibialis anterior",
+    "description": "Im Sitzen den Fuß gegen einen leichten Widerstand (Theraband) Richtung Schienbein ziehen.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Theraband"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Anterior Tibialis"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "Aktivierung Tibialis posterior & mediale Hamstrings",
+    "description": "Im Sitzen den Fuß einwärts gegen ein Theraband drücken, während das Knie leicht gebeugt bleibt.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Theraband"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Posterior Tibialis",
+      "Medial Hamstrings"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "Aktivierung Gluteus medius",
+    "description": "In Seitenlage das obere Bein gegen ein Theraband seitlich anheben, Becken bleibt stabil.",
+    "language": "de",
+    "muscleGroups": [
+      "Po"
+    ],
+    "equipment": [
+      "Theraband"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Gluteus Medius"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "Aktivierung Gluteus maximus",
+    "description": "In Rückenlage mit aufgestellten Beinen das Becken zur Brücke anheben und die Gesäßmuskulatur bewusst anspannen.",
+    "language": "de",
+    "muscleGroups": [
+      "Po"
+    ],
+    "equipment": [
+      "Körpergewicht"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Gluteus Maximus"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "Aktivierung Rumpfstabilisatoren",
+    "description": "Im Vierfüßlerstand einen Arm und das gegenüberliegende Bein gleichzeitig strecken, Rumpf bleibt ruhig.",
+    "language": "de",
+    "muscleGroups": [
+      "Bauch"
+    ],
+    "equipment": [
+      "Körpergewicht"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      10,
+      10
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Abdominal Complex",
+      "Core Stabilizers"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "Aktivierung Rückenstrecker",
+    "description": "In Bauchlage Oberkörper und gestreckte Beine leicht vom Boden abheben und kurz halten (Superman/Cobra).",
+    "language": "de",
+    "muscleGroups": [
+      "Rücken"
+    ],
+    "equipment": [
+      "Körpergewicht"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Erector Spinae"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "Aktivierung Hüftbeuger",
+    "description": "Im Sitzen oder Stehen das Knie gegen leichten Widerstand kontrolliert Richtung Brust anheben.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Theraband"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Hip Flexors"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "Aktivierung Rautenmuskeln & unterer Trapezius",
+    "description": "In Bauchlage auf dem Ball die Arme zur T-Position abduzieren und die Schulterblätter zusammenziehen.",
+    "language": "de",
+    "muscleGroups": [
+      "Rücken"
+    ],
+    "equipment": [
+      "Theraband"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Rhomboids",
+      "Lower Trapezius",
+      "Middle Trapezius",
+      "Upper Trapezius"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "Aktivierung Rotatorenmanschette",
+    "description": "Im Stehen mit angelegtem Ellbogen den Unterarm gegen ein Theraband nach außen rotieren.",
+    "language": "de",
+    "muscleGroups": [
+      "Schultern"
+    ],
+    "equipment": [
+      "Theraband"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Rotator Cuff"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "Aktivierung Serratus anterior",
+    "description": "Aus der Liegestütz-Position die Schulterblätter zusätzlich nach vorne/oben schieben (Push-up Plus).",
+    "language": "de",
+    "muscleGroups": [
+      "Brust"
+    ],
+    "equipment": [
+      "Körpergewicht"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      12,
+      12
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Serratus Anterior"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "Aktivierung tiefe Nackenbeuger",
+    "description": "Im Vierfüßlerstand oder Rückenlage das Kinn sanft einziehen (Chin Tuck), ohne den Nacken zu überstrecken.",
+    "language": "de",
+    "muscleGroups": [
+      "Schultern"
+    ],
+    "equipment": [
+      "Körpergewicht"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      12,
+      12
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Deep Cervical Flexors",
+      "Cervical Erector Spinae"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "Aktivierung seitliche Halsmuskulatur",
+    "description": "Im Sitzen den Kopf gegen leichten manuellen Widerstand zur Seite neigen und wieder aufrichten.",
+    "language": "de",
+    "muscleGroups": [
+      "Schultern"
+    ],
+    "equipment": [
+      "Körpergewicht"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      12,
+      12
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Scalenes"
+    ],
+    "taggingSource": "manual"
+  },
+  {
+    "legacyId": null,
+    "name": "Aktivierung Adduktoren",
+    "description": "In Seitenlage das untere Bein gegen ein Theraband Richtung Körpermitte anheben.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Theraband"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Adductors"
+    ],
+    "taggingSource": "manual"
+  }
+]

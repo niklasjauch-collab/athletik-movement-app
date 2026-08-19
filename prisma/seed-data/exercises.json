@@ -1,0 +1,1965 @@
+[
+  {
+    "legacyId": "xSPmBut5O6nCOkUswhFI",
+    "name": "Abdominal Stretch im Liegen",
+    "description": "Ziel der Übung:\nVerbesserung der Mobilität der vorderen Rumpfkette und Reduktion der Spannung in der Bauchmuskulatur.\n\nAusgangsposition:\nBauchlage auf dem Boden oder auf einer Matte.\nHände befinden sich unter den Schultern.\n\nDurchführung:\nDen Oberkörper langsam über die Arme nach oben drücken.\nBecken und Hüfte bleiben möglichst am Boden.\nDie Brust kontrolliert anheben, bis eine Dehnung im Bauchbereich spürbar ist.\nSchultern bleiben entspannt.\nDie Position ruhig halten und gleichmäßig weiteratmen.\n\nDosierung:\n1–2 Sätze à 30–60 Sekunden.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Bauch"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/xSPmBut5O6nCOkUswhFI/male/video/20260514143422.mp4",
+    "videoFemalePath": "media/exercises/xSPmBut5O6nCOkUswhFI/female/video/20260514143422.mp4",
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Abdominal Complex"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "qFarnIcJa2Z8ng4NQmHa",
+    "name": "Activation Quad Sets mit Faszienrolle",
+    "description": "Ziel: Aktivierung des Musculus quadriceps, insbesondere des Vastus medialis obliquus (VMO), zur Verbesserung der Kniestreckung und Kniegelenksstabilität.\n\nAusgangsposition\nSetze dich mit gestreckten Beinen auf den Boden.\nLege eine Faszienrolle oder ein zusammengerolltes Handtuch unter das Knie des Trainingsbeins, sodass das Knie leicht gebeugt ist.\nDas andere Bein bleibt entspannt ausgestreckt.\nDurchführung\nDrücke die Kniekehle aktiv in die Faszienrolle.\nStrecke das Knie vollständig, indem du den vorderen Oberschenkel bewusst anspannst.\nHalte die maximale Spannung für 2 Sekunden.\nLöse die Spannung langsam und kontrolliert, ohne das Knie vollständig zu entspannen.\nWiederhole die Bewegung kontrolliert.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen pro Seite.\n\nSeite: Beidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/qFarnIcJa2Z8ng4NQmHa/male/video/20260514150547.mp4",
+    "videoFemalePath": "media/exercises/qFarnIcJa2Z8ng4NQmHa/female/video/20260514150547.mp4",
+    "correctivePhase": null,
+    "targetMuscles": [],
+    "taggingSource": null
+  },
+  {
+    "legacyId": "mINTMIwQ8RL7cOZpj7uA",
+    "name": "Activation Standing Banded Hip Adduction",
+    "description": "Ziel: Aktivierung und Kräftigung der Hüftadduktoren zur Verbesserung der Beckenstabilität und der Kontrolle der Beinachse.\n\nAusgangsposition\nBefestige ein Miniband oder Kabelzug seitlich auf Sprunggelenkshöhe.\nLege die Schlaufe um das trainingsseitige Sprunggelenk.\nStelle dich aufrecht hin und halte dich bei Bedarf leicht an einer Wand oder einem stabilen Gegenstand fest.\nDas Standbein ist leicht gebeugt.\nDurchführung\nBeginne mit dem Trainingsbein leicht nach außen geführt.\nFühre das gestreckte Bein kontrolliert vor dem Standbein nach innen gegen den Widerstand.\nHalte die Endposition für 2 Sekunden.\nFühre das Bein langsam und kontrolliert in die Ausgangsposition zurück.\nOberkörper und Becken bleiben während der gesamten Übung ruhig – die Bewegung erfolgt ausschließlich aus dem Hüftgelenk.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen pro Seite.\n\nSeite: Beidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Theraband"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/mINTMIwQ8RL7cOZpj7uA/male/video/20260514151058.mp4",
+    "videoFemalePath": "media/exercises/mINTMIwQ8RL7cOZpj7uA/female/video/20260514151058.mp4",
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Adductors"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "EkHWp4KaDY2ZCjpCtTpC",
+    "name": "Activation Terminal Knee Extension (Powerband)",
+    "description": "Ziel: Aktivierung des Musculus vastus medialis obliquus (VMO) und Verbesserung der aktiven Kniestreckung sowie der Kniegelenksstabilität.\n\nAusgangsposition\nBefestige ein Powerband auf Kniehöhe hinter dir.\nSteige mit einem Bein in das Band, sodass es in der Kniekehle liegt.\nStelle das Trainingsbein leicht gebeugt auf den Boden und richte den Oberkörper auf.\nDurchführung\nBeginne mit leicht gebeugtem Knie.\nStrecke das Knie kontrolliert vollständig gegen den Zug des Powerbands.\nHalte die Endposition für 2 Sekunden und spanne den vorderen Oberschenkel bewusst an.\nBeuge das Knie langsam und kontrolliert wieder in die Ausgangsposition.\nDer Oberkörper bleibt während der gesamten Übung ruhig und aufrecht.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen pro Seite.\n\nSeite: Beidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Theraband"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/EkHWp4KaDY2ZCjpCtTpC/male/video/20260514150404.mp4",
+    "videoFemalePath": "media/exercises/EkHWp4KaDY2ZCjpCtTpC/female/video/20260514150404.mp4",
+    "correctivePhase": null,
+    "targetMuscles": [],
+    "taggingSource": null
+  },
+  {
+    "legacyId": "AiLm6MLCF0xGkSrh7Vk6",
+    "name": "Adductor Stretch + Mobilisation (erhöht)",
+    "description": "Ziel der Übung:\nVerbesserung der Hüftmobilität und Reduktion der Spannung in der Adduktorenmuskulatur.\n\nAusgangsposition:\nSeitlicher Stand neben einer Box, Stuhl oder Erhöhung.\nEin Bein liegt gestreckt auf der Erhöhung, das Standbein bleibt am Boden.\nOberkörper bleibt aufrecht.\n\nDurchführung:\nDas gestreckte Bein seitlich positionieren, bis eine Dehnung an der Innenseite des Oberschenkels spürbar ist.\nDie Dehnposition halten.\nAnschließend das Becken langsam vor und zurück bewegen, um die Adduktoren zusätzlich zu mobilisieren.\nDie Bewegung bleibt kontrolliert und schmerzfrei.\nAtmung ruhig weiterführen.\n\nDosierung:\n1–2 Sätze à 30–60 Sekunden mit langsamen Mobilisationsbewegungen.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/AiLm6MLCF0xGkSrh7Vk6/male/video/20260514142645.mp4",
+    "videoFemalePath": "media/exercises/AiLm6MLCF0xGkSrh7Vk6/female/video/20260514142645.mp4",
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Adductors"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "cySlOnF1szrP5tFy5yLS",
+    "name": "Banded Deadlift",
+    "description": "Ziel: Aktivierung und Kräftigung der hinteren Muskelkette, insbesondere des Musculus gluteus maximus und der ischiocruralen Muskulatur, sowie Verbesserung des Hüftstreckmusters.\n\nAusgangsposition\nStelle dich schulterbreit mittig auf ein Powerband.\nGreife die Enden des Bands links und rechts mit gestreckten Armen.\nBeuge die Knie leicht und schiebe die Hüfte nach hinten.\nNeige den Oberkörper mit geradem Rücken nach vorne. Der Kopf bleibt in Verlängerung der Wirbelsäule.\nDurchführung\nDrücke die Füße aktiv in den Boden.\nStrecke Hüfte und Knie kontrolliert, indem du die Hüfte nach vorne schiebst.\nRichte den Oberkörper bis in den aufrechten Stand auf.\nSpanne das Gesäß in der Endposition für 2 Sekunden maximal an, ohne ins Hohlkreuz zu fallen.\nSchiebe anschließend die Hüfte langsam wieder nach hinten und neige den Oberkörper kontrolliert nach vorne, bis die Ausgangsposition erreicht ist. Die Bewegung erfolgt primär aus der Hüfte, die Knie bleiben nur leicht gebeugt.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine",
+      "Po"
+    ],
+    "equipment": [
+      "Theraband"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/cySlOnF1szrP5tFy5yLS/male/video/20260514153044.mp4",
+    "videoFemalePath": "media/exercises/cySlOnF1szrP5tFy5yLS/female/video/20260514153044.mp4",
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Biceps Femoris",
+      "Hamstrings",
+      "Gluteus Maximus"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "Z0tbzWcvh1XjHBXNHInu",
+    "name": "Banded Scapular Protractions",
+    "description": "Ziel: Aktivierung des Musculus serratus anterior zur Verbesserung der Schulterblattstabilität und der Kontrolle des Schultergürtels.\n\nAusgangsposition\nStelle dich aufrecht hin.\nFühre ein Widerstandsband um den oberen Rücken auf Höhe der Schulterblätter.\nHalte jeweils ein Ende des Bands mit gestreckten Armen vor dem Körper fest.\nDas Band verläuft frei über den Rücken und ist an keinem festen Punkt befestigt.\nDurchführung\nSchiebe die Schulterblätter kontrolliert nach vorne, als würdest du die Arme verlängern wollen.\nDie Arme bleiben vollständig gestreckt – die Bewegung erfolgt ausschließlich aus den Schulterblättern.\nHalte die Endposition für 2 Sekunden und spanne den Serratus anterior bewusst an.\nLasse die Schulterblätter langsam und kontrolliert wieder in die Ausgangsposition zurückgleiten.\nDer Oberkörper bleibt während der gesamten Übung aufrecht und ruhig.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen.",
+    "language": "de",
+    "muscleGroups": [
+      "Brust"
+    ],
+    "equipment": [
+      "Theraband"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/Z0tbzWcvh1XjHBXNHInu/male/video/20260514152412.mp4",
+    "videoFemalePath": "media/exercises/Z0tbzWcvh1XjHBXNHInu/female/video/20260514152412.mp4",
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Serratus Anterior"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "rFRcdoR3RGDEGYjCjDY3",
+    "name": "Banded Scapular Retractions",
+    "description": "iel: Aktivierung der Schulterblattstabilisatoren, insbesondere des mittleren Trapezmuskels und der Rhomboiden, zur Verbesserung der Haltung und Schulterstabilität.\n\nAusgangsposition\nBefestige ein Widerstandsband an einem stabilen Türgriff.\nStelle dich aufrecht mit ausgestreckten Armen vor das Band.\nHalte die Enden des Bands mit beiden Händen fest.\nDie Arme bleiben während der gesamten Übung vollständig gestreckt.\nDurchführung\nZiehe die Schulterblätter kontrolliert nach hinten und leicht nach unten.\nDie Arme bleiben vollständig gestreckt – die Bewegung erfolgt ausschließlich aus den Schulterblättern.\nHalte die Endposition für 2 Sekunden und spanne die Muskulatur zwischen den Schulterblättern bewusst an.\nLasse die Schulterblätter langsam und kontrolliert wieder nach vorne gleiten.\nDer Oberkörper bleibt aufrecht und ruhig, ohne Ausweichbewegungen.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen.",
+    "language": "de",
+    "muscleGroups": [
+      "Rücken",
+      "Schultern"
+    ],
+    "equipment": [
+      "Theraband"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/rFRcdoR3RGDEGYjCjDY3/male/video/20260514152258.mp4",
+    "videoFemalePath": "media/exercises/rFRcdoR3RGDEGYjCjDY3/female/video/20260514152258.mp4",
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Middle Trapezius",
+      "Rhomboids"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "58yKFswxFoWUjJ6EGNzy",
+    "name": "Banded Shrugs",
+    "description": "Ziel: Aktivierung und Kräftigung des oberen Trapezmuskels zur Verbesserung der Schulterblattstabilität und Haltung.\n\nAusgangsposition\nStelle dich aufrecht mit beiden Füßen mittig auf ein Widerstandsband.\nHalte die Enden des Bands seitlich am Körper fest.\nDie Arme bleiben während der gesamten Übung vollständig gestreckt.\nRichte den Blick nach vorne und halte den Kopf in Verlängerung der Wirbelsäule.\nDurchführung\nZiehe die Schultern kontrolliert nach oben und leicht nach hinten.\nDie Arme bleiben vollständig gestreckt – die Bewegung erfolgt ausschließlich aus den Schulterblättern.\nHalte die Endposition für 2 Sekunden und spanne die Nackenmuskulatur bewusst an.\nSenke die Schultern langsam und kontrolliert wieder ab.\nVermeide Schwung oder Ausweichbewegungen mit Kopf oder Oberkörper.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen.\n\nSeite: Beidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Rücken",
+      "Schultern"
+    ],
+    "equipment": [
+      "Theraband"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/58yKFswxFoWUjJ6EGNzy/male/video/20260514151720.mp4",
+    "videoFemalePath": "media/exercises/58yKFswxFoWUjJ6EGNzy/female/video/20260514151720.mp4",
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Upper Trapezius"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "WUGzpv4d0tix9WPHWjj3",
+    "name": "Banded Side Bend",
+    "description": "Ziel: Aktivierung und Kräftigung der seitlichen Rumpfmuskulatur, insbesondere der schrägen Bauchmuskulatur und des Musculus quadratus lumborum.\n\nAusgangsposition\nStelle dich aufrecht mit schulterbreitem Stand auf das Widerstandsband.\nHalte das andere Ende des Bands mit einer Hand auf der gleichen Körperseite fest.\nKnie sind leicht gebeugt, der Oberkörper aufrecht.\nDas Becken bleibt während der gesamten Übung stabil.\nDurchführung\nNeige den Oberkörper langsam zur Seite des Bandes und spüre die Dehnung auf der gegenüberliegenden Rumpfseite.\nRichte den Oberkörper anschließend kontrolliert gegen den Widerstand des Bands wieder auf und bewege dich leicht über die Mittelstellung hinaus.\nDie Bewegung erfolgt ausschließlich aus der Wirbelsäule. Das Becken und die Beine bleiben stabil.\nHalte die Endposition für 2 Sekunden.\nKehre langsam und kontrolliert in die Ausgangsposition zurück.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen pro Seite.\n\nSeite: Beidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Bauch"
+    ],
+    "equipment": [
+      "Körpergewicht",
+      "Theraband"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/WUGzpv4d0tix9WPHWjj3/male/video/20260514155134.mp4",
+    "videoFemalePath": "media/exercises/WUGzpv4d0tix9WPHWjj3/female/video/20260514155134.mp4",
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Abdominal Complex"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "eLzRlZDWpGUHuvcrPwBd",
+    "name": "Bird Dog",
+    "description": "Ziel: Verbesserung der Rumpfstabilität sowie Aktivierung der tiefen Bauchmuskulatur, der Rückenstrecker und des Musculus gluteus maximus.\n\nAusgangsposition\nGehe in den Vierfüßlerstand.\nHände befinden sich unter den Schultern, Knie unter den Hüften.\nSpanne die Bauchmuskulatur an und halte die Wirbelsäule in einer neutralen Position.\nDer Blick ist nach unten zur Matte gerichtet.\nDurchführung\nStrecke einen Arm nach vorne und gleichzeitig das gegenüberliegende Bein nach hinten aus.\nStrecke Arm und Bein möglichst weit in die Länge, ohne sie über die Körperlinie anzuheben.\nDas Becken bleibt parallel zum Boden und der untere Rücken bewegt sich nicht.\nHalte die Endposition für 2 Sekunden.\nFühre Arm und Bein langsam und kontrolliert zurück in die Ausgangsposition und wechsle anschließend die Seite.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen pro Seite.\n\nSeite: Beidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Bauch",
+      "Rücken"
+    ],
+    "equipment": [
+      "Körpergewicht"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/eLzRlZDWpGUHuvcrPwBd/male/video/20260514154506.mp4",
+    "videoFemalePath": "media/exercises/eLzRlZDWpGUHuvcrPwBd/female/video/20260514154506.mp4",
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Gluteus Maximus",
+      "Erector Spinae",
+      "Abdominal Complex"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "qwACqAxX0vHEpWKBLbQq",
+    "name": "Child’s Pose mit Lateralflexion",
+    "description": "Ziel der Übung:\nVerbesserung der lateralen Rumpfmobilität und Reduktion der Spannung im Latissimus, Quadratus lumborum und der seitlichen Faszienkette.\n\nAusgangsposition:\nVierfüßlerstand auf dem Boden oder einer Matte.\nGesäß Richtung Fersen absenken, Arme nach vorne ausgestreckt.\n\nDurchführung:\nBeide Hände kontrolliert zu einer Seite wandern lassen.\nDen Oberkörper leicht zur Gegenseite schieben, bis eine Dehnung entlang der seitlichen Rumpfkette spürbar ist.\nBecken bleibt möglichst Richtung Fersen abgesenkt.\nDie Position ruhig halten und gleichmäßig weiteratmen.\n\nDosierung:\n1–2 Sätze à 30–60 Sekunden.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Rücken"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/qwACqAxX0vHEpWKBLbQq/male/video/20260514143857.mp4",
+    "videoFemalePath": "media/exercises/qwACqAxX0vHEpWKBLbQq/female/video/20260514143857.mp4",
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Gluteus Maximus",
+      "Latissimus Dorsi"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "htFDLAI9qHCg8wV47IdP",
+    "name": "Dead Bug",
+    "description": "Ziel: Aktivierung der tiefen Bauchmuskulatur sowie Verbesserung der Rumpfstabilität und der lumbopelvinen Kontrolle.\n\nAusgangsposition\nLege dich in Rückenlage auf den Boden.\nHebe beide Beine an, sodass Hüfte und Knie jeweils etwa 90° gebeugt sind.\nStrecke beide Arme senkrecht über die Schultern.\nDrücke den unteren Rücken während der gesamten Übung fest in den Boden.\nDurchführung\nStrecke langsam einen Arm nach hinten über den Kopf und gleichzeitig das gegenüberliegende Bein nach vorne aus.\nSenke Arm und Bein nur so weit ab, wie der untere Rücken vollständig auf dem Boden bleiben kann.\nAtme während der Abwärtsbewegung aus.\nFühre Arm und Bein langsam in die Ausgangsposition zurück und atme dabei tief in den Bauch ein.\nWiederhole die Bewegung mit der gegenüberliegenden Seite. Die Ausführung erfolgt langsam und kontrolliert.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen pro Seite.\n\nSeite: Beidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Bauch"
+    ],
+    "equipment": [
+      "Körpergewicht"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/htFDLAI9qHCg8wV47IdP/male/video/20260514151624.mp4",
+    "videoFemalePath": "media/exercises/htFDLAI9qHCg8wV47IdP/female/video/20260514151624.mp4",
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Abdominal Complex"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "SmgGsTJdhGByqTA58EeC",
+    "name": "Dynamic Lateral Step-Down",
+    "description": "Ziel: Verbesserung der dynamischen Knie- und Hüftstabilität sowie der reaktiven Kraft des Musculus gluteus medius und Musculus quadriceps.\n\nAusgangsposition\nStelle dich seitlich mit einem Fuß vollständig auf eine stabile Box oder Stufe.\nDas Standbein befindet sich mittig auf der Box.\nDas freie Bein hängt seitlich neben der Box.\nRichte den Oberkörper auf und halte den Blick nach vorne.\nDurchführung\nBeuge das Standbein kontrolliert und senke den Körper seitlich ab, bis die Ferse des freien Beins den Boden leicht berührt.\nFange die Bewegung kurz ab und drücke dich anschließend sofort explosiv über das Standbein zurück auf die Box.\nNutze die Arme dynamisch zur Unterstützung der Aufwärtsbewegung.\nDas Knie des Standbeins bleibt während der gesamten Übung stabil und zeigt in Richtung der Zehenspitzen.\nFühre die Bewegung flüssig und rhythmisch ohne Pause am tiefsten Punkt aus.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen pro Seite.\n\nSeite: Beidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Bauch",
+      "Beine",
+      "Po"
+    ],
+    "equipment": [
+      "Körpergewicht"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/SmgGsTJdhGByqTA58EeC/male/video/20260514154105.mp4",
+    "videoFemalePath": "media/exercises/SmgGsTJdhGByqTA58EeC/female/video/20260514154105.mp4",
+    "correctivePhase": "INTEGRATE",
+    "targetMuscles": [
+      "Gluteus Medius"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "VapIuotiS8YmPo1yVn7o",
+    "name": "Figure-4 Lumbar Rotation Stretch",
+    "description": "Ziel der Übung:\nVerbesserung der lumbalen Rotationsmobilität sowie Reduktion der Spannung im unteren Rücken- und Gesäßbereich.\n\nAusgangsposition:\nRückenlage auf dem Boden.\nEin Bein wird in Figure-4-Position über das andere Bein gelegt.\nArme liegen seitlich ausgestreckt am Boden.\n\nDurchführung:\nBeide Beine kontrolliert zur Seite absinken lassen, bis eine Dehnung im unteren Rücken und Gesäß spürbar ist.\nSchultern bleiben möglichst am Boden.\nDie Bewegung erfolgt langsam und kontrolliert.\nDie Position ruhig halten und gleichmäßig weiteratmen.\n\nDosierung:\n1–2 Sätze à 30–60 Sekunden.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Rücken"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/VapIuotiS8YmPo1yVn7o/male/video/20260514143730.mp4",
+    "videoFemalePath": "media/exercises/VapIuotiS8YmPo1yVn7o/female/video/20260514143730.mp4",
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Gluteus Maximus"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "mehxaFqRj3IG9KNxxnuR",
+    "name": "Floor Angels",
+    "description": "Ziel: Verbesserung der Brustwirbelsäulen- und Schulterbeweglichkeit sowie Aktivierung der Schulterblattstabilisatoren, insbesondere des unteren Trapezmuskels.\n\nAusgangsposition\nLege dich in Rückenlage auf den Boden.\nStelle beide Beine auf, sodass die Lendenwirbelsäule in einer neutralen Position bleibt.\nLege den unteren Rücken flach auf den Boden.\nStrecke die Arme seitlich im 90°-Winkel aus, sodass Ellenbogen, Unterarme und Handrücken Kontakt zum Boden haben.\nDurchführung\nSchiebe die Arme langsam und kontrolliert über den Kopf nach oben, ohne dass Handrücken, Unterarme oder Ellenbogen den Bodenkontakt verlieren.\nSenke die Arme anschließend langsam wieder zurück in die Ausgangsposition.\nAtme beim Hochschieben der Arme aus und beim Zurückführen ein.\nDie Bewegung erfolgt nur so weit, wie der Bodenkontakt der Arme und der neutrale Rücken erhalten bleiben.\nFühre die Übung langsam und kontrolliert aus.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen.\n\nSeite: Beidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Rücken",
+      "Schultern"
+    ],
+    "equipment": [
+      "Körpergewicht"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/mehxaFqRj3IG9KNxxnuR/male/video/20260514151935.mp4",
+    "videoFemalePath": "media/exercises/mehxaFqRj3IG9KNxxnuR/female/video/20260514151935.mp4",
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Lower Trapezius"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "r2rCdkXJBVbT1dA5WNvx",
+    "name": "Forward Lunge",
+    "description": "Ziel: Verbesserung der Beinachsenstabilität sowie Kräftigung des Musculus quadriceps, des Musculus gluteus maximus und der gesamten unteren Extremität.\n\nAusgangsposition\nStelle dich aufrecht mit hüftbreit auseinanderstehenden Füßen hin.\nRichte den Oberkörper auf und halte den Blick nach vorne.\nDie Arme können locker seitlich oder vor dem Körper gehalten werden.\nDurchführung\nMache mit einem Bein einen kontrollierten Schritt nach vorne.\nBeuge beide Knie, bis das hintere Knie den Boden fast berührt und das vordere Knie etwa einen 90°-Winkel erreicht.\nDas vordere Knie bleibt während der gesamten Bewegung stabil und zeigt in Richtung der Zehenspitzen.\nDrücke dich kraftvoll über die Ferse des vorderen Beins wieder in die Ausgangsposition zurück.\nFühre die Bewegung langsam und kontrolliert aus und wechsle anschließend die Seite.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen pro Seite.\n\nSeite: Beidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine",
+      "Po"
+    ],
+    "equipment": [
+      "Körpergewicht"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/r2rCdkXJBVbT1dA5WNvx/male/video/20260514153309.mp4",
+    "videoFemalePath": "media/exercises/r2rCdkXJBVbT1dA5WNvx/female/video/20260514153309.mp4",
+    "correctivePhase": "INTEGRATE",
+    "targetMuscles": [
+      "Gluteus Maximus"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "Icls2NUusVp0mGWUibeM",
+    "name": "Frog Crunch (Butterfly Crunch)",
+    "description": "Ziel: Aktivierung und Kräftigung des Musculus rectus abdominis bei minimaler Beteiligung der Hüftbeuger.\n\nAusgangsposition\nLege dich in Rückenlage auf den Boden.\nFühre die Fußsohlen zusammen und lasse die Knie entspannt nach außen fallen.\nStrecke die Arme nach vorne in Richtung Knie.\nDie Lendenwirbelsäule bleibt während der gesamten Übung flach auf dem Boden.\nDurchführung\nSpanne die Bauchmuskulatur an und hebe Kopf, Schultern und Schulterblätter kontrolliert vom Boden ab.\nFühre die Arme nach vorne, ohne Schwung zu holen.\nDer Blick bleibt schräg nach oben zur Decke gerichtet, sodass der Nacken entspannt bleibt.\nHalte die Endposition für 2 Sekunden.\nSenke den Oberkörper langsam und kontrolliert wieder bis kurz vor den Boden ab.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen.\n\nSeite: Beidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Bauch"
+    ],
+    "equipment": [
+      "Körpergewicht"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/Icls2NUusVp0mGWUibeM/male/video/20260514151505.mp4",
+    "videoFemalePath": "media/exercises/Icls2NUusVp0mGWUibeM/female/video/20260514151505.mp4",
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Hip Flexor Complex",
+      "Abdominal Complex"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "14CVxhRlmc7py5ZwmKiQ",
+    "name": "Gastrocnemius Activation (mit Erhöhung)",
+    "description": "Ziel der Übung:\nAktivierung des Gastrocnemius zur Verbesserung der Plantarflexionskraft und Sprunggelenksstabilität.\n\nAusgangsposition:\nAufrechter Stand.\nDie Fußballen stehen erhöht auf einem Buch, einer kleinen Erhöhung oder Stufe.\nDie Fersen befinden sich frei in der Luft.\nDer Körper bleibt aufrecht.\n\nDurchführung:\nDie Fersen kontrolliert maximal nach oben drücken.\nKurz die Spannung in der Wade halten.\nAnschließend die Fersen langsam und kontrolliert absenken.\nDie Bewegung erfolgt ausschließlich aus dem Sprunggelenk.\nDer restliche Körper bleibt stabil.\n\nDosierung:\n2 Sätze à 10–15 Wiederholungen.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/14CVxhRlmc7py5ZwmKiQ/male/video/20260514150048.mp4",
+    "videoFemalePath": "media/exercises/14CVxhRlmc7py5ZwmKiQ/female/video/20260514150048.mp4",
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Gastrocnemius",
+      "Soleus"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "b798LmJmWXJQfEfH1jbD",
+    "name": "Gastrocnemius Stretch (mit Fußerhöhung)",
+    "description": "Ziel der Übung:\nVerbesserung der Dorsalflexion im Sprunggelenk und Reduktion der Spannung im Gastrocnemius.\n\nAusgangsposition:\nStand vor einer Wand.\nVorfuß des hinteren Beins steht erhöht auf einem Buch oder einer kleinen Erhöhung, die Ferse bleibt am Boden.\nDas vordere Bein ist leicht gebeugt.\n\nDurchführung:\nHände gegen die Wand stützen.\nBecken kontrolliert nach vorne schieben, bis eine Dehnung in der Wade des hinteren Beins spürbar ist.\nDas hintere Knie bleibt gestreckt.\nOberkörper bleibt aufrecht.\n\nDosierung:\n1–2 Sätze à 30–60 Sekunden.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/b798LmJmWXJQfEfH1jbD/male/video/20260514141848.mp4",
+    "videoFemalePath": "media/exercises/b798LmJmWXJQfEfH1jbD/female/video/20260514141848.mp4",
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Gastrocnemius",
+      "Soleus"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "llH6nK16RpQpyBuhJXay",
+    "name": "Glute Med Activation (Miniband)",
+    "description": "Ziel: Aktivierung und Kräftigung des Musculus gluteus medius zur Verbesserung der Becken- und Hüftstabilität.\n\nAusgangsposition\nStelle dich aufrecht vor eine Wand und strecke beide Arme nach vorne aus. Die Hände liegen leicht an der Wand an.\nLege ein Miniband um beide Sprunggelenke.\nVerteile dein Gewicht gleichmäßig auf das Standbein.\nDurchführung\nHalte den Oberkörper aufrecht und das Standbein leicht gebeugt.\nSpreize das andere Bein gestreckt kontrolliert zur Seite gegen den Widerstand des Minibands ab.\nHalte die Endposition für 2 Sekunden.\nFühre das Bein langsam und kontrolliert in die Ausgangsposition zurück.\nDer Oberkörper bleibt während der gesamten Übung ruhig – nur das Bein bewegt sich.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen pro Seite.\n\nSeite: Beidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Po"
+    ],
+    "equipment": [
+      "Theraband"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/llH6nK16RpQpyBuhJXay/male/video/20260514150252.mp4",
+    "videoFemalePath": "media/exercises/llH6nK16RpQpyBuhJXay/female/video/20260514150252.mp4",
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Gluteus Medius"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "PAYQ9MSGHm0bpscU6If6",
+    "name": "Hamstring Stretch stehend (mit Erhöhung)",
+    "description": "Ziel der Übung:\nVerbesserung der posterioren Kettenmobilität und Reduktion der Spannung in der ischiokruralen Muskulatur.\n\nAusgangsposition:\nAufrechter Stand.\nDie Ferse des zu dehnenden Beins liegt erhöht auf einem Stuhl oder einer Box.\nDas Standbein bleibt leicht gebeugt.\n\nDurchführung:\nDie Hüfte kontrolliert nach hinten schieben.\nMit dem gegenüberliegenden Arm Richtung Fuß oder Unterschenkel greifen.\nDer Oberkörper bewegt sich leicht nach vorne, während die Wirbelsäule möglichst lang bleibt.\nBis eine Dehnung an der Rückseite des Oberschenkels spürbar ist.\nDie Bewegung bleibt langsam und kontrolliert.\n\nDosierung:\n1–2 Sätze à 30–60 Sekunden.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/PAYQ9MSGHm0bpscU6If6/male/video/20260514142554.mp4",
+    "videoFemalePath": "media/exercises/PAYQ9MSGHm0bpscU6If6/female/video/20260514142554.mp4",
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Hamstrings"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "a4uV6T22EnLC7K3FbFPZ",
+    "name": "Heels-Elevated Squat",
+    "description": "Ziel: Aktivierung und Kräftigung des Musculus quadriceps mit Schwerpunkt auf der kniedominanten Bewegungsausführung.\n\nAusgangsposition\nStelle beide Fersen auf eine 3–5 cm hohe Erhöhung (z. B. Keil, Gewichtsscheibe oder kleines Brett).\nDie Füße stehen etwa hüftbreit.\nRichte den Oberkörper auf und halte den Blick nach vorne.\nDie Arme können zum Ausgleich vor dem Körper gehalten werden.\nDurchführung\nBeuge kontrolliert Knie und Hüfte und gehe möglichst tief in die Kniebeuge.\nDie Knie dürfen sich dabei weit über die Fußspitzen nach vorne bewegen.\nDer Oberkörper bleibt möglichst aufrecht und die Fersen behalten während der gesamten Übung Kontakt zur Erhöhung.\nDrücke dich kontrolliert über den gesamten Fuß wieder in den Stand zurück.\nSpanne in der Endposition Gesäß- und Oberschenkelmuskulatur für 2 Sekunden an.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/a4uV6T22EnLC7K3FbFPZ/male/video/20260514153157.mp4",
+    "videoFemalePath": "media/exercises/a4uV6T22EnLC7K3FbFPZ/female/video/20260514153157.mp4",
+    "correctivePhase": "INTEGRATE",
+    "targetMuscles": [
+      "Gluteus Maximus"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "VFr1RrMcfF5XS0MyoX3L",
+    "name": "Hip Flexor Stretch",
+    "description": "Ziel der Übung:\nVerbesserung der Hüftstreckung und Reduktion der Spannung im Hüftbeugerbereich.\n\nAusgangsposition:\nHalbknie-Stand.\nDas hintere Knie befindet sich am Boden, das vordere Bein steht stabil vor dem Körper.\nOberkörper bleibt aufrecht.\n\nDurchführung:\nGesäß des hinteren Beins aktiv anspannen.\nDas Becken kontrolliert leicht nach vorne schieben, bis eine Dehnung an der Vorderseite der Hüfte spürbar ist.\nAnschließend den Oberkörper leicht zur Gegenseite neigen, um die Dehnung zu verstärken.\nDie Bewegung bleibt langsam und kontrolliert.\nAtmung ruhig weiterführen.\n\nDosierung:\n1–2 Sätze à 30–60 Sekunden.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Bauch"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/VFr1RrMcfF5XS0MyoX3L/male/video/20260514142833.mp4",
+    "videoFemalePath": "media/exercises/VFr1RrMcfF5XS0MyoX3L/female/video/20260514142833.mp4",
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Gluteus Maximus",
+      "Hip Flexor Complex"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "YSZirG1XSQXVCGG4njua",
+    "name": "Kneeling Lat Stretch",
+    "description": "Ziel der Übung:\nVerbesserung der Schulterflexion und Reduktion der Spannung im Latissimus dorsi sowie der seitlichen Rumpfkette.\n\nAusgangsposition:\nKniender Stand vor einer Bank, Box oder Wand.\nBeide Unterarme oder Hände liegen erhöht auf der Unterlage.\nHüfte befindet sich über den Knien.\n\nDurchführung:\nBrustkorb kontrolliert Richtung Boden sinken lassen.\nDas Becken leicht nach hinten schieben, bis eine Dehnung unter den Achseln und entlang der seitlichen Rumpfkette spürbar ist.\nDie Wirbelsäule bleibt möglichst lang.\nDie Position ruhig halten und gleichmäßig weiteratmen.\n\nDosierung:\n1–2 Sätze à 30–60 Sekunden.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Rücken"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/YSZirG1XSQXVCGG4njua/male/video/20260514143957.mp4",
+    "videoFemalePath": "media/exercises/YSZirG1XSQXVCGG4njua/female/video/20260514143957.mp4",
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Latissimus Dorsi"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "qhTFWR2q6t03vo4CZ1Cb",
+    "name": "Lat Release",
+    "description": "Ziel der Übung:\nVerbesserung der Schulterbeweglichkeit und thorakalen Aufrichtung.\n\nAusgangsposition:\nSeitlage, Roller unter seitlicher Rückenpartie.\n\nDurchführung:\nVom unteren Rippenbogen bis zur Achsel rollen.\nZusätzlich quer (links/rechts) über die Muskelstruktur arbeiten.\nDruckpunkte 30–60 Sekunden halten.\n\nDosierung:\n1–2 Durchgänge.\n\nSeite:\nBeidseitig",
+    "language": "de",
+    "muscleGroups": [
+      "Rücken"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/qhTFWR2q6t03vo4CZ1Cb/male/video/MFRLat.mp4",
+    "videoFemalePath": "media/exercises/qhTFWR2q6t03vo4CZ1Cb/female/video/MFRLat.mp4",
+    "correctivePhase": "INHIBIT",
+    "targetMuscles": [
+      "Latissimus Dorsi"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "cFcc3dCrwZMayJ82L8ku",
+    "name": "Lat Stretch Door",
+    "description": "Ziel der Übung:\nVerbesserung der Schulterbeweglichkeit und Reduktion der Spannung im Latissimus dorsi sowie der seitlichen Rumpfkette.\n\nAusgangsposition:\nSeitlich vor einem stabilen Türrahmen stehen.\nMit einem Arm überkreuzt an die Innenseite oder Rückseite des Türrahmens greifen – etwa auf Schulterhöhe oder leicht darüber.\nDer Daumen zeigt nach unten.\nDer Arm bleibt vollständig gestreckt.\n\nDurchführung:\nDie Knie leicht beugen.\nDie Hüfte kontrolliert nach hinten schieben und den Oberkörper vom Türrahmen weg lehnen.\nAnschließend den Oberkörper leicht rotieren, sodass der Blick unter der ausgestreckten Achsel hindurchgeht.\nDie Hüfte zusätzlich leicht zur Seite des gedehnten Arms schieben, bis eine Dehnung entlang der seitlichen Rippen und unter der Achsel spürbar ist.\nDie Position ruhig halten und gleichmäßig weiteratmen.\n\nDosierung:\n1–2 Sätze à 30–60 Sekunden.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Rücken"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/cFcc3dCrwZMayJ82L8ku/male/video/20260514144943.mp4",
+    "videoFemalePath": "media/exercises/cFcc3dCrwZMayJ82L8ku/female/video/20260514144943.mp4",
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Latissimus Dorsi"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "IN0kOJ6itDHSLYSp06KN",
+    "name": "Levator Scapulae Stretch sitzend",
+    "description": "Ziel der Übung:\nVerbesserung der Hals- und Schulterbeweglichkeit sowie Reduktion der Spannung im Levator scapulae.\n\nAusgangsposition:\nAufrecht auf einem Stuhl sitzen.\nDie Schulter der zu dehnenden Seite bleibt entspannt und tief.\nMit der Hand der betroffenen Seite kann die Unterseite des Stuhls gehalten werden, um die Schulter zusätzlich zu stabilisieren.\n\nDurchführung:\nDas Kinn etwa 45° zur Gegenseite drehen.\nAnschließend den Kopf kontrolliert nach unten Richtung Achsel der Gegenseite bewegen, bis eine Dehnung seitlich und hinten am Hals spürbar ist.\nOptional kann die freie Hand sanft am Hinterkopf unterstützen, um die Dehnung leicht zu intensivieren.\nDie Bewegung bleibt langsam und kontrolliert.\nKeinen starken Zug ausüben.\n\nDosierung:\n1–2 Sätze à 30–60 Sekunden.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Schultern"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/IN0kOJ6itDHSLYSp06KN/male/video/20260514144347.mp4",
+    "videoFemalePath": "media/exercises/IN0kOJ6itDHSLYSp06KN/female/video/20260514144347.mp4",
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Levator Scapulae"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "csXUo9svfnXmD5UFKLy2",
+    "name": "Pallof Press",
+    "description": "Ziel: Verbesserung der Rumpfstabilität sowie der Anti-Rotationsfähigkeit durch Aktivierung der tiefen Bauch- und Rumpfmuskulatur.\n\nAusgangsposition\nBefestige ein Powerband auf Brusthöhe an einem stabilen Fixpunkt.\nStelle dich seitlich zum Befestigungspunkt in einen schulterbreiten Stand.\nDie Knie sind leicht gebeugt und der Oberkörper aufrecht.\nGreife das Band mit beiden Händen und halte es direkt vor der Brust. Das Band steht bereits unter Spannung.\nDurchführung\nSpanne Bauch- und Gesäßmuskulatur fest an.\nDrücke das Band explosiv und kontrolliert gerade nach vorne, bis die Arme vollständig gestreckt sind.\nHalte die Endposition für 2 Sekunden, ohne dass sich Oberkörper oder Becken zur Seite drehen.\nFühre die Hände langsam und kontrolliert wieder zur Brust zurück.\nWährend der gesamten Übung bleibt der Körper stabil – ausschließlich die Arme bewegen sich.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen pro Seite.\n\nSeite: Beidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Bauch"
+    ],
+    "equipment": [
+      "Theraband"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/csXUo9svfnXmD5UFKLy2/male/video/20260514154745.mp4",
+    "videoFemalePath": "media/exercises/csXUo9svfnXmD5UFKLy2/female/video/20260514154745.mp4",
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Gluteus Maximus"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "jx5znFZbwEBdex1oWQA0",
+    "name": "Pec Stretch",
+    "description": "Ziel der Übung:\nVerbesserung der Schulteraußenrotation und Reduktion der Spannung in der Brustmuskulatur.\n\nAusgangsposition:\nSeitlich neben einer Wand oder einem Türrahmen stehen.\nDer Arm der zu dehnenden Seite befindet sich seitlich auf Schulterhöhe an der Wand.\nDer Ellbogen ist leicht gebeugt.\n\nDurchführung:\nDen Oberkörper langsam vom Arm weg rotieren, bis eine Dehnung im Brustbereich spürbar ist.\nDie Schulter bleibt dabei möglichst tief und entspannt.\nBrustkorb aufrichten und ruhig weiteratmen.\nDie Position kontrolliert halten.\n\nDosierung:\n1–2 Sätze à 30–60 Sekunden.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Brust"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/jx5znFZbwEBdex1oWQA0/male/video/20260514144234.mp4",
+    "videoFemalePath": "media/exercises/jx5znFZbwEBdex1oWQA0/female/video/20260514144234.mp4",
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Pectoralis Major"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "yzhpaUoTNgbezYlDgIMq",
+    "name": "Peroneal Stretch und Mobilisation",
+    "description": "Ziel der Übung:\nVerbesserung der lateralen Sprunggelenksmobilität und Reduktion der Spannung in der Peronealmuskulatur.\n\nAusgangsposition:\nAufrechter Stand.\nDas zu dehnende Bein steht leicht hinter dem Körper.\nDer Fußrücken wird leicht nach vorne außen positioniert.\n\nDurchführung:\nDen Fußrücken kontrolliert nach vorne außen in den Boden drücken.\nDabei entsteht eine Dehnung an der Außenseite des Unterschenkels.\nDas Körpergewicht leicht auf das hintere Bein verlagern.\nDie Bewegung bleibt langsam und kontrolliert.\nAtmung ruhig weiterführen.\n\nDosierung:\n1–2 Sätze à 30–60 Sekunden.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/yzhpaUoTNgbezYlDgIMq/male/video/20260514142331.mp4",
+    "videoFemalePath": "media/exercises/yzhpaUoTNgbezYlDgIMq/female/video/20260514142331.mp4",
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Peroneal Complex"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "mFx8bWYB57VlxWp11wRA",
+    "name": "Piriformis + Glutes Stretch",
+    "description": "Ziel der Übung:\nVerbesserung der Hüftaußenrotationsmobilität und Reduktion der Spannung im Piriformis sowie der Gesäßmuskulatur.\n\nAusgangsposition:\nRückenlage nahe einer Wand.\nEin Fuß wird gegen die Wand gestellt, Hüfte und Knie sind gebeugt.\nDas andere Bein wird in Figure-4-Position über das Standbein gelegt.\n\nDurchführung:\nDas Standbein kontrolliert gegen die Wand drücken.\nDadurch bewegt sich die Hüfte langsam in Flexion, bis eine Dehnung im Gesäß spürbar ist.\nAnschließend das Knie des Figure-4-Beins aktiv leicht vom Körper wegdrücken, um den Stretch zu intensivieren.\nBecken bleibt möglichst stabil am Boden.\nDie Position ruhig halten und gleichmäßig weiteratmen.\n\nDosierung:\n1–2 Sätze à 30–60 Sekunden.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Po"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/mFx8bWYB57VlxWp11wRA/male/video/20260514143109.mp4",
+    "videoFemalePath": "media/exercises/mFx8bWYB57VlxWp11wRA/female/video/20260514143109.mp4",
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Gluteus Maximus",
+      "Piriformis"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "vtwG1tnyH0qLcJheSKEe",
+    "name": "Quadrizeps Stretch liegend",
+    "description": "Ziel der Übung:\nVerbesserung der Kniebeugung und Reduktion der Spannung im Quadrizeps sowie Hüftbeugerbereich.\n\nAusgangsposition:\nBauchlage auf dem Boden oder auf einer Matte.\nEin Bein bleibt gestreckt am Boden.\nDas andere Bein wird angewinkelt.\n\nDurchführung:\nDen Fuß des angewinkelten Beins mit der Hand greifen.\nDie Ferse kontrolliert Richtung Gesäß ziehen, bis eine Dehnung an der Vorderseite des Oberschenkels spürbar ist.\nDas Becken bleibt möglichst stabil am Boden.\nDie Bewegung bleibt langsam und kontrolliert.\nAtmung ruhig weiterführen.\n\nDosierung:\n1–2 Sätze à 30–60 Sekunden.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/vtwG1tnyH0qLcJheSKEe/male/video/20260514144115.mp4",
+    "videoFemalePath": "media/exercises/vtwG1tnyH0qLcJheSKEe/female/video/20260514144115.mp4",
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Gluteus Maximus",
+      "Hip Flexor Complex"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "85FbG2OtvlQXsdIoN8OE",
+    "name": "Release Wade",
+    "description": "Ziel der Übung:\nReduktion von Spannung in der Wadenmuskulatur zur Verbesserung der Sprunggelenksbeweglichkeit.\n\nAusgangsposition:\nSitz am Boden, Foam Roller unter der Wade.\n\nDurchführung:\nLangsam vom Achillessehnenansatz bis unterhalb der Kniekehle rollen.\nZusätzlich kleine seitliche Bewegungen (links/rechts) durchführen.\nDruckpunkte 30–60 Sekunden halten.\n\nDosierung:\n1–2 Durchgänge à 30–60 Sekunden.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/85FbG2OtvlQXsdIoN8OE/male/video/MFRSoleusGastrocnemius.mp4",
+    "videoFemalePath": "media/exercises/85FbG2OtvlQXsdIoN8OE/female/video/MFRSoleusGastrocnemius.mp4",
+    "correctivePhase": "INHIBIT",
+    "targetMuscles": [
+      "Gastrocnemius",
+      "Soleus"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "V0dQww8ml1ZfwcIQTiPA",
+    "name": "Resisted Ankle Eversion mit Miniband",
+    "description": "Ziel der Übung:\nAktivierung der evertierenden Fußmuskulatur zur Verbesserung der lateralen Sprunggelenksstabilität und Fußkontrolle.\n\nAusgangsposition:\nSitz auf dem Boden mit ausgestreckten Beinen.\nDas Miniband liegt um den Vorfuß, die Fixierung befindet sich an der Innenseite des Fußes.\nDas andere Ende des Bands wird am gegenüberliegenden Fuß fixiert.\n\nDurchführung:\nDas Bein bleibt gestreckt.\nDen Fuß kontrolliert nach außen ziehen gegen den Widerstand des Minibands.\nDie Bewegung erfolgt ausschließlich aus dem Sprunggelenk.\nKurz die Spannung halten und den Fuß anschließend langsam zurückführen.\nDie Bewegung bleibt kontrolliert ohne Rotation aus Hüfte oder Knie.\n\nDosierung:\n2 Sätze à 10–15 Wiederholungen.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Theraband"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/V0dQww8ml1ZfwcIQTiPA/male/video/20260514145618.mp4",
+    "videoFemalePath": "media/exercises/V0dQww8ml1ZfwcIQTiPA/female/video/20260514145618.mp4",
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Peroneal Complex"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "thnaLzbb83eRCemWXNMd",
+    "name": "Resisted Ankle Inversion mit Miniband",
+    "description": "Ziel der Übung:\nAktivierung der invertierenden Fußmuskulatur zur Verbesserung der medialen Sprunggelenksstabilität und Fußkontrolle.\n\nAusgangsposition:\nSitz auf dem Boden mit ausgestreckten Beinen.\nDas zu trainierende Bein wird über das andere Bein gekreuzt.\nDas Miniband liegt um den Vorfuß, die Fixierung befindet sich an der Außenseite des Fußes.\nDas andere Ende des Bands wird am gegenüberliegenden Fuß fixiert.\n\nDurchführung:\nDas Bein bleibt gestreckt.\nDen Fuß kontrolliert nach innen ziehen gegen den Widerstand des Minibands.\nDie Bewegung erfolgt ausschließlich aus dem Sprunggelenk.\nKurz die Spannung halten und den Fuß anschließend langsam zurückführen.\nDie Bewegung bleibt kontrolliert ohne Rotation aus Hüfte oder Knie.\n\nDosierung:\n2 Sätze à 10–15 Wiederholungen.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Theraband"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/thnaLzbb83eRCemWXNMd/male/video/20260514145850.mp4",
+    "videoFemalePath": "media/exercises/thnaLzbb83eRCemWXNMd/female/video/20260514145850.mp4",
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Anterior Tibialis",
+      "Posterior Tibialis"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "Riy0rUUdTzKwQeSmEPg2",
+    "name": "Reverse Lunge",
+    "description": "Ziel: Verbesserung der Beinachsenstabilität sowie Kräftigung des Musculus quadriceps, des Musculus gluteus maximus und der gesamten unteren Extremität.\n\nAusgangsposition\nStelle dich aufrecht mit hüftbreit auseinanderstehenden Füßen hin.\nRichte den Oberkörper auf und halte den Blick nach vorne.\nDie Arme können locker seitlich oder vor dem Körper gehalten werden.\nDurchführung\nMache mit einem Bein einen kontrollierten Schritt nach hinten.\nBeuge beide Knie, bis das hintere Knie den Boden fast berührt und das vordere Knie etwa einen 90°-Winkel erreicht.\nDas vordere Knie bleibt während der gesamten Bewegung stabil und zeigt in Richtung der Zehenspitzen.\nDrücke dich kontrolliert über die Ferse des vorderen Beins zurück in die Ausgangsposition.\nFühre die Bewegung langsam und kontrolliert aus und wechsle anschließend die Seite.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen pro Seite.\n\nSeite: Beidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine",
+      "Po"
+    ],
+    "equipment": [
+      "Körpergewicht"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/Riy0rUUdTzKwQeSmEPg2/male/video/20260514153418.mp4",
+    "videoFemalePath": "media/exercises/Riy0rUUdTzKwQeSmEPg2/female/video/20260514153418.mp4",
+    "correctivePhase": "INTEGRATE",
+    "targetMuscles": [
+      "Gluteus Maximus"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "T9hRkY9N2sIkELlGfdgt",
+    "name": "SCM Stretch sitzend",
+    "description": "Ziel der Übung:\nVerbesserung der cervicalen Beweglichkeit und Reduktion der Spannung im Musculus sternocleidomastoideus (SCM).\n\nAusgangsposition:\nAufrecht auf einem Stuhl sitzen.\nFüße stehen stabil am Boden.\nSchultern bleiben entspannt und tief.\n\nDurchführung:\nDen Kopf leicht nach hinten neigen.\nAnschließend den Kopf zur Gegenseite drehen und leicht zur gleichen Seite neigen, bis eine Dehnung an der Vorder- und Seitenfläche des Halses spürbar ist.\nOptional kann die freie Hand oder der Unterarm genutzt werden, um die Dehnung sanft zu verstärken.\nDie Bewegung bleibt langsam und kontrolliert.\nRuhig und gleichmäßig weiteratmen.\n\nDosierung:\n1–2 Sätze à 30–60 Sekunden.",
+    "language": "de",
+    "muscleGroups": [
+      "Rücken",
+      "Schultern"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/T9hRkY9N2sIkELlGfdgt/male/video/20260514144525.mp4",
+    "videoFemalePath": "media/exercises/T9hRkY9N2sIkELlGfdgt/female/video/20260514144525.mp4",
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Sternocleidomastoid"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "olJI1J0LTaOtCgoqZt5j",
+    "name": "Side Lunge (dynamisch im Wechsel)",
+    "description": "Ziel: Verbesserung der Beinachsenstabilität, der Hüftmobilität sowie Kräftigung der Adduktoren, des Musculus gluteus maximus und des Musculus quadriceps.\n\nAusgangsposition\nStelle dich aufrecht mit den Füßen etwa hüftbreit auseinander.\nRichte den Oberkörper auf und halte den Blick nach vorne.\nDie Arme können vor dem Körper gehalten werden, um das Gleichgewicht zu unterstützen.\nDurchführung\nMache einen kontrollierten Schritt zur Seite und verlagere das Körpergewicht vollständig auf dieses Bein.\nBeuge Hüfte und Knie des belasteten Beins, während das andere Bein gestreckt bleibt.\nDas belastete Knie bleibt stabil und zeigt in Richtung der Zehenspitzen.\nDrücke dich kraftvoll zurück in die Mitte und führe die Bewegung ohne Pause direkt zur anderen Seite aus.\nDie Bewegung erfolgt flüssig, kontrolliert und im kontinuierlichen Wechsel zwischen beiden Seiten.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen pro Seite.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine",
+      "Po"
+    ],
+    "equipment": [
+      "Körpergewicht"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/olJI1J0LTaOtCgoqZt5j/male/video/20260514153516.mp4",
+    "videoFemalePath": "media/exercises/olJI1J0LTaOtCgoqZt5j/female/video/20260514153516.mp4",
+    "correctivePhase": "INTEGRATE",
+    "targetMuscles": [
+      "Adductors",
+      "Gluteus Maximus"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "pyC1oYA6bOsGhd6gqx1N",
+    "name": "Side-Lying Hip Abduction (an der Wand) Activation",
+    "description": "Ziel: Aktivierung und Kräftigung des Musculus gluteus medius zur Verbesserung der Hüftstabilität und Beckenkontrolle.\n\nAusgangsposition\nLege dich seitlich auf den Boden, sodass Rücken und Gesäß an einer Wand anliegen.\nDas untere Bein ist leicht gebeugt, das obere Bein gestreckt.\nDer Kopf liegt entspannt auf dem unteren Arm.\nDer Rücken bleibt während der gesamten Übung in Kontakt mit der Wand.\nDurchführung\nHebe das obere, gestreckte Bein kontrolliert nach oben ab.\nHalte die Fußspitze leicht nach vorne gerichtet.\nHebe das Bein nur so weit an, dass Rücken und Becken den Kontakt zur Wand nicht verlieren.\nHalte die Endposition für 2 Sekunden.\nSenke das Bein langsam und kontrolliert wieder ab.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen pro Seite.\n\nSeite: Beidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Po"
+    ],
+    "equipment": [
+      "Körpergewicht"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/pyC1oYA6bOsGhd6gqx1N/male/video/20260514150818.mp4",
+    "videoFemalePath": "media/exercises/pyC1oYA6bOsGhd6gqx1N/female/video/20260514150818.mp4",
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Gluteus Medius",
+      "Gluteus Maximus"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "9avryjpCVpH8ng8etas9",
+    "name": "Side-Lying Leg Lift Activation",
+    "description": "Ziel: Aktivierung und Kräftigung der Hüftadduktoren zur Verbesserung der Beckenstabilität und der Kontrolle der Beinachse.\n\nAusgangsposition\nLege dich seitlich auf den Boden.\nDas untere Bein ist gestreckt, das obere Bein wird angewinkelt und mit dem Fuß vor dem unteren Bein auf dem Boden aufgestellt.\nStütze den Kopf entspannt auf dem unteren Arm.\nDer Oberkörper bleibt während der gesamten Übung ruhig.\nDurchführung\nHebe das untere, gestreckte Bein kontrolliert nach oben an.\nHalte die Endposition für 2 Sekunden.\nSenke das Bein langsam und kontrolliert wieder bis kurz vor den Boden ab.\nDas Becken bleibt stabil und kippt nicht nach vorne oder hinten.\nWiederhole die Bewegung ohne Schwung.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen pro Seite.\n\nSeite: Beidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Körpergewicht"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/9avryjpCVpH8ng8etas9/male/video/202605141509411.mp4",
+    "videoFemalePath": "media/exercises/9avryjpCVpH8ng8etas9/female/video/202605141509411.mp4",
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Adductors"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "NmKE27CVm95fGQSvd5CO",
+    "name": "Single Leg Deadlift",
+    "description": "Ziel: Verbesserung der Hüftstabilität, Balance sowie der koordinativen Ansteuerung der gesamten hinteren Muskelkette.\n\nAusgangsposition\nStelle dich auf ein Bein. Das Standbein ist leicht gebeugt.\nDas freie Bein wird im Hüft- und Kniegelenk auf etwa 90° angehoben.\nDer Oberkörper ist aufrecht und der Blick nach vorne gerichtet.\nDurchführung\nNeige den Oberkörper kontrolliert nach vorne.\nStrecke das freie Bein gleichzeitig nach hinten aus, bis Oberkörper und Bein eine gerade Linie bilden.\nDas Standbein bleibt leicht gebeugt und das Becken bleibt möglichst waagerecht.\nHalte die Endposition für 2 Sekunden.\nFühre das freie Bein wieder kontrolliert nach vorne, beuge Hüfte und Knie und kehre in die Ausgangsposition zurück.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen pro Seite.\n\nSeite: Beidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine",
+      "Po",
+      "Rücken"
+    ],
+    "equipment": [
+      "Körpergewicht"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/NmKE27CVm95fGQSvd5CO/male/video/202605141512161.mp4",
+    "videoFemalePath": "media/exercises/NmKE27CVm95fGQSvd5CO/female/video/202605141512161.mp4",
+    "correctivePhase": "INTEGRATE",
+    "targetMuscles": [],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "N5BP5IFGK53nOXVaP9N1",
+    "name": "Single-Leg Balance with Torso Rotation",
+    "description": "Ziel: Verbesserung der Einbeinstabilität sowie der rotatorischen Kontrolle von Rumpf und Hüfte.\n\nAusgangsposition\nStelle dich auf ein Bein.\nDas Standbein ist leicht gebeugt.\nDas freie Bein wird im Hüft- und Kniegelenk etwa 90° angehoben.\nVerschränke die Arme vor der Brust und richte den Oberkörper auf.\nDurchführung\nHalte das Becken stabil und beginne den Oberkörper langsam nach links und rechts zu rotieren.\nDie Rotation erfolgt ausschließlich aus der Brustwirbelsäule.\nDas Standbein bleibt ruhig und stabil, das Knie zeigt während der gesamten Übung in Richtung der Zehenspitzen.\nDas angehobene Bein und das Becken bleiben nach vorne ausgerichtet.\nFühre die Bewegung langsam und kontrolliert aus und kehre anschließend in die Ausgangsposition zurück.\n\nDosierung: 2 Sätze mit 10–15 Rotationen pro Seite.\n\nSeite: Beidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Bauch",
+      "Beine",
+      "Rücken"
+    ],
+    "equipment": [
+      "Körpergewicht"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/N5BP5IFGK53nOXVaP9N1/male/video/20260514155239.mp4",
+    "videoFemalePath": "media/exercises/N5BP5IFGK53nOXVaP9N1/female/video/20260514155239.mp4",
+    "correctivePhase": "INTEGRATE",
+    "targetMuscles": [],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "e3J3kERyFMVNXR4KTWCP",
+    "name": "Single-Leg Box Squat",
+    "description": "Ziel: Verbesserung der einbeinigen Kraft, Beinachsenstabilität sowie der Kontrolle von Hüfte, Knie und Sprunggelenk.\n\nAusgangsposition\nSetze dich aufrecht auf eine Box oder einen Stuhl.\nEin Fuß steht vollständig unter dem Körper auf dem Boden und übernimmt die Hauptbelastung.\nDas andere Bein ist nach vorne ausgestreckt und hat mit der Ferse leichten Bodenkontakt. Es dient ausschließlich der Stabilität und unterstützt die Bewegung nicht aktiv.\nRichte den Oberkörper auf und halte den Blick nach vorne.\nDurchführung\nDrücke dich kontrolliert über die Ferse des Standbeins aus der Sitzposition in den Stand.\nRichte Hüfte und Knie vollständig auf.\nHalte die Endposition für 2 Sekunden.\nSchiebe die Hüfte anschließend kontrolliert nach hinten und setze dich langsam wieder auf die Box oder den Stuhl.\nDas Knie des Standbeins bleibt während der gesamten Bewegung stabil und zeigt in Richtung der Zehenspitzen. Das ausgestreckte Bein behält lediglich leichten Bodenkontakt zur Stabilisierung.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen pro Seite.\n\nSeite: Beidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Bauch",
+      "Beine",
+      "Po"
+    ],
+    "equipment": [
+      "Körpergewicht"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/e3J3kERyFMVNXR4KTWCP/male/video/20260514153925.mp4",
+    "videoFemalePath": "media/exercises/e3J3kERyFMVNXR4KTWCP/female/video/20260514153925.mp4",
+    "correctivePhase": "INTEGRATE",
+    "targetMuscles": [],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "QejGkIEYhyjuq4Bgdqcb",
+    "name": "Single-Leg Glute Bridge with Knee Hug",
+    "description": "Ziel: Aktivierung und Kräftigung des Musculus gluteus maximus sowie Verbesserung der Hüftstreckung und Beckenstabilität.\n\nAusgangsposition\nLege dich in Rückenlage auf den Boden.\nStelle einen Fuß auf, das andere Knie wird mit beiden Händen zur Brust gezogen und während der gesamten Übung festgehalten.\nDas Standbein ist etwa 90° gebeugt.\nBauch- und Gesäßmuskulatur leicht anspannen.\nDurchführung\nDrücke die Ferse des Standbeins fest in den Boden.\nHebe das Becken kontrolliert an, bis Schulter, Hüfte und Knie eine gerade Linie bilden.\nDas angezogene Knie bleibt während der gesamten Übung eng zur Brust gezogen, sodass die Lendenwirbelsäule stabil bleibt.\nHalte die Endposition für 2 Sekunden und spanne das Gesäß des Standbeins maximal an.\nSenke das Becken langsam und kontrolliert wieder bis kurz vor den Boden ab.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen pro Seite.\n\nSeite: Beidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine",
+      "Po"
+    ],
+    "equipment": [
+      "Körpergewicht"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/QejGkIEYhyjuq4Bgdqcb/male/video/20260514151404.mp4",
+    "videoFemalePath": "media/exercises/QejGkIEYhyjuq4Bgdqcb/female/video/20260514151404.mp4",
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Gluteus Maximus"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "2JklA86Qtp3fCcC4jKkR",
+    "name": "SMR Adduktoren",
+    "description": "Ziel der Übung:\nReduktion myofaszialer Spannung in der Adduktorenmuskulatur zur Verbesserung der Hüftmobilität und Beckenstabilität.\n\nAusgangsposition:\nBauchlage auf dem Boden.\nEin Bein ist seitlich abgespreizt und leicht gebeugt.\nDie Faszienrolle liegt unter der Innenseite des Oberschenkels nahe der Knieinnenseite.\nUnterarme stützen den Oberkörper.\n\nDurchführung:\nKörpergewicht kontrolliert auf die Rolle verlagern.\nLangsam von distal (nahe Knieinnenseite) nach proximal (Richtung Leiste) rollen – immer Richtung Herz.\nOhne Druck zurückführen.\nZusätzlich kleine seitliche Bewegungen durchführen, um verschiedene Muskelanteile zu erreichen.\nSpannungspunkte 30–60 Sekunden halten.\n\nDosierung:\n1–2 Durchgänge à 30–60 Sekunden.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/2JklA86Qtp3fCcC4jKkR/male/video/20260514140704.mp4",
+    "videoFemalePath": "media/exercises/2JklA86Qtp3fCcC4jKkR/female/video/20260514140704.mp4",
+    "correctivePhase": "INHIBIT",
+    "targetMuscles": [
+      "Adductors"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "J6fFeEELKqjUC2iFrW4L",
+    "name": "SMR Erector Spinae Lumbar",
+    "description": "Ziel der Übung:\nReduktion myofaszialer Spannung in der lumbalen Rückenstreckermuskulatur zur Verbesserung der lumbalen Beweglichkeit und Rumpfentspannung.\n\nAusgangsposition:\nRückenlage auf dem Boden.\nEin Doppelball oder eine Faszienrolle liegt beidseits der Lendenwirbelsäule auf Höhe der lumbalen Rückenstrecker.\nKnie sind aufgestellt, Füße stehen nah am Gesäß.\n\nDurchführung:\nKörpergewicht kontrolliert auf den Doppelball oder die Faszienrolle verlagern.\nDen Körper langsam vor- und zurückbewegen.\nDie Bewegung bleibt klein und kontrolliert.\nZusätzlich kleine seitliche Bewegungen durchführen, um unterschiedliche Muskelanteile zu erreichen.\nSpannungspunkte 30–60 Sekunden halten.\nDie Lendenwirbelsäule bleibt entspannt.\n\nDosierung:\n1–2 Durchgänge à 30–60 Sekunden.",
+    "language": "de",
+    "muscleGroups": [
+      "Rücken"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/J6fFeEELKqjUC2iFrW4L/male/video/20260514141305.mp4",
+    "videoFemalePath": "media/exercises/J6fFeEELKqjUC2iFrW4L/female/video/20260514141305.mp4",
+    "correctivePhase": "INHIBIT",
+    "targetMuscles": [
+      "Gluteus Maximus",
+      "Erector Spinae"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "Mff997UZZSBD4BmlIrng",
+    "name": "SMR Hamstrings",
+    "description": "Ziel der Übung:\nReduktion myofaszialer Spannung in der ischiokruralen Muskulatur zur Verbesserung der Hüftbeweglichkeit und posterioren Kettenfunktion.\n\nAusgangsposition:\nSitz am Boden, Hände hinter dem Körper abgestützt.\nFaszienrolle unter dem hinteren Oberschenkel nahe der Kniekehle.\n\nDurchführung:\nLangsam von distal (nahe Kniekehle) nach proximal (Richtung Gesäß) rollen – immer Richtung Herz.\nKontrolliert zurückführen ohne Druck.\nZusätzlich kleine seitliche Bewegungen (medial/lateral) durchführen.\nSpannungspunkte 30–60 Sekunden halten.\nOptional: Fuß leicht nach innen und außen rotieren.\n\nDosierung:\n1–2 Durchgänge à 30–60 Sekunden.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": null,
+    "videoFemalePath": null,
+    "correctivePhase": "INHIBIT",
+    "targetMuscles": [
+      "Hamstrings",
+      "Gluteus Maximus"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "QYDgq58I2UswKDd5O8Uw",
+    "name": "SMR Levator Scapulae + Upper Trapezius",
+    "description": "Ziel der Übung:\nReduktion myofaszialer Spannung im oberen Trapezius und Levator scapulae zur Verbesserung der Schulter- und Halsbeweglichkeit.\n\nAusgangsposition:\nStand an der Wand.\nEin kleiner Ball befindet sich zwischen Wand und oberem Schulter-/Nackenbereich.\nDer Arm der behandelten Seite ist leicht abgespreizt.\n\nDurchführung:\nLeichten Druck auf den Ball geben.\nDen Arm langsam nach oben und unten führen, während der Druck aufrechterhalten wird.\nKleine Positionsveränderungen durchführen, um unterschiedliche Muskelbereiche zu erreichen.\nSpannungspunkte 30–60 Sekunden halten.\nDie Bewegung bleibt kontrolliert und schmerzfrei.\n\nDosierung:\n1–2 Durchgänge à 30–60 Sekunden.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Rücken",
+      "Schultern"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/QYDgq58I2UswKDd5O8Uw/male/video/20260514141556.mp4",
+    "videoFemalePath": "media/exercises/QYDgq58I2UswKDd5O8Uw/female/video/20260514141556.mp4",
+    "correctivePhase": "INHIBIT",
+    "targetMuscles": [
+      "Levator Scapulae",
+      "Upper Trapezius"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "jQvszjuhCNMhjzlQs04A",
+    "name": "SMR Pectoralis",
+    "description": "Ziel der Übung:\nReduktion myofaszialer Spannung im Pectoralis major und minor zur Verbesserung der Schulteraußenrotation und thorakalen Aufrichtung.\n\nAusgangsposition:\nBauchlage auf der Faszienrolle, diese liegt diagonal unter der Brustmuskulatur (von Brustbein Richtung Schulter).\nEin Arm ist seitlich abgespreizt.\n\nDurchführung:\nKörper langsam über die Rolle bewegen.\nVon innen (Brustbein) nach außen (Schulter) rollen.\nZusätzlich kleine seitliche Bewegungen (kranial/kaudal sowie medial/lateral) durchführen.\nSpannungspunkte 30–60 Sekunden halten.\nOptional leichte Armbewegungen integrieren.\n\nDosierung:\n1–2 Durchgänge à 30–60 Sekunden.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Brust"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/jQvszjuhCNMhjzlQs04A/male/video/MFRPectoralis.mp4",
+    "videoFemalePath": "media/exercises/jQvszjuhCNMhjzlQs04A/female/video/MFRPectoralis.mp4",
+    "correctivePhase": "INHIBIT",
+    "targetMuscles": [
+      "Pectoralis Major"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "bvlJUz2Ue1E7G54z7rzw",
+    "name": "SMR Peroneals",
+    "description": "Ziel der Übung:\nReduktion myofaszialer Spannung in der lateralen Unterschenkelmuskulatur zur Verbesserung der lateralen Sprunggelenksstabilität und Fußkontrolle.\n\nAusgangsposition:\nSeitlage am Boden.\nFaszienrolle unter dem äußeren Unterschenkel, knapp oberhalb des Außenknöchels.\nOberes Bein kann zur Druckregulation aufgestellt werden.\n\nDurchführung:\nLangsam von distal (oberhalb des Außenknöchels) nach proximal (Richtung Knie) rollen – immer Richtung Herz.\nKontrolliert ohne Druck zurückführen.\nZusätzlich kleine seitliche Bewegungen (anterior/posterior) durchführen, um verschiedene Muskelanteile zu erreichen.\nSpannungspunkte 30–60 Sekunden halten.\nOptional: Fuß leicht in Eversion und Inversion bewegen.\n\nDosierung:\n1–2 Durchgänge à 30–60 Sekunden.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/bvlJUz2Ue1E7G54z7rzw/male/video/SMRPeroneals.mp4",
+    "videoFemalePath": "media/exercises/bvlJUz2Ue1E7G54z7rzw/female/video/SMRPeroneals.mp4",
+    "correctivePhase": "INHIBIT",
+    "targetMuscles": [
+      "Peroneal Complex",
+      "Anterior Tibialis",
+      "Posterior Tibialis"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "39PGCENIHjVIxq5wuaw8",
+    "name": "SMR Quadratus Lumborum (QL)",
+    "description": "Ziel der Übung:\nReduktion myofaszialer Spannung im Quadratus lumborum zur Verbesserung der lateralen Rumpfbeweglichkeit und lumbopelvinen Kontrolle.\n\nAusgangsposition:\nSeitlage auf der Faszienrolle.\nDie Rolle liegt seitlich zwischen Beckenkamm und unterem Rippenbogen.\nUnterer Arm stützt den Oberkörper, oberes Bein kann hinter dem Körper aufgestellt werden.\n\nDurchführung:\nKörpergewicht kontrolliert auf die Rolle verlagern.\nDen Körper langsam von hinten nach vorne über die Rolle bewegen.\nDie Bewegung bleibt klein und kontrolliert.\nSpannungspunkte 30–60 Sekunden halten.\nAtmung ruhig weiterführen.\n\nDosierung:\n1–2 Durchgänge à 30–60 Sekunden.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Rücken"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/39PGCENIHjVIxq5wuaw8/male/video/20260514140932.mp4",
+    "videoFemalePath": "media/exercises/39PGCENIHjVIxq5wuaw8/female/video/20260514140932.mp4",
+    "correctivePhase": null,
+    "targetMuscles": [],
+    "taggingSource": null
+  },
+  {
+    "legacyId": "XoK9Gdmc8f5aQNwSfVTJ",
+    "name": "SMR Quadrizeps",
+    "description": "Ziel der Übung:\nReduktion myofaszialer Spannung im vorderen Oberschenkel zur Verbesserung der Knie- und Hüftbeweglichkeit.\n\nAusgangsposition:\nBauchlage auf dem Boden.\nFaszienrolle unter dem vorderen Oberschenkel knapp oberhalb der Kniescheibe.\nUnterarme stützen den Oberkörper.\n\nDurchführung:\nLangsam von distal (oberhalb der Kniescheibe) nach proximal (Richtung Hüfte) rollen – immer Richtung Herz.\nKontrolliert ohne Druck zurückführen.\nZusätzlich kleine seitliche Bewegungen (medial/lateral) durchführen, um die einzelnen Muskelanteile zu erreichen.\nSpannungspunkte 30–60 Sekunden halten.\nOptional: Ein Bein leicht anheben zur Intensitätssteigerung.\n\nDosierung:\n1–2 Durchgänge à 30–60 Sekunden.\n\nSeite:\nBeidseitig (bei Bedarf einseitig intensivieren).",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/XoK9Gdmc8f5aQNwSfVTJ/male/video/SMRQuad.mp4",
+    "videoFemalePath": "media/exercises/XoK9Gdmc8f5aQNwSfVTJ/female/video/SMRQuad.mp4",
+    "correctivePhase": null,
+    "targetMuscles": [],
+    "taggingSource": null
+  },
+  {
+    "legacyId": "D1DE77Tbpp2Iwi4nDLa4",
+    "name": "SMR Suboccipitals",
+    "description": "Ziel der Übung:\nReduktion myofaszialer Spannung in der subokzipitalen Muskulatur zur Verbesserung der Kopfhaltung und cervicalen Beweglichkeit.\n\nAusgangsposition:\nRückenlage auf dem Boden.\nDie Faszienrolle liegt unter dem oberen Nacken direkt unterhalb des Hinterkopfes.\nKnie sind aufgestellt, Schultern entspannt.\n\nDurchführung:\nKopfgewicht kontrolliert auf die Rolle sinken lassen.\nLangsame kreisende Bewegungen mit dem Kopf durchführen, um unterschiedliche Bereiche der subokzipitalen Muskulatur zu mobilisieren.\nDie Bewegung bleibt klein und kontrolliert.\nSpannungspunkte 30–60 Sekunden halten.\nAtmung ruhig weiterführen.\n\nDosierung:\n1–2 Durchgänge à 30–60 Sekunden.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Rücken"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/D1DE77Tbpp2Iwi4nDLa4/male/video/20260514141046.mp4",
+    "videoFemalePath": "media/exercises/D1DE77Tbpp2Iwi4nDLa4/female/video/20260514141046.mp4",
+    "correctivePhase": null,
+    "targetMuscles": [],
+    "taggingSource": null
+  },
+  {
+    "legacyId": "EtBi3nCZcmk0xwPu7MnB",
+    "name": "SMR Thoracic Spine Extension",
+    "description": "Ziel der Übung:\nReduktion myofaszialer Spannung im thorakalen Bereich und Verbesserung der segmentalen Brustwirbelsäulen-Extension bei stabilisierter Lendenwirbelsäule.\n\nAusgangsposition:\nRückenlage auf dem Boden.\nFaszienrolle quer unter der Brustwirbelsäule (nicht im LWS-Bereich).\nFüße stehen relativ nah am Gesäß, sodass eine deutliche Hüftbeugung entsteht.\nDadurch bleibt die LWS stabilisiert.\nHände stützen den Hinterkopf.\n\nDurchführung:\nBecken bleibt stabil am Boden.\nAus dieser Position die Brustwirbelsäule kontrolliert über die Rolle in Extension bewegen.\nAnschließend wieder in Flexion zurückführen.\nDie Bewegung findet ausschließlich in der BWS statt – LWS bleibt ruhig.\nSegment für Segment arbeiten, ggf. Rolle leicht versetzen.\n\nDosierung:\n6–10 kontrollierte Wiederholungen pro Segment.\n1–2 Durchgänge.",
+    "language": "de",
+    "muscleGroups": [
+      "Rücken"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      10,
+      10
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/EtBi3nCZcmk0xwPu7MnB/male/video/20210830CreatorDayAthletikNiklasJauchbung33frontal1.mp4",
+    "videoFemalePath": "media/exercises/EtBi3nCZcmk0xwPu7MnB/female/video/20210830CreatorDayAthletikNiklasJauchbung33frontal1.mp4",
+    "correctivePhase": "INHIBIT",
+    "targetMuscles": [
+      "Gluteus Maximus"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "paUlPMLveDtj7XGcMgAG",
+    "name": "SMR Tibialis Anterior",
+    "description": "Ziel der Übung:\nReduktion myofaszialer Spannung im Tibialis anterior zur Verbesserung der Dorsalflexion und vorderen Unterschenkelmobilität.\n\nAusgangsposition:\nVierfüßlerstand.\nFaszienrolle liegt unter dem vorderen/anterolateralen Unterschenkel knapp oberhalb des Sprunggelenks.\nDas andere Bein bleibt zur Druckregulation am Boden.\n\nDurchführung:\nKörpergewicht kontrolliert nach vorne verlagern.\nLangsam von distal (oberhalb des Sprunggelenks) nach proximal (Richtung Knie) rollen – immer Richtung Herz.\nOhne Druck zurückführen.\nZusätzlich kleine seitliche Bewegungen durchführen, um verschiedene Muskelanteile zu erreichen.\nSpannungspunkte 30–60 Sekunden halten.\nOptional: Fuß aktiv beugen und strecken.\n\nDosierung:\n1–2 Durchgänge à 30–60 Sekunden.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/paUlPMLveDtj7XGcMgAG/male/video/SMRTibialisAnterior.mp4",
+    "videoFemalePath": "media/exercises/paUlPMLveDtj7XGcMgAG/female/video/SMRTibialisAnterior.mp4",
+    "correctivePhase": "INHIBIT",
+    "targetMuscles": [
+      "Anterior Tibialis"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "4Iqyw3uRvT8k2nXfSxXK",
+    "name": "SMR Tibialis Posterior",
+    "description": "Ziel der Übung:\nReduktion myofaszialer Spannung im Tibialis posterior zur Verbesserung der medialen Fußgewölbestabilität und Sprunggelenksfunktion.\n\nAusgangsposition:\nSitz am Boden oder seitlich abgestützt.\nFaszienrolle unter dem inneren Unterschenkel, knapp oberhalb des Innenknöchels.\nUnterschenkel leicht nach außen rotiert, damit die mediale Muskelstruktur erreicht wird.\n\nDurchführung:\nLangsam von distal (oberhalb des Innenknöchels) nach proximal (Richtung Knie) rollen – immer Richtung Herz.\nKontrolliert ohne Druck zurückführen.\nZusätzlich kleine seitliche Bewegungen (medial/lateral) durchführen.\nSpannungspunkte 30–60 Sekunden halten.\nOptional: Fuß leicht beugen und strecken zur zusätzlichen Mobilisation.\n\nDosierung:\n1–2 Durchgänge à 30–60 Sekunden.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/4Iqyw3uRvT8k2nXfSxXK/male/video/MFRSoleusGastrocnemiusnah.mp4",
+    "videoFemalePath": "media/exercises/4Iqyw3uRvT8k2nXfSxXK/female/video/MFRSoleusGastrocnemiusnah.mp4",
+    "correctivePhase": "INHIBIT",
+    "targetMuscles": [
+      "Posterior Tibialis"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "a19qhZCSiIvzccV4zblG",
+    "name": "Soleus Activation (einbeinig, erhöhte Position)",
+    "description": "Ziel: Aktivierung und Kräftigung des Musculus soleus zur Verbesserung der Sprunggelenksstabilität und der Kontrolle in geschlossener Kette.\n\nAusgangsposition\nStelle dich mit einem Fuß auf eine kleine Erhöhung oder Stufe, sodass der Fußballen aufliegt und die Ferse frei in der Luft ist.\nBeuge das Standknie leicht und halte diese Position während der gesamten Übung.\nDas andere Bein bleibt frei in der Luft.\nHalte dich bei Bedarf leicht an einer Wand oder einem Geländer fest.\nDurchführung\nDrücke die Ferse des Standbeins kontrolliert nach oben.\nHalte die höchste Position für 2 Sekunden.\nSenke die Ferse langsam und kontrolliert unter das Niveau der Erhöhung ab.\nDas Standknie bleibt während der gesamten Bewegung leicht gebeugt.\nDie Bewegung erfolgt ausschließlich aus dem Sprunggelenk.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen pro Seite.\n\nSeite: Beidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Körpergewicht"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/a19qhZCSiIvzccV4zblG/male/video/20260514150659.mp4",
+    "videoFemalePath": "media/exercises/a19qhZCSiIvzccV4zblG/female/video/20260514150659.mp4",
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Gastrocnemius",
+      "Soleus"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "8dK2E2en3P3yjCDdLlYB",
+    "name": "Soleus Stretch (mit Fußerhöhung)",
+    "description": "ZZiel der Übung:\nVerbesserung der Sprunggelenksbeweglichkeit und Reduktion der Spannung im Soleus.\n\nAusgangsposition:\nStand vor einer Wand.\nDer Vorfuß des vorderen Beins steht erhöht auf einem Buch oder einer kleinen Erhöhung, die Ferse bleibt am Boden.\nDas hintere Bein steht versetzt nach hinten.\nBeide Hände stützen an der Wand.\n\nDurchführung:\nDas vordere Knie kontrolliert nach vorne schieben, bis eine Dehnung tief in der Wade des vorderen Beins spürbar ist.\nDas vordere Knie bleibt dabei gebeugt.\nDie Ferse des vorderen Beins bleibt während der gesamten Bewegung am Boden.\nOberkörper bleibt aufrecht.\n\nDosierung:\n1–2 Sätze à 30–60 Sekunden.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/8dK2E2en3P3yjCDdLlYB/male/video/20260514142109.mp4",
+    "videoFemalePath": "media/exercises/8dK2E2en3P3yjCDdLlYB/female/video/20260514142109.mp4",
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Gastrocnemius",
+      "Soleus"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "bAuMJ6waUzy2vW239bxV",
+    "name": "Staggered Stance Banded Press with Reciprocal Reach",
+    "description": "Ziel: Verbesserung der Rumpfstabilität und der funktionellen Kraftübertragung über das Anterior Oblique Subsystem sowie Kräftigung der Brust-, Schulter- und Rumpfmuskulatur.\n\nAusgangsposition\nBefestige ein Widerstandsband auf Brusthöhe hinter dir.\nStelle dich in einen versetzten Stand (Staggered Stance), sodass das gegenüberliegende Bein zum drückenden Arm vorne steht.\nHalte das Band mit dem hinteren Arm auf Brusthöhe.\nDer freie Arm ist nach hinten geführt.\nDas Becken zeigt nach vorne und bleibt während der gesamten Übung stabil.\nDurchführung\nDrücke den Arm kontrolliert nach vorne, bis der Ellenbogen nahezu vollständig gestreckt ist.\nGleichzeitig zieht der freie Arm kontrolliert nach hinten.\nDie Schultern bleiben tief und entspannt.\nHalte die Endposition für 2 Sekunden und spanne Brust-, Rumpf- und Gesäßmuskulatur bewusst an.\nFühre den drückenden Arm langsam zurück zur Brust und den freien Arm wieder nach vorne. Das Becken bleibt während der gesamten Bewegung stabil nach vorne ausgerichtet.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen pro Seite.\n\nSeite: Beidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Arme",
+      "Bauch",
+      "Beine",
+      "Brust",
+      "Po",
+      "Schultern"
+    ],
+    "equipment": [
+      "Theraband"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/bAuMJ6waUzy2vW239bxV/male/video/20260514154715.mp4",
+    "videoFemalePath": "media/exercises/bAuMJ6waUzy2vW239bxV/female/video/20260514154715.mp4",
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Gluteus Maximus"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "lrTGPX6xK3t25ZKCu93n",
+    "name": "Staggered Stance Banded Rotational",
+    "description": "Ziel: Verbesserung der rotatorischen Kraftübertragung sowie der Stabilität von Hüfte, Rumpf und Schultergürtel.\n\nAusgangsposition\nBefestige ein Powerband auf Brusthöhe seitlich neben dir.\nStelle dich in einen versetzten Stand (Staggered Stance), sodass das äußere Bein zum Band hinten steht.\nGreife das Band mit beiden Händen vor der Brust.\nDas Becken zeigt nach vorne, der Oberkörper ist leicht zum Band rotiert.\nDurchführung\nDrücke den hinteren Fuß aktiv in den Boden und leite die Bewegung aus der Hüfte ein.\nDrehe Hüfte und Brustkorb explosiv vom Band weg und führe die Hände vor dem Körper in einer rotierenden Bewegung nach vorne.\nDas vordere Bein stabilisiert die gesamte Bewegung. Das Knie bleibt dabei in Richtung der Zehenspitzen ausgerichtet.\nHalte die Endposition für 1–2 Sekunden.\nFühre die Bewegung anschließend langsam und kontrolliert über denselben Bewegungsweg zurück in die Ausgangsposition.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen pro Seite.\n\nSeite: Beidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Arme",
+      "Bauch",
+      "Beine",
+      "Brust",
+      "Po",
+      "Rücken",
+      "Schultern"
+    ],
+    "equipment": [
+      "Theraband"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/lrTGPX6xK3t25ZKCu93n/male/video/20260514154904.mp4",
+    "videoFemalePath": "media/exercises/lrTGPX6xK3t25ZKCu93n/female/video/20260514154904.mp4",
+    "correctivePhase": "INTEGRATE",
+    "targetMuscles": [],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "kKoIncYs9PbkcpKTFleK",
+    "name": "Staggered Stance Banded Row with Reciprocal Reach",
+    "description": "Ziel: Verbesserung der Rumpfstabilität und der funktionellen Kraftübertragung über das Posterior Oblique Subsystem (Latissimus dorsi – Thorakolumbalfaszie – Gluteus maximus).\n\nAusgangsposition\nBefestige ein Widerstandsband auf Brusthöhe.\nStelle dich in einen versetzten Stand (Staggered Stance), sodass das gleiche Bein zum ziehenden Arm vorne steht.\nGreife das Band mit dem hinteren Arm.\nDer freie Arm ist nach vorne ausgestreckt.\nDas Becken zeigt nach vorne und bleibt während der gesamten Übung stabil.\nDurchführung\nZiehe den Ellenbogen kontrolliert eng am Körper nach hinten unten.\nGleichzeitig schiebt sich der freie Arm aktiv nach vorne.\nDie Schulterblätter bewegen sich kontrolliert mit, während die Schultern tief bleiben.\nHalte die Endposition für 2 Sekunden und spanne den Latissimus sowie den gegenüberliegenden Gesäßmuskel bewusst an.\nFühre den Zugarm langsam nach vorne und den freien Arm zurück in die Ausgangsposition. Die Bewegung erfolgt kontrolliert, während das Becken stabil nach vorne ausgerichtet bleibt.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen pro Seite.\n\nSeite: Beidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Arme",
+      "Bauch",
+      "Beine",
+      "Brust",
+      "Po",
+      "Rücken",
+      "Schultern"
+    ],
+    "equipment": [
+      "Theraband"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/kKoIncYs9PbkcpKTFleK/male/video/20260514154651.mp4",
+    "videoFemalePath": "media/exercises/kKoIncYs9PbkcpKTFleK/female/video/20260514154651.mp4",
+    "correctivePhase": "INTEGRATE",
+    "targetMuscles": [
+      "Gluteus Maximus",
+      "Latissimus Dorsi"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "nVGRWd023I020NYtvWYv",
+    "name": "Standing Mini-Band Hip March",
+    "description": "Ziel: Aktivierung und Kräftigung der Hüftbeuger, insbesondere des Musculus iliopsoas, sowie Verbesserung der Beckenstabilität im Einbeinstand.\n\nAusgangsposition\nStelle dich mit dem Rücken an eine Wand.\nLege ein Miniband um beide Füße.\nLehne Oberkörper und Gesäß leicht an die Wand an.\nDas Standbein ist leicht gebeugt und stabil.\nDurchführung\nZiehe ein Knie kontrolliert bis etwa auf Hüfthöhe an.\nZiehe den Fuß aktiv Richtung Schienbein (Dorsalflexion), sodass das Miniband gespannt bleibt.\nHalte die Endposition für 2 Sekunden.\nSenke das Bein langsam und kontrolliert wieder in die Ausgangsposition ab.\nOberkörper, Becken und Gesäß bleiben während der gesamten Übung in Kontakt mit der Wand. Das Standbein stabilisiert den Körper ohne Ausweichbewegungen.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen pro Seite.\n\nSeite: Beidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Bauch",
+      "Beine"
+    ],
+    "equipment": [
+      "Theraband"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/nVGRWd023I020NYtvWYv/male/video/20260514152619.mp4",
+    "videoFemalePath": "media/exercises/nVGRWd023I020NYtvWYv/female/video/20260514152619.mp4",
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Gluteus Maximus",
+      "Hip Flexor Complex"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "DGDwli2GKAM2uWdHNd8S",
+    "name": "Step Down",
+    "description": "Ziel: Verbesserung der exzentrischen Kontrolle von Hüfte, Knie und Sprunggelenk sowie Kräftigung des Musculus quadriceps und des Musculus gluteus medius.\n\nAusgangsposition\nStelle dich mit beiden Füßen auf eine stabile Box oder Stufe.\nDie Füße stehen hüftbreit und vollständig auf der Box.\nRichte den Oberkörper auf und halte den Blick nach vorne.\nDurchführung\nMache mit einem Bein einen kontrollierten Schritt nach vorne von der Box herunter.\nFange die Bewegung weich mit dem vorderen Bein auf, während das hintere Bein zunächst auf der Box bleibt.\nHalte die Endposition für 2 Sekunden und stabilisiere Hüfte, Knie und Sprunggelenk des vorderen Beins.\nDrücke dich anschließend kontrolliert über das vordere Bein wieder zurück auf die Box in die Ausgangsposition.\nDas Knie des Landebeins bleibt während der gesamten Bewegung stabil und zeigt in Richtung der Zehenspitzen.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen pro Seite.\n\nSeite: Beidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Bauch",
+      "Beine",
+      "Po"
+    ],
+    "equipment": [
+      "Körpergewicht"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/DGDwli2GKAM2uWdHNd8S/male/video/202605141537481.mp4",
+    "videoFemalePath": "media/exercises/DGDwli2GKAM2uWdHNd8S/female/video/202605141537481.mp4",
+    "correctivePhase": "INTEGRATE",
+    "targetMuscles": [
+      "Gluteus Medius"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "tZjYFSyJLuRU6fAeVkgV",
+    "name": "Step-Up with Knee Drive",
+    "description": "Ziel: Verbesserung der Hüft-, Knie- und Sprunggelenksstabilität sowie Kräftigung des Musculus gluteus maximus, Musculus quadriceps und der Hüftbeuger.\n\nAusgangsposition\nStelle dich aufrecht vor eine stabile Box oder Stufe.\nBeide Füße stehen vor der Box etwa hüftbreit auf dem Boden.\nRichte den Oberkörper auf und halte den Blick nach vorne.\nDurchführung\nSetze einen Fuß vollständig auf die Box.\nDrücke dich kontrolliert über die Ferse des Standbeins auf die Box.\nRichte Hüfte und Knie vollständig auf und ziehe das freie Knie bis auf Hüfthöhe an.\nHalte die Endposition für 2 Sekunden und stabilisiere das Becken im Einbeinstand.\nSenke das freie Bein langsam wieder ab und steige kontrolliert mit beiden Füßen zurück vor die Box in die Ausgangsposition.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen pro Seite.\n\nSeite: Beidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Bauch",
+      "Beine",
+      "Po"
+    ],
+    "equipment": [],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/tZjYFSyJLuRU6fAeVkgV/male/video/20260514153641.mp4",
+    "videoFemalePath": "media/exercises/tZjYFSyJLuRU6fAeVkgV/female/video/20260514153641.mp4",
+    "correctivePhase": "INTEGRATE",
+    "targetMuscles": [
+      "Gluteus Maximus",
+      "Hip Flexor Complex"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "QQZVtd8mfEEgbaG4ZiMB",
+    "name": "TFL Release",
+    "description": "Ziel der Übung:\nReduktion lateraler Hüftspannung.\n\nAusgangsposition:\nSeitlage leicht nach vorne rotiert, Roller unter vorderem seitlichem Beckenbereich.\n\nDurchführung:\nKleine kontrollierte Rollbewegungen vor/zurück.\nZusätzlich quer über den Muskel rollen.\nDruckpunkte halten.\n\nDosierung:\n1–2 Durchgänge à 30–60 Sekunden.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/QQZVtd8mfEEgbaG4ZiMB/male/video/MFRITBand.mp4",
+    "videoFemalePath": "media/exercises/QQZVtd8mfEEgbaG4ZiMB/female/video/MFRITBand.mp4",
+    "correctivePhase": "INHIBIT",
+    "targetMuscles": [
+      "Tensor Fasciae Latae"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "UQr3Xwhui2u0lz7rl1sm",
+    "name": "TFL Stretch im Stehen (Cross-Over Wall Stretch)",
+    "description": "Ziel der Übung:\nVerbesserung der Hüftmobilität und Reduktion der Spannung im Tensor fasciae latae (TFL) sowie der lateralen Hüftkette.\n\nAusgangsposition:\nSeitlich neben einer Wand stehen.\nDie zu dehnende Seite befindet sich näher zur Wand.\nEine Hand stützt an der Wand zur Stabilisation.\nDas äußere Bein wird hinter dem wandnahen Bein überkreuzt.\n\nDurchführung:\nDie Hüfte kontrolliert Richtung Wand und leicht nach vorne schieben.\nDer Oberkörper bleibt möglichst aufrecht.\nBis eine deutliche Dehnung an der Außenseite der hinteren Hüfte spürbar ist.\nDie Position ruhig halten und gleichmäßig weiteratmen.\n\nDosierung:\n1–2 Sätze à 30–60 Sekunden.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Sekunden",
+    "pauseSeconds": 0,
+    "sets": [
+      60,
+      60
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/UQr3Xwhui2u0lz7rl1sm/male/video/20260514143312.mp4",
+    "videoFemalePath": "media/exercises/UQr3Xwhui2u0lz7rl1sm/female/video/20260514143312.mp4",
+    "correctivePhase": "LENGTHEN",
+    "targetMuscles": [
+      "Tensor Fasciae Latae"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "Tu7eTqetczFD8WQJQ7Qf",
+    "name": "Tibialis Anterior Activation (Miniband)",
+    "description": "Ziel: Aktivierung und Kräftigung des Musculus tibialis anterior zur Verbesserung der Dorsalflexion und Sprunggelenksstabilität.\n\nAusgangsposition\nSetze dich auf den Boden und strecke ein Bein nach vorne aus.\nWinkle das andere Bein an und umfasse es mit beiden Armen, sodass es stabil bleibt.\nLege das Miniband um den Vorfuß des angewinkelten Beins und fixiere das andere Ende mit den Händen oder am gestreckten Bein, sodass Zug nach unten entsteht.\nAusführung\nHalte das Knie während der gesamten Übung ruhig.\nZiehe den Vorfuß kontrolliert in Richtung Schienbein (Dorsalflexion).\nHalte die Endposition für 2 Sekunden.\nSenke den Fuß langsam und kontrolliert wieder in die Ausgangsposition ab.\nWiederhole die Bewegung, ohne Schwung zu verwenden.\n\nDosierung: 1–2 Sätze mit 10–15 Wiederholungen pro Seite.\n\nCoaching Cues\n\nBewegung erfolgt ausschließlich aus dem Sprunggelenk.\nZehen in Richtung Schienbein ziehen.\nLangsame Rückführung gegen den Widerstand.\nKnie und Oberschenkel bleiben während der gesamten Übung stabil.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Theraband"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/Tu7eTqetczFD8WQJQ7Qf/male/video/20260514145519.mp4",
+    "videoFemalePath": "media/exercises/Tu7eTqetczFD8WQJQ7Qf/female/video/20260514145519.mp4",
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Anterior Tibialis"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "0Dg0SyUFUsjKAGEdOmaY",
+    "name": "Tibialis Anterior Raise mit Miniband sitzend",
+    "description": "Ziel der Übung:\nAktivierung des Tibialis anterior zur Verbesserung der Dorsalflexion und Sprunggelenkskontrolle.\n\nAusgangsposition:\nSitz auf dem Boden.\nEin Bein ist gestreckt, das andere Bein gebeugt.\nEin Miniband verbindet beide Füße.\n\nDurchführung:\nDen Fuß des gebeugten Beins kontrolliert Richtung Schienbein heranziehen gegen den Widerstand des Minibands.\nDie Bewegung erfolgt ausschließlich aus dem Sprunggelenk.\nKurz die Spannung halten und den Fuß anschließend langsam wieder absenken.\nDer Oberkörper bleibt stabil und ruhig.\n\nDosierung:\n2 Sätze à 10–15 Wiederholungen.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Theraband"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/0Dg0SyUFUsjKAGEdOmaY/male/video/20260514145519.mp4",
+    "videoFemalePath": "media/exercises/0Dg0SyUFUsjKAGEdOmaY/female/video/20260514145519.mp4",
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Anterior Tibialis"
+    ],
+    "taggingSource": "auto"
+  },
+  {
+    "legacyId": "Ny42LD8AUswIuX9Teg6Z",
+    "name": "Towel Scrunch im Stehen",
+    "description": "Ziel der Übung:\nAktivierung der intrinsischen Fußmuskulatur zur Verbesserung der Fußgewölbestabilität und Fußkontrolle.\n\nAusgangsposition:\nAufrechter Stand.\nEin Handtuch liegt flach unter dem Fuß auf dem Boden.\nDas Standbein bleibt leicht gebeugt.\n\nDurchführung:\nDas Handtuch mit den Zehen kontrolliert greifen und anschließend wieder loslassen.\nDas Fußgewölbe bleibt dabei aktiv stabilisiert.\nDie Bewegung erfolgt langsam und kontrolliert ohne starkes Krallen der Zehen.\nDer restliche Körper bleibt möglichst ruhig.\n\nDosierung:\n2 Sätze à 10–15 Wiederholungen.\n\nSeite:\nBeidseitig.",
+    "language": "de",
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Beweglichkeit"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/Ny42LD8AUswIuX9Teg6Z/male/video/20260514145156.mp4",
+    "videoFemalePath": "media/exercises/Ny42LD8AUswIuX9Teg6Z/female/video/20260514145156.mp4",
+    "correctivePhase": null,
+    "targetMuscles": [],
+    "taggingSource": null
+  },
+  {
+    "legacyId": "qVLRKO7IN0qxdGdI5eg7",
+    "name": "Wall Chin Tucks",
+    "description": "Ziel: Aktivierung der tiefen Nackenbeuger sowie Verbesserung der Kopfhaltung und der Stabilität der Halswirbelsäule.\n\nAusgangsposition\nStelle dich mit dem Rücken an eine Wand.\nHinterkopf, oberer Rücken und Gesäß liegen an der Wand an.\nDie Füße stehen etwa eine Fußlänge von der Wand entfernt.\nDer Blick bleibt gerade nach vorne gerichtet.\nDurchführung\nZiehe das Kinn kontrolliert nach hinten, als würdest du ein deutliches Doppelkinn machen.\nDer Kopf bewegt sich dabei ausschließlich horizontal nach hinten und bleibt in Kontakt mit der Wand.\nVermeide es, den Kopf nach hinten zu neigen oder das Kinn anzuheben.\nHalte die Endposition für 2 Sekunden.\nKehre langsam und kontrolliert in die Ausgangsposition zurück.\n\nDosierung: 2 Sätze mit 10–15 Wiederholungen.",
+    "language": "de",
+    "muscleGroups": [
+      "Rücken",
+      "Schultern"
+    ],
+    "equipment": [
+      "Körpergewicht"
+    ],
+    "unit": "Körpergewicht",
+    "pauseSeconds": 0,
+    "sets": [
+      15,
+      15
+    ],
+    "intensity": "medium",
+    "notes": null,
+    "videoMalePath": "media/exercises/qVLRKO7IN0qxdGdI5eg7/male/video/20260514152045.mp4",
+    "videoFemalePath": "media/exercises/qVLRKO7IN0qxdGdI5eg7/female/video/20260514152045.mp4",
+    "correctivePhase": "ACTIVATE",
+    "targetMuscles": [
+      "Gluteus Maximus"
+    ],
+    "taggingSource": "auto"
+  }
+]

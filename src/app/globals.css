@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Athletik Movement brand palette, sampled from the provided logo files
+ * (public/brand/): green ~#62aa00 (leaf/runner icon), navy ~#00111b (the
+ * circular frame + wordmark). Shades below are hand-tuned from those
+ * source colors rather than a mechanical HSL sweep — the raw logo green
+ * is fully saturated and unreadable as text/button fills at most steps,
+ * so brand-600/700 were deepened slightly until white-text-on-fill
+ * contrast cleared WCAG AA (4.5:1) — see the dataviz skill's contrast
+ * check method. Replaces the placeholder teal used before this tenant's
+ * branding landed (see src/lib/branding.ts). */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --color-brand-50: #f4faec;
+  --color-brand-100: #e6f4d2;
+  --color-brand-200: #cde9a8;
+  --color-brand-300: #aed873;
+  --color-brand-400: #8cc247;
+  --color-brand-500: #6ea82a;
+  --color-brand-600: #4f7a12; /* primary button/link fill — 5.1:1 vs white */
+  --color-brand-700: #3a5c08; /* hover / high-contrast text — 7.7:1 vs white */
+  --color-brand-800: #2e4907;
+  --color-brand-900: #253a08;
+
+  --color-ink-900: #00111b; /* logo navy — headings, dark surfaces */
+  --color-ink-800: #0d1f2b;
+  --color-ink-700: #1c3040;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,747 @@
+[
+  {
+    "smartMotionCode": "E075",
+    "name": "Medial Hamstring Activation with Tibial Internal Rotation",
+    "correctivePhase": "ACTIVATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      10,
+      10
+    ],
+    "pauseSeconds": 30,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E075, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E076",
+    "name": "Popliteus Activation / Tibial Internal Rotation Control",
+    "correctivePhase": "ACTIVATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      10,
+      10
+    ],
+    "pauseSeconds": 30,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E076, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E077",
+    "name": "Short Foot / Arch Doming",
+    "correctivePhase": "ACTIVATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      10,
+      10
+    ],
+    "pauseSeconds": 30,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E077, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E078",
+    "name": "Prone Bent-Knee Hip Extension – Glute Max Isolation",
+    "correctivePhase": "ACTIVATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      10,
+      10
+    ],
+    "pauseSeconds": 30,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E078, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E079",
+    "name": "Banded Clamshell / Hip External Rotation",
+    "correctivePhase": "ACTIVATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      10,
+      10
+    ],
+    "pauseSeconds": 30,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [
+      "Widerstandsband"
+    ],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E079, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E080",
+    "name": "Assisted Hip Airplane / Single-Leg Hip Rotation Control",
+    "correctivePhase": "INTEGRATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      8,
+      8
+    ],
+    "pauseSeconds": 45,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E080, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E081",
+    "name": "Self-Administered Hip Posterior Glide Mobilization",
+    "correctivePhase": "LENGTHEN",
+    "unit": "Sekunden",
+    "sets": [
+      30,
+      30
+    ],
+    "pauseSeconds": 0,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E081, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E082",
+    "name": "Self-Administered Hip Lateral Distraction",
+    "correctivePhase": "LENGTHEN",
+    "unit": "Sekunden",
+    "sets": [
+      30,
+      30
+    ],
+    "pauseSeconds": 0,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E082, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E083",
+    "name": "90/90 Hip Internal Rotation Mobility",
+    "correctivePhase": "LENGTHEN",
+    "unit": "Sekunden",
+    "sets": [
+      30,
+      30
+    ],
+    "pauseSeconds": 0,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E083, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E084",
+    "name": "90/90 Breathing + TVA Brace",
+    "correctivePhase": "ACTIVATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      10,
+      10
+    ],
+    "pauseSeconds": 30,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E084, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E085",
+    "name": "Quadruped TVA Activation / Abdominal Draw-In",
+    "correctivePhase": "ACTIVATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      10,
+      10
+    ],
+    "pauseSeconds": 30,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E085, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E086",
+    "name": "Bear Plank Hold",
+    "correctivePhase": "INTEGRATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      8,
+      8
+    ],
+    "pauseSeconds": 45,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E086, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E087",
+    "name": "Side-Lying Shoulder External Rotation",
+    "correctivePhase": "ACTIVATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      10,
+      10
+    ],
+    "pauseSeconds": 30,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E087, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E088",
+    "name": "Banded Shoulder External Rotation at 0° Abduction",
+    "correctivePhase": "ACTIVATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      10,
+      10
+    ],
+    "pauseSeconds": 30,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [
+      "Widerstandsband"
+    ],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E088, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E089",
+    "name": "Serratus Wall Slide + Reach",
+    "correctivePhase": "ACTIVATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      10,
+      10
+    ],
+    "pauseSeconds": 30,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E089, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E090",
+    "name": "Prone Y / Lower Trapezius Raise",
+    "correctivePhase": "ACTIVATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      10,
+      10
+    ],
+    "pauseSeconds": 30,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E090, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E091",
+    "name": "Scapular Push-Up Plus",
+    "correctivePhase": "ACTIVATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      10,
+      10
+    ],
+    "pauseSeconds": 30,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E091, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E092",
+    "name": "Overhead Long-Head Triceps Activation",
+    "correctivePhase": "ACTIVATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      10,
+      10
+    ],
+    "pauseSeconds": 30,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E092, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E093",
+    "name": "Posterior Deltoid Release",
+    "correctivePhase": "INHIBIT",
+    "unit": "Sekunden",
+    "sets": [
+      45
+    ],
+    "pauseSeconds": 0,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E093, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E094",
+    "name": "Subscapularis Release",
+    "correctivePhase": "INHIBIT",
+    "unit": "Sekunden",
+    "sets": [
+      45
+    ],
+    "pauseSeconds": 0,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E094, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E095",
+    "name": "Teres Major Release",
+    "correctivePhase": "INHIBIT",
+    "unit": "Sekunden",
+    "sets": [
+      45
+    ],
+    "pauseSeconds": 0,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E095, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E096",
+    "name": "Self-Administered Shoulder Posterior Glide",
+    "correctivePhase": "LENGTHEN",
+    "unit": "Sekunden",
+    "sets": [
+      30,
+      30
+    ],
+    "pauseSeconds": 0,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E096, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E097",
+    "name": "Self-Administered Shoulder Inferior Glide",
+    "correctivePhase": "LENGTHEN",
+    "unit": "Sekunden",
+    "sets": [
+      30,
+      30
+    ],
+    "pauseSeconds": 0,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E097, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E098",
+    "name": "First Rib Self-Mobilization",
+    "correctivePhase": "LENGTHEN",
+    "unit": "Sekunden",
+    "sets": [
+      30,
+      30
+    ],
+    "pauseSeconds": 0,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E098, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E099",
+    "name": "Open Book Thoracic Rotation",
+    "correctivePhase": "LENGTHEN",
+    "unit": "Sekunden",
+    "sets": [
+      30,
+      30
+    ],
+    "pauseSeconds": 0,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E099, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E100",
+    "name": "Quadruped Thoracic Rotation",
+    "correctivePhase": "LENGTHEN",
+    "unit": "Sekunden",
+    "sets": [
+      30,
+      30
+    ],
+    "pauseSeconds": 0,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E100, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E101",
+    "name": "Supine Deep Cervical Flexor Nod",
+    "correctivePhase": "ACTIVATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      10,
+      10
+    ],
+    "pauseSeconds": 30,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E101, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E102",
+    "name": "Half-Kneeling Static Chop",
+    "correctivePhase": "INTEGRATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      8,
+      8
+    ],
+    "pauseSeconds": 45,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E102, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E103",
+    "name": "Tall-Kneeling Diagonal Chop",
+    "correctivePhase": "INTEGRATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      8,
+      8
+    ],
+    "pauseSeconds": 45,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E103, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E104",
+    "name": "Half-Kneeling Diagonal Lift",
+    "correctivePhase": "INTEGRATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      8,
+      8
+    ],
+    "pauseSeconds": 45,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E104, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E105",
+    "name": "Glute Bridge + Contralateral Band Pulldown",
+    "correctivePhase": "INTEGRATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      8,
+      8
+    ],
+    "pauseSeconds": 45,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [
+      "Widerstandsband"
+    ],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E105, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E106",
+    "name": "Reverse Lunge + Contralateral Row",
+    "correctivePhase": "INTEGRATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      8,
+      8
+    ],
+    "pauseSeconds": 45,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E106, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E107",
+    "name": "Split Squat + Contralateral Row",
+    "correctivePhase": "INTEGRATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      8,
+      8
+    ],
+    "pauseSeconds": 45,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E107, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E108",
+    "name": "Single-Leg RDL + Contralateral Row",
+    "correctivePhase": "INTEGRATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      8,
+      8
+    ],
+    "pauseSeconds": 45,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E108, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E109",
+    "name": "Step-Up + Contralateral Row",
+    "correctivePhase": "INTEGRATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      8,
+      8
+    ],
+    "pauseSeconds": 45,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E109, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E110",
+    "name": "Side Plank + Row",
+    "correctivePhase": "INTEGRATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      8,
+      8
+    ],
+    "pauseSeconds": 45,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E110, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E111",
+    "name": "Split Squat + Contralateral Press",
+    "correctivePhase": "INTEGRATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      8,
+      8
+    ],
+    "pauseSeconds": 45,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E111, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E113",
+    "name": "Step-Up + Contralateral Press",
+    "correctivePhase": "INTEGRATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      8,
+      8
+    ],
+    "pauseSeconds": 45,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E113, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E114",
+    "name": "Dead Bug + Band Pulldown",
+    "correctivePhase": "INTEGRATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      8,
+      8
+    ],
+    "pauseSeconds": 45,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [
+      "Widerstandsband"
+    ],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E114, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E115",
+    "name": "Bear Plank + Alternating Shoulder Tap",
+    "correctivePhase": "INTEGRATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      8,
+      8
+    ],
+    "pauseSeconds": 45,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E115, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  },
+  {
+    "smartMotionCode": "E116",
+    "name": "Bird Dog + Band Row",
+    "correctivePhase": "INTEGRATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      8,
+      8
+    ],
+    "pauseSeconds": 45,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [
+      "Widerstandsband"
+    ],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E116, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+  }
+]
