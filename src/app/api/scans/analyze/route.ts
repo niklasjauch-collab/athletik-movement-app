@@ -1,15 +1,26 @@
 import { analyzeScanDocument, AnalyzeScanConfigError } from "@/lib/corrective/analyzeScan";
+import { requireAdmin, AdminAuthRequiredError } from "@/lib/adminAuth";
 
-// Optional, opt-in step in the /scans flow: run the uploaded SmartMotionScan
-// report through analyzeScan.ts to get an AI-suggested findings list, which
-// the UI then pre-fills into the SAME manual findings checklist the coach
-// already reviews and edits before generating a plan (see analyzeScan.ts
-// for the full rationale). This never generates or persists a plan by
-// itself — it only returns suggestions.
+// Optional, opt-in step in the /admin/scans flow: run the uploaded
+// SmartMotionScan report through analyzeScan.ts to get an AI-suggested
+// findings list, which the UI then pre-fills into the SAME manual
+// findings checklist the coach already reviews and edits before
+// generating a plan (see analyzeScan.ts for the full rationale). This
+// never generates or persists a plan by itself — it only returns
+// suggestions.
 //
 // TODO (before deploying): rate-limit this route (PDF analysis calls cost
-// money per request) and require coach auth once real auth exists.
+// money per request).
 export async function POST(request: Request) {
+  try {
+    await requireAdmin();
+  } catch (err) {
+    if (err instanceof AdminAuthRequiredError) {
+      return Response.json({ error: "Nicht als Coach angemeldet." }, { status: 401 });
+    }
+    throw err;
+  }
+
   const formData = await request.formData();
   const file = formData.get("file");
 

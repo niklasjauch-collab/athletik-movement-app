@@ -1,9 +1,12 @@
 import { randomUUID } from "crypto";
 import { mkdir, writeFile } from "fs/promises";
 import path from "path";
+import { requireAdmin, AdminAuthRequiredError } from "@/lib/adminAuth";
 
 // Receives a SmartMotionScan (or any other movement-assessment) report
-// file plus a clientId, and stores it.
+// file plus a clientId, and stores it. Used by the older /admin/scans
+// manual-review flow (see that page) — the real, current pipeline is
+// /api/clients/[id]/scans.
 //
 // TODO (before deploying to Vercel/production): this currently writes to
 // the LOCAL filesystem under .uploads/scans/, which only works when
@@ -16,6 +19,15 @@ import path from "path";
 // (prisma.movementScan.create({ data: { providerId, clientId, fileUrl,
 // fileName, contentType } })) instead of just returning JSON.
 export async function POST(request: Request) {
+  try {
+    await requireAdmin();
+  } catch (err) {
+    if (err instanceof AdminAuthRequiredError) {
+      return Response.json({ error: "Nicht als Coach angemeldet." }, { status: 401 });
+    }
+    throw err;
+  }
+
   const formData = await request.formData();
   const file = formData.get("file");
   const clientId = formData.get("clientId");

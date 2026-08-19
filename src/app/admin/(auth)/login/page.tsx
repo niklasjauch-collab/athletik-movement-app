@@ -1,17 +1,19 @@
 "use client";
 
-import { useState, FormEvent, Suspense } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useState, FormEvent } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { getBranding } from "@/lib/branding";
 
 const branding = getBranding();
 
-function LoginPageInner() {
+// Separate login from the customer /login — different cookie, different
+// table (AdminUser, not Client), see src/lib/adminAuth.ts. No public
+// self-registration here on purpose (single-operator business) — the
+// first account is seeded and its password set via
+// /admin/forgot-password, same as any later reset.
+export default function AdminLoginPage() {
   const router = useRouter();
-  const searchParams = useSearchParams();
-  const redirectTo = searchParams.get("redirectTo") || "/app";
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -22,7 +24,7 @@ function LoginPageInner() {
     setError(null);
     setSubmitting(true);
     try {
-      const res = await fetch("/api/auth/login", {
+      const res = await fetch("/api/admin/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
@@ -33,7 +35,7 @@ function LoginPageInner() {
         setSubmitting(false);
         return;
       }
-      router.push(redirectTo);
+      router.push("/admin");
       router.refresh();
     } catch {
       setError("Login fehlgeschlagen. Bitte später erneut versuchen.");
@@ -48,25 +50,25 @@ function LoginPageInner() {
           // eslint-disable-next-line @next/next/no-img-element
           <img src={branding.iconUrl} alt={branding.appName} className="h-16 w-auto" />
         )}
-        <h1 className="mt-4 text-2xl font-extrabold">Login</h1>
+        <h1 className="mt-4 font-serif text-2xl font-bold text-ink-900">Coach-Bereich</h1>
       </div>
 
       <form onSubmit={handleSubmit} className="mt-8 flex flex-col gap-4">
         <div>
-          <label className="block text-sm font-medium text-slate-700">E-Mail-Adresse</label>
+          <label className="block text-sm font-medium text-ink-700">E-Mail-Adresse</label>
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
+            className="mt-1 w-full rounded-lg border border-ink-900/15 px-3 py-2 text-sm"
             autoComplete="email"
             required
           />
         </div>
         <div>
           <div className="flex items-center justify-between">
-            <label className="block text-sm font-medium text-slate-700">Passwort</label>
-            <Link href="/forgot-password" className="text-xs text-brand-700 underline">
+            <label className="block text-sm font-medium text-ink-700">Passwort</label>
+            <Link href="/admin/forgot-password" className="text-xs text-brand-700 underline">
               Passwort vergessen?
             </Link>
           </div>
@@ -74,7 +76,7 @@ function LoginPageInner() {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
+            className="mt-1 w-full rounded-lg border border-ink-900/15 px-3 py-2 text-sm"
             autoComplete="current-password"
             required
           />
@@ -90,21 +92,6 @@ function LoginPageInner() {
           {submitting ? "Wird geprüft…" : "Einloggen"}
         </button>
       </form>
-
-      <p className="mt-6 text-center text-sm text-slate-500">
-        Noch kein Konto?{" "}
-        <Link href="/register" className="font-medium text-brand-700 underline">
-          Registrieren
-        </Link>
-      </p>
     </main>
-  );
-}
-
-export default function LoginPage() {
-  return (
-    <Suspense fallback={<main className="flex-1 max-w-md mx-auto px-6 py-16 text-sm text-slate-400">Lädt…</main>}>
-      <LoginPageInner />
-    </Suspense>
   );
 }

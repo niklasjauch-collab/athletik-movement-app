@@ -43,6 +43,7 @@ model Provider {
   correctivePlans CorrectivePlan[]
   trainingSessions TrainingSession[]
   products        Product[]
+  adminUsers      AdminUser[]
 }
 
 enum ServiceType {
@@ -665,6 +666,67 @@ model PasswordResetToken {
   createdAt DateTime  @default(now())
 
   @@index([clientId])
+}
+
+// ============================================================
+// Coach/admin auth (COACH_ADMIN role)
+// ============================================================
+//
+// Deliberately a SEPARATE table + session/cookie from Client, not a
+// shared "User" table with a role column: Client already has its own
+// full set of customer-only relations (creditBalances, bookings,
+// movementScans, ...) that must never accidentally apply to a coach
+// account, and vice versa. Two tables with the exact same proven
+// session pattern (hash-only-at-rest token, see Session's doc comment)
+// is less risky than a shared table with a role switch sprinkled
+// through every query in the app. A person COULD in principle hold
+// both a Client cookie and an AdminSession cookie in the same browser
+// at once (different cookie names, see lib/adminAuth.ts) — that's fine,
+// each grants access to a disjoint set of routes.
+//
+// No public self-registration for AdminUser (single-operator business,
+// see project status doc) — the first account is seeded by
+// prisma/seed.ts from the ADMIN_EMAIL env var with passwordHash left
+// null, then the real password is set via the same "Passwort vergessen"
+// flow Client already uses (see /admin/forgot-password), so this file
+// never has to invent or transmit a real password.
+model AdminUser {
+  id           String   @id @default(cuid())
+  providerId   String
+  provider     Provider @relation(fields: [providerId], references: [id])
+  email        String
+  passwordHash String?
+  name         String
+  createdAt    DateTime @default(now())
+
+  sessions            AdminSession[]
+  passwordResetTokens AdminPasswordResetToken[]
+
+  @@unique([providerId, email])
+}
+
+model AdminSession {
+  id          String    @id @default(cuid())
+  adminUserId String
+  adminUser   AdminUser @relation(fields: [adminUserId], references: [id])
+  tokenHash   String    @unique
+  expiresAt   DateTime
+  createdAt   DateTime  @default(now())
+
+  @@index([adminUserId])
+}
+
+/// Same shape/semantics as PasswordResetToken above, for AdminUser.
+model AdminPasswordResetToken {
+  id          String    @id @default(cuid())
+  adminUserId String
+  adminUser   AdminUser @relation(fields: [adminUserId], references: [id])
+  tokenHash   String    @unique
+  expiresAt   DateTime
+  usedAt      DateTime?
+  createdAt   DateTime  @default(now())
+
+  @@index([adminUserId])
 }
 
 // ============================================================

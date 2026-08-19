@@ -64,7 +64,7 @@ export default function RegisterPage() {
         setSubmitting(false);
         return;
       }
-      router.push("/portal");
+      router.push("/app");
       router.refresh();
     } catch {
       setError("Registrierung fehlgeschlagen. Bitte später erneut versuchen.");

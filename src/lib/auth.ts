@@ -19,7 +19,6 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
 import { cookies } from "next/headers";
-import { redirect } from "next/navigation";
 import { cache } from "react";
 import { randomBytes, createHash } from "crypto";
 import bcrypt from "bcryptjs";
@@ -140,20 +139,14 @@ export class AuthRequiredError extends Error {
   }
 }
 
-/** Guard for coach-only routes (/clients, /scans, /exercises, /training,
- * /progress): a logged-in end-customer should never land here — per the
- * product requirement, clients only book sessions, view their scan/plan,
- * and buy training plans; they don't get the exercise library or plan
- * authoring tools. There's no separate coach login yet (single-operator
- * beta, see project status doc), so these routes stay reachable by URL to
- * anyone who ISN'T logged in as a client; this only redirects the client
- * case away. Call from a route segment's layout.tsx (not just the page)
- * so it also covers "use client" pages in that segment — layouts render
- * server-side first, before the client page component mounts. */
-export async function redirectIfClientLoggedIn(): Promise<void> {
-  const client = await getCurrentClient();
-  if (client) redirect("/portal");
-}
+// NOTE: the old redirectIfClientLoggedIn() guard that used to live here
+// (blocking a logged-in customer from /clients, /scans, /exercises,
+// /training, /progress) has been REMOVED — those routes now live under
+// /admin/* and are protected by a real AdminUser login
+// (src/lib/adminAuth.ts#redirectIfNotAdmin, applied once in
+// src/app/admin/(protected)/layout.tsx), which also closes the previous
+// gap where those routes were reachable by anyone who simply wasn't
+// logged in as a client (i.e. any anonymous visitor).
 
 export interface CreatePasswordResetResult {
   token: string;

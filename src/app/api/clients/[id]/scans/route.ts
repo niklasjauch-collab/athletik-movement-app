@@ -3,6 +3,7 @@ import { mkdir, writeFile } from "fs/promises";
 import path from "path";
 import { prisma } from "@/lib/db";
 import { getActiveProvider } from "@/lib/tenant";
+import { requireAdmin, AdminAuthRequiredError } from "@/lib/adminAuth";
 import { analyzeScanDocument, AnalyzeScanConfigError } from "@/lib/corrective/analyzeScan";
 import { splitIntoSessions, SplitFindingInput } from "@/lib/corrective/splitIntoSessions";
 import type { ExerciseCandidate } from "@/lib/corrective/generatePlan";
@@ -27,10 +28,17 @@ import type { ExerciseCandidate } from "@/lib/corrective/generatePlan";
 //
 // TODO (before deploying to Vercel/production): same local-filesystem
 // caveat as src/app/api/scans/upload/route.ts — swap for real object
-// storage before going live. TODO (coach auth): this route has no
-// authentication yet — see README "Auth" for the current single-operator
-// assumption.
+// storage before going live.
 export async function POST(request: Request, { params }: { params: Promise<{ id: string }> }) {
+  try {
+    await requireAdmin();
+  } catch (err) {
+    if (err instanceof AdminAuthRequiredError) {
+      return Response.json({ error: "Nicht als Coach angemeldet." }, { status: 401 });
+    }
+    throw err;
+  }
+
   const { id: clientId } = await params;
 
   const formData = await request.formData();

@@ -193,6 +193,26 @@ async function main() {
     },
   });
 
+  // ============================================================
+  // First COACH_ADMIN account (P0 role split, see schema.prisma's
+  // AdminUser doc comment). passwordHash is deliberately left null —
+  // the real password gets set via /admin/forgot-password's "Passwort
+  // vergessen" flow, same mechanism as any later reset, so this script
+  // never has to invent, transmit, or store a real password.
+  // ============================================================
+  // Inline trim+lowercase rather than importing src/lib/auth.ts's
+  // normalizeEmail — that file imports next/headers, which isn't safe to
+  // pull into this standalone `tsx prisma/seed.ts` script (run outside
+  // Next's request context).
+  const adminEmail = (process.env.ADMIN_EMAIL || "niklasjauch@gmail.com").trim().toLowerCase();
+  const adminName = process.env.ADMIN_NAME || "Niklas Jauch";
+  const adminUser = await prisma.adminUser.upsert({
+    where: { providerId_email: { providerId: provider.id, email: adminEmail } },
+    update: {},
+    create: { providerId: provider.id, email: adminEmail, name: adminName },
+  });
+  console.log(`Admin account ready: ${adminUser.email} (set/reset password via /admin/forgot-password).`);
+
   let created = 0;
   let skipped = 0;
 
