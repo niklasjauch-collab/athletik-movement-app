@@ -53,7 +53,7 @@
 //     `isPublished:false` per the spec's launch strategy, not because
 //     their data is incomplete.
 
-import { PrismaClient, CorrectivePhase, BibCategory, ExerciseLevel, ProductCategory } from "@prisma/client";
+import { PrismaClient, CorrectivePhase, BibCategory, ExerciseLevel, TrainingProgramCategory, ProductType } from "@prisma/client";
 import exercisesData from "./seed-data/exercises.json";
 import correctiveExercisesData from "./seed-data/corrective-exercises.json";
 import draftExercisesData from "./seed-data/draft-exercises.json";
@@ -458,14 +458,14 @@ async function main() {
   let sessionItemsCreated = 0;
   for (const entry of smartMotionProductsCatalogData as SmartMotionProductCatalogEntry[]) {
     const { cents, note } = parsePriceEur(entry.priceRaw);
-    const product = await prisma.product.upsert({
+    const trainingProgram = await prisma.trainingProgram.upsert({
       where: { providerId_slug: { providerId: provider.id, slug: entry.slug } },
       update: {},
       create: {
         providerId: provider.id,
         specId: entry.id,
         slug: entry.slug,
-        category: entry.category as ProductCategory,
+        category: entry.category as TrainingProgramCategory,
         title: entry.title,
         hook: entry.hook,
         description: entry.description,
@@ -488,13 +488,13 @@ async function main() {
 
     for (const block of program.blocks) {
       const existingBlock = await prisma.programBlock.findFirst({
-        where: { productId: product.id, weekStart: block.weekStart },
+        where: { trainingProgramId: trainingProgram.id, weekStart: block.weekStart },
       });
       if (existingBlock) continue; // already seeded in a prior run
 
       const createdBlock = await prisma.programBlock.create({
         data: {
-          productId: product.id,
+          trainingProgramId: trainingProgram.id,
           weekStart: block.weekStart,
           weekEnd: block.weekEnd,
           progressionRule: block.progressionRule ?? "",
@@ -549,8 +549,9 @@ async function main() {
     { key: "partner", name: "Partner", description: "Z. B. GetImpulse, EvoGolf.", colorHex: "#0ea5e9" },
     { key: "vip", name: "VIP / individuell", description: "Für individuelle Sondervereinbarungen.", colorHex: "#22c55e" },
   ];
+  const segmentsByKey = new Map<string, { id: string }>();
   for (const seg of STANDARD_SEGMENTS) {
-    await prisma.customerSegment.upsert({
+    const created = await prisma.customerSegment.upsert({
       where: { providerId_key: { providerId: provider.id, key: seg.key } },
       update: {},
       create: {
@@ -562,8 +563,100 @@ async function main() {
         isSystemDefault: true,
       },
     });
+    segmentsByKey.set(seg.key, created);
   }
   console.log(`Customer segments: ${STANDARD_SEGMENTS.length} standard segment(s) ensured.`);
+
+  // --- CoachAdmin briefing §65: default commercial products + §18 their
+  // booking links. Prices/URLs are the exact real values already in
+  // production use on src/lib/bookingOffers.ts's hardcoded customer-
+  // facing list (Runde 4) — this seed migrates that data into the real
+  // Product/BookingLink tables so /app/appointments can read it from the
+  // DB instead (§66 "customer view must be derived, not duplicated").
+  // One dedicated BookingLink per product (matches §18's own example
+  // list, which names "15er/30er/45er Standard" as separate entries even
+  // though several share the same underlying Calendly event) — a
+  // BookingLink is scoped to exactly one product, so reusing one row
+  // across products isn't a valid modeling choice here. Only the offers
+  // with a genuine distinct Calendly link are seeded; Beta/Friends/
+  // Legacy-specific links are NOT invented (no such distinct Calendly
+  // event exists yet) — a coach adds those for real via
+  // /admin/booking-links once they exist, same "honest empty state"
+  // pattern used elsewhere in this app.
+  const EINZEL_URL =
+    process.env.MOVEMENT_SINGLE_CALENDLY_URL ||
+    "https://calendly.com/athletikmovement/movement-coaching-corrective-exercise";
+  const DEFAULT_PRODUCTS: {
+    key: string;
+    name: string;
+    type: ProductType;
+    priceCents: number;
+    credits?: number;
+    bookingLinkName: string;
+    bookingLinkUrl: string;
+  }[] = [
+    { key: "smartmotionscan", name: "SmartMotionScan", type: "SMARTMOTION_SCAN", priceCents: 49900, bookingLinkName: "SmartMotionScan Standard", bookingLinkUrl: "https://calendly.com/athletikmovement/smartmotionscan" },
+    { key: "movement-coaching-einzel", name: "Movement Coaching – Einzelsession", type: "COACHING_SESSION", priceCents: 25000, bookingLinkName: "Movement Coaching Einzel Standard", bookingLinkUrl: EINZEL_URL },
+    { key: "movement-coaching-15er", name: "Movement Coaching – 15er Paket", type: "COACHING_PACKAGE", priceCents: 270000, credits: 15, bookingLinkName: "Movement Coaching 15er Standard", bookingLinkUrl: EINZEL_URL },
+    { key: "movement-coaching-30er", name: "Movement Coaching – 30er Paket", type: "COACHING_PACKAGE", priceCents: 495000, credits: 30, bookingLinkName: "Movement Coaching 30er Standard", bookingLinkUrl: EINZEL_URL },
+    { key: "movement-coaching-45er", name: "Movement Coaching – 45er Paket", type: "COACHING_PACKAGE", priceCents: 675000, credits: 45, bookingLinkName: "Movement Coaching 45er Standard", bookingLinkUrl: EINZEL_URL },
+  ];
+  let defaultProductsUpserted = 0;
+  let defaultBookingLinksUpserted = 0;
+  for (const p of DEFAULT_PRODUCTS) {
+    const product = await prisma.product.upsert({
+      where: { providerId_key: { providerId: provider.id, key: p.key } },
+      update: {},
+      create: {
+        providerId: provider.id,
+        key: p.key,
+        name: p.name,
+        type: p.type,
+        priceCents: p.priceCents,
+        credits: p.credits ?? null,
+      },
+    });
+    defaultProductsUpserted++;
+
+    await prisma.bookingLink.upsert({
+      where: { providerId_key: { providerId: provider.id, key: `${p.key}-standard` } },
+      update: {},
+      create: {
+        providerId: provider.id,
+        key: `${p.key}-standard`,
+        name: p.bookingLinkName,
+        url: p.bookingLinkUrl,
+        type: "Standard",
+        productId: product.id,
+        active: true,
+      },
+    });
+    defaultBookingLinksUpserted++;
+  }
+
+  // Real example of §19's segment-level resolution (priority 2): the
+  // "Partner" segment (GetImpulse/EvoGolf, per its own seeded
+  // description above) gets its own real Calendly event — GetImpulse's
+  // is a genuine distinct event on the connected account; EvoGolf has no
+  // distinct event yet, so only GetImpulse is wired here. Deliberately
+  // NOT attached to a specific product (segmentId set, productId null) —
+  // it's a segment-wide override, not a product-specific one.
+  await prisma.bookingLink.upsert({
+    where: { providerId_key: { providerId: provider.id, key: "movement-coaching-getimpulse" } },
+    update: {},
+    create: {
+      providerId: provider.id,
+      key: "movement-coaching-getimpulse",
+      name: "Movement Coaching GetImpulse",
+      url: "https://calendly.com/athletikmovement/getimpulse",
+      type: "Partner",
+      segmentId: segmentsByKey.get("partner")?.id ?? null,
+      active: true,
+    },
+  });
+  defaultBookingLinksUpserted++;
+
+  console.log(`Products: ${defaultProductsUpserted} default product(s) ensured, ${defaultBookingLinksUpserted} booking link(s) ensured.`);
 
   // --- customerNumber backfill (see schema.prisma's Client.customerNumber
   // comment for why this is a runtime backfill rather than a NOT NULL
