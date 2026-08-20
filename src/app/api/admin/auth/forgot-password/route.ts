@@ -3,6 +3,7 @@ import { getActiveProvider } from "@/lib/tenant";
 import { createAdminPasswordResetToken, normalizeEmail } from "@/lib/adminAuth";
 import { sendEmail } from "@/lib/email";
 import { getBranding } from "@/lib/branding";
+import { absoluteUrl } from "@/lib/baseUrl";
 
 // Mirror of /api/auth/forgot-password for AdminUser. This is also how
 // the FIRST coach account gets a real password: seed.ts creates the
@@ -38,7 +39,7 @@ export async function POST(request: Request) {
 
     if (admin) {
       const { token } = await createAdminPasswordResetToken(admin.id);
-      const resetUrl = new URL(`/admin/reset-password?token=${token}`, request.url).toString();
+      const resetUrl = absoluteUrl(request, `/admin/reset-password?token=${token}`);
       const branding = getBranding();
 
       await sendEmail({
