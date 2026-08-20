@@ -325,15 +325,15 @@
     "category": "BESCHWERDEN_RETURN_TO_MOVEMENT",
     "slug": "tennisellenbogen",
     "launch": false,
-    "contentStatus": "blocked-missing-forearm-loading",
+    "contentStatus": "ready-after-forearm-videos",
     "priceRaw": "79 € / 90 Tage (69 € optionaler Launch-Test)",
-    "hook": "Tennisellenbogen ist kein Problem, das sich seriös allein über Schulterübungen lösen lässt.",
-    "description": "Die aktuelle SmartMotion-Bibliothek enthält gute Schulter-/Scapula-Übungen, aber keine ausreichende progressive Belastung der Handgelenkextensoren. Ein eigenständiges Verkaufsprogramm wäre deshalb fachlich zu dünn. Claude soll Produktseite, Testlogik und Programmshell anlegen, aber das Produkt deaktiviert lassen.",
-    "forYou": "Später geeignet bei fachlich abgeklärter lateraler Ellenbogentendinopathie, sobald direkte Unterarmbelastung ergänzt wurde.",
+    "hook": "Greifen, Heben oder längeres Arbeiten mit der Hand reizt die Außenseite deines Ellenbogens? Dann braucht dein Unterarm vor allem eines: eine Belastung, die wieder dosiert aufgebaut wird.",
+    "description": "Dieses 12-Wochen-Programm verbindet gezielte Entlastung und Beweglichkeit mit einer systematischen Belastung der Handgelenkstrecker. Du startest mit kontrollierten isometrischen Übungen, steigerst anschließend die langsame Kraftarbeit und überträgst die neu aufgebaute Belastbarkeit in Zug-, Druck- und Greifbewegungen. Schulter und Schulterblatt werden ergänzend trainiert, damit der Arm nicht isoliert, sondern als Teil der gesamten Bewegungskette arbeitet.",
+    "forYou": "Geeignet bei fachlich abgeklärten, nicht-akuten Beschwerden an der Außenseite des Ellenbogens, die besonders beim Greifen, Heben oder bei Handgelenksbelastung auftreten. Nicht als Self-Service-Programm starten bei frischem Trauma, deutlicher Schwellung, ausgeprägter Kraftminderung, Taubheit/Kribbeln oder ungeklärten ausstrahlenden Beschwerden aus Nacken/Arm.",
     "cta": "12-Wochen-Programm starten",
-    "frequency": "Noch nicht freigeben",
-    "testRetestProtocol": "In Woche 0, 4, 8 und 12 identisch durchführen:\n- Schmerz bei typischer Greif-/Hebebelastung 0–10.\n- Später ergänzen: standardisierte schmerzarme Griff- und Wrist-Extension-Belastung mit dokumentierbarer Last.\n\n**BLOCKER:** Diese Programmshell darf nicht verkauft/freigeschaltet werden, bis die im Status genannte direkte Belastungskomponente in der Übungsbibliothek vorhanden und programmiert ist.",
-    "specialLogicNote": null
+    "frequency": "3–4 Einheiten/Woche, ca. 15–25 Minuten; direkte Unterarmbelastung in der Regel 3×/Woche, kurze Mobility-/Release-Elemente nach Bedarf.",
+    "testRetestProtocol": "In Woche 0, 4, 8 und 12 identisch durchführen:\n- **Alltagsbelastung:** Eine persönliche Standardaufgabe wählen, z. B. Tasse/Hantel/Tasche greifen und anheben. Beschwerden 0–10 erfassen.\n- **30-Sekunden-Griffhalte-Test:** Immer dasselbe Gewicht und denselben Griff verwenden; Haltezeit, Beschwerden 0–10 und Abbruchgrund dokumentieren. Wenn ein Handdynamometer vorhanden ist, Grip Strength zusätzlich optional speichern.\n- **Standardisierte Wrist-Extension-Capacity:** Dasselbe Gewicht wie beim Baseline-Test verwenden; bis zu 10 langsame Wiederholungen mit ca. 3–4 Sekunden Absenkphase. Saubere Wiederholungen und Beschwerden 0–10 notieren.\n- **Folgetag-Reaktion:** Am nächsten Morgen dokumentieren, ob Beschwerden wieder auf Ausgangsniveau sind.",
+    "specialLogicNote": "Direkte Sehnenbelastung nur steigern, wenn Technik kontrolliert bleibt und die Reaktion spätestens am nächsten Tag wieder auf Baseline liegt. Pro Progression nur **eine** Variable erhöhen: Gewicht, Wiederholungen oder Bewegungsausmaß."
   },
   {
     "id": "P22",
@@ -341,14 +341,14 @@
     "category": "BESCHWERDEN_RETURN_TO_MOVEMENT",
     "slug": "golferellenbogen",
     "launch": false,
-    "contentStatus": "blocked-missing-forearm-loading",
+    "contentStatus": "ready-after-forearm-videos",
     "priceRaw": "79 € / 90 Tage (69 € optionaler Launch-Test)",
-    "hook": "Auch an der Innenseite des Ellenbogens reicht ein allgemeines Schulterprogramm nicht aus, wenn die belastete Unterarmsehne selbst nicht progressiv trainiert wird.",
-    "description": "Die App kann aktuell Schulter und Schulterblatt sinnvoll unterstützen, aber die entscheidende progressive Handgelenkflexor-/Pronatorbelastung fehlt. Deshalb nur als deaktivierte Programmshell umsetzen und erst nach Erweiterung der Übungsbibliothek freischalten.",
-    "forYou": "Später geeignet bei fachlich abgeklärter medialer Ellenbogentendinopathie, sobald direkte Unterarmbelastung ergänzt wurde.",
+    "hook": "Greifen, Ziehen oder Belastungen des Handgelenks reizen die Innenseite deines Ellenbogens? Dann sollte das Training nicht nur die Schulter beschäftigen – sondern den Unterarm wieder gezielt belastbar machen.",
+    "description": "Dieses 12-Wochen-Programm baut die Belastbarkeit der Handgelenkbeuger und Pronatoren systematisch auf. Du startest mit kontrollierten isometrischen Belastungen, steigerst anschließend langsame Kraftarbeit und Unterarmrotation und verbindest das Ganze mit stabilen Zug- und Druckbewegungen. So wird nicht nur die empfindliche Region trainiert, sondern die gesamte Bewegungskette vom Griff bis zur Schulter.",
+    "forYou": "Geeignet bei fachlich abgeklärten, nicht-akuten Beschwerden an der Innenseite des Ellenbogens, die besonders beim Greifen, Ziehen, Golfen oder bei Handgelenksflexion/Pronation auftreten. Nicht als Self-Service-Programm starten bei frischem Trauma, deutlicher Schwellung, ausgeprägter Kraftminderung, Taubheit/Kribbeln oder ungeklärten neurologischen Symptomen.",
     "cta": "12-Wochen-Programm starten",
-    "frequency": "Noch nicht freigeben",
-    "testRetestProtocol": "In Woche 0, 4, 8 und 12 identisch durchführen:\n- Schmerz bei typischer Greif-/Zugbelastung 0–10.\n- Später ergänzen: standardisierte Wrist-Flexion-/Pronation-Belastung mit dokumentierbarer Last.\n\n**BLOCKER:** Diese Programmshell darf nicht verkauft/freigeschaltet werden, bis die im Status genannte direkte Belastungskomponente in der Übungsbibliothek vorhanden und programmiert ist.",
-    "specialLogicNote": null
+    "frequency": "3–4 Einheiten/Woche, ca. 15–25 Minuten; direkte Unterarmbelastung in der Regel 3×/Woche.",
+    "testRetestProtocol": "In Woche 0, 4, 8 und 12 identisch durchführen:\n- **Alltags-/Sportbelastung:** Eine persönliche Standardaufgabe wählen, z. B. Tasche tragen, Griff ziehen oder leichte Golfbewegung ohne maximale Geschwindigkeit. Beschwerden 0–10 erfassen.\n- **30-Sekunden-Griffhalte-Test:** Immer dasselbe Gewicht und denselben Griff verwenden; Haltezeit, Beschwerden 0–10 und Abbruchgrund dokumentieren. Optional Grip-Dynamometer, wenn vorhanden.\n- **Standardisierte Wrist-Flexion-Capacity:** Dasselbe Gewicht wie beim Baseline-Test verwenden; bis zu 10 langsame Wiederholungen mit ca. 3–4 Sekunden Absenkphase. Wiederholungen + Beschwerden dokumentieren.\n- **Standardisierte Pronation:** Gleicher Hebel/Bandwiderstand, 10 kontrollierte Wiederholungen; Beschwerden 0–10 und Bewegungsqualität erfassen.\n- **Folgetag-Reaktion:** Am nächsten Morgen Veränderung zum Ausgangsniveau dokumentieren.",
+    "specialLogicNote": "Belastung nur erhöhen, wenn Technik stabil bleibt und die Reaktion spätestens am nächsten Tag wieder auf Baseline liegt. Nur eine Progressionsvariable gleichzeitig verändern."
   }
 ]

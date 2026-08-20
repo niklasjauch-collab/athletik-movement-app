@@ -1048,7 +1048,7 @@
     "phaseRaw": "MoveFlexRelax",
     "phase": "INHIBIT",
     "status": "planned_video",
-    "name": "SMR Unterarmstrecker",
+    "name": "SMR Unterarmstrecker / Forearm Extensor Release",
     "matchedSeedName": null,
     "matchedSeedSource": null
   },
@@ -1057,7 +1057,7 @@
     "phaseRaw": "MoveFlexRelax",
     "phase": "INHIBIT",
     "status": "planned_video",
-    "name": "SMR Unterarmbeuger & Pronatoren",
+    "name": "SMR Unterarmbeuger & Pronatoren / Forearm Flexor-Pronator Release",
     "matchedSeedName": null,
     "matchedSeedSource": null
   },
@@ -1066,7 +1066,7 @@
     "phaseRaw": "MoveFlexStretch",
     "phase": "LENGTHEN",
     "status": "planned_video",
-    "name": "Unterarmstrecker Stretch",
+    "name": "Unterarmstrecker Stretch / Wrist Extensor Stretch",
     "matchedSeedName": null,
     "matchedSeedSource": null
   },
@@ -1075,7 +1075,7 @@
     "phaseRaw": "MoveFlexStretch",
     "phase": "LENGTHEN",
     "status": "planned_video",
-    "name": "Unterarmbeuger Stretch",
+    "name": "Unterarmbeuger Stretch / Wrist Flexor Stretch",
     "matchedSeedName": null,
     "matchedSeedSource": null
   },
@@ -1084,7 +1084,7 @@
     "phaseRaw": "MoveSyncActivation",
     "phase": "ACTIVATE",
     "status": "planned_video",
-    "name": "Isometrische Handgelenkextension",
+    "name": "Isometrische Handgelenkextension / Isometric Wrist Extension",
     "matchedSeedName": null,
     "matchedSeedSource": null
   },
@@ -1093,7 +1093,7 @@
     "phaseRaw": "MoveSyncActivation",
     "phase": "ACTIVATE",
     "status": "planned_video",
-    "name": "Langsame Handgelenkextension",
+    "name": "Langsame Handgelenkextension / Slow Wrist Extension",
     "matchedSeedName": null,
     "matchedSeedSource": null
   },
@@ -1102,7 +1102,7 @@
     "phaseRaw": "MoveSyncActivation",
     "phase": "ACTIVATE",
     "status": "planned_video",
-    "name": "Isometrische Handgelenkflexion",
+    "name": "Isometrische Handgelenkflexion / Isometric Wrist Flexion",
     "matchedSeedName": null,
     "matchedSeedSource": null
   },
@@ -1111,7 +1111,7 @@
     "phaseRaw": "MoveSyncActivation",
     "phase": "ACTIVATE",
     "status": "planned_video",
-    "name": "Langsame Handgelenkflexion",
+    "name": "Langsame Handgelenkflexion / Slow Wrist Flexion",
     "matchedSeedName": null,
     "matchedSeedSource": null
   },
@@ -1120,7 +1120,7 @@
     "phaseRaw": "MoveSyncActivation",
     "phase": "ACTIVATE",
     "status": "planned_video",
-    "name": "Widerstand gegen Pronation",
+    "name": "Widerstand gegen Pronation / Resisted Forearm Pronation",
     "matchedSeedName": null,
     "matchedSeedSource": null
   },
@@ -1129,7 +1129,7 @@
     "phaseRaw": "MoveSyncActivation",
     "phase": "ACTIVATE",
     "status": "planned_video",
-    "name": "Widerstand gegen Supination",
+    "name": "Widerstand gegen Supination / Resisted Forearm Supination",
     "matchedSeedName": null,
     "matchedSeedSource": null
   }
