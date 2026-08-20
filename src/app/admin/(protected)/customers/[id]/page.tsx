@@ -78,7 +78,7 @@ export default async function CustomerDetailPage({
       accessGrant: true,
       notes: true,
       bookings: { orderBy: { startTime: "desc" }, take: 20 },
-      creditBalances: { include: { service: true } },
+      creditBalances: { include: { product: true } },
       trainingSessions: { orderBy: { createdAt: "desc" }, take: 20 },
       orders: { orderBy: { createdAt: "desc" }, take: 20, include: { digitalProduct: true } },
       trainingPlans: { select: { id: true } },
@@ -271,7 +271,7 @@ export default async function CustomerDetailPage({
                 {/* eslint-disable-next-line @typescript-eslint/no-explicit-any -- SANDBOX-ONLY, see src/lib/db.ts */}
                 {client.creditBalances.map((cb: any) => (
                   <li key={cb.id} className="rounded-lg border border-ink-900/10 p-3 text-sm flex justify-between">
-                    <span>{cb.service?.name ?? "—"}</span>
+                    <span>{cb.product?.name ?? "—"}</span>
                     <span className="text-ink-700/60">{cb.creditsRemaining} verbleibend</span>
                   </li>
                 ))}
