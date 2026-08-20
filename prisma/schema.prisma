@@ -622,6 +622,10 @@ model Exercise {
   // *Path fields above become historical/reference only.
   videoMaleUrl    String?
   videoFemaleUrl  String?
+  // §38 VIDEO MANAGEMENT "Thumbnail ändern" — a single thumbnail shared by
+  // both variants (male/female videos of the same exercise use the same
+  // cover frame in practice); optional, purely presentational.
+  videoThumbnailUrl String?
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -648,24 +652,63 @@ model Exercise {
 enum TrainingPlanKind {
   INDIVIDUAL // built for one specific client
   SELLABLE   // pre-made digital product, sold via DigitalProduct
+  TEMPLATE   // reusable admin-authored plan, not yet tied to a client or a
+             // sellable product (CoachAdmin briefing §32 "Templates" /
+             // §35 "Template -> Kundenplan"). Added additively — existing
+             // INDIVIDUAL/SELLABLE rows and their meaning are unchanged.
 }
 
-/// A training plan: an ordered composition of exercises. Used both for
-/// plans built for an individual client and as the basis of a sellable
-/// digital product (see concept doc section 3.3).
+/// CoachAdmin briefing §32/§38: DRAFT while being built, PUBLISHED once a
+/// coach has reviewed it (and, per §38, only allowed once every exercise
+/// in it has a video — see the PUBLISH action in
+/// /api/admin/plans/[id]/action), ARCHIVED for the §32 "Archiv" bucket.
+/// Independent of `kind` — a Template, a Kundenplan and a Shop-Plan can
+/// each be in any of these three states.
+enum TrainingPlanStatus {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
+
+/// A training plan: an ordered composition of exercises. Used for plans
+/// built for an individual client, as the basis of a sellable digital
+/// product (see concept doc section 3.3), and — added in P5 — as a
+/// reusable Template a coach can duplicate into a client's plan without
+/// rebuilding it from scratch each time (§34 PLAN DUPLIZIEREN).
 model TrainingPlan {
   id         String           @id @default(cuid())
   providerId String
   provider   Provider         @relation(fields: [providerId], references: [id])
   kind       TrainingPlanKind
+  status     TrainingPlanStatus @default(DRAFT)
   title      String
+  // §33 Plan Builder Schritt 1 fields. All optional — a plan can be saved
+  // with just a title and filled in later.
+  description String? @db.Text
+  goal        String?
+  durationWeeks    Int?
+  frequencyPerWeek Int?
   clientId   String? // set when kind = INDIVIDUAL
   client     Client?          @relation(fields: [clientId], references: [id])
   createdAt  DateTime         @default(now())
   updatedAt  DateTime         @updatedAt
 
+  // §35 TEMPLATE -> KUNDENPLAN: "eine eigene ... Version erzeugen. Spätere
+  // Änderungen am Template dürfen einen bereits laufenden Kundenplan nicht
+  // unbemerkt verändern." Rather than a live reference, duplicating a
+  // Template creates a fully independent TrainingPlan (own items, own
+  // future edits) and records where it came from here, purely for
+  // traceability/display ("aus Template X erstellt") — this field is never
+  // read by any assignment/entitlement logic, so an edit to the original
+  // Template can never silently change a client's already-assigned plan.
+  assignedFromTemplateId String?
+  assignedFromTemplate   TrainingPlan?  @relation("TemplateAssignment", fields: [assignedFromTemplateId], references: [id])
+  assignedCopies         TrainingPlan[] @relation("TemplateAssignment")
+
   items TrainingPlanExercise[]
   trainingSessions TrainingSession[]
+
+  @@index([providerId, kind, status])
 }
 
 /// One exercise slot within a training plan, with its own order/overrides.
@@ -677,7 +720,10 @@ model TrainingPlanExercise {
   exercise       Exercise @relation(fields: [exerciseId], references: [id])
   order          Int
   setsOverride   Int[]    // if empty, use Exercise.sets as default
-  notes          String?
+  // Rest between sets for this slot specifically; null = use
+  // Exercise.pauseSeconds (§33 Schritt 3 "Pause" per-exercise field).
+  pauseSecondsOverride Int?
+  notes          String? // §33 Schritt 3 "Notiz für Kunde"
 
   // A sellable digital product can reuse the same plan-item shape when its
   // content is generated from a TrainingPlan (kind = SELLABLE) rather than
