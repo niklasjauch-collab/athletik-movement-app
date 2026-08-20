@@ -44,6 +44,8 @@ model Provider {
   trainingSessions TrainingSession[]
   products        Product[]
   adminUsers      AdminUser[]
+  customerSegments CustomerSegment[]
+  legacyPrograms   LegacyProgram[]
 }
 
 enum ServiceType {
@@ -75,6 +77,14 @@ model Service {
 /// firstName/lastName/email and sets a password (see Session below); the
 /// email is always the username (@@unique per provider, matches how a
 /// client only ever belongs to one provider's business in this model).
+enum CustomerStatus {
+  LEAD
+  ACTIVE
+  PAUSED
+  INACTIVE
+  ARCHIVED
+}
+
 model Client {
   id               String   @id @default(cuid())
   providerId       String
@@ -82,6 +92,7 @@ model Client {
   firstName        String
   lastName         String
   email            String
+  phone            String?
   // Null until the client completes registration's password step, or for
   // clients a coach creates manually without self-service login (e.g.
   // during migration). A null passwordHash means login is not possible —
@@ -89,6 +100,24 @@ model Client {
   passwordHash     String?
   stripeCustomerId String?
   createdAt        DateTime @default(now())
+
+  // --- Coach/Admin area (CoachAdmin briefing §3-§10, §41) ---
+  // Status and Segment are deliberately separate dimensions (briefing §5:
+  // "Status und Segment dürfen nicht dasselbe sein") — status is a simple
+  // lifecycle enum, segment is the flexible, admin-manageable grouping
+  // below. customerNumber is nullable at the schema level (not enforced
+  // NOT NULL) so `prisma db push` never fails against existing production
+  // rows; seed.ts backfills it for every client missing one instead —
+  // see the "customerNumber backfill" block in seed.ts.
+  status           CustomerStatus @default(ACTIVE)
+  customerNumber   String?        @unique
+  archivedAt       DateTime?
+  legacyProgramId  String?
+  legacyProgram    LegacyProgram? @relation(fields: [legacyProgramId], references: [id])
+
+  segmentMemberships CustomerSegmentMembership[]
+  accessGrant        CustomerAccessGrant?
+  notes              CoachNote[]
 
   creditBalances CreditBalance[]
   bookings       Booking[]
@@ -102,6 +131,122 @@ model Client {
   productAssessments   ProductAssessment[]
 
   @@unique([providerId, email])
+}
+
+/// Admin-manageable customer grouping (CoachAdmin briefing §6/§7) — NOT a
+/// hardcoded enum, deliberately, per the briefing's explicit "keine festen
+/// Sonderlösungen nur für einzelne Personengruppen programmieren" rule.
+/// seed.ts creates the 6 standard segments (isSystemDefault:true); the
+/// admin UI lets a coach add further custom ones later. `key` is a stable
+/// slug used for the seeded defaults (e.g. "beta-tester") so re-seeding is
+/// idempotent; custom segments get a generated slug.
+model CustomerSegment {
+  id              String   @id @default(cuid())
+  providerId      String
+  provider        Provider @relation(fields: [providerId], references: [id])
+  key             String
+  name            String
+  description     String?
+  isSystemDefault Boolean  @default(false)
+  colorHex        String?
+  createdAt       DateTime @default(now())
+
+  memberships CustomerSegmentMembership[]
+
+  @@unique([providerId, key])
+}
+
+model CustomerSegmentMembership {
+  id         String          @id @default(cuid())
+  clientId   String
+  client     Client          @relation(fields: [clientId], references: [id])
+  segmentId  String
+  segment    CustomerSegment @relation(fields: [segmentId], references: [id])
+  assignedAt DateTime        @default(now())
+  assignedBy String?         // AdminUser id; null for the seed-time default assignment
+
+  @@unique([clientId, segmentId])
+}
+
+/// The "Zugang verwalten" backing model (CoachAdmin briefing §8 Beta
+/// Tester + §9 Freunde/Family — explicitly "dasselbe System... Keinen
+/// technisch komplett anderen Kundentyp bauen", so one model serves both).
+/// One row per client (upsert from the admin UI, not an append-only
+/// history) — represents the CURRENT grant a coach has explicitly and
+/// deliberately switched on for this customer; per §8's constraint, a
+/// grant is never implied by segment membership alone, the coach chooses
+/// item-by-item what's unlocked.
+///
+/// Several fields here are plain strings/notes rather than typed relations
+/// (specialBookingLinkUrl, coachingAccessNote) because the models they'll
+/// eventually point to (BookingLink, priced ProductAccessRule) don't exist
+/// yet — those are CoachAdmin briefing P2 work. Treat these as an honest
+/// stopgap, not a finished design; migrate to typed relations when P2 lands.
+model CustomerAccessGrant {
+  id                    String    @id @default(cuid())
+  clientId              String    @unique
+  client                Client    @relation(fields: [clientId], references: [id])
+  validFrom             DateTime?
+  validUntil            DateTime? // null = unbegrenzt
+  appAccessGranted      Boolean   @default(false)
+  scanResultAccessGranted Boolean @default(false)
+  allProductsGranted    Boolean   @default(false)
+  coachingAccessNote    String?   // e.g. "kostenlos", "vergünstigt 50%", "kein Coaching enthalten"
+  sessionsGranted       Int?      // null = n/a; a number = e.g. "5 kostenlose Termine"
+  sessionsUnlimited     Boolean   @default(false)
+  specialBookingLinkUrl String?
+  note                  String?
+  createdBy             String?   // AdminUser id
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+
+  grantedProducts CustomerAccessGrantProduct[]
+}
+
+model CustomerAccessGrantProduct {
+  id       String               @id @default(cuid())
+  grantId  String
+  grant    CustomerAccessGrant  @relation(fields: [grantId], references: [id])
+  productId String
+  product  Product              @relation(fields: [productId], references: [id])
+
+  @@unique([grantId, productId])
+}
+
+/// CoachAdmin briefing §10 — a named legacy program (e.g. "Legacy 2024")
+/// carrying a legacy customer's grandfathered conditions. Fields are free
+/// text/notes rather than typed price/link overrides for the same reason
+/// as CustomerAccessGrant above: the real Product-pricing and BookingLink
+/// models this should eventually reference are P2 work. Explicit briefing
+/// rule: never auto-migrate a legacy client onto current products.
+model LegacyProgram {
+  id                 String   @id @default(cuid())
+  providerId         String
+  provider           Provider @relation(fields: [providerId], references: [id])
+  key                String
+  name               String
+  oldPriceNote       String?
+  oldBookingLinkUrl  String?
+  oldPackageSizeNote String?
+  conditionsNote     String?
+  hideNewProducts    Boolean  @default(false)
+  createdAt          DateTime @default(now())
+
+  clients Client[]
+
+  @@unique([providerId, key])
+}
+
+/// CoachAdmin briefing §41 — internal coach notes on a customer, never
+/// shown to the customer themselves.
+model CoachNote {
+  id        String   @id @default(cuid())
+  clientId  String
+  client    Client   @relation(fields: [clientId], references: [id])
+  authorId  String?  // AdminUser id
+  text      String
+  pinned    Boolean  @default(false)
+  createdAt DateTime @default(now())
 }
 
 /// The credits ledger — tracks remaining sessions per client per package,
@@ -795,6 +940,7 @@ model Product {
 
   blocks      ProgramBlock[]
   assessments ProductAssessment[]
+  accessGrants CustomerAccessGrantProduct[]
 
   @@unique([providerId, slug])
 }
