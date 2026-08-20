@@ -26,7 +26,7 @@ export default async function PortalPage() {
   const [creditBalances, nextBooking, scans, digitalOrders, plans] = await Promise.all([
     prisma.creditBalance.findMany({
       where: { clientId: client.id, creditsRemaining: { gt: 0 } },
-      include: { service: true },
+      include: { product: true },
       orderBy: { createdAt: "desc" },
     }),
     prisma.booking.findFirst({
@@ -91,7 +91,7 @@ export default async function PortalPage() {
                 {/* eslint-disable-next-line @typescript-eslint/no-explicit-any -- SANDBOX-ONLY, see src/lib/db.ts */}
                 {creditBalances.map((cb: any) => (
                   <li key={cb.id}>
-                    {cb.creditsRemaining}× {cb.service?.name ?? "Einheit"}
+                    {cb.creditsRemaining}× {cb.product?.name ?? "Einheit"}
                   </li>
                 ))}
               </ul>
