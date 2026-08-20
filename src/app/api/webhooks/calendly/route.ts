@@ -2,13 +2,17 @@
  * Calendly webhook handler.
  *
  * Handles `invitee.created` and `invitee.canceled` events (see concept
- * doc, section 4). This is a Phase 1/2 scaffold:
- *  - Phase 1: just log/acknowledge, no credits logic yet.
- *  - Phase 2: look up the booked event type, decide whether it's a
- *    single-session purchase (Calendly/Stripe already handled payment)
- *    or a package redemption, then decrement/refund the CreditBalance
- *    in the database and fire the low-balance notification when it
- *    hits zero.
+ * doc, section 4). This is a scaffold — still P4 (CoachAdmin briefing
+ * §20-§23 Calendly-Termin-Sync) work, not built yet:
+ *  - Currently: just log/acknowledge, no Booking/credits logic.
+ *  - P4: match payload.payload to a Client + Product (via
+ *    src/lib/commerceResolution.ts, same as the customer app), create a
+ *    real Booking row, resolve which PackageEntitlement it draws from,
+ *    and call src/lib/creditLedger.ts's reserveCreditForBooking() /
+ *    releaseReservedCredit() / completeCreditForBooking() (§13 — the
+ *    ledger engine already exists as of P3, this handler just needs to
+ *    call into it; do NOT reintroduce a CreditBalance-style mutable
+ *    counter). Unmatched bookings (§21) need their own handling too.
  *
  * TODO before going live:
  *  - Verify the webhook signature using CALENDLY_WEBHOOK_SIGNING_KEY
@@ -24,13 +28,16 @@ export async function POST(request: Request) {
 
   switch (eventType) {
     case "invitee.created":
-      // TODO: match payload.payload to a Client + Service, create a Booking,
-      // and if the Service is a PACKAGE, decrement the matching CreditBalance.
+      // TODO(P4): match payload.payload to a Client + Product, create a
+      // Booking, and (if the Product is a COACHING_PACKAGE) call
+      // src/lib/creditLedger.ts's reserveCreditForBooking().
       console.log("[calendly webhook] invitee.created", payload?.payload?.uri);
       break;
     case "invitee.canceled":
-      // TODO: mark the Booking as CANCELED and refund the credit if within
-      // the cancellation window.
+      // TODO(P4): mark the Booking as CANCELED, then call
+      // releaseReservedCredit() if on-time (§13) or, per
+      // Product.consumeCreditOnLateCancel, completeCreditForBooking()
+      // if within Product.lateCancelHours of the appointment.
       console.log("[calendly webhook] invitee.canceled", payload?.payload?.uri);
       break;
     default:
