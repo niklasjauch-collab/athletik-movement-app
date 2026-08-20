@@ -64,6 +64,7 @@ export default async function AdminDashboardPage() {
 
   const links = [
     { href: "/admin/customers", label: "Kunden", description: "Kundenliste, Segmente, Zugang, Scan-Upload" },
+    { href: "/admin/plans", label: "Trainingspläne", description: "Templates, Kundenpläne, Shop-Pläne, Plan Builder" },
     { href: "/admin/appointments", label: "Termine", description: "Calendly-Sync, Kontingent-Zuordnung, No-Show" },
     { href: "/admin/products", label: "Produkte", description: "Preise, Sonderpreise, Sichtbarkeit" },
     { href: "/admin/booking-links", label: "Buchungslinks", description: "Calendly-Links pro Produkt/Segment" },
