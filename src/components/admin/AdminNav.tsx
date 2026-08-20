@@ -9,11 +9,11 @@ import { usePathname } from "next/navigation";
 // Kleinigkeit einen eigenen Menüpunkt erstellen"). Desktop: left sidebar.
 // Mobile: this same list behind a hamburger toggle.
 //
-// Several routes below don't exist yet (Trainingspläne/P5, Termine/P4,
-// Produkte+Buchungslinks/P2, Zahlungen/P7, Analytics/P8, Einstellungen/P9)
-// — they're still listed (so the nav's shape matches the briefing's final
-// picture and Niklas can see what's coming) but rendered disabled with a
-// "bald" tag instead of being a dead 404 link.
+// Several routes below don't exist yet (Trainingspläne/P5, Zahlungen/P7,
+// Analytics/P8, Einstellungen/P9) — they're still listed (so the nav's
+// shape matches the briefing's final picture and Niklas can see what's
+// coming) but rendered disabled with a "bald" tag instead of being a dead
+// 404 link. Termine (P4) and Produkte+Buchungslinks (P2) are now enabled.
 type NavItem = { href: string; label: string; enabled: boolean };
 
 const NAV_ITEMS: NavItem[] = [
@@ -22,7 +22,7 @@ const NAV_ITEMS: NavItem[] = [
   { href: "/admin/scans", label: "SmartMotionScan", enabled: true },
   { href: "/admin/plans", label: "Trainingspläne", enabled: false },
   { href: "/admin/exercises", label: "Übungen", enabled: true },
-  { href: "/admin/appointments", label: "Termine", enabled: false },
+  { href: "/admin/appointments", label: "Termine", enabled: true },
   { href: "/admin/products", label: "Produkte", enabled: true },
   { href: "/admin/booking-links", label: "Buchungslinks", enabled: true },
   { href: "/admin/payments", label: "Zahlungen", enabled: false },
