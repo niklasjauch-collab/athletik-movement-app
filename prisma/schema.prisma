@@ -116,6 +116,13 @@ model Product {
   grantedTo      CustomerAccessGrantProduct[]
 
   @@unique([providerId, key])
+  // Explicit @@map: this is a NEW model (P2) that happens to share the
+  // "Product" name with the pre-existing SmartMotion catalog model
+  // (renamed to TrainingProgram below, which itself @@map's back onto
+  // the physical "Product" table to keep its existing rows). Without
+  // this, `prisma db push` would try to put both models on a table
+  // named "Product" and fail/collide. See TrainingProgram's doc comment.
+  @@map("CommerceProduct")
 }
 
 enum PriceOverrideScope {
@@ -1088,6 +1095,13 @@ model TrainingProgram {
   products    Product[] // commercial listings (P2) that sell this program
 
   @@unique([providerId, slug])
+  // @@map: this model was renamed from `Product` to `TrainingProgram`
+  // (Runde 5 Teil 4 / P2, see doc comment above). Without this, `prisma
+  // db push` would treat the rename as "drop the old Product table,
+  // create an empty TrainingProgram table" — losing the 22 existing
+  // catalog rows (and cascading to ProgramBlock etc.) instead of just
+  // altering the existing table in place.
+  @@map("Product")
 }
 
 /// One 4-week block of a TrainingProgram's 12-week program (weeks 1-4,
@@ -1097,7 +1111,12 @@ model TrainingProgram {
 /// "Session-Logik").
 model ProgramBlock {
   id                String          @id @default(cuid())
-  trainingProgramId String
+  // @map: the underlying column is still named "productId" (pre-rename,
+  // see TrainingProgram's doc comment) — 66 existing rows already have
+  // it set. Renaming the Prisma field without @map would make `prisma
+  // db push` try to add a new required "trainingProgramId" column with
+  // no data, which fails on those existing rows.
+  trainingProgramId String          @map("productId")
   trainingProgram   TrainingProgram @relation(fields: [trainingProgramId], references: [id])
 
   weekStart Int // 1, 5, or 9
@@ -1159,7 +1178,9 @@ model TrainingProgramAssessment {
   id        String  @id @default(cuid())
   clientId  String
   client    Client  @relation(fields: [clientId], references: [id])
-  trainingProgramId String
+  // @map for the same reason as ProgramBlock.trainingProgramId above —
+  // preserves the pre-rename "productId" column in place.
+  trainingProgramId String          @map("productId")
   trainingProgram   TrainingProgram @relation(fields: [trainingProgramId], references: [id])
 
   assessmentWeek Int // 0, 4, 8, or 12
