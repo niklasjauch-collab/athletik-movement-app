@@ -68,6 +68,7 @@ const TABS = [
 // PlanAssignment/Payment) are P5/P7 work, not built in this pass. Where
 // an OLDER, differently-shaped model already holds some real data
 // (TrainingSession, Order), that tab shows it rather than hiding it.
+// Trainingspläne (P5) is now real too — see that tab block below.
 export default async function CustomerDetailPage({
   params,
   searchParams,
@@ -90,7 +91,10 @@ export default async function CustomerDetailPage({
       bookings: { orderBy: { startTime: "desc" }, take: 20, include: { product: { select: { id: true, name: true } } } },
       trainingSessions: { orderBy: { createdAt: "desc" }, take: 20 },
       orders: { orderBy: { createdAt: "desc" }, take: 20, include: { digitalProduct: true } },
-      trainingPlans: { select: { id: true } },
+      trainingPlans: {
+        orderBy: { updatedAt: "desc" },
+        include: { assignedFromTemplate: { select: { id: true, title: true } }, _count: { select: { items: true } } },
+      },
       movementScans: {
         orderBy: { uploadedAt: "desc" },
         include: {
@@ -212,7 +216,7 @@ export default async function CustomerDetailPage({
             <p className="text-sm text-ink-700/70">
               Kunde seit {client.createdAt.toLocaleDateString("de-DE")}.{" "}
               {client.movementScans.length} SmartMotionScan(s), {client.notes.length} Notiz(en),{" "}
-              {client.trainingPlans?.length ?? 0} Trainingsplan(-pläne, altes Format).
+              {client.trainingPlans?.length ?? 0} Trainingsplan(-pläne).
             </p>
             {client.accessGrant && (
               <div className="rounded-lg border border-ink-900/10 p-4 text-sm">
@@ -328,9 +332,46 @@ export default async function CustomerDetailPage({
         )}
 
         {tab === "trainingsplaene" && (
-          <p className="text-sm text-ink-700/50">
-            Die versionierte Trainingsplan-Verwaltung (Templates, Kundenpläne, Duplizieren) kommt mit Phase P5.
-          </p>
+          <div>
+            <p className="text-sm text-ink-700/70">
+              Individuelle Pläne für diesen Kunden. Neue Pläne per Template + „Duplizieren &amp; Kunde zuweisen“ unter{" "}
+              <Link href="/admin/plans?tab=templates" className="underline hover:text-brand-700">
+                Trainingspläne
+              </Link>
+              .
+            </p>
+            {client.trainingPlans.length === 0 ? (
+              <p className="mt-4 text-sm text-ink-700/50">Noch kein Trainingsplan zugewiesen.</p>
+            ) : (
+              <ul className="mt-4 flex flex-col gap-2">
+                {/* eslint-disable-next-line @typescript-eslint/no-explicit-any -- SANDBOX-ONLY, see src/lib/db.ts */}
+                {client.trainingPlans.map((p: any) => (
+                  <li key={p.id} className="rounded-lg border border-ink-900/10 p-4">
+                    <Link href={`/admin/plans/${p.id}`} className="font-medium text-ink-900 hover:underline">
+                      {p.title}
+                    </Link>
+                    <p className="mt-1 text-xs text-ink-700/50">
+                      {p._count.items} Übung(en)
+                      {p.assignedFromTemplate && <> · aus Template {p.assignedFromTemplate.title}</>}
+                      {" · zuletzt geändert "}
+                      {p.updatedAt.toLocaleDateString("de-DE")}
+                    </p>
+                    <span
+                      className={`mt-2 inline-block rounded-full px-2 py-0.5 text-xs font-medium ${
+                        p.status === "PUBLISHED"
+                          ? "bg-brand-100 text-brand-700"
+                          : p.status === "ARCHIVED"
+                            ? "bg-amber-100 text-amber-700"
+                            : "bg-slate-100 text-slate-600"
+                      }`}
+                    >
+                      {p.status === "PUBLISHED" ? "Veröffentlicht" : p.status === "ARCHIVED" ? "Archiviert" : "Entwurf"}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
         )}
 
         {tab === "scan" && (
