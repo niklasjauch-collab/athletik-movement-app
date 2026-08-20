@@ -883,8 +883,27 @@ model CorrectivePlan {
 
   generatedAt DateTime @default(now())
 
+  // CoachAdmin briefing §36/§69: a plan should be reviewed by the coach
+  // before the client sees it ("Plan überprüfen -> veröffentlichen ->
+  // Kunde erhält Zugriff"). Default is deliberately PUBLISHED, not
+  // REVIEW_REQUIRED: when this column is added, Postgres backfills every
+  // EXISTING row with the column default, and all plans created before
+  // this review workflow existed were already visible to their client —
+  // this default preserves that (no client silently loses access to a
+  // plan they could already see). Only the creation path in
+  // src/app/api/clients/[id]/scans/route.ts explicitly sets
+  // REVIEW_REQUIRED for newly generated plans going forward, so the
+  // review gate only applies to plans generated after this shipped.
+  status      CorrectivePlanStatus @default(PUBLISHED)
+  publishedAt DateTime? // set when status flips to PUBLISHED; null for legacy rows (fall back to generatedAt in the UI) and for plans still awaiting review
+
   items CorrectivePlanItem[]
   trainingSessions TrainingSession[]
+}
+
+enum CorrectivePlanStatus {
+  REVIEW_REQUIRED
+  PUBLISHED
 }
 
 /// One exercise slot in a CorrectivePlan, tagged with which phase it
