@@ -658,6 +658,85 @@ async function main() {
 
   console.log(`Products: ${defaultProductsUpserted} default product(s) ensured, ${defaultBookingLinksUpserted} booking link(s) ensured.`);
 
+  // --- P3 (Runde 5 Teil 5): one-time migration of any legacy CreditBalance
+  // rows into the new Kontingent-Ledger (PackageEntitlement +
+  // CreditLedgerEntry) — see schema.prisma's CreditBalance doc comment for
+  // why that old model itself stays untouched rather than renamed/removed.
+  // Idempotent via the unique migratedFromCreditBalanceId marker, so this
+  // is a no-op on every redeploy after the first one. Expected to migrate
+  // 0 rows in practice (Runde 3's notes confirm CreditBalance never had a
+  // real write path — no purchase flow has ever run) but this exists so
+  // no manually-inserted test data would silently get lost when the admin
+  // UI and customer portal stop reading that model.
+  const legacyCreditBalances = await prisma.creditBalance.findMany({
+    where: { creditsRemaining: { gt: 0 } },
+    include: { product: true },
+  });
+  let legacyCreditBalancesMigrated = 0;
+  for (const cb of legacyCreditBalances) {
+    const already = await prisma.packageEntitlement.findUnique({
+      where: { migratedFromCreditBalanceId: cb.id },
+    });
+    if (already) continue;
+    await prisma.packageEntitlement.create({
+      data: {
+        clientId: cb.clientId,
+        productId: cb.productId,
+        label: cb.product?.name ?? "Migriertes Kontingent",
+        source: "legacy_migration",
+        migratedFromCreditBalanceId: cb.id,
+        ledgerEntries: {
+          create: {
+            type: "PACKAGE_PURCHASE",
+            totalDelta: cb.creditsRemaining,
+            reason: `Migriert aus altem Kontingent-System (Quelle: ${cb.source})`,
+          },
+        },
+      },
+    });
+    legacyCreditBalancesMigrated++;
+  }
+  console.log(`Legacy credit balances: ${legacyCreditBalancesMigrated} migrated into PackageEntitlement.`);
+
+  // --- P3: keep every existing CustomerAccessGrant's
+  // sessionsGranted/sessionsUnlimited (§9, built in P1) backed by a real
+  // PackageEntitlement — mirrors src/lib/creditLedger.ts's
+  // syncAccessGrantEntitlement() (kept as a hand-written duplicate here
+  // rather than an import, matching this file's existing pattern of never
+  // importing from src/lib — see the top-of-file imports). The API route
+  // (/api/admin/customers/[id]/access-grant) calls the real helper on every
+  // future save; this block only needs to catch grants that already
+  // existed before this migration shipped.
+  const grantsWithSessions = await prisma.customerAccessGrant.findMany({
+    where: { OR: [{ sessionsUnlimited: true }, { sessionsGranted: { gt: 0 } }] },
+  });
+  let accessGrantEntitlementsSynced = 0;
+  for (const grant of grantsWithSessions) {
+    const existing = await prisma.packageEntitlement.findFirst({
+      where: { clientId: grant.clientId, source: "access_grant_sync" },
+    });
+    if (existing) continue; // already synced (by this block on a previous run, or by the API route) — never re-derive on top of manual corrections since
+    const targetTotal = grant.sessionsUnlimited ? 0 : (grant.sessionsGranted ?? 0);
+    await prisma.packageEntitlement.create({
+      data: {
+        clientId: grant.clientId,
+        label: grant.sessionsUnlimited ? "Freigabe: unbegrenzte Termine" : "Freigabe: kostenlose Termine",
+        unlimited: grant.sessionsUnlimited,
+        source: "access_grant_sync",
+        linkedAccessGrantId: grant.clientId,
+        ledgerEntries: {
+          create: {
+            type: "PACKAGE_PURCHASE",
+            totalDelta: targetTotal,
+            reason: "Automatisch aus Zugang-Freigabe synchronisiert",
+          },
+        },
+      },
+    });
+    accessGrantEntitlementsSynced++;
+  }
+  console.log(`Access-grant entitlements: ${accessGrantEntitlementsSynced} synced from existing CustomerAccessGrant rows.`);
+
   // --- customerNumber backfill (see schema.prisma's Client.customerNumber
   // comment for why this is a runtime backfill rather than a NOT NULL
   // migration) --- assigns "AM-0001"-style numbers to any client that
