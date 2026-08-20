@@ -81,6 +81,7 @@ export default async function CustomerDetailPage({
       creditBalances: { include: { service: true } },
       trainingSessions: { orderBy: { createdAt: "desc" }, take: 20 },
       orders: { orderBy: { createdAt: "desc" }, take: 20, include: { digitalProduct: true } },
+      trainingPlans: { select: { id: true } },
       movementScans: {
         orderBy: { uploadedAt: "desc" },
         include: {
