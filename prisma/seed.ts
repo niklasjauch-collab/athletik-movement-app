@@ -27,24 +27,31 @@
 //
 // Also seeds the 22 SmartMotion sellable programs (see README
 // "SmartMotion-Programme" and SmartMotion_App_22_Programme_Claude_
-// MasterSpec.md at the repo root) — data sources:
+// MasterSpec_v2_126_Uebungen.md in the project) — data sources:
 //   - prisma/seed-data/smartmotion-exercise-registry.json,
 //     smartmotion-code-to-name.json, smartmotion-stub-exercises.json:
-//     the spec's 116-entry "verbindliche" exercise registry (E001-E116),
-//     matched against the exercises above by name, plus placeholder
-//     Exercise rows (isPublished:false) for the ones that don't exist
-//     yet — see scripts/match_smartmotion_exercises.py and
-//     scripts/generate_smartmotion_seed_data.py, which produced these
-//     from the spec (not hand-authored).
+//     the spec's 126-entry "verbindliche" exercise registry (E001-E126,
+//     the original 71 BodyControl-migrated + all 55 SmartMotionApproach
+//     exercises from the Filming Guide), matched against the exercises
+//     above by name, plus placeholder Exercise rows (isPublished:false)
+//     for the ones that don't have a video yet — see
+//     scripts/match_smartmotion_exercises.py, scripts/generate_
+//     smartmotion_seed_data.py, and scripts/merge_filming_guide_into_
+//     seed_data.py, which produced/enriched these from the specs (not
+//     hand-authored).
 //   - prisma/seed-data/smartmotion-products-catalog.json: all 22
 //     products' catalog/marketing fields (title, hook, description,
-//     price, ...), parsed from the spec by
-//     scripts/parse_smartmotion_spec.py.
+//     price, ...), parsed from the v2 spec by
+//     scripts/parse_smartmotion_spec_v2.py (supersedes the v1-only
+//     scripts/parse_smartmotion_spec.py).
 //   - prisma/seed-data/smartmotion-programs.json: full 12-week
-//     block/session/exercise structure for the 10 LAUNCH products only
-//     (P01-P06, P08, P09, P15, P18) — the other 12 exist as Product rows
-//     (isPublished:false) with no ProgramBlock data yet; see README for
-//     why this round stopped there.
+//     block/session/exercise structure for ALL 22 products (v2 extended
+//     this beyond v1's 10-launch-products-only scope once the 55 new
+//     exercises made every product's plan fully specifiable) — only the
+//     10 launch products (P01-P06, P08, P09, P15, P18) are
+//     `isPublished:true`; the other 12 are seeded in full but stay
+//     `isPublished:false` per the spec's launch strategy, not because
+//     their data is incomplete.
 
 import { PrismaClient, CorrectivePhase, BibCategory, ExerciseLevel, ProductCategory } from "@prisma/client";
 import exercisesData from "./seed-data/exercises.json";
@@ -53,7 +60,23 @@ import draftExercisesData from "./seed-data/draft-exercises.json";
 import smartMotionCodeToNameData from "./seed-data/smartmotion-code-to-name.json";
 import smartMotionStubExercisesData from "./seed-data/smartmotion-stub-exercises.json";
 import smartMotionProductsCatalogData from "./seed-data/smartmotion-products-catalog.json";
-import smartMotionProgramsData from "./seed-data/smartmotion-programs.json";
+// smartmotion-programs.json (full 22-product/12-week dataset, ~200KB) is
+// split into 4 parts purely for GitHub-web-upload commit-size reasons (the
+// single combined file repeatedly failed to commit via the browser upload
+// flow in the deployment sandbox) — content-wise this is identical to one
+// file, just chunked. See scripts/parse_smartmotion_spec_v2.py, which
+// writes the un-split smartmotion-programs.json; scripts/split_programs.py
+// (or an equivalent one-off) chunks it into these 4 parts for upload.
+import smartMotionProgramsPart1 from "./seed-data/smartmotion-programs-1.json";
+import smartMotionProgramsPart2 from "./seed-data/smartmotion-programs-2.json";
+import smartMotionProgramsPart3 from "./seed-data/smartmotion-programs-3.json";
+import smartMotionProgramsPart4 from "./seed-data/smartmotion-programs-4.json";
+const smartMotionProgramsData = [
+  ...smartMotionProgramsPart1,
+  ...smartMotionProgramsPart2,
+  ...smartMotionProgramsPart3,
+  ...smartMotionProgramsPart4,
+];
 
 const prisma = new PrismaClient();
 
