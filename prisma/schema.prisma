@@ -34,7 +34,7 @@ model Provider {
   calendlyAccountUri String? // Calendly organization/user URI
   stripeAccountId    String? // Stripe Connect account id
 
-  services       Service[]
+  products        Product[]
   clients        Client[]
   digitalProducts DigitalProduct[]
   exercises       Exercise[]
@@ -42,34 +42,156 @@ model Provider {
   movementScans   MovementScan[]
   correctivePlans CorrectivePlan[]
   trainingSessions TrainingSession[]
-  products        Product[]
+  trainingPrograms TrainingProgram[]
   adminUsers      AdminUser[]
   customerSegments CustomerSegment[]
   legacyPrograms   LegacyProgram[]
+  bookingLinks     BookingLink[]
 }
 
-enum ServiceType {
-  SINGLE
-  PACKAGE
-  DIGITAL
+// CoachAdmin briefing §24/§56/§65 — the commercial catalog: what a
+// customer can actually buy or be granted, kept strictly separate from
+// WHERE they book it (BookingLink), WHAT it entitles them to (P3's
+// Kontingent-Ledger) and WHAT they actually booked (Booking/Appointment).
+// This model replaces the never-wired-up Phase-1 "Service" scaffold
+// (SINGLE/PACKAGE/DIGITAL, zero seed data, zero UI — safe to fold into
+// this rather than keep as a second, competing catalog concept).
+enum ProductType {
+  COACHING_SESSION
+  COACHING_PACKAGE
+  SMARTMOTION_SCAN
+  DIGITAL_TRAINING_PLAN
+  COMPLIMENTARY
 }
 
-/// A bookable or purchasable offering: a single session, a session package, or a digital product.
-model Service {
-  id                  String      @id @default(cuid())
-  providerId          String
-  provider            Provider    @relation(fields: [providerId], references: [id])
-  name                String
-  description         String?
-  type                ServiceType
-  priceCents          Int
-  currency            String      @default("EUR")
-  calendlyEventTypeUri String?    // null for DIGITAL services
-  packageCredits      Int?        // number of sessions included, only for PACKAGE
-  createdAt           DateTime    @default(now())
-  updatedAt           DateTime    @updatedAt
+// §25: who can even see/buy this product.
+enum ProductVisibility {
+  ALL
+  SEGMENTS
+  CUSTOMERS
+}
 
-  bookings CreditBalance[]
+/// A sellable/grantable offering (§24). `credits` is only meaningful for
+/// COACHING_PACKAGE (how many sessions it contains); `validityDays` is the
+/// package's/plan's expiry window from purchase (§17 territory, read here
+/// only). `trainingProgramId`/`digitalProductId` are the two possible
+/// content sources for a DIGITAL_TRAINING_PLAN product — a SmartMotion
+/// 12-week program or a generic downloadable plan — deliberately both
+/// optional and mutually-informal (never both meaningfully set at once)
+/// rather than a polymorphic union, since Prisma has no clean union type
+/// and this keeps the common (non-digital-plan) product types simple.
+/// Booking links for this product live on BookingLink.productId (§19
+/// priority levels 2-4 all resolve from that one table by how it's
+/// scoped — see src/lib/commerceResolution.ts); the individual-customer
+/// override (level 1) is CustomerAccessGrant.specialBookingLinkUrl.
+model Product {
+  id         String            @id @default(cuid())
+  providerId String
+  provider   Provider          @relation(fields: [providerId], references: [id])
+  key        String            // stable slug for idempotent seeding + future stable references, e.g. "smartmotion-scan" (same pattern as CustomerSegment.key/LegacyProgram.key)
+  name       String
+  description String?
+  type       ProductType
+  priceCents Int
+  currency   String            @default("EUR")
+  credits    Int?              // sessions included, COACHING_PACKAGE only
+  validityDays Int?            // e.g. 365 — null = unbegrenzt
+  stripePriceId String?        // set once Stripe/P7 is wired up
+  active     Boolean           @default(true)
+  visibility ProductVisibility @default(ALL)
+  visibleToCustomers Boolean   @default(true) // admin kill-switch independent of `active` (e.g. temporarily hide without deactivating an in-progress package)
+
+  trainingProgramId String?
+  trainingProgram   TrainingProgram? @relation(fields: [trainingProgramId], references: [id])
+  digitalProductId  String?
+  digitalProduct    DigitalProduct?  @relation(fields: [digitalProductId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  creditBalances CreditBalance[]
+  prices         ProductPrice[]
+  accessRules    ProductAccessRule[]
+  bookingLinks   BookingLink[]
+  grantedTo      CustomerAccessGrantProduct[]
+
+  @@unique([providerId, key])
+}
+
+enum PriceOverrideScope {
+  CUSTOMER
+  SEGMENT
+}
+
+/// §26 Sonderpreise — never duplicate a Product for a special price,
+/// layer an override instead. Resolution priority: customer > segment >
+/// Product.priceCents default (see src/lib/commerceResolution.ts).
+model ProductPrice {
+  id         String             @id @default(cuid())
+  productId  String
+  product    Product            @relation(fields: [productId], references: [id])
+  scope      PriceOverrideScope
+  customerId String?
+  customer   Client?            @relation(fields: [customerId], references: [id])
+  segmentId  String?
+  segment    CustomerSegment?   @relation(fields: [segmentId], references: [id])
+  priceCents Int
+  currency   String             @default("EUR")
+  reasonNote String?            // "Freund", "Kulanz", "Partnerpreis" — feeds P8 "Produktwert vs. gezahlt" reporting
+  createdBy  String?            // AdminUser id
+  createdAt  DateTime           @default(now())
+
+  @@unique([productId, customerId])
+  @@unique([productId, segmentId])
+}
+
+/// §25 visibility — only meaningful (rows expected) when the owning
+/// Product.visibility is SEGMENTS or CUSTOMERS; one row per allowed
+/// segment/customer.
+model ProductAccessRule {
+  id         String           @id @default(cuid())
+  productId  String
+  product    Product          @relation(fields: [productId], references: [id])
+  segmentId  String?
+  segment    CustomerSegment? @relation(fields: [segmentId], references: [id])
+  customerId String?
+  customer   Client?          @relation(fields: [customerId], references: [id])
+  createdAt  DateTime         @default(now())
+
+  @@unique([productId, segmentId])
+  @@unique([productId, customerId])
+}
+
+/// §18 Calendly Link Manager. `productId`/`segmentId` scope a link and
+/// together drive all four §19 resolution levels from this one table —
+/// no separate "default link" field needed on Product:
+///   - both set        → segment-specific link for that exact product
+///   - segmentId only   → segment-wide link (any product)          (level 2)
+///   - productId only   → this product's own default link           (level 3)
+///   - neither set      → provider-wide "Standard-Link" fallback     (level 4)
+/// The individual-customer override (§19 priority level 1) is
+/// deliberately NOT a field here — it already exists and works as
+/// CustomerAccessGrant.specialBookingLinkUrl (built in P1, before this
+/// model existed); duplicating it here would create two competing
+/// sources of truth for the same override.
+model BookingLink {
+  id          String           @id @default(cuid())
+  providerId  String
+  provider    Provider         @relation(fields: [providerId], references: [id])
+  key         String?          // stable slug for idempotent seeding, e.g. "smartmotionscan-standard" — nullable since admin-created links after seed time don't need one
+  name        String
+  url         String
+  type        String?          // free-text label, e.g. "Standard", "Beta", "Partner" — not an enum, spec gives examples not a fixed set
+  productId   String?
+  product     Product?         @relation(fields: [productId], references: [id])
+  segmentId   String?
+  segment     CustomerSegment? @relation(fields: [segmentId], references: [id])
+  active      Boolean          @default(true)
+  description String?
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+
+  @@unique([providerId, key])
 }
 
 /// A client of a specific Provider (not a platform-wide user — scoped per
@@ -128,7 +250,9 @@ model Client {
   trainingSessions TrainingSession[]
   sessions             Session[]
   passwordResetTokens  PasswordResetToken[]
-  productAssessments   ProductAssessment[]
+  trainingProgramAssessments TrainingProgramAssessment[]
+  productPriceOverrides ProductPrice[]
+  productAccessRules    ProductAccessRule[]
 
   @@unique([providerId, email])
 }
@@ -152,6 +276,9 @@ model CustomerSegment {
   createdAt       DateTime @default(now())
 
   memberships CustomerSegmentMembership[]
+  productPriceOverrides ProductPrice[]
+  productAccessRules    ProductAccessRule[]
+  bookingLinks          BookingLink[]
 
   @@unique([providerId, key])
 }
@@ -177,11 +304,17 @@ model CustomerSegmentMembership {
 /// grant is never implied by segment membership alone, the coach chooses
 /// item-by-item what's unlocked.
 ///
-/// Several fields here are plain strings/notes rather than typed relations
-/// (specialBookingLinkUrl, coachingAccessNote) because the models they'll
-/// eventually point to (BookingLink, priced ProductAccessRule) don't exist
-/// yet — those are CoachAdmin briefing P2 work. Treat these as an honest
-/// stopgap, not a finished design; migrate to typed relations when P2 lands.
+/// `specialBookingLinkUrl` and `coachingAccessNote` stay plain strings even
+/// now that P2's BookingLink/ProductPrice exist (Runde 5 Teil 4): this
+/// field IS the §19 priority-1 individual-customer link override by
+/// design (see BookingLink's doc comment) — a raw URL rather than a
+/// BookingLink FK precisely so per-customer overrides never require
+/// creating a throwaway BookingLink row just to hold one URL.
+/// `allProductsGranted`/`sessionsGranted` remain free-standing rather than
+/// generating real ProductPrice(0€)/CreditBalance rows — this model
+/// records the coach's INTENT ("this client gets X for free"), turning
+/// that into actual entitlement rows is still P3 (Kontingent-Ledger)
+/// work.
 model CustomerAccessGrant {
   id                    String    @id @default(cuid())
   clientId              String    @unique
@@ -214,11 +347,13 @@ model CustomerAccessGrantProduct {
 }
 
 /// CoachAdmin briefing §10 — a named legacy program (e.g. "Legacy 2024")
-/// carrying a legacy customer's grandfathered conditions. Fields are free
-/// text/notes rather than typed price/link overrides for the same reason
-/// as CustomerAccessGrant above: the real Product-pricing and BookingLink
-/// models this should eventually reference are P2 work. Explicit briefing
-/// rule: never auto-migrate a legacy client onto current products.
+/// carrying a legacy customer's grandfathered conditions. Fields stay
+/// free text/notes rather than typed Product/BookingLink relations even
+/// now that P2's models exist: §10's explicit rule is that a legacy
+/// client is NEVER auto-migrated onto current products, so a legacy
+/// client's real conditions were never meant to resolve through the
+/// normal Product/BookingLink/ProductPrice machinery in the first place
+/// — this stays a deliberately separate, informal record.
 model LegacyProgram {
   id                 String   @id @default(cuid())
   providerId         String
@@ -256,8 +391,8 @@ model CreditBalance {
   id               String   @id @default(cuid())
   clientId         String
   client           Client   @relation(fields: [clientId], references: [id])
-  serviceId        String
-  service          Service  @relation(fields: [serviceId], references: [id])
+  productId        String
+  product          Product  @relation(fields: [productId], references: [id])
   creditsRemaining Int
   source           String   // "calendly_meeting_package" | "manual" | "stripe_checkout"
   lowBalanceNotifiedAt DateTime? // set once we've notified provider+client at 0 credits
@@ -316,6 +451,7 @@ model DigitalProduct {
   createdAt   DateTime @default(now())
 
   orders Order[]
+  products Product[] // P2 commercial listings (type=DIGITAL_TRAINING_PLAN) wrapping this downloadable plan
 
   planExercises TrainingPlanExercise[] // digital plans are also built from Exercise items
 }
@@ -882,18 +1018,21 @@ model AdminPasswordResetToken {
 // SmartMotion_App_22_Programme_Claude_MasterSpec.md (kept at the repo
 // root), specifically its section 10 "Claude – technische
 // Umsetzungsanforderungen". Distinct from CorrectivePlan (which is
-// auto-generated per-client from a MovementScan's findings): a Product
-// here is a pre-authored, sellable 12-week program a client purchases
-// and follows on a fixed schedule, not something generated from their
-// own assessment data.
+// auto-generated per-client from a MovementScan's findings): a
+// TrainingProgram here is a pre-authored, sellable 12-week program a
+// client purchases and follows on a fixed schedule, not something
+// generated from their own assessment data. (Model renamed from
+// `Product` to `TrainingProgram` in Runde 5 Teil 4/P2 — see that
+// model's own doc comment for why.)
 //
 // Seeded from prisma/seed-data/smartmotion-products-catalog.json (all 22,
 // catalog fields only) and prisma/seed-data/smartmotion-programs.json
 // (full week-by-week session structure, LAUNCH PRODUCTS ONLY for now --
 // see README "SmartMotion-Programme" for why the other 12 exist as
-// Product rows with isPublished=false but no ProgramBlock rows yet).
+// TrainingProgram rows with isPublished=false but no ProgramBlock rows
+// yet).
 
-enum ProductCategory {
+enum TrainingProgramCategory {
   HALTUNG                        // "Haltung" bundle (P01-P04)
   BESCHWERDEN_RETURN_TO_MOVEMENT // "Beschwerden & Return to Movement" (P05-P22)
 }
@@ -903,7 +1042,13 @@ enum ProductCategory {
 /// week content lives in ProgramBlock/ProgramSession/ProgramSessionExercise
 /// below, kept separate per the spec's "Exercise-Content nicht in
 /// Programme kopieren" rule (exercises are referenced, never duplicated).
-model Product {
+/// Renamed from `Product` (Runde 5 Teil 4 / P2) once the CoachAdmin
+/// briefing's own "Product" concept (§24, commercial catalog — price,
+/// booking link, visibility) needed that name for real; this model is
+/// specifically the SmartMotion program CONTENT, which a commercial
+/// Product (type=DIGITAL_TRAINING_PLAN) can optionally wrap via
+/// Product.trainingProgramId.
+model TrainingProgram {
   id         String          @id @default(cuid())
   providerId String
   provider   Provider        @relation(fields: [providerId], references: [id])
@@ -913,7 +1058,7 @@ model Product {
   // used as a foreign key anywhere.
   specId     String          @unique
   slug       String
-  category   ProductCategory
+  category   TrainingProgramCategory
   title      String
 
   // --- Verkaufspsychologische Kurzbeschreibung (verbatim from the spec,
@@ -923,7 +1068,7 @@ model Product {
   forYou      String @db.Text // "Für dich, wenn:"
   cta         String
 
-  priceCents Int    // parsed from the spec's "Preis" field, e.g. 7900 for "79 €"
+  priceCents Int    // parsed from the spec's "Preis" field, e.g. 7900 for "79 €" -- catalog/reference value only; the commercial Product wrapping this program is the actual sellable price of record once P2's Product exists for it
   priceNote  String? @db.Text // full raw price text when there's more than a flat price, e.g. "79 € / 90 Tage (69 € optionaler Launch-Test)"
   accessDays Int    @default(90)
 
@@ -939,20 +1084,21 @@ model Product {
   updatedAt DateTime @updatedAt
 
   blocks      ProgramBlock[]
-  assessments ProductAssessment[]
-  accessGrants CustomerAccessGrantProduct[]
+  assessments TrainingProgramAssessment[]
+  products    Product[] // commercial listings (P2) that sell this program
 
   @@unique([providerId, slug])
 }
 
-/// One 4-week block of a Product's 12-week program (weeks 1-4, 5-8, or
-/// 9-12 -- see spec section 3 "Globale Dosierung"). Holds the block-level
-/// progression rule; the actual exercises live on its two ProgramSessions
-/// (A/B, alternated across the block per spec section 3's "Session-Logik").
+/// One 4-week block of a TrainingProgram's 12-week program (weeks 1-4,
+/// 5-8, or 9-12 -- see spec section 3 "Globale Dosierung"). Holds the
+/// block-level progression rule; the actual exercises live on its two
+/// ProgramSessions (A/B, alternated across the block per spec section 3's
+/// "Session-Logik").
 model ProgramBlock {
-  id        String  @id @default(cuid())
-  productId String
-  product   Product @relation(fields: [productId], references: [id])
+  id                String          @id @default(cuid())
+  trainingProgramId String
+  trainingProgram   TrainingProgram @relation(fields: [trainingProgramId], references: [id])
 
   weekStart Int // 1, 5, or 9
   weekEnd   Int // 4, 8, or 12
@@ -961,7 +1107,7 @@ model ProgramBlock {
 
   sessions ProgramSession[]
 
-  @@unique([productId, weekStart])
+  @@unique([trainingProgramId, weekStart])
 }
 
 /// Session "A" or "B" within a ProgramBlock -- clients alternate between
@@ -1001,25 +1147,25 @@ enum AssessmentStatus {
   MEDICAL_REVIEW // flagged for professional follow-up, not a self-service decision
 }
 
-/// One Test/Re-Test checkpoint for a client's Product (spec section 4),
-/// taken at week 0/4/8/12 under identical conditions. `testValues` is
-/// deliberately Json: each product's test protocol is different (e.g.
-/// P01's Overhead Squat 0/1/2 scores vs. P09's Sit-to-Stand rep count),
-/// so a fixed relational shape would mean a wide, mostly-null table --
-/// Json keeps each product's own test fields self-describing. This is
-/// explicitly NOT a diagnosis (spec rule #5) -- `status` drives
-/// progress/stay/regress copy, never a clinical claim.
-model ProductAssessment {
+/// One Test/Re-Test checkpoint for a client's TrainingProgram (spec
+/// section 4), taken at week 0/4/8/12 under identical conditions.
+/// `testValues` is deliberately Json: each program's test protocol is
+/// different (e.g. P01's Overhead Squat 0/1/2 scores vs. P09's
+/// Sit-to-Stand rep count), so a fixed relational shape would mean a
+/// wide, mostly-null table -- Json keeps each program's own test fields
+/// self-describing. This is explicitly NOT a diagnosis (spec rule #5) --
+/// `status` drives progress/stay/regress copy, never a clinical claim.
+model TrainingProgramAssessment {
   id        String  @id @default(cuid())
   clientId  String
   client    Client  @relation(fields: [clientId], references: [id])
-  productId String
-  product   Product @relation(fields: [productId], references: [id])
+  trainingProgramId String
+  trainingProgram   TrainingProgram @relation(fields: [trainingProgramId], references: [id])
 
   assessmentWeek Int // 0, 4, 8, or 12
   performedAt    DateTime @default(now())
 
-  // 0-10 scales from spec section 4 -- null when the product doesn't
+  // 0-10 scales from spec section 4 -- null when the program doesn't
   // address symptoms (e.g. the pure "Haltung" programs) or the client
   // skipped an optional field.
   avgSymptomIntensity      Int?
@@ -1030,5 +1176,5 @@ model ProductAssessment {
 
   status AssessmentStatus
 
-  @@index([clientId, productId])
+  @@index([clientId, trainingProgramId])
 }
