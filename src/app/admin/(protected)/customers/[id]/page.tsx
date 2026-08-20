@@ -37,6 +37,14 @@ const STATUS_LABELS: Record<string, string> = {
   ARCHIVED: "Archiviert",
 };
 
+const BOOKING_STATUS_LABELS: Record<string, string> = {
+  CONFIRMED: "Bestätigt",
+  COMPLETED: "Durchgeführt",
+  CANCELED: "Storniert",
+  NO_SHOW: "No Show",
+  RESCHEDULED: "Verschoben",
+};
+
 const TABS = [
   { key: "uebersicht", label: "Übersicht" },
   { key: "termine", label: "Termine" },
@@ -53,13 +61,13 @@ const TABS = [
 // one page via a handful of tabs, selected through ?tab= (server-
 // rendered, no client state) so the page stays a plain server component
 // apart from the few interactive panels below it (Notes/Settings/
-// AccessGrant). Termine/Kontingente/Trainingspläne/Training/Zahlungen
-// tabs are honest "kommt mit Phase PX" stubs for now — their backing
-// models (Appointment/PackageEntitlement+CreditLedgerEntry/
-// TrainingPlanVersion+PlanAssignment/Payment) are P3-P7 work, not built
-// in this pass. Where an OLDER, differently-shaped model already holds
-// some real data (Booking, CreditBalance, TrainingSession, Order), that
-// tab shows it rather than hiding it — see each tab's block below.
+// AccessGrant). Termine (P4) and Kontingente (P3) tabs are now backed by
+// the real Booking/PackageEntitlement models — see each block below.
+// Trainingspläne/Training/Zahlungen tabs are still honest "kommt mit
+// Phase PX" stubs; their backing models (TrainingPlanVersion+
+// PlanAssignment/Payment) are P5/P7 work, not built in this pass. Where
+// an OLDER, differently-shaped model already holds some real data
+// (TrainingSession, Order), that tab shows it rather than hiding it.
 export default async function CustomerDetailPage({
   params,
   searchParams,
@@ -79,7 +87,7 @@ export default async function CustomerDetailPage({
       legacyProgram: true,
       accessGrant: true,
       notes: true,
-      bookings: { orderBy: { startTime: "desc" }, take: 20 },
+      bookings: { orderBy: { startTime: "desc" }, take: 20, include: { product: { select: { id: true, name: true } } } },
       trainingSessions: { orderBy: { createdAt: "desc" }, take: 20 },
       orders: { orderBy: { createdAt: "desc" }, take: 20, include: { digitalProduct: true } },
       trainingPlans: { select: { id: true } },
@@ -148,14 +156,12 @@ export default async function CustomerDetailPage({
       </div>
 
       <div className="mt-4 flex flex-wrap gap-2">
-        <button
-          type="button"
-          disabled
-          title="Kommt mit der Terminverwaltung (Phase P4)"
-          className="rounded-lg border border-ink-900/10 px-3 py-1.5 text-xs font-medium text-ink-900/30 cursor-not-allowed"
+        <Link
+          href={tabHref("termine")}
+          className="rounded-lg border border-ink-900/15 px-3 py-1.5 text-xs font-medium text-ink-900 hover:bg-ink-900/5"
         >
-          Termin buchen
-        </button>
+          Termine ansehen
+        </Link>
         <button
           type="button"
           disabled
@@ -246,18 +252,37 @@ export default async function CustomerDetailPage({
 
         {tab === "termine" && (
           <div>
+            <p className="text-sm text-ink-700/60">
+              Automatisch aus Calendly synchronisiert (§20). Details, Kontingent-Zuordnung und Aktionen (Durchgeführt/No
+              Show/Kulanz) im{" "}
+              <Link href="/admin/appointments" className="underline hover:text-brand-700">
+                Termine-Bereich
+              </Link>
+              .
+            </p>
             {client.bookings.length === 0 ? (
-              <p className="text-sm text-ink-700/50">
-                Noch keine Termine. Die vollständige Terminverwaltung (Calendly-Sync, Kontingent-Zuordnung) kommt mit
-                Phase P4 — bis dahin zeigt dieser Tab nur bereits vorhandene, älter mitgeschriebene Buchungen.
-              </p>
+              <p className="mt-4 text-sm text-ink-700/50">Noch keine Termine.</p>
             ) : (
-              <ul className="flex flex-col gap-2">
+              <ul className="mt-4 flex flex-col gap-2">
                 {/* eslint-disable-next-line @typescript-eslint/no-explicit-any -- SANDBOX-ONLY, see src/lib/db.ts */}
                 {client.bookings.map((b: any) => (
-                  <li key={b.id} className="rounded-lg border border-ink-900/10 p-3 text-sm flex justify-between">
-                    <span>{b.startTime.toLocaleString("de-DE")}</span>
-                    <span className="text-ink-700/60">{b.status}</span>
+                  <li key={b.id}>
+                    <Link
+                      href={`/admin/appointments/${b.id}`}
+                      className="flex flex-wrap items-center justify-between gap-2 rounded-lg border border-ink-900/10 p-3 text-sm hover:bg-ink-900/[0.03]"
+                    >
+                      <span>
+                        {b.startTime.toLocaleString("de-DE", { day: "2-digit", month: "2-digit", year: "2-digit", hour: "2-digit", minute: "2-digit" })}
+                        {" · "}
+                        <span className="text-ink-700/70">{b.product?.name ?? b.calendlyEventName ?? "kein Produkt"}</span>
+                      </span>
+                      <span className="flex items-center gap-2 text-ink-700/60">
+                        {b.complimentary && (
+                          <span className="rounded-full bg-brand-50 px-2 py-0.5 text-xs font-medium text-brand-700">kostenlos</span>
+                        )}
+                        {BOOKING_STATUS_LABELS[b.status] ?? b.status}
+                      </span>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -285,6 +310,7 @@ export default async function CustomerDetailPage({
                 consumed: ent.status.consumed,
                 available: ent.status.available,
               },
+              /* eslint-disable-next-line @typescript-eslint/no-explicit-any -- SANDBOX-ONLY, see src/lib/db.ts */
               ledgerEntries: ent.ledgerEntries.map((e: any) => ({
                 id: e.id,
                 type: e.type,
