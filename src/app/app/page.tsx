@@ -2,6 +2,7 @@ import { redirect } from "next/navigation";
 import Link from "next/link";
 import { getCurrentClient } from "@/lib/auth";
 import { prisma } from "@/lib/db";
+import { getAggregatedCreditsByProduct } from "@/lib/creditLedger";
 import { CorrectivePlanCard } from "@/components/CorrectivePlanCard";
 
 // Hits the database directly and doesn't itself call cookies()/headers()
@@ -23,12 +24,11 @@ export default async function PortalPage() {
   const client = await getCurrentClient();
   if (!client) redirect("/login?redirectTo=/app");
 
-  const [creditBalances, nextBooking, scans, digitalOrders, plans] = await Promise.all([
-    prisma.creditBalance.findMany({
-      where: { clientId: client.id, creditsRemaining: { gt: 0 } },
-      include: { product: true },
-      orderBy: { createdAt: "desc" },
-    }),
+  const [creditGroups, nextBooking, scans, digitalOrders, plans] = await Promise.all([
+    // P3: derived from the Kontingent-Ledger (src/lib/creditLedger.ts),
+    // not the old CreditBalance model — see that model's schema.prisma
+    // comment for why it's kept around unused rather than removed.
+    getAggregatedCreditsByProduct(client.id),
     prisma.booking.findFirst({
       where: { clientId: client.id, status: "CONFIRMED", startTime: { gte: new Date() } },
       orderBy: { startTime: "asc" },
@@ -55,10 +55,15 @@ export default async function PortalPage() {
   // `: any` annotations below are SANDBOX-ONLY, see src/lib/db.ts —
   // @prisma/client's generated types don't exist in this environment.
   /* eslint-disable @typescript-eslint/no-explicit-any -- SANDBOX-ONLY, see src/lib/db.ts */
-  const totalCreditsRemaining = creditBalances.reduce(
-    (sum: number, cb: any) => sum + cb.creditsRemaining,
-    0,
-  );
+  const hasUnlimited = creditGroups.some((g) => g.available === Infinity);
+  const totalCreditsRemaining = hasUnlimited
+    ? Infinity
+    : creditGroups.reduce((sum, g) => sum + g.available, 0);
+  // §17 — earliest upcoming expiry across all groups still holding credit, shown as a heads-up banner.
+  const nearestExpiry = creditGroups.reduce((earliest: Date | null, g) => {
+    if (!g.nearestExpiry) return earliest;
+    return !earliest || g.nearestExpiry < earliest ? g.nearestExpiry : earliest;
+  }, null);
   const latestScanId = plans[0]?.movementScanId;
   const currentPlans = plans.filter((p: any) => p.movementScanId === latestScanId);
   const historicalPlans = plans.filter((p: any) => p.movementScanId !== latestScanId);
@@ -78,23 +83,27 @@ export default async function PortalPage() {
           <p className="text-xs font-semibold uppercase tracking-widest text-brand-600">
             Verbleibende Einheiten
           </p>
-          {creditBalances.length === 0 ? (
+          {creditGroups.length === 0 ? (
             <p className="mt-2 text-sm text-ink-700/60">
               Keine aktiven Pakete. Sessions &amp; Pakete findest du auf der Startseite.
             </p>
           ) : (
             <>
               <p className="mt-2 font-serif text-3xl font-bold text-ink-900">
-                {totalCreditsRemaining}
+                {hasUnlimited ? "∞" : totalCreditsRemaining}
               </p>
               <ul className="mt-2 text-sm text-ink-700/70">
-                {/* eslint-disable-next-line @typescript-eslint/no-explicit-any -- SANDBOX-ONLY, see src/lib/db.ts */}
-                {creditBalances.map((cb: any) => (
-                  <li key={cb.id}>
-                    {cb.creditsRemaining}× {cb.product?.name ?? "Einheit"}
+                {creditGroups.map((g) => (
+                  <li key={g.productId ?? g.productName}>
+                    {g.available === Infinity ? "Unbegrenzt" : g.available}× {g.productName}
                   </li>
                 ))}
               </ul>
+              {nearestExpiry && (
+                <p className="mt-2 text-xs text-amber-600">
+                  Dein Paket läuft am {nearestExpiry.toLocaleDateString("de-DE")} ab.
+                </p>
+              )}
             </>
           )}
         </div>
