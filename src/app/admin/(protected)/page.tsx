@@ -27,7 +27,12 @@ export default async function AdminDashboardPage() {
   startOfMonth.setDate(1);
   startOfMonth.setHours(0, 0, 0, 0);
 
-  const [clientCount, activeClientCount, scanCount, scansThisMonth, pendingScanCount, clientsWithoutPlan] =
+  const todayStart = new Date();
+  todayStart.setHours(0, 0, 0, 0);
+  const todayEnd = new Date(todayStart);
+  todayEnd.setDate(todayEnd.getDate() + 1);
+
+  const [clientCount, activeClientCount, scanCount, scansThisMonth, pendingScanCount, clientsWithoutPlan, appointmentsToday, unmatchedAppointments] =
     await Promise.all([
       prisma.client.count({ where: { providerId: provider.id } }),
       prisma.client.count({ where: { providerId: provider.id, status: "ACTIVE" } }),
@@ -37,10 +42,29 @@ export default async function AdminDashboardPage() {
       prisma.client.count({
         where: { providerId: provider.id, status: "ACTIVE", trainingPlans: { none: {} }, correctivePlans: { none: {} } },
       }),
+      prisma.booking.count({
+        where: {
+          AND: [
+            { OR: [{ client: { providerId: provider.id } }, { clientId: null }] },
+            { startTime: { gte: todayStart, lt: todayEnd } },
+          ],
+        },
+      }),
+      // §21 — same "never silently drop" flag as /admin/appointments' own banner.
+      prisma.booking.count({
+        where: {
+          AND: [
+            { OR: [{ client: { providerId: provider.id } }, { clientId: null }] },
+            { complimentary: false },
+            { OR: [{ clientId: null }, { productId: null }] },
+          ],
+        },
+      }),
     ]);
 
   const links = [
     { href: "/admin/customers", label: "Kunden", description: "Kundenliste, Segmente, Zugang, Scan-Upload" },
+    { href: "/admin/appointments", label: "Termine", description: "Calendly-Sync, Kontingent-Zuordnung, No-Show" },
     { href: "/admin/products", label: "Produkte", description: "Preise, Sonderpreise, Sichtbarkeit" },
     { href: "/admin/booking-links", label: "Buchungslinks", description: "Calendly-Links pro Produkt/Segment" },
     { href: "/admin/scans", label: "SmartMotionScan", description: "Manuelle Scan-Auswertung (älterer Flow)" },
@@ -55,11 +79,18 @@ export default async function AdminDashboardPage() {
       <h1 className="font-serif text-3xl font-bold text-ink-900">Hallo {admin?.name?.split(" ")[0] ?? "Coach"}!</h1>
       <p className="mt-2 text-ink-700/80">Coach-Bereich — hier siehst du nur Verwaltungsfunktionen, keine Kundenansicht.</p>
 
-      <div className="mt-8 grid gap-4 sm:grid-cols-3">
+      <div className="mt-8 grid gap-4 sm:grid-cols-4">
         <div className="rounded-xl border border-ink-900/10 bg-white/50 p-6">
           <p className="text-xs font-semibold uppercase tracking-widest text-brand-600">Aktive Kunden</p>
           <p className="mt-2 font-serif text-3xl font-bold text-ink-900">{activeClientCount}</p>
           <p className="text-xs text-ink-700/50">von {clientCount} insgesamt</p>
+        </div>
+        <div className="rounded-xl border border-ink-900/10 bg-white/50 p-6">
+          <p className="text-xs font-semibold uppercase tracking-widest text-brand-600">Termine heute</p>
+          <p className="mt-2 font-serif text-3xl font-bold text-ink-900">{appointmentsToday}</p>
+          <Link href="/admin/appointments?range=today" className="text-xs text-ink-700/50 hover:underline">
+            ansehen
+          </Link>
         </div>
         <div className="rounded-xl border border-ink-900/10 bg-white/50 p-6">
           <p className="text-xs font-semibold uppercase tracking-widest text-brand-600">SmartMotionScans</p>
@@ -72,12 +103,20 @@ export default async function AdminDashboardPage() {
         </div>
       </div>
 
-      {(clientsWithoutPlan > 0 || pendingScanCount > 0) && (
+      {(clientsWithoutPlan > 0 || pendingScanCount > 0 || unmatchedAppointments > 0) && (
         <div className="mt-6 rounded-xl border border-amber-200 bg-amber-50 p-5">
           <p className="text-xs font-semibold uppercase tracking-widest text-amber-700">Offene Aufgaben</p>
           <ul className="mt-2 text-sm text-amber-800 list-disc list-inside">
             {pendingScanCount > 0 && <li>{pendingScanCount} Scan(s) noch nicht ausgewertet</li>}
             {clientsWithoutPlan > 0 && <li>{clientsWithoutPlan} aktive Kunde(n) ohne Trainingsplan</li>}
+            {unmatchedAppointments > 0 && (
+              <li>
+                {unmatchedAppointments} Termin(e) ohne Kunden-/Produkt-Zuordnung —{" "}
+                <Link href="/admin/appointments?unmatched=1" className="font-semibold underline">
+                  jetzt prüfen
+                </Link>
+              </li>
+            )}
           </ul>
         </div>
       )}
