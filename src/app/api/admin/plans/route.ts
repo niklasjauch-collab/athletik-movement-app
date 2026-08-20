@@ -7,7 +7,8 @@ import { prisma } from "@/lib/db";
 import { getActiveProvider } from "@/lib/tenant";
 import { requireAdmin, AdminAuthRequiredError } from "@/lib/adminAuth";
 
-const VALID_KINDS = ["INDIVIDUAL", "SELLABLE", "TEMPLATE"];
+const VALID_KINDS: string[] = ["INDIVIDUAL", "SELLABLE", "TEMPLATE"];
+type PlanKind = "INDIVIDUAL" | "SELLABLE" | "TEMPLATE";
 
 export async function POST(request: Request) {
   try {
@@ -48,7 +49,7 @@ export async function POST(request: Request) {
     data: {
       providerId: provider.id,
       title: title.trim(),
-      kind,
+      kind: kind as PlanKind, // validated against VALID_KINDS above
       clientId: kind === "INDIVIDUAL" ? (clientId as string) : null,
     },
   });
