@@ -1,0 +1,1766 @@
+[
+  {
+    "id": "P13",
+    "blocks": [
+      {
+        "weekStart": 1,
+        "weekEnd": 4,
+        "progressionRule": "Tests technisch stabiler und keine relevante anhaltende Verschlechterung nach den Einheiten.",
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E004",
+                "name": "SMR Adduktoren",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E011",
+                "name": "SMR Quadrizeps",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E017",
+                "name": "Adductor Stretch + Mobilisation erhöht",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E083",
+                "name": "90/90 Hip Internal Rotation Mobility",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E034",
+                "name": "Activation Standing Banded Hip Adduction",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E046",
+                "name": "Pallof Press",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E063",
+                "name": "Side Lunge dynamisch im Wechsel",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E003",
+                "name": "TFL Release",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E022",
+                "name": "Hip Flexor Stretch",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E050",
+                "name": "Side-Lying Leg Lift Activation / Hip Adduction",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E062",
+                "name": "Reverse Lunge",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "weekStart": 5,
+        "weekEnd": 8,
+        "progressionRule": "höhere Kontrolle/Belastbarkeit in den Re-Tests; Übungen des Blocks ohne deutliche Ausweichbewegung.",
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E004",
+                "name": "SMR Adduktoren",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E081",
+                "name": "Self-Administered Hip Posterior Glide Mobilization",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E034",
+                "name": "Activation Standing Banded Hip Adduction",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E041",
+                "name": "Dead Bug",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E064",
+                "name": "Single Leg Deadlift",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E107",
+                "name": "Split Squat + Contralateral Row",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E004",
+                "name": "SMR Adduktoren",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E082",
+                "name": "Self-Administered Hip Lateral Distraction",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E050",
+                "name": "Side-Lying Leg Lift Activation / Hip Adduction",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E060",
+                "name": "Forward Lunge",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "weekStart": 9,
+        "weekEnd": 12,
+        "progressionRule": null,
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E004",
+                "name": "SMR Adduktoren",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E083",
+                "name": "90/90 Hip Internal Rotation Mobility",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E034",
+                "name": "Activation Standing Banded Hip Adduction",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E063",
+                "name": "Side Lunge dynamisch im Wechsel",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E111",
+                "name": "Split Squat + Contralateral Press",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E004",
+                "name": "SMR Adduktoren",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E083",
+                "name": "90/90 Hip Internal Rotation Mobility",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E050",
+                "name": "Side-Lying Leg Lift Activation / Hip Adduction",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E106",
+                "name": "Reverse Lunge + Contralateral Row",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E112",
+                "name": "Reverse Lunge + Contralateral Press",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "abschluss": "Woche-12-Re-Test, Fortschrittsbericht, Empfehlung: Programm erhalten/weiterführen, nächstes passendes Programm oder individuelle Analyse."
+  },
+  {
+    "id": "P14",
+    "blocks": [
+      {
+        "weekStart": 1,
+        "weekEnd": 4,
+        "progressionRule": "Tests technisch stabiler und keine relevante anhaltende Verschlechterung nach den Einheiten.",
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E005",
+                "name": "SMR Erector Spinae Lumbar",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E003",
+                "name": "TFL Release",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E022",
+                "name": "Hip Flexor Stretch",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E028",
+                "name": "Piriformis + Glutes Stretch",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E084",
+                "name": "90/90 Breathing + TVA Brace",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E045",
+                "name": "Glute Med Activation mit Miniband",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E062",
+                "name": "Reverse Lunge",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E010",
+                "name": "SMR Quadratus Lumborum (QL)",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E004",
+                "name": "SMR Adduktoren",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E017",
+                "name": "Adductor Stretch + Mobilisation erhöht",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E019",
+                "name": "Figure-4 Lumbar Rotation Stretch",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E041",
+                "name": "Dead Bug",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E046",
+                "name": "Pallof Press",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E062",
+                "name": "Reverse Lunge",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "weekStart": 5,
+        "weekEnd": 8,
+        "progressionRule": "höhere Kontrolle/Belastbarkeit in den Re-Tests; Übungen des Blocks ohne deutliche Ausweichbewegung.",
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E010",
+                "name": "SMR Quadratus Lumborum (QL)",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E081",
+                "name": "Self-Administered Hip Posterior Glide Mobilization",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E083",
+                "name": "90/90 Hip Internal Rotation Mobility",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E051",
+                "name": "Single-Leg Glute Bridge with Knee Hug",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E085",
+                "name": "Quadruped TVA Activation / Abdominal Draw-In",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E064",
+                "name": "Single Leg Deadlift",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E105",
+                "name": "Glute Bridge + Contralateral Band Pulldown",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E010",
+                "name": "SMR Quadratus Lumborum (QL)",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E082",
+                "name": "Self-Administered Hip Lateral Distraction",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E040",
+                "name": "Bird Dog",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E102",
+                "name": "Half-Kneeling Static Chop",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "weekStart": 9,
+        "weekEnd": 12,
+        "progressionRule": null,
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E010",
+                "name": "SMR Quadratus Lumborum (QL)",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E083",
+                "name": "90/90 Hip Internal Rotation Mobility",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E084",
+                "name": "90/90 Breathing + TVA Brace",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E068",
+                "name": "Staggered Stance Banded Rotational",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E107",
+                "name": "Split Squat + Contralateral Row",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E114",
+                "name": "Dead Bug + Band Pulldown",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E010",
+                "name": "SMR Quadratus Lumborum (QL)",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E083",
+                "name": "90/90 Hip Internal Rotation Mobility",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E084",
+                "name": "90/90 Breathing + TVA Brace",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E106",
+                "name": "Reverse Lunge + Contralateral Row",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E110",
+                "name": "Side Plank + Row",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E116",
+                "name": "Bird Dog + Band Row",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "abschluss": "Woche-12-Re-Test, Fortschrittsbericht, Empfehlung: Programm erhalten/weiterführen, nächstes passendes Programm oder individuelle Analyse."
+  },
+  {
+    "id": "P15",
+    "blocks": [
+      {
+        "weekStart": 1,
+        "weekEnd": 4,
+        "progressionRule": "Tests technisch stabiler und keine relevante anhaltende Verschlechterung nach den Einheiten.",
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E005",
+                "name": "SMR Erector Spinae Lumbar",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E003",
+                "name": "TFL Release",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E022",
+                "name": "Hip Flexor Stretch",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E028",
+                "name": "Piriformis + Glutes Stretch",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E084",
+                "name": "90/90 Breathing + TVA Brace",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E040",
+                "name": "Bird Dog",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E058",
+                "name": "Banded Deadlift",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E010",
+                "name": "SMR Quadratus Lumborum (QL)",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E021",
+                "name": "Hamstring Stretch stehend mit Erhöhung",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E019",
+                "name": "Figure-4 Lumbar Rotation Stretch",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E041",
+                "name": "Dead Bug",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E046",
+                "name": "Pallof Press",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E062",
+                "name": "Reverse Lunge",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "weekStart": 5,
+        "weekEnd": 8,
+        "progressionRule": "höhere Kontrolle/Belastbarkeit in den Re-Tests; Übungen des Blocks ohne deutliche Ausweichbewegung.",
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E005",
+                "name": "SMR Erector Spinae Lumbar",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E081",
+                "name": "Self-Administered Hip Posterior Glide Mobilization",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E051",
+                "name": "Single-Leg Glute Bridge with Knee Hug",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E043",
+                "name": "Frog Crunch / Butterfly Crunch",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E102",
+                "name": "Half-Kneeling Static Chop",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E086",
+                "name": "Bear Plank Hold",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E005",
+                "name": "SMR Erector Spinae Lumbar",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E083",
+                "name": "90/90 Hip Internal Rotation Mobility",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E085",
+                "name": "Quadruped TVA Activation / Abdominal Draw-In",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E039",
+                "name": "Banded Side Bend",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E105",
+                "name": "Glute Bridge + Contralateral Band Pulldown",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "weekStart": 9,
+        "weekEnd": 12,
+        "progressionRule": null,
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E005",
+                "name": "SMR Erector Spinae Lumbar",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E019",
+                "name": "Figure-4 Lumbar Rotation Stretch",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E084",
+                "name": "90/90 Breathing + TVA Brace",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E103",
+                "name": "Tall-Kneeling Diagonal Chop",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E114",
+                "name": "Dead Bug + Band Pulldown",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E116",
+                "name": "Bird Dog + Band Row",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E005",
+                "name": "SMR Erector Spinae Lumbar",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E019",
+                "name": "Figure-4 Lumbar Rotation Stretch",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E040",
+                "name": "Bird Dog",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E104",
+                "name": "Half-Kneeling Diagonal Lift",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E115",
+                "name": "Bear Plank + Alternating Shoulder Tap",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E106",
+                "name": "Reverse Lunge + Contralateral Row",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "abschluss": "Woche-12-Re-Test, Fortschrittsbericht, Empfehlung: Programm erhalten/weiterführen, nächstes passendes Programm oder individuelle Analyse."
+  },
+  {
+    "id": "P16",
+    "blocks": [
+      {
+        "weekStart": 1,
+        "weekEnd": 4,
+        "progressionRule": "Tests technisch stabiler und keine relevante anhaltende Verschlechterung nach den Einheiten.",
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E013",
+                "name": "SMR Thoracic Spine Extension",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E008",
+                "name": "SMR Pectoralis",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E023",
+                "name": "Kneeling Lat Stretch",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E099",
+                "name": "Open Book Thoracic Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E042",
+                "name": "Floor Angels",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E089",
+                "name": "Serratus Wall Slide + Reach",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E068",
+                "name": "Staggered Stance Banded Rotational",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E001",
+                "name": "Lat Release",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E026",
+                "name": "Pec Stretch",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E100",
+                "name": "Quadruped Thoracic Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E037",
+                "name": "Banded Scapular Retractions",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E068",
+                "name": "Staggered Stance Banded Rotational",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "weekStart": 5,
+        "weekEnd": 8,
+        "progressionRule": "höhere Kontrolle/Belastbarkeit in den Re-Tests; Übungen des Blocks ohne deutliche Ausweichbewegung.",
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E007",
+                "name": "SMR Levator Scapulae + Upper Trapezius",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E024",
+                "name": "Lat Stretch Door",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E100",
+                "name": "Quadruped Thoracic Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E036",
+                "name": "Banded Scapular Protractions",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E091",
+                "name": "Scapular Push-Up Plus",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E069",
+                "name": "Staggered Stance Banded Row with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E013",
+                "name": "SMR Thoracic Spine Extension",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E099",
+                "name": "Open Book Thoracic Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E090",
+                "name": "Prone Y / Lower Trapezius Raise",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E067",
+                "name": "Staggered Stance Banded Press with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "weekStart": 9,
+        "weekEnd": 12,
+        "progressionRule": null,
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E013",
+                "name": "SMR Thoracic Spine Extension",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E099",
+                "name": "Open Book Thoracic Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E089",
+                "name": "Serratus Wall Slide + Reach",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E103",
+                "name": "Tall-Kneeling Diagonal Chop",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E111",
+                "name": "Split Squat + Contralateral Press",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E013",
+                "name": "SMR Thoracic Spine Extension",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E100",
+                "name": "Quadruped Thoracic Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E090",
+                "name": "Prone Y / Lower Trapezius Raise",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E104",
+                "name": "Half-Kneeling Diagonal Lift",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E112",
+                "name": "Reverse Lunge + Contralateral Press",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "abschluss": "Woche-12-Re-Test, Fortschrittsbericht, Empfehlung: Programm erhalten/weiterführen, nächstes passendes Programm oder individuelle Analyse."
+  },
+  {
+    "id": "P17",
+    "blocks": [
+      {
+        "weekStart": 1,
+        "weekEnd": 4,
+        "progressionRule": "Tests technisch stabiler und keine relevante anhaltende Verschlechterung nach den Einheiten.",
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E012",
+                "name": "SMR Suboccipitals",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E008",
+                "name": "SMR Pectoralis",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E025",
+                "name": "Levator Scapulae Stretch sitzend",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E026",
+                "name": "Pec Stretch",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E057",
+                "name": "Wall Chin Tucks",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E037",
+                "name": "Banded Scapular Retractions",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E069",
+                "name": "Staggered Stance Banded Row with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E007",
+                "name": "SMR Levator Scapulae + Upper Trapezius",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E013",
+                "name": "SMR Thoracic Spine Extension",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E030",
+                "name": "SCM Stretch sitzend",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E099",
+                "name": "Open Book Thoracic Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E101",
+                "name": "Supine Deep Cervical Flexor Nod",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E069",
+                "name": "Staggered Stance Banded Row with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "weekStart": 5,
+        "weekEnd": 8,
+        "progressionRule": "höhere Kontrolle/Belastbarkeit in den Re-Tests; Übungen des Blocks ohne deutliche Ausweichbewegung.",
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E007",
+                "name": "SMR Levator Scapulae + Upper Trapezius",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E098",
+                "name": "First Rib Self-Mobilization",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E100",
+                "name": "Quadruped Thoracic Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E101",
+                "name": "Supine Deep Cervical Flexor Nod",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E090",
+                "name": "Prone Y / Lower Trapezius Raise",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E067",
+                "name": "Staggered Stance Banded Press with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E007",
+                "name": "SMR Levator Scapulae + Upper Trapezius",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E099",
+                "name": "Open Book Thoracic Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E089",
+                "name": "Serratus Wall Slide + Reach",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E069",
+                "name": "Staggered Stance Banded Row with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "weekStart": 9,
+        "weekEnd": 12,
+        "progressionRule": null,
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E012",
+                "name": "SMR Suboccipitals",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E099",
+                "name": "Open Book Thoracic Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E101",
+                "name": "Supine Deep Cervical Flexor Nod",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E090",
+                "name": "Prone Y / Lower Trapezius Raise",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E115",
+                "name": "Bear Plank + Alternating Shoulder Tap",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E012",
+                "name": "SMR Suboccipitals",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E099",
+                "name": "Open Book Thoracic Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E089",
+                "name": "Serratus Wall Slide + Reach",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E104",
+                "name": "Half-Kneeling Diagonal Lift",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "abschluss": "Woche-12-Re-Test, Fortschrittsbericht, Empfehlung: Programm erhalten/weiterführen, nächstes passendes Programm oder individuelle Analyse."
+  },
+  {
+    "id": "P18",
+    "blocks": [
+      {
+        "weekStart": 1,
+        "weekEnd": 4,
+        "progressionRule": "Tests technisch stabiler und keine relevante anhaltende Verschlechterung nach den Einheiten.",
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E008",
+                "name": "SMR Pectoralis",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E093",
+                "name": "Posterior Deltoid Release",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E095",
+                "name": "Teres Major Release",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E026",
+                "name": "Pec Stretch",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E096",
+                "name": "Self-Administered Shoulder Posterior Glide",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E087",
+                "name": "Side-Lying Shoulder External Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E089",
+                "name": "Serratus Wall Slide + Reach",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E069",
+                "name": "Staggered Stance Banded Row with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E001",
+                "name": "Lat Release",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E094",
+                "name": "Subscapularis Release",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E023",
+                "name": "Kneeling Lat Stretch",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E097",
+                "name": "Self-Administered Shoulder Inferior Glide",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E088",
+                "name": "Banded Shoulder External Rotation at 0° Abduction",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E090",
+                "name": "Prone Y / Lower Trapezius Raise",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E069",
+                "name": "Staggered Stance Banded Row with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "weekStart": 5,
+        "weekEnd": 8,
+        "progressionRule": "höhere Kontrolle/Belastbarkeit in den Re-Tests; Übungen des Blocks ohne deutliche Ausweichbewegung.",
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E093",
+                "name": "Posterior Deltoid Release",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E095",
+                "name": "Teres Major Release",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E099",
+                "name": "Open Book Thoracic Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E091",
+                "name": "Scapular Push-Up Plus",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E042",
+                "name": "Floor Angels",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E067",
+                "name": "Staggered Stance Banded Press with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E115",
+                "name": "Bear Plank + Alternating Shoulder Tap",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E094",
+                "name": "Subscapularis Release",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E100",
+                "name": "Quadruped Thoracic Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E092",
+                "name": "Overhead Long-Head Triceps Activation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E104",
+                "name": "Half-Kneeling Diagonal Lift",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "weekStart": 9,
+        "weekEnd": 12,
+        "progressionRule": null,
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E008",
+                "name": "SMR Pectoralis",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E099",
+                "name": "Open Book Thoracic Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E088",
+                "name": "Banded Shoulder External Rotation at 0° Abduction",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E090",
+                "name": "Prone Y / Lower Trapezius Raise",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E067",
+                "name": "Staggered Stance Banded Press with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E111",
+                "name": "Split Squat + Contralateral Press",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E115",
+                "name": "Bear Plank + Alternating Shoulder Tap",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E008",
+                "name": "SMR Pectoralis",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E099",
+                "name": "Open Book Thoracic Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E089",
+                "name": "Serratus Wall Slide + Reach",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E038",
+                "name": "Banded Shrugs",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E069",
+                "name": "Staggered Stance Banded Row with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E113",
+                "name": "Step-Up + Contralateral Press",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "abschluss": "Woche-12-Re-Test, Fortschrittsbericht, Empfehlung: Programm erhalten/weiterführen, nächstes passendes Programm oder individuelle Analyse."
+  }
+]
