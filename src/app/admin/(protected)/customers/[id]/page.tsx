@@ -4,6 +4,7 @@ import { prisma } from "@/lib/db";
 import { getActiveProvider } from "@/lib/tenant";
 import { getClientEntitlements } from "@/lib/creditLedger";
 import { CorrectivePlanCard } from "@/components/CorrectivePlanCard";
+import CorrectivePlanActions from "@/components/admin/CorrectivePlanActions";
 import UploadForm from "./UploadForm";
 import NotesPanel from "./NotesPanel";
 import SettingsPanel from "./SettingsPanel";
@@ -166,14 +167,13 @@ export default async function CustomerDetailPage({
         >
           Termine ansehen
         </Link>
-        <button
-          type="button"
-          disabled
-          title="Kommt mit der Trainingsplan-Verwaltung (Phase P5)"
-          className="rounded-lg border border-ink-900/10 px-3 py-1.5 text-xs font-medium text-ink-900/30 cursor-not-allowed"
+        <Link
+          href="/admin/plans?tab=templates"
+          title="Template auswählen, dann dort 'Duplizieren & Kunde zuweisen'"
+          className="rounded-lg border border-ink-900/15 px-3 py-1.5 text-xs font-medium text-ink-900 hover:bg-ink-900/5"
         >
           Plan zuweisen
-        </button>
+        </Link>
         <Link
           href={tabHref("scan")}
           className="rounded-lg border border-ink-900/15 px-3 py-1.5 text-xs font-medium text-ink-900 hover:bg-ink-900/5"
@@ -421,7 +421,21 @@ export default async function CustomerDetailPage({
                         <div className="mt-5 flex flex-col gap-6">
                           {/* eslint-disable-next-line @typescript-eslint/no-explicit-any -- SANDBOX-ONLY, see src/lib/db.ts */}
                           {scan.plans.map((plan: any) => (
-                            <CorrectivePlanCard key={plan.id} plan={plan} />
+                            <div key={plan.id}>
+                              <div className="flex flex-wrap items-center justify-between gap-3">
+                                <span
+                                  className={`rounded-full px-2.5 py-1 text-xs font-medium ${
+                                    plan.status === "PUBLISHED" ? "bg-brand-100 text-brand-700" : "bg-amber-100 text-amber-700"
+                                  }`}
+                                >
+                                  {plan.status === "PUBLISHED" ? "Veröffentlicht" : "Review erforderlich"}
+                                </span>
+                                <CorrectivePlanActions planId={plan.id} status={plan.status} />
+                              </div>
+                              <div className="mt-3">
+                                <CorrectivePlanCard plan={plan} />
+                              </div>
+                            </div>
                           ))}
                         </div>
                       ) : (
