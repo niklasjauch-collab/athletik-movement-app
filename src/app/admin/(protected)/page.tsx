@@ -32,35 +32,53 @@ export default async function AdminDashboardPage() {
   const todayEnd = new Date(todayStart);
   todayEnd.setDate(todayEnd.getDate() + 1);
 
-  const [clientCount, activeClientCount, scanCount, scansThisMonth, pendingScanCount, clientsWithoutPlan, appointmentsToday, unmatchedAppointments] =
-    await Promise.all([
-      prisma.client.count({ where: { providerId: provider.id } }),
-      prisma.client.count({ where: { providerId: provider.id, status: "ACTIVE" } }),
-      prisma.movementScan.count({ where: { providerId: provider.id } }),
-      prisma.movementScan.count({ where: { providerId: provider.id, uploadedAt: { gte: startOfMonth } } }),
-      prisma.movementScan.count({ where: { providerId: provider.id, status: "UPLOADED" } }),
-      prisma.client.count({
-        where: { providerId: provider.id, status: "ACTIVE", trainingPlans: { none: {} }, correctivePlans: { none: {} } },
-      }),
-      prisma.booking.count({
-        where: {
-          AND: [
-            { OR: [{ client: { providerId: provider.id } }, { clientId: null }] },
-            { startTime: { gte: todayStart, lt: todayEnd } },
-          ],
-        },
-      }),
-      // §21 — same "never silently drop" flag as /admin/appointments' own banner.
-      prisma.booking.count({
-        where: {
-          AND: [
-            { OR: [{ client: { providerId: provider.id } }, { clientId: null }] },
-            { complimentary: false },
-            { OR: [{ clientId: null }, { productId: null }] },
-          ],
-        },
-      }),
-    ]);
+  const [
+    clientCount,
+    activeClientCount,
+    scanCount,
+    scansThisMonth,
+    pendingScanCount,
+    clientsWithoutPlan,
+    appointmentsToday,
+    unmatchedAppointments,
+    scansWithoutPlan,
+    scansWithUnpublishedPlan,
+  ] = await Promise.all([
+    prisma.client.count({ where: { providerId: provider.id } }),
+    prisma.client.count({ where: { providerId: provider.id, status: "ACTIVE" } }),
+    prisma.movementScan.count({ where: { providerId: provider.id } }),
+    prisma.movementScan.count({ where: { providerId: provider.id, uploadedAt: { gte: startOfMonth } } }),
+    prisma.movementScan.count({ where: { providerId: provider.id, status: "UPLOADED" } }),
+    prisma.client.count({
+      where: { providerId: provider.id, status: "ACTIVE", trainingPlans: { none: {} }, correctivePlans: { none: {} } },
+    }),
+    prisma.booking.count({
+      where: {
+        AND: [
+          { OR: [{ client: { providerId: provider.id } }, { clientId: null }] },
+          { startTime: { gte: todayStart, lt: todayEnd } },
+        ],
+      },
+    }),
+    // §21 — same "never silently drop" flag as /admin/appointments' own banner.
+    prisma.booking.count({
+      where: {
+        AND: [
+          { OR: [{ client: { providerId: provider.id } }, { clientId: null }] },
+          { complimentary: false },
+          { OR: [{ clientId: null }, { productId: null }] },
+        ],
+      },
+    }),
+    // §36 dashboard-level rollup of /admin/scans' "Braucht Aufmerksamkeit"
+    // filter: scans with no CorrectivePlan yet, and scans whose plan(s)
+    // are still awaiting review/publish. The two sets are disjoint (a
+    // scan can't have zero plans AND a plan with status REVIEW_REQUIRED
+    // at once), so they're summed below into one KPI.
+    prisma.movementScan.count({ where: { providerId: provider.id, plans: { none: {} } } }),
+    prisma.movementScan.count({ where: { providerId: provider.id, plans: { some: { status: "REVIEW_REQUIRED" } } } }),
+  ]);
+  const scansNeedingAttention = scansWithoutPlan + scansWithUnpublishedPlan;
 
   const links = [
     { href: "/admin/customers", label: "Kunden", description: "Kundenliste, Segmente, Zugang, Scan-Upload" },
@@ -68,7 +86,7 @@ export default async function AdminDashboardPage() {
     { href: "/admin/appointments", label: "Termine", description: "Calendly-Sync, Kontingent-Zuordnung, No-Show" },
     { href: "/admin/products", label: "Produkte", description: "Preise, Sonderpreise, Sichtbarkeit" },
     { href: "/admin/booking-links", label: "Buchungslinks", description: "Calendly-Links pro Produkt/Segment" },
-    { href: "/admin/scans", label: "SmartMotionScan", description: "Manuelle Scan-Auswertung (älterer Flow)" },
+    { href: "/admin/scans", label: "SmartMotionScan", description: "Alle Scans, Planstatus, Review & Veröffentlichen" },
     { href: "/admin/exercises", label: "Übungen", description: "Übungsbibliothek verwalten" },
     { href: "/admin/training", label: "Training", description: "Trainingseinheiten protokollieren" },
     { href: "/admin/progress", label: "Fortschritt", description: "Verlauf je Kunde" },
@@ -104,11 +122,19 @@ export default async function AdminDashboardPage() {
         </div>
       </div>
 
-      {(clientsWithoutPlan > 0 || pendingScanCount > 0 || unmatchedAppointments > 0) && (
+      {(clientsWithoutPlan > 0 || pendingScanCount > 0 || unmatchedAppointments > 0 || scansNeedingAttention > 0) && (
         <div className="mt-6 rounded-xl border border-amber-200 bg-amber-50 p-5">
           <p className="text-xs font-semibold uppercase tracking-widest text-amber-700">Offene Aufgaben</p>
           <ul className="mt-2 text-sm text-amber-800 list-disc list-inside">
             {pendingScanCount > 0 && <li>{pendingScanCount} Scan(s) noch nicht ausgewertet</li>}
+            {scansNeedingAttention > 0 && (
+              <li>
+                {scansNeedingAttention} Scan(s) brauchen noch einen Plan oder ein Review/Veröffentlichen —{" "}
+                <Link href="/admin/scans?attention=1" className="font-semibold underline">
+                  jetzt prüfen
+                </Link>
+              </li>
+            )}
             {clientsWithoutPlan > 0 && <li>{clientsWithoutPlan} aktive Kunde(n) ohne Trainingsplan</li>}
             {unmatchedAppointments > 0 && (
               <li>
