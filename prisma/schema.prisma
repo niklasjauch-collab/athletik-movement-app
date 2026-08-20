@@ -125,6 +125,7 @@ model Product {
   bookingLinks   BookingLink[]
   grantedTo      CustomerAccessGrantProduct[]
   packageEntitlements PackageEntitlement[]
+  bookings       Booking[] // back-relation for Booking.productId (P4)
 
   @@unique([providerId, key])
   // Explicit @@map: this is a NEW model (P2) that happens to share the
@@ -208,6 +209,8 @@ model BookingLink {
   description String?
   createdAt   DateTime         @default(now())
   updatedAt   DateTime         @updatedAt
+
+  bookings Booking[] // back-relation for Booking.bookingLinkId (P4)
 
   @@unique([providerId, key])
 }
@@ -429,23 +432,61 @@ enum BookingStatus {
   CONFIRMED
   CANCELED
   COMPLETED
+  // Added in P4 (Runde 5 Teil 6) — purely additive, no existing value
+  // renamed (a Postgres enum rename needs the same @@map care as a model
+  // rename, see Runde 5 Teil 4's incident notes; adding new values is
+  // always non-destructive, so CONFIRMED keeps doing duty as "scheduled"
+  // rather than being renamed to match §22's own "SCHEDULED" wording).
+  NO_SHOW
+  RESCHEDULED
 }
 
-/// A single booked session, mirrored from a Calendly webhook event.
+/// A single booked session. §20 CALENDLY TERMINIMPORT — mirrored from a
+/// Calendly webhook event (src/lib/calendlyMatching.ts +
+/// /api/webhooks/calendly). `clientId` is nullable: §21 UNMATCHED
+/// BOOKINGS requires that a booking whose invitee email doesn't match any
+/// existing Client still gets stored (never silently dropped) so an admin
+/// can hand-match it later from /admin/appointments. Same reasoning for
+/// `productId`/`entitlementId` — a booking can arrive matched to a client
+/// but not (yet) to a product/credit.
 model Booking {
   id               String        @id @default(cuid())
-  clientId         String
-  client           Client        @relation(fields: [clientId], references: [id])
+  clientId         String?
+  client           Client?       @relation(fields: [clientId], references: [id])
   calendlyEventUri String        @unique
+  // The invitee resource's own URI — distinct from calendlyEventUri (the
+  // scheduled_event's URI). Kept unique too: Calendly retries webhook
+  // deliveries, so this doubles as a second idempotency key when looking
+  // up a booking from an invitee.canceled payload.
+  calendlyInviteeUri String?     @unique
+  // Raw snapshot of what Calendly called the invitee/event at webhook
+  // time — kept even when matching succeeds, and especially important
+  // when it doesn't: this is what an admin sees for an unmatched booking
+  // in the review queue (§21's own example: "Max Mustermann – Movement
+  // Coaching – kein Paket gefunden").
+  inviteeName        String?
+  inviteeEmail       String?
+  calendlyEventName  String?
   status           BookingStatus @default(CONFIRMED)
   startTime        DateTime
+  endTime          DateTime?
+  cancelUrl        String?
+  rescheduleUrl    String?
   // Legacy/unused field — predates PackageEntitlement (P3) and was never
-  // written to by any real flow (Calendly-Sync/P4 doesn't exist yet
-  // either). Superseded by `entitlementId` below; left in place rather
-  // than removed, same reasoning as CreditBalance's doc comment above.
+  // written to by any real flow. Superseded by `entitlementId` below;
+  // left in place rather than removed, same reasoning as CreditBalance's
+  // doc comment above.
   linkedCreditId   String?
-  entitlementId    String?             // which PackageEntitlement this booking reserves/consumes a credit from, if any (§13) — set once P4's Calendly-Sync creates real Bookings
+  entitlementId    String?             // which PackageEntitlement this booking reserves/consumes a credit from, if any (§13)
   entitlement      PackageEntitlement? @relation(fields: [entitlementId], references: [id])
+  bookingLinkId    String?             // which BookingLink the matching heuristic resolved to, if any — record-keeping only, not itself authoritative for credit logic
+  bookingLink      BookingLink?        @relation(fields: [bookingLinkId], references: [id])
+  productId        String?
+  product          Product?            @relation(fields: [productId], references: [id])
+  // §23 "Kontingent nicht berechnen" / §21 "als kostenlose Session
+  // markieren" — an explicit admin decision, not an inferred state, per
+  // §14's "keine stillen Änderungen" philosophy applied here too.
+  complimentary    Boolean             @default(false)
   createdAt        DateTime      @default(now())
 
   ledgerEntries CreditLedgerEntry[]
