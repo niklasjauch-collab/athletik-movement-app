@@ -43,7 +43,10 @@ export default async function PortalPage() {
       orderBy: { createdAt: "desc" },
     }),
     prisma.correctivePlan.findMany({
-      where: { clientId: client.id },
+      // §36/§69: only show plans the coach has explicitly published —
+      // see prisma/schema.prisma's CorrectivePlan.status doc comment for
+      // why existing plans still show (they default to PUBLISHED).
+      where: { clientId: client.id, status: "PUBLISHED" },
       orderBy: [{ generatedAt: "desc" }, { priorityRank: "asc" }],
       include: {
         items: { orderBy: { order: "asc" }, include: { exercise: true } },
