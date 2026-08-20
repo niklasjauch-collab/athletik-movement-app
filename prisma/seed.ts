@@ -534,6 +534,67 @@ async function main() {
   console.log(
     `SmartMotion products: ${productsUpserted} upserted (of which ${smartMotionProgramsById.size} with full program data), ${blocksCreated} block(s), ${sessionItemsCreated} session item(s) created.`
   );
+
+  // --- CoachAdmin briefing §6: the 6 standard customer segments. ---
+  // Idempotent upsert on [providerId, key] — safe to re-run every deploy.
+  // isSystemDefault:true just marks these as the seeded defaults for the
+  // admin UI (e.g. to discourage accidental deletion); it doesn't block a
+  // coach from creating further custom segments (§6's explicit
+  // requirement) or editing these ones' name/description/color.
+  const STANDARD_SEGMENTS: { key: string; name: string; description: string; colorHex: string }[] = [
+    { key: "standard", name: "Standardkunde", description: "Normale, aktuelle Konditionen.", colorHex: "#64748b" },
+    { key: "beta-tester", name: "Beta Tester", description: "Kostenloser oder individuell definierter Zugang.", colorHex: "#8b5cf6" },
+    { key: "friends-family", name: "Freunde & Familie", description: "Individuelle kostenlose oder vergünstigte Konditionen.", colorHex: "#ec4899" },
+    { key: "legacy", name: "Altkunde / Legacy", description: "Alte Preise, Links und Paketbedingungen.", colorHex: "#f59e0b" },
+    { key: "partner", name: "Partner", description: "Z. B. GetImpulse, EvoGolf.", colorHex: "#0ea5e9" },
+    { key: "vip", name: "VIP / individuell", description: "Für individuelle Sondervereinbarungen.", colorHex: "#22c55e" },
+  ];
+  for (const seg of STANDARD_SEGMENTS) {
+    await prisma.customerSegment.upsert({
+      where: { providerId_key: { providerId: provider.id, key: seg.key } },
+      update: {},
+      create: {
+        providerId: provider.id,
+        key: seg.key,
+        name: seg.name,
+        description: seg.description,
+        colorHex: seg.colorHex,
+        isSystemDefault: true,
+      },
+    });
+  }
+  console.log(`Customer segments: ${STANDARD_SEGMENTS.length} standard segment(s) ensured.`);
+
+  // --- customerNumber backfill (see schema.prisma's Client.customerNumber
+  // comment for why this is a runtime backfill rather than a NOT NULL
+  // migration) --- assigns "AM-0001"-style numbers to any client that
+  // doesn't have one yet, continuing from the current highest number so
+  // re-running this is a no-op for already-numbered clients and never
+  // reuses a number.
+  const clientsMissingNumber = await prisma.client.findMany({
+    where: { providerId: provider.id, customerNumber: null },
+    orderBy: { createdAt: "asc" },
+    select: { id: true },
+  });
+  if (clientsMissingNumber.length > 0) {
+    const numbered = await prisma.client.findMany({
+      where: { providerId: provider.id, customerNumber: { not: null } },
+      select: { customerNumber: true },
+    });
+    let maxN = 0;
+    for (const c of numbered) {
+      const m = /^AM-(\d+)$/.exec(c.customerNumber ?? "");
+      if (m) maxN = Math.max(maxN, parseInt(m[1], 10));
+    }
+    for (const c of clientsMissingNumber) {
+      maxN += 1;
+      await prisma.client.update({
+        where: { id: c.id },
+        data: { customerNumber: `AM-${String(maxN).padStart(4, "0")}` },
+      });
+    }
+  }
+  console.log(`Customer numbers: ${clientsMissingNumber.length} client(s) backfilled with a customerNumber.`);
 }
 
 main()
