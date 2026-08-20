@@ -1,0 +1,1160 @@
+[
+  {
+    "id": "P19",
+    "blocks": [
+      {
+        "weekStart": 1,
+        "weekEnd": 4,
+        "progressionRule": "Tests technisch stabiler und keine relevante anhaltende Verschlechterung nach den Einheiten.",
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E008",
+                "name": "SMR Pectoralis",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E094",
+                "name": "Subscapularis Release",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E026",
+                "name": "Pec Stretch",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E096",
+                "name": "Self-Administered Shoulder Posterior Glide",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E087",
+                "name": "Side-Lying Shoulder External Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E037",
+                "name": "Banded Scapular Retractions",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E069",
+                "name": "Staggered Stance Banded Row with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E001",
+                "name": "Lat Release",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E023",
+                "name": "Kneeling Lat Stretch",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E088",
+                "name": "Banded Shoulder External Rotation at 0° Abduction",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E069",
+                "name": "Staggered Stance Banded Row with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "weekStart": 5,
+        "weekEnd": 8,
+        "progressionRule": "höhere Kontrolle/Belastbarkeit in den Re-Tests; Übungen des Blocks ohne deutliche Ausweichbewegung.",
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E093",
+                "name": "Posterior Deltoid Release",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E097",
+                "name": "Self-Administered Shoulder Inferior Glide",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E089",
+                "name": "Serratus Wall Slide + Reach",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E092",
+                "name": "Overhead Long-Head Triceps Activation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E067",
+                "name": "Staggered Stance Banded Press with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E095",
+                "name": "Teres Major Release",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E099",
+                "name": "Open Book Thoracic Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E090",
+                "name": "Prone Y / Lower Trapezius Raise",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E104",
+                "name": "Half-Kneeling Diagonal Lift",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "weekStart": 9,
+        "weekEnd": 12,
+        "progressionRule": null,
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E008",
+                "name": "SMR Pectoralis",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E099",
+                "name": "Open Book Thoracic Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E088",
+                "name": "Banded Shoulder External Rotation at 0° Abduction",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E090",
+                "name": "Prone Y / Lower Trapezius Raise",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E067",
+                "name": "Staggered Stance Banded Press with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E111",
+                "name": "Split Squat + Contralateral Press",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E008",
+                "name": "SMR Pectoralis",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E099",
+                "name": "Open Book Thoracic Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E089",
+                "name": "Serratus Wall Slide + Reach",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E038",
+                "name": "Banded Shrugs",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E069",
+                "name": "Staggered Stance Banded Row with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "abschluss": "Woche-12-Re-Test, Fortschrittsbericht, Empfehlung: Programm erhalten/weiterführen, nächstes passendes Programm oder individuelle Analyse."
+  },
+  {
+    "id": "P20",
+    "blocks": [
+      {
+        "weekStart": 1,
+        "weekEnd": 4,
+        "progressionRule": "Tests technisch stabiler und keine relevante anhaltende Verschlechterung nach den Einheiten.",
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E008",
+                "name": "SMR Pectoralis",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E001",
+                "name": "Lat Release",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E026",
+                "name": "Pec Stretch",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E099",
+                "name": "Open Book Thoracic Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E036",
+                "name": "Banded Scapular Protractions",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E089",
+                "name": "Serratus Wall Slide + Reach",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E091",
+                "name": "Scapular Push-Up Plus",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E069",
+                "name": "Staggered Stance Banded Row with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E007",
+                "name": "SMR Levator Scapulae + Upper Trapezius",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E023",
+                "name": "Kneeling Lat Stretch",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E037",
+                "name": "Banded Scapular Retractions",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E090",
+                "name": "Prone Y / Lower Trapezius Raise",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E069",
+                "name": "Staggered Stance Banded Row with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "weekStart": 5,
+        "weekEnd": 8,
+        "progressionRule": "höhere Kontrolle/Belastbarkeit in den Re-Tests; Übungen des Blocks ohne deutliche Ausweichbewegung.",
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E093",
+                "name": "Posterior Deltoid Release",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E096",
+                "name": "Self-Administered Shoulder Posterior Glide",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E100",
+                "name": "Quadruped Thoracic Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E089",
+                "name": "Serratus Wall Slide + Reach",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E091",
+                "name": "Scapular Push-Up Plus",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E067",
+                "name": "Staggered Stance Banded Press with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E095",
+                "name": "Teres Major Release",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E097",
+                "name": "Self-Administered Shoulder Inferior Glide",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E090",
+                "name": "Prone Y / Lower Trapezius Raise",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E115",
+                "name": "Bear Plank + Alternating Shoulder Tap",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "weekStart": 9,
+        "weekEnd": 12,
+        "progressionRule": null,
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E008",
+                "name": "SMR Pectoralis",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E099",
+                "name": "Open Book Thoracic Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E089",
+                "name": "Serratus Wall Slide + Reach",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E091",
+                "name": "Scapular Push-Up Plus",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E067",
+                "name": "Staggered Stance Banded Press with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E104",
+                "name": "Half-Kneeling Diagonal Lift",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E008",
+                "name": "SMR Pectoralis",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E100",
+                "name": "Quadruped Thoracic Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E090",
+                "name": "Prone Y / Lower Trapezius Raise",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E092",
+                "name": "Overhead Long-Head Triceps Activation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E069",
+                "name": "Staggered Stance Banded Row with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E115",
+                "name": "Bear Plank + Alternating Shoulder Tap",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "abschluss": "Woche-12-Re-Test, Fortschrittsbericht, Empfehlung: Programm erhalten/weiterführen, nächstes passendes Programm oder individuelle Analyse."
+  },
+  {
+    "id": "P21",
+    "blocks": [
+      {
+        "weekStart": 1,
+        "weekEnd": 4,
+        "progressionRule": "Standardaufgabe und Wrist-Extension-Test technisch stabiler oder gleich stabil bei geringerer Reaktion; keine relevante Verschlechterung am Folgetag.",
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E117",
+                "name": "SMR Unterarmstrecker",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E119",
+                "name": "Wrist Extensor Stretch",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E121",
+                "name": "Isometric Wrist Extension",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E088",
+                "name": "Banded Shoulder External Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E069",
+                "name": "Staggered Stance Banded Row with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND, leichter Griff"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E117",
+                "name": "SMR Unterarmstrecker",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E007",
+                "name": "SMR Levator Scapulae + Upper Trapezius",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND, optional"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E119",
+                "name": "Wrist Extensor Stretch",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E122",
+                "name": "Slow Wrist Extension",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN, sehr leichte Last"
+              },
+              {
+                "code": "E037",
+                "name": "Banded Scapular Retractions",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E067",
+                "name": "Staggered Stance Banded Press with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND, leichter Griff"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "weekStart": 5,
+        "weekEnd": 8,
+        "progressionRule": "gleiche oder höhere Last bei besserer Kontrolle und akzeptabler Folgetag-Reaktion; Griffhalte-Test und Standardaufgabe zeigen Fortschritt.",
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E117",
+                "name": "SMR Unterarmstrecker",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "optional"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E119",
+                "name": "Wrist Extensor Stretch",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E122",
+                "name": "Slow Wrist Extension",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E126",
+                "name": "Resisted Forearm Supination",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E069",
+                "name": "Staggered Stance Banded Row with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E117",
+                "name": "SMR Unterarmstrecker",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "optional"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E099",
+                "name": "Open Book Thoracic Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E121",
+                "name": "Isometric Wrist Extension",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E089",
+                "name": "Serratus Wall Slide + Reach",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E067",
+                "name": "Staggered Stance Banded Press with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E104",
+                "name": "Half-Kneeling Diagonal Lift",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "weekStart": 9,
+        "weekEnd": 12,
+        "progressionRule": null,
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E117",
+                "name": "SMR Unterarmstrecker",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "optional"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E119",
+                "name": "Wrist Extensor Stretch",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E122",
+                "name": "Slow Wrist Extension",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E126",
+                "name": "Resisted Forearm Supination",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E069",
+                "name": "Staggered Stance Banded Row with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E104",
+                "name": "Half-Kneeling Diagonal Lift",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E117",
+                "name": "SMR Unterarmstrecker",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "optional"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E100",
+                "name": "Quadruped Thoracic Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E122",
+                "name": "Slow Wrist Extension",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E088",
+                "name": "Banded Shoulder External Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E067",
+                "name": "Staggered Stance Banded Press with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E069",
+                "name": "Staggered Stance Banded Row with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "abschluss": "Woche-12-Re-Test, Fortschrittsbericht, Empfehlung: Programm weiterführen, nächste Belastungsstufe oder individuelle Analyse."
+  },
+  {
+    "id": "P22",
+    "blocks": [
+      {
+        "weekStart": 1,
+        "weekEnd": 4,
+        "progressionRule": "standardisierte Wrist-Flexion-/Pronation-Belastung technisch stabil, keine relevante Folgetag-Verschlechterung.",
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E118",
+                "name": "SMR Unterarmbeuger & Pronatoren",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E120",
+                "name": "Wrist Flexor Stretch",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E123",
+                "name": "Isometric Wrist Flexion",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E125",
+                "name": "Resisted Forearm Pronation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN, sehr leicht"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E069",
+                "name": "Staggered Stance Banded Row with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND, leichter Griff"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E118",
+                "name": "SMR Unterarmbeuger & Pronatoren",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E008",
+                "name": "SMR Pectoralis",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND, optional"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E120",
+                "name": "Wrist Flexor Stretch",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E124",
+                "name": "Slow Wrist Flexion",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN, sehr leichte Last"
+              },
+              {
+                "code": "E037",
+                "name": "Banded Scapular Retractions",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E067",
+                "name": "Staggered Stance Banded Press with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND, leichter Griff"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "weekStart": 5,
+        "weekEnd": 8,
+        "progressionRule": "höhere oder gleiche Belastung mit geringerer Symptomreaktion; standardisierte Greif-, Flexions- und Pronationsaufgabe zeigt Fortschritt.",
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E118",
+                "name": "SMR Unterarmbeuger & Pronatoren",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "optional"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E120",
+                "name": "Wrist Flexor Stretch",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E124",
+                "name": "Slow Wrist Flexion",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E125",
+                "name": "Resisted Forearm Pronation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E069",
+                "name": "Staggered Stance Banded Row with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E118",
+                "name": "SMR Unterarmbeuger & Pronatoren",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "optional"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E099",
+                "name": "Open Book Thoracic Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E126",
+                "name": "Resisted Forearm Supination",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E123",
+                "name": "Isometric Wrist Flexion",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN, optional"
+              },
+              {
+                "code": "E089",
+                "name": "Serratus Wall Slide + Reach",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E067",
+                "name": "Staggered Stance Banded Press with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E104",
+                "name": "Half-Kneeling Diagonal Lift",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "weekStart": 9,
+        "weekEnd": 12,
+        "progressionRule": null,
+        "sessions": {
+          "A": {
+            "INHIBIT": [
+              {
+                "code": "E118",
+                "name": "SMR Unterarmbeuger & Pronatoren",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "optional"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E120",
+                "name": "Wrist Flexor Stretch",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E124",
+                "name": "Slow Wrist Flexion",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E125",
+                "name": "Resisted Forearm Pronation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E069",
+                "name": "Staggered Stance Banded Row with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E103",
+                "name": "Tall-Kneeling Diagonal Chop",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          },
+          "B": {
+            "INHIBIT": [
+              {
+                "code": "E118",
+                "name": "SMR Unterarmbeuger & Pronatoren",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "optional"
+              }
+            ],
+            "LENGTHEN": [
+              {
+                "code": "E100",
+                "name": "Quadruped Thoracic Rotation",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "ACTIVATE": [
+              {
+                "code": "E124",
+                "name": "Slow Wrist Flexion",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              },
+              {
+                "code": "E126",
+                "name": "Resisted Forearm Supination",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ],
+            "INTEGRATE": [
+              {
+                "code": "E067",
+                "name": "Staggered Stance Banded Press with Reciprocal Reach",
+                "raw_status": "BESTEHEND",
+                "tagRaw": "BESTEHEND"
+              },
+              {
+                "code": "E104",
+                "name": "Half-Kneeling Diagonal Lift",
+                "raw_status": "GEPLANT/NOCH ZU FILMEN",
+                "tagRaw": "GEPLANT/NOCH ZU FILMEN"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "abschluss": "Woche-12-Re-Test, Fortschrittsbericht, Empfehlung: Programm weiterführen, nächste Belastungsstufe oder individuelle Analyse."
+  }
+]
