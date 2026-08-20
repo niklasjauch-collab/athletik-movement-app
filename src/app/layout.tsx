@@ -46,26 +46,12 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
           </Link>
 
           {admin ? (
-            // COACH_ADMIN: small admin nav, completely separate from the
-            // customer app. Full admin dashboard/analytics nav is a P1+
-            // follow-up — this is deliberately minimal for P0.
+            // COACH_ADMIN: the actual admin navigation (Kunden/Scans/
+            // Übungen/etc.) now lives in the persistent sidebar rendered
+            // by /admin/(protected)/layout.tsx (CoachAdmin briefing §1) —
+            // this top bar just keeps name+logout reachable from every
+            // admin page without duplicating the sidebar's links here too.
             <nav className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm font-medium text-ink-700">
-              <Link href="/admin/clients" className="hover:text-brand-700">
-                Kunden
-              </Link>
-              <Link href="/admin/scans" className="hover:text-brand-700">
-                SmartMotionScan
-              </Link>
-              <Link href="/admin/exercises" className="hover:text-brand-700">
-                Übungen
-              </Link>
-              <Link href="/admin/training" className="hover:text-brand-700">
-                Training
-              </Link>
-              <Link href="/admin/progress" className="hover:text-brand-700">
-                Fortschritt
-              </Link>
-              <span className="h-4 w-px bg-ink-900/10" aria-hidden />
               <span className="text-ink-900">{admin.name}</span>
               <form action="/api/admin/auth/logout" method="POST">
                 <button type="submit" className="text-ink-700/70 hover:text-ink-900">
