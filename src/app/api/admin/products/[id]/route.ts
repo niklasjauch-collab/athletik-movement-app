@@ -55,9 +55,10 @@ export async function PATCH(request: Request, { params }: { params: Promise<{ id
 
 // Products can be genuinely deleted (unlike Client, which is archived) —
 // a product is catalog config, not a customer's history. Guard against
-// deleting one that's already in use as an entitlement source (P3) once
-// that exists; for now, block delete if it has CreditBalance rows (the
-// only "in use" relation that currently exists).
+// deleting one that's already in use as an entitlement source: real
+// PackageEntitlement rows (P3) plus any leftover legacy CreditBalance
+// rows (superseded but still checked defensively, see that model's
+// schema.prisma comment).
 export async function DELETE(_request: Request, { params }: { params: Promise<{ id: string }> }) {
   try {
     await requireAdmin();
@@ -75,8 +76,11 @@ export async function DELETE(_request: Request, { params }: { params: Promise<{ 
     return Response.json({ error: "Produkt nicht gefunden." }, { status: 404 });
   }
 
-  const inUse = await prisma.creditBalance.count({ where: { productId: product.id } });
-  if (inUse > 0) {
+  const [entitlementsInUse, legacyCreditBalancesInUse] = await Promise.all([
+    prisma.packageEntitlement.count({ where: { productId: product.id } }),
+    prisma.creditBalance.count({ where: { productId: product.id } }),
+  ]);
+  if (entitlementsInUse > 0 || legacyCreditBalancesInUse > 0) {
     return Response.json(
       { error: "Produkt wird bereits von Kontingenten verwendet und kann nicht gelöscht werden — stattdessen deaktivieren." },
       { status: 400 },
