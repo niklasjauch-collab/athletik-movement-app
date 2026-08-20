@@ -1,0 +1,1136 @@
+[
+  {
+    "code": "E001",
+    "phaseRaw": "MoveFlexRelax",
+    "phase": "INHIBIT",
+    "status": "existing",
+    "name": "Lat Release",
+    "matchedSeedName": "Lat Release",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E002",
+    "phaseRaw": "MoveFlexRelax",
+    "phase": "INHIBIT",
+    "status": "existing",
+    "name": "Release Wade",
+    "matchedSeedName": "Release Wade",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E003",
+    "phaseRaw": "MoveFlexRelax",
+    "phase": "INHIBIT",
+    "status": "existing",
+    "name": "TFL Release",
+    "matchedSeedName": "TFL Release",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E004",
+    "phaseRaw": "MoveFlexRelax",
+    "phase": "INHIBIT",
+    "status": "existing",
+    "name": "SMR Adduktoren",
+    "matchedSeedName": "SMR Adduktoren",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E005",
+    "phaseRaw": "MoveFlexRelax",
+    "phase": "INHIBIT",
+    "status": "existing",
+    "name": "SMR Erector Spinae Lumbar",
+    "matchedSeedName": "SMR Erector Spinae Lumbar",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E006",
+    "phaseRaw": "MoveFlexRelax",
+    "phase": "INHIBIT",
+    "status": "existing",
+    "name": "SMR Hamstrings",
+    "matchedSeedName": "SMR Hamstrings",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E007",
+    "phaseRaw": "MoveFlexRelax",
+    "phase": "INHIBIT",
+    "status": "existing",
+    "name": "SMR Levator Scapulae + Upper Trapezius",
+    "matchedSeedName": "SMR Levator Scapulae + Upper Trapezius",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E008",
+    "phaseRaw": "MoveFlexRelax",
+    "phase": "INHIBIT",
+    "status": "existing",
+    "name": "SMR Pectoralis",
+    "matchedSeedName": "SMR Pectoralis",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E009",
+    "phaseRaw": "MoveFlexRelax",
+    "phase": "INHIBIT",
+    "status": "existing",
+    "name": "SMR Peroneals",
+    "matchedSeedName": "SMR Peroneals",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E010",
+    "phaseRaw": "MoveFlexRelax",
+    "phase": "INHIBIT",
+    "status": "existing",
+    "name": "SMR Quadratus Lumborum (QL)",
+    "matchedSeedName": "SMR Quadratus Lumborum (QL)",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E011",
+    "phaseRaw": "MoveFlexRelax",
+    "phase": "INHIBIT",
+    "status": "existing",
+    "name": "SMR Quadrizeps",
+    "matchedSeedName": "SMR Quadrizeps",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E012",
+    "phaseRaw": "MoveFlexRelax",
+    "phase": "INHIBIT",
+    "status": "existing",
+    "name": "SMR Suboccipitals",
+    "matchedSeedName": "SMR Suboccipitals",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E013",
+    "phaseRaw": "MoveFlexRelax",
+    "phase": "INHIBIT",
+    "status": "existing",
+    "name": "SMR Thoracic Spine Extension",
+    "matchedSeedName": "SMR Thoracic Spine Extension",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E014",
+    "phaseRaw": "MoveFlexRelax",
+    "phase": "INHIBIT",
+    "status": "existing",
+    "name": "SMR Tibialis Anterior",
+    "matchedSeedName": "SMR Tibialis Anterior",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E015",
+    "phaseRaw": "MoveFlexRelax",
+    "phase": "INHIBIT",
+    "status": "existing",
+    "name": "SMR Tibialis Posterior",
+    "matchedSeedName": "SMR Tibialis Posterior",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E016",
+    "phaseRaw": "MoveFlexStretch",
+    "phase": "LENGTHEN",
+    "status": "existing",
+    "name": "Abdominal Stretch im Liegen",
+    "matchedSeedName": "Abdominal Stretch im Liegen",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E017",
+    "phaseRaw": "MoveFlexStretch",
+    "phase": "LENGTHEN",
+    "status": "existing",
+    "name": "Adductor Stretch + Mobilisation erhöht",
+    "matchedSeedName": "Adductor Stretch + Mobilisation (erhöht)",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E018",
+    "phaseRaw": "MoveFlexStretch",
+    "phase": "LENGTHEN",
+    "status": "existing",
+    "name": "Child’s Pose mit Lateralflexion",
+    "matchedSeedName": "Child’s Pose mit Lateralflexion",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E019",
+    "phaseRaw": "MoveFlexStretch",
+    "phase": "LENGTHEN",
+    "status": "existing",
+    "name": "Figure-4 Lumbar Rotation Stretch",
+    "matchedSeedName": "Figure-4 Lumbar Rotation Stretch",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E020",
+    "phaseRaw": "MoveFlexStretch",
+    "phase": "LENGTHEN",
+    "status": "existing",
+    "name": "Gastrocnemius Stretch mit Fußerhöhung",
+    "matchedSeedName": "Gastrocnemius Stretch (mit Fußerhöhung)",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E021",
+    "phaseRaw": "MoveFlexStretch",
+    "phase": "LENGTHEN",
+    "status": "existing",
+    "name": "Hamstring Stretch stehend mit Erhöhung",
+    "matchedSeedName": "Hamstring Stretch stehend (mit Erhöhung)",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E022",
+    "phaseRaw": "MoveFlexStretch",
+    "phase": "LENGTHEN",
+    "status": "existing",
+    "name": "Hip Flexor Stretch",
+    "matchedSeedName": "Hip Flexor Stretch",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E023",
+    "phaseRaw": "MoveFlexStretch",
+    "phase": "LENGTHEN",
+    "status": "existing",
+    "name": "Kneeling Lat Stretch",
+    "matchedSeedName": "Kneeling Lat Stretch",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E024",
+    "phaseRaw": "MoveFlexStretch",
+    "phase": "LENGTHEN",
+    "status": "existing",
+    "name": "Lat Stretch Door",
+    "matchedSeedName": "Lat Stretch Door",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E025",
+    "phaseRaw": "MoveFlexStretch",
+    "phase": "LENGTHEN",
+    "status": "existing",
+    "name": "Levator Scapulae Stretch sitzend",
+    "matchedSeedName": "Levator Scapulae Stretch sitzend",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E026",
+    "phaseRaw": "MoveFlexStretch",
+    "phase": "LENGTHEN",
+    "status": "existing",
+    "name": "Pec Stretch",
+    "matchedSeedName": "Pec Stretch",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E027",
+    "phaseRaw": "MoveFlexStretch",
+    "phase": "LENGTHEN",
+    "status": "existing",
+    "name": "Peroneal Stretch und Mobilisation",
+    "matchedSeedName": "Peroneal Stretch und Mobilisation",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E028",
+    "phaseRaw": "MoveFlexStretch",
+    "phase": "LENGTHEN",
+    "status": "existing",
+    "name": "Piriformis + Glutes Stretch",
+    "matchedSeedName": "Piriformis + Glutes Stretch",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E029",
+    "phaseRaw": "MoveFlexStretch",
+    "phase": "LENGTHEN",
+    "status": "existing",
+    "name": "Quadrizeps Stretch liegend",
+    "matchedSeedName": "Quadrizeps Stretch liegend",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E030",
+    "phaseRaw": "MoveFlexStretch",
+    "phase": "LENGTHEN",
+    "status": "existing",
+    "name": "SCM Stretch sitzend",
+    "matchedSeedName": "SCM Stretch sitzend",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E031",
+    "phaseRaw": "MoveFlexStretch",
+    "phase": "LENGTHEN",
+    "status": "existing",
+    "name": "Soleus Stretch mit Fußerhöhung",
+    "matchedSeedName": "Soleus Stretch (mit Fußerhöhung)",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E032",
+    "phaseRaw": "MoveFlexStretch",
+    "phase": "LENGTHEN",
+    "status": "existing",
+    "name": "TFL Stretch im Stehen / Cross-Over Wall Stretch",
+    "matchedSeedName": "TFL Stretch im Stehen (Cross-Over Wall Stretch)",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E033",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "existing",
+    "name": "Activation Quad Sets mit Faszienrolle",
+    "matchedSeedName": "Activation Quad Sets mit Faszienrolle",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E034",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "existing",
+    "name": "Activation Standing Banded Hip Adduction",
+    "matchedSeedName": "Activation Standing Banded Hip Adduction",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E035",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "existing",
+    "name": "Activation Terminal Knee Extension mit Powerband",
+    "matchedSeedName": "Activation Terminal Knee Extension (Powerband)",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E036",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "existing",
+    "name": "Banded Scapular Protractions",
+    "matchedSeedName": "Banded Scapular Protractions",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E037",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "existing",
+    "name": "Banded Scapular Retractions",
+    "matchedSeedName": "Banded Scapular Retractions",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E038",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "existing",
+    "name": "Banded Shrugs",
+    "matchedSeedName": "Banded Shrugs",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E039",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "existing",
+    "name": "Banded Side Bend",
+    "matchedSeedName": "Banded Side Bend",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E040",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "existing",
+    "name": "Bird Dog",
+    "matchedSeedName": "Bird Dog",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E041",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "existing",
+    "name": "Dead Bug",
+    "matchedSeedName": "Dead Bug",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E042",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "existing",
+    "name": "Floor Angels",
+    "matchedSeedName": "Floor Angels",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E043",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "existing",
+    "name": "Frog Crunch / Butterfly Crunch",
+    "matchedSeedName": "Frog Crunch (Butterfly Crunch)",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E044",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "existing",
+    "name": "Gastrocnemius Activation mit Erhöhung",
+    "matchedSeedName": "Gastrocnemius Activation (mit Erhöhung)",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E045",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "existing",
+    "name": "Glute Med Activation mit Miniband",
+    "matchedSeedName": "Glute Med Activation (Miniband)",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E046",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "existing",
+    "name": "Pallof Press",
+    "matchedSeedName": "Pallof Press",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E047",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "existing",
+    "name": "Resisted Ankle Eversion mit Miniband",
+    "matchedSeedName": "Resisted Ankle Eversion mit Miniband",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E048",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "existing",
+    "name": "Resisted Ankle Inversion mit Miniband",
+    "matchedSeedName": "Resisted Ankle Inversion mit Miniband",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E049",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "existing",
+    "name": "Side-Lying Hip Abduction an der Wand",
+    "matchedSeedName": "Side-Lying Hip Abduction (an der Wand) Activation",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E050",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "existing",
+    "name": "Side-Lying Leg Lift Activation / Hip Adduction",
+    "matchedSeedName": "Side-Lying Leg Lift Activation",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E051",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "existing",
+    "name": "Single-Leg Glute Bridge with Knee Hug",
+    "matchedSeedName": "Single-Leg Glute Bridge with Knee Hug",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E052",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "existing",
+    "name": "Soleus Activation einbeinig in erhöhter Position",
+    "matchedSeedName": "Soleus Activation (einbeinig, erhöhte Position)",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E053",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "existing",
+    "name": "Standing Mini-Band Hip March",
+    "matchedSeedName": "Standing Mini-Band Hip March",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E054",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "existing",
+    "name": "Tibialis Anterior Activation mit Miniband",
+    "matchedSeedName": "Tibialis Anterior Activation (Miniband)",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E055",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "existing",
+    "name": "Tibialis Anterior Raise mit Miniband sitzend",
+    "matchedSeedName": "Tibialis Anterior Raise mit Miniband sitzend",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E056",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "existing",
+    "name": "Towel Scrunch im Stehen",
+    "matchedSeedName": "Towel Scrunch im Stehen",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E057",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "existing",
+    "name": "Wall Chin Tucks",
+    "matchedSeedName": "Wall Chin Tucks",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E058",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "existing",
+    "name": "Banded Deadlift",
+    "matchedSeedName": "Banded Deadlift",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E059",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "existing",
+    "name": "Dynamic Lateral Step-Down",
+    "matchedSeedName": "Dynamic Lateral Step-Down",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E060",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "existing",
+    "name": "Forward Lunge",
+    "matchedSeedName": "Forward Lunge",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E061",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "existing",
+    "name": "Heels-Elevated Squat",
+    "matchedSeedName": "Heels-Elevated Squat",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E062",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "existing",
+    "name": "Reverse Lunge",
+    "matchedSeedName": "Reverse Lunge",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E063",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "existing",
+    "name": "Side Lunge dynamisch im Wechsel",
+    "matchedSeedName": "Side Lunge (dynamisch im Wechsel)",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E064",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "existing",
+    "name": "Single Leg Deadlift",
+    "matchedSeedName": "Single Leg Deadlift",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E065",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "existing",
+    "name": "Single-Leg Balance with Torso Rotation",
+    "matchedSeedName": "Single-Leg Balance with Torso Rotation",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E066",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "existing",
+    "name": "Single-Leg Box Squat",
+    "matchedSeedName": "Single-Leg Box Squat",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E067",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "existing",
+    "name": "Staggered Stance Banded Press with Reciprocal Reach",
+    "matchedSeedName": "Staggered Stance Banded Press with Reciprocal Reach",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E068",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "existing",
+    "name": "Staggered Stance Banded Rotational",
+    "matchedSeedName": "Staggered Stance Banded Rotational",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E069",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "existing",
+    "name": "Staggered Stance Banded Row with Reciprocal Reach",
+    "matchedSeedName": "Staggered Stance Banded Row with Reciprocal Reach",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E070",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "existing",
+    "name": "Step Down",
+    "matchedSeedName": "Step Down",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E071",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "existing",
+    "name": "Step-Up with Knee Drive",
+    "matchedSeedName": "Step-Up with Knee Drive",
+    "matchedSeedSource": "exercises.json"
+  },
+  {
+    "code": "E072",
+    "phaseRaw": "MoveFlexStretch / Mobilize",
+    "phase": "LENGTHEN",
+    "status": "planned_video",
+    "name": "Self-Administered Ankle Dorsiflexion Mobilization mit Powerband",
+    "matchedSeedName": "Selbstmobilisation Sprunggelenk-Dorsalflexion mit Powerband",
+    "matchedSeedSource": "draft-exercises.json"
+  },
+  {
+    "code": "E073",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "planned_video",
+    "name": "Tibialis Posterior Heel Raise with Arch Control",
+    "matchedSeedName": "Tibialis-posterior-Fersenhub mit Fußgewölbekontrolle",
+    "matchedSeedSource": "draft-exercises.json"
+  },
+  {
+    "code": "E074",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "planned_video",
+    "name": "Resisted Tibial Internal Rotation",
+    "matchedSeedName": "Widerstandskontrolle gegen Tibia-Innenrotation",
+    "matchedSeedSource": "draft-exercises.json"
+  },
+  {
+    "code": "E075",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "planned_video",
+    "name": "Medial Hamstring Activation with Tibial Internal Rotation",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E076",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "planned_video",
+    "name": "Popliteus Activation / Tibial Internal Rotation Control",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E077",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "planned_video",
+    "name": "Short Foot / Arch Doming",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E078",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "planned_video",
+    "name": "Prone Bent-Knee Hip Extension – Glute Max Isolation",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E079",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "planned_video",
+    "name": "Banded Clamshell / Hip External Rotation",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E080",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "planned_video",
+    "name": "Assisted Hip Airplane / Single-Leg Hip Rotation Control",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E081",
+    "phaseRaw": "MoveFlexStretch / Mobilize",
+    "phase": "LENGTHEN",
+    "status": "planned_video",
+    "name": "Self-Administered Hip Posterior Glide Mobilization",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E082",
+    "phaseRaw": "MoveFlexStretch / Mobilize",
+    "phase": "LENGTHEN",
+    "status": "planned_video",
+    "name": "Self-Administered Hip Lateral Distraction",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E083",
+    "phaseRaw": "MoveFlexStretch",
+    "phase": "LENGTHEN",
+    "status": "planned_video",
+    "name": "90/90 Hip Internal Rotation Mobility",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E084",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "planned_video",
+    "name": "90/90 Breathing + TVA Brace",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E085",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "planned_video",
+    "name": "Quadruped TVA Activation / Abdominal Draw-In",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E086",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "planned_video",
+    "name": "Bear Plank Hold",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E087",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "planned_video",
+    "name": "Side-Lying Shoulder External Rotation",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E088",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "planned_video",
+    "name": "Banded Shoulder External Rotation at 0° Abduction",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E089",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "planned_video",
+    "name": "Serratus Wall Slide + Reach",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E090",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "planned_video",
+    "name": "Prone Y / Lower Trapezius Raise",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E091",
+    "phaseRaw": "MoveSyncActivation / Integration",
+    "phase": "ACTIVATE",
+    "status": "planned_video",
+    "name": "Scapular Push-Up Plus",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E092",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "planned_video",
+    "name": "Overhead Long-Head Triceps Activation",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E093",
+    "phaseRaw": "MoveFlexRelax",
+    "phase": "INHIBIT",
+    "status": "planned_video",
+    "name": "Posterior Deltoid Release",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E094",
+    "phaseRaw": "MoveFlexRelax",
+    "phase": "INHIBIT",
+    "status": "planned_video",
+    "name": "Subscapularis Release",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E095",
+    "phaseRaw": "MoveFlexRelax",
+    "phase": "INHIBIT",
+    "status": "planned_video",
+    "name": "Teres Major Release",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E096",
+    "phaseRaw": "MoveFlexStretch / Mobilize",
+    "phase": "LENGTHEN",
+    "status": "planned_video",
+    "name": "Self-Administered Shoulder Posterior Glide",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E097",
+    "phaseRaw": "MoveFlexStretch / Mobilize",
+    "phase": "LENGTHEN",
+    "status": "planned_video",
+    "name": "Self-Administered Shoulder Inferior Glide",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E098",
+    "phaseRaw": "MoveFlexStretch / Mobilize",
+    "phase": "LENGTHEN",
+    "status": "planned_video",
+    "name": "First Rib Self-Mobilization",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E099",
+    "phaseRaw": "MoveFlexStretch",
+    "phase": "LENGTHEN",
+    "status": "planned_video",
+    "name": "Open Book Thoracic Rotation",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E100",
+    "phaseRaw": "MoveFlexStretch / Mobility",
+    "phase": "LENGTHEN",
+    "status": "planned_video",
+    "name": "Quadruped Thoracic Rotation",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E101",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "planned_video",
+    "name": "Supine Deep Cervical Flexor Nod",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E102",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "planned_video",
+    "name": "Half-Kneeling Static Chop",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E103",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "planned_video",
+    "name": "Tall-Kneeling Diagonal Chop",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E104",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "planned_video",
+    "name": "Half-Kneeling Diagonal Lift",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E105",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "planned_video",
+    "name": "Glute Bridge + Contralateral Band Pulldown",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E106",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "planned_video",
+    "name": "Reverse Lunge + Contralateral Row",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E107",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "planned_video",
+    "name": "Split Squat + Contralateral Row",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E108",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "planned_video",
+    "name": "Single-Leg RDL + Contralateral Row",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E109",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "planned_video",
+    "name": "Step-Up + Contralateral Row",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E110",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "planned_video",
+    "name": "Side Plank + Row",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E111",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "planned_video",
+    "name": "Split Squat + Contralateral Press",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E112",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "planned_video",
+    "name": "Reverse Lunge + Contralateral Press",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E113",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "planned_video",
+    "name": "Step-Up + Contralateral Press",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E114",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "planned_video",
+    "name": "Dead Bug + Band Pulldown",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E115",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "planned_video",
+    "name": "Bear Plank + Alternating Shoulder Tap",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E116",
+    "phaseRaw": "MoveSyncIntegration",
+    "phase": "INTEGRATE",
+    "status": "planned_video",
+    "name": "Bird Dog + Band Row",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E117",
+    "phaseRaw": "MoveFlexRelax",
+    "phase": "INHIBIT",
+    "status": "planned_video",
+    "name": "SMR Unterarmstrecker",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E118",
+    "phaseRaw": "MoveFlexRelax",
+    "phase": "INHIBIT",
+    "status": "planned_video",
+    "name": "SMR Unterarmbeuger & Pronatoren",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E119",
+    "phaseRaw": "MoveFlexStretch",
+    "phase": "LENGTHEN",
+    "status": "planned_video",
+    "name": "Unterarmstrecker Stretch",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E120",
+    "phaseRaw": "MoveFlexStretch",
+    "phase": "LENGTHEN",
+    "status": "planned_video",
+    "name": "Unterarmbeuger Stretch",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E121",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "planned_video",
+    "name": "Isometrische Handgelenkextension",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E122",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "planned_video",
+    "name": "Langsame Handgelenkextension",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E123",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "planned_video",
+    "name": "Isometrische Handgelenkflexion",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E124",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "planned_video",
+    "name": "Langsame Handgelenkflexion",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E125",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "planned_video",
+    "name": "Widerstand gegen Pronation",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  },
+  {
+    "code": "E126",
+    "phaseRaw": "MoveSyncActivation",
+    "phase": "ACTIVATE",
+    "status": "planned_video",
+    "name": "Widerstand gegen Supination",
+    "matchedSeedName": null,
+    "matchedSeedSource": null
+  }
+]

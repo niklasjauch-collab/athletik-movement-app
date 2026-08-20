@@ -5,13 +5,20 @@
     "nameEn": "Self-Administered Ankle Dorsiflexion Mobilization with Band",
     "description": "Aktive Gelenkmobilisation des oberen Sprunggelenks mittels Bandwiderstand zur Verbesserung der talokruralen Dorsalflexion (posteriorer Talus-Gleit). Keine Muskeldehnung, sondern eine gezielte Arthrokinematik-Mobilisation.",
     "language": "de",
-    "muscleGroups": ["Beine"],
-    "equipment": ["Theraband"],
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Theraband"
+    ],
     "unit": "Sekunden",
     "pauseSeconds": 30,
-    "sets": [10, 10],
+    "sets": [
+      10,
+      10
+    ],
     "intensity": "medium",
-    "notes": null,
+    "notes": "Kamera (Filming Guide): Seitlich 30–45°. Zweiter kurzer Front-Take für Knie-/Fußachse.",
     "videoMalePath": null,
     "videoFemalePath": null,
     "correctivePhase": "LENGTHEN",
@@ -21,8 +28,15 @@
     "bibCategory": "BI_BASED",
     "level": "LEVEL_1",
     "productionRound": 1,
-    "relevantSigns": ["Feet Flatten", "Feet Turn Out", "Excessive Forward Lean", "Heels Rise"],
-    "relevantSignClusters": ["LED"],
+    "relevantSigns": [
+      "Feet Flatten",
+      "Feet Turn Out",
+      "Excessive Forward Lean",
+      "Heels Rise"
+    ],
+    "relevantSignClusters": [
+      "LED"
+    ],
     "relevantSubsystems": [],
     "rationale": "Eingeschränkte Sprunggelenks-Dorsalflexion ist einer der häufigsten Treiber für Fußpronation, Fersenanheben und Vorlage des Oberkörpers im Overhead Squat. Die Bibliothek deckt bereits Wadenmuskel-Dehnung ab, aber keine gezielte Gelenkkapsel-Mobilisation.",
     "startPosition": "Band auf Höhe des Sprunggelenks um den Talus (vorderer Unterschenkel, direkt über dem Fußgelenk) legen, anderes Ende hinter dem Körper an einem stabilen Ankerpunkt fixieren, sodass der Zug das Sprunggelenk nach hinten zieht. Das zu mobilisierende Bein steht vorne in einer Ausfallschrittposition, das Knie zeigt Richtung Ankerpunkt.",
@@ -53,24 +67,37 @@
     "nameEn": "Tibialis Posterior Heel Raise with Arch Control",
     "description": "Aktivierungsübung für den Tibialis posterior über einen kontrollierten Fersenhub mit vorgeschaltetem Anheben des medialen Fußgewölbes, zur Verbesserung der Fußgewölbekontrolle bei Pronationsmustern.",
     "language": "de",
-    "muscleGroups": ["Beine"],
-    "equipment": ["Körpergewicht"],
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Körpergewicht"
+    ],
     "unit": "Körpergewicht",
     "pauseSeconds": 0,
-    "sets": [15, 15],
+    "sets": [
+      15,
+      15
+    ],
     "intensity": "medium",
-    "notes": null,
+    "notes": "Kamera (Filming Guide): Schräg von hinten, sodass Ferse und mediales Fußgewölbe sichtbar sind.",
     "videoMalePath": null,
     "videoFemalePath": null,
     "correctivePhase": "ACTIVATE",
-    "targetMuscles": ["Posterior Tibialis"],
+    "targetMuscles": [
+      "Posterior Tibialis"
+    ],
     "taggingSource": "manual",
     "isPublished": false,
     "bibCategory": "BI_BASED",
     "level": "LEVEL_2",
     "productionRound": 1,
-    "relevantSigns": ["Feet Flatten"],
-    "relevantSignClusters": ["LED"],
+    "relevantSigns": [
+      "Feet Flatten"
+    ],
+    "relevantSignClusters": [
+      "LED"
+    ],
     "relevantSubsystems": [],
     "rationale": "Tibialis posterior ist bei Pronationsmustern (Pronation Distortion Syndrome) typischerweise unteraktiv/gehemmt. Die Bibliothek hat bereits SMR Tibialis Posterior (Release), aber keine isolierte Aktivierungsübung.",
     "startPosition": "Aufrechter Stand, Gewicht gleichmäßig auf beiden Füßen, Füße hüftbreit und parallel.",
@@ -101,24 +128,38 @@
     "nameEn": "Resisted Tibial Internal Rotation (Control Drill)",
     "description": "Bandgestützte Kontrollübung gegen exzessive Tibia-Innenrotation im geschlossenen kinetischen Kette, zur Vorbereitung aktiver Knie-/Fußkontrolle bei Valgus- und Pronationsmustern.",
     "language": "de",
-    "muscleGroups": ["Beine"],
-    "equipment": ["Theraband"],
+    "muscleGroups": [
+      "Beine"
+    ],
+    "equipment": [
+      "Theraband"
+    ],
     "unit": "Körpergewicht",
     "pauseSeconds": 0,
-    "sets": [12, 12],
+    "sets": [
+      12,
+      12
+    ],
     "intensity": "medium",
-    "notes": null,
+    "notes": "Kamera (Filming Guide): Von vorne leicht schräg; Knie, Unterschenkel und Fuß müssen gleichzeitig sichtbar sein.",
     "videoMalePath": null,
     "videoFemalePath": null,
     "correctivePhase": "ACTIVATE",
-    "targetMuscles": ["Posterior Tibialis"],
+    "targetMuscles": [
+      "Posterior Tibialis"
+    ],
     "taggingSource": "manual",
     "isPublished": false,
     "bibCategory": "BI_BASED",
     "level": "LEVEL_2",
     "productionRound": 1,
-    "relevantSigns": ["Feet Turn Out", "Knees Move Inward"],
-    "relevantSignClusters": ["LED"],
+    "relevantSigns": [
+      "Feet Turn Out",
+      "Knees Move Inward"
+    ],
+    "relevantSignClusters": [
+      "LED"
+    ],
     "relevantSubsystems": [],
     "rationale": "Übermäßige Tibia-Innenrotation ist ein zentraler Treiber für Knee Valgus und kompensatorische Fußpronation. Legt die motorische Grundlage für die aufbauenden Runde-2-Übungen (Medial Hamstring Activation, Popliteus Activation).",
     "startPosition": "Band knapp oberhalb des Sprunggelenks um den distalen Unterschenkel legen, anderes Ende seitlich/schräg hinten an einem Ankerpunkt fixieren, sodass die Zugrichtung eine Innenrotation der Tibia erzeugt. Stand auf dem Trainingsbein, Knie leicht gebeugt.",

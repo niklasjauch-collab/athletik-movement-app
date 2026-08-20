@@ -11,15 +11,34 @@
     "pauseSeconds": 30,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Leichtes Band",
+      "Matte"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E075, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E075, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Seitlich-hinten, damit Kniebeugung und Fußstellung sichtbar sind.",
+    "nameEn": null,
+    "startPosition": "Bauchlage. Knie auf ca. 60–90° beugen. Tibia leicht nach innen rotieren – optisch bewegt sich der Fuß dabei etwas nach außen.",
+    "execution": "Aus der leicht innenrotierten Tibia das Knie kontrolliert gegen den Bandwiderstand weiter beugen. Oben 2 Sekunden halten, in 3–4 Sekunden absenken.",
+    "coachingCues": [
+      "Becken bleibt am Boden",
+      "Fuß nur leicht nach außen",
+      "Bewegung kommt aus Kniebeugung",
+      "Hamstrings arbeiten, nicht der untere Rücken"
+    ],
+    "commonMistakes": [
+      "Becken hebt ab",
+      "starke Hüftrotation",
+      "Fuß maximal verdrehen",
+      "schnelles Curling"
+    ],
+    "productionRound": 2
   },
   {
     "smartMotionCode": "E076",
-    "name": "Popliteus Activation / Tibial Internal Rotation Control",
+    "name": "Popliteus Activation",
     "correctivePhase": "ACTIVATE",
     "unit": "Wiederholungen",
     "sets": [
@@ -29,15 +48,33 @@
     "pauseSeconds": 30,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Sehr leichtes Band"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E076, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E076, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Front/45°, Nahaufnahme auf Knie und Unterschenkel.",
+    "nameEn": "Tibial Internal Rotation Control",
+    "startPosition": "Sitzend mit Knie fast gestreckt, aber nicht verriegelt. Band erzeugt einen leichten Außenrotationszug auf den Unterschenkel.",
+    "execution": "Knie minimal „entriegeln“ und dabei die Tibia sanft nach innen rotieren. 2 Sekunden halten, kontrolliert zurück in die nahezu gestreckte Position.",
+    "coachingCues": [
+      "Sehr kleine Bewegung",
+      "Knie bleibt über dem Fuß",
+      "Rotation statt seitliches Wegkippen",
+      "niedriger Widerstand"
+    ],
+    "commonMistakes": [
+      "Volle Kniebeuge daraus machen",
+      "kräftig rotieren",
+      "Schmerz in Kniekehle/Gelenk",
+      "Femur dreht mit"
+    ],
+    "productionRound": 2
   },
   {
     "smartMotionCode": "E077",
-    "name": "Short Foot / Arch Doming",
+    "name": "Short Foot",
     "correctivePhase": "ACTIVATE",
     "unit": "Wiederholungen",
     "sets": [
@@ -47,11 +84,29 @@
     "pauseSeconds": 30,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Keines"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E077, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E077, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Seitlich nah auf Fuß, zusätzlich 30° von vorne.",
+    "nameEn": "Arch Doming",
+    "startPosition": "Barfuß stehen oder sitzen. Großzehenballen, Kleinzehenballen und Ferse bleiben am Boden.",
+    "execution": "Vorfuß gedanklich zur Ferse ziehen und dadurch das Längsgewölbe anheben, ohne die Zehen zu beugen. 3–5 Sekunden halten, lösen.",
+    "coachingCues": [
+      "Zehen lang lassen",
+      "drei Kontaktpunkte behalten",
+      "Fuß kürzer machen",
+      "Knie bleibt ruhig"
+    ],
+    "commonMistakes": [
+      "Zehen krallen",
+      "Großzehe hebt ab",
+      "Fuß auf Außenkante rollen",
+      "Spannung bis in Wade erzwingen"
+    ],
+    "productionRound": 2
   },
   {
     "smartMotionCode": "E078",
@@ -65,15 +120,33 @@
     "pauseSeconds": 30,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Matte"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E078, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E078, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Seitlich.",
+    "nameEn": null,
+    "startPosition": "Bauchlage, ein Knie auf ca. 90° beugen. Becken neutral, Bauch leicht aktiv.",
+    "execution": "Oberschenkel wenige Zentimeter vom Boden anheben, ohne die LWS zu überstrecken. Oben 2 Sekunden halten, langsam absenken.",
+    "coachingCues": [
+      "Ferse Richtung Decke",
+      "Becken bleibt schwer",
+      "Gesäß anspannen",
+      "kleine saubere Bewegung"
+    ],
+    "commonMistakes": [
+      "Hohlkreuz",
+      "Becken rotiert",
+      "Bein wird sehr hoch gehoben",
+      "Schwung"
+    ],
+    "productionRound": 3
   },
   {
     "smartMotionCode": "E079",
-    "name": "Banded Clamshell / Hip External Rotation",
+    "name": "Banded Clamshell",
     "correctivePhase": "ACTIVATE",
     "unit": "Wiederholungen",
     "sets": [
@@ -84,16 +157,33 @@
     "intensity": "medium",
     "muscleGroups": [],
     "equipment": [
-      "Widerstandsband"
+      "Miniband",
+      "Matte"
     ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E079, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E079, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Schräg von vorne/oben, damit Becken und Knie sichtbar sind.",
+    "nameEn": "Hip External Rotation",
+    "startPosition": "Seitlage, Hüfte und Knie leicht gebeugt, Füße übereinander. Miniband oberhalb der Knie. Becken senkrecht übereinander.",
+    "execution": "Füße zusammenlassen und oberes Knie kontrolliert öffnen. Becken bleibt stabil. 2 Sekunden halten, langsam schließen.",
+    "coachingCues": [
+      "Becken nicht nach hinten rollen",
+      "Füße zusammen",
+      "Spannung seitlich im Gesäß",
+      "kleiner sauberer Weg"
+    ],
+    "commonMistakes": [
+      "Maximal weit öffnen",
+      "LWS mitdrehen",
+      "Fuß lösen",
+      "Band zu stark wählen"
+    ],
+    "productionRound": 3
   },
   {
     "smartMotionCode": "E080",
-    "name": "Assisted Hip Airplane / Single-Leg Hip Rotation Control",
+    "name": "Assisted Hip Airplane",
     "correctivePhase": "INTEGRATE",
     "unit": "Wiederholungen",
     "sets": [
@@ -103,11 +193,29 @@
     "pauseSeconds": 45,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Stange/Wand zur Unterstützung"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E080, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E080, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Von vorne 30–45°, zweite Perspektive seitlich.",
+    "nameEn": "Single-Leg Hip Rotation Control",
+    "startPosition": "Einbeinstand mit leichter Handunterstützung. Hüfte in einen kleinen Single-Leg-RDL-Hinge bringen. Standknie leicht gebeugt.",
+    "execution": "Becken langsam um den Oberschenkel öffnen und wieder schließen, ohne Standfuß oder Knieposition zu verlieren. Oberkörper bewegt sich mit dem Becken als Einheit.",
+    "coachingCues": [
+      "Standfuß bleibt Dreipunkt",
+      "Knie zeigt über den Fuß",
+      "Becken rotiert kontrolliert",
+      "Hand nur zur Balance"
+    ],
+    "commonMistakes": [
+      "Knie kollabiert",
+      "Fuß rollt weg",
+      "Bewegung aus LWS",
+      "zu große Rotation"
+    ],
+    "productionRound": 3
   },
   {
     "smartMotionCode": "E081",
@@ -121,11 +229,31 @@
     "pauseSeconds": 0,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Starkes Powerband",
+      "Matte"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E081, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E081, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Seitlich, Bandverlauf vollständig sichtbar.",
+    "nameEn": null,
+    "startPosition": "Quadruped oder halb kniend. Band gelenknah um den proximalen Oberschenkel legen; Anker so wählen, dass der Zug den Femur posterior führt.",
+    "execution": "Wirbelsäule neutral halten und Hüfte langsam nach hinten in Flexion bewegen. Am angenehmen Endpunkt kurz halten, wieder vor. 4–6 Wiederholungen.",
+    "coachingCues": [
+      "Band sitzt hoch am Oberschenkel",
+      "Rücken bleibt neutral",
+      "kein Einklemmen vorne in der Hüfte",
+      "Bewegung langsam"
+    ],
+    "commonMistakes": [
+      "Band über Leiste/Genitalbereich",
+      "aggressive Traktion",
+      "Beckendrehung",
+      "Schmerz/Pinching"
+    ],
+    "contraindicationNote": "⚠️ Vor Veröffentlichung durch qualifizierte Fachperson gegen die originale Fachquelle prüfen (Technik, Bandposition/Griff, Kontraindikationen) -- siehe Filming Guide Sicherheitsprüfung. Shoulder/Hip Band Mobilization: Band immer gelenknah und kontrolliert; keine aggressive Traktion.",
+    "productionRound": 4
   },
   {
     "smartMotionCode": "E082",
@@ -139,11 +267,31 @@
     "pauseSeconds": 0,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Starkes Powerband",
+      "Matte"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E082, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E082, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Von vorne schräg, sodass lateraler Bandzug sichtbar ist.",
+    "nameEn": null,
+    "startPosition": "Band sehr hoch um proximalen Oberschenkel. Anker seitlich, sodass ein klarer lateraler Zug auf die Hüfte entsteht.",
+    "execution": "In einer stabilen halb knienden oder quadrupeden Position langsam in die gewünschte Hüftbewegung gehen und zurück. Zug konstant halten.",
+    "coachingCues": [
+      "Band gelenknah",
+      "Becken bleibt kontrolliert",
+      "nur angenehme Traktion",
+      "keine Endrange erzwingen"
+    ],
+    "commonMistakes": [
+      "Band auf empfindlichen Strukturen",
+      "hoher Schmerz",
+      "ruckartige Bewegungen",
+      "Rotation aus der LWS"
+    ],
+    "contraindicationNote": "⚠️ Vor Veröffentlichung durch qualifizierte Fachperson gegen die originale Fachquelle prüfen (Technik, Bandposition/Griff, Kontraindikationen) -- siehe Filming Guide Sicherheitsprüfung. Shoulder/Hip Band Mobilization: Band immer gelenknah und kontrolliert; keine aggressive Traktion.",
+    "productionRound": 4
   },
   {
     "smartMotionCode": "E083",
@@ -157,11 +305,30 @@
     "pauseSeconds": 0,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Matte",
+      "optional Yoga-Block"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E083, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E083, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Von vorne leicht erhöht.",
+    "nameEn": null,
+    "startPosition": "90/90-Sitz. Vorderes und hinteres Knie ungefähr 90°. Hände dürfen zunächst stützen.",
+    "execution": "Oberkörper aufrichten und die hintere Hüfte aktiv in Innenrotation kontrollieren. Optional hinteren Fuß wenige Zentimeter anheben, ohne das hintere Knie vom Boden zu lösen. Langsam absetzen.",
+    "coachingCues": [
+      "Becken möglichst ruhig",
+      "Bewegung aus der Hüfte",
+      "Knie bleibt entspannt am Boden",
+      "nicht in den Schmerz drücken"
+    ],
+    "commonMistakes": [
+      "Knie forcieren",
+      "Becken stark wegkippen",
+      "mit Schwung heben",
+      "Innenknieschmerz"
+    ],
+    "productionRound": 4
   },
   {
     "smartMotionCode": "E084",
@@ -175,15 +342,33 @@
     "pauseSeconds": 30,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Wand oder Bank"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E084, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E084, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Seitlich auf Rippenkorb, Bauch und Becken.",
+    "nameEn": null,
+    "startPosition": "Rückenlage, Hüfte und Knie ca. 90°, Füße an Wand oder Unterschenkel auf Bank. Wirbelsäule neutral.",
+    "execution": "Durch die Nase einatmen und Rippen seitlich/hinten erweitern. Lang ausatmen, Rippen kontrolliert senken und Bauchwand sanft 360° anspannen. Spannung halten und weiter atmen.",
+    "coachingCues": [
+      "Nicht maximal einziehen",
+      "Rippen über Becken",
+      "ruhig weiteratmen",
+      "Beckenboden nur sanft mit einbeziehen"
+    ],
+    "commonMistakes": [
+      "Pressatmung",
+      "starkes Abflachen der LWS",
+      "Bauch maximal hohl ziehen",
+      "Schultern hochziehen"
+    ],
+    "productionRound": 5
   },
   {
     "smartMotionCode": "E085",
-    "name": "Quadruped TVA Activation / Abdominal Draw-In",
+    "name": "Quadruped TVA Activation",
     "correctivePhase": "ACTIVATE",
     "unit": "Wiederholungen",
     "sets": [
@@ -193,11 +378,29 @@
     "pauseSeconds": 30,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Matte"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E085, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E085, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Seitlich.",
+    "nameEn": "Abdominal Draw-In",
+    "startPosition": "Vierfüßler, Hände unter Schultern, Knie unter Hüften, Wirbelsäule neutral.",
+    "execution": "Einatmen. Beim Ausatmen unteren Bauch sanft nach innen/oben aktivieren, ohne Wirbelsäule oder Becken zu bewegen. 5–10 Sekunden ruhig weiteratmen.",
+    "coachingCues": [
+      "Rücken bleibt unverändert",
+      "nur geringe Bauchspannung",
+      "weiteratmen",
+      "Nacken lang"
+    ],
+    "commonMistakes": [
+      "Cat-Cow-Bewegung",
+      "Luft anhalten",
+      "Bauch maximal einziehen",
+      "Schulterblätter einsinken lassen"
+    ],
+    "productionRound": 5
   },
   {
     "smartMotionCode": "E086",
@@ -211,11 +414,29 @@
     "pauseSeconds": 45,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Matte"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E086, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E086, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Seitlich leicht schräg.",
+    "nameEn": null,
+    "startPosition": "Vierfüßler, Zehen aufgestellt. Bauchspannung aufbauen.",
+    "execution": "Knie 2–4 cm vom Boden anheben und Position halten. Schulterblätter aktiv, Rücken neutral, gleichmäßig atmen.",
+    "coachingCues": [
+      "Knie knapp über Boden",
+      "Rippen über Becken",
+      "Boden wegdrücken",
+      "ruhig atmen"
+    ],
+    "commonMistakes": [
+      "Po hochschieben",
+      "LWS hängt durch",
+      "Kopf fällt",
+      "Gewicht nur auf Händen"
+    ],
+    "productionRound": 5
   },
   {
     "smartMotionCode": "E087",
@@ -229,11 +450,30 @@
     "pauseSeconds": 30,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Leichte Kurzhantel",
+      "Handtuchrolle"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E087, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E087, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Von vorne/45°, Schulter und Ellenbogen sichtbar.",
+    "nameEn": null,
+    "startPosition": "Seitlage. Oberer Ellenbogen ca. 90° gebeugt und am Rumpf, kleines Handtuch zwischen Ellenbogen und Rippen.",
+    "execution": "Unterarm aus Bauchposition nach oben außen rotieren, ohne Ellenbogen abzuheben. 2 Sekunden halten, 3–4 Sekunden absenken.",
+    "coachingCues": [
+      "Ellenbogen bleibt am Handtuch",
+      "Schulter nicht nach hinten ziehen",
+      "langsame Exzentrik",
+      "Nacken locker"
+    ],
+    "commonMistakes": [
+      "Rumpf rollt zurück",
+      "Ellenbogen wandert",
+      "zu schweres Gewicht",
+      "Schulter hebt an"
+    ],
+    "productionRound": 6
   },
   {
     "smartMotionCode": "E088",
@@ -248,12 +488,28 @@
     "intensity": "medium",
     "muscleGroups": [],
     "equipment": [
-      "Widerstandsband"
+      "Leichtes Theraband/Powerband"
     ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E088, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E088, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Frontal 30–45°.",
+    "nameEn": null,
+    "startPosition": "Aufrecht stehen. Ellenbogen 90° und am Körper, Handtuch optional. Band zieht die Hand zur Körpermitte.",
+    "execution": "Unterarm nach außen rotieren, Oberarm bleibt ruhig. 2 Sekunden halten, langsam zurück.",
+    "coachingCues": [
+      "Ellenbogen bleibt am Körper",
+      "Schulter tief",
+      "Rippen ruhig",
+      "nur Schulterrotation"
+    ],
+    "commonMistakes": [
+      "Rumpf rotiert",
+      "Handgelenk knickt",
+      "Schulterblatt wird maximal zusammengedrückt",
+      "Band zu stark"
+    ],
+    "productionRound": 6
   },
   {
     "smartMotionCode": "E089",
@@ -267,15 +523,34 @@
     "pauseSeconds": 30,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Wand",
+      "optional Miniband um Unterarme"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E089, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E089, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Schräg seitlich-vorne.",
+    "nameEn": null,
+    "startPosition": "Unterarme an die Wand, Ellenbogen etwa 90°. Leichten Druck in die Wand geben.",
+    "execution": "Unterarme langsam nach oben gleiten lassen. Am oberen Punkt aktiv noch etwas in die Wand bzw. nach vorne „reichen“, ohne Schulterhochziehen. Kontrolliert zurück.",
+    "coachingCues": [
+      "Boden/Wand wegdrücken",
+      "Schulterblatt darf aufwärts rotieren",
+      "Rippen unten",
+      "Nacken lang"
+    ],
+    "commonMistakes": [
+      "Schultern zu Ohren",
+      "Hohlkreuz",
+      "Unterarme verlieren Kontakt",
+      "Schulterblätter zwanghaft nach hinten ziehen"
+    ],
+    "productionRound": 6
   },
   {
     "smartMotionCode": "E090",
-    "name": "Prone Y / Lower Trapezius Raise",
+    "name": "Prone Y",
     "correctivePhase": "ACTIVATE",
     "unit": "Wiederholungen",
     "sets": [
@@ -285,11 +560,29 @@
     "pauseSeconds": 30,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Matte oder Bank"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E090, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E090, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Schräg von oben/hinten.",
+    "nameEn": "Lower Trapezius Raise",
+    "startPosition": "Bauchlage. Arme in Y-Position, Daumen nach oben. Stirn auf Handtuch.",
+    "execution": "Arme wenige Zentimeter anheben, Schulterblätter dabei leicht nach hinten-unten führen. 2 Sekunden halten, langsam ablegen.",
+    "coachingCues": [
+      "Daumen hoch",
+      "Nacken lang",
+      "Schulter nicht zu Ohr",
+      "Bewegung klein"
+    ],
+    "commonMistakes": [
+      "LWS überstrecken",
+      "Arme zu hoch",
+      "Schulterblätter stark zusammenquetschen",
+      "Schwung"
+    ],
+    "productionRound": 7
   },
   {
     "smartMotionCode": "E091",
@@ -303,11 +596,29 @@
     "pauseSeconds": 30,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Matte"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E091, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E091, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Seitlich-hinten, Schulterblätter müssen sichtbar sein.",
+    "nameEn": null,
+    "startPosition": "Plank oder Knie-Plank. Ellenbogen gestreckt.",
+    "execution": "Brustkorb kontrolliert zwischen die Schulterblätter sinken lassen, ohne Ellenbogen zu beugen. Anschließend Boden aktiv wegdrücken und Schulterblätter protra­hieren.",
+    "coachingCues": [
+      "Arme bleiben lang",
+      "Schulterblätter bewegen sich um den Brustkorb",
+      "Rumpf bleibt fest",
+      "Kopf neutral"
+    ],
+    "commonMistakes": [
+      "Normale Liegestütze daraus machen",
+      "LWS hängt",
+      "Schulterhochziehen",
+      "zu große Endrange"
+    ],
+    "productionRound": 7
   },
   {
     "smartMotionCode": "E092",
@@ -321,11 +632,29 @@
     "pauseSeconds": 30,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Band/Kabelzug"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E092, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E092, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Seitlich.",
+    "nameEn": null,
+    "startPosition": "Band tief/hinter dem Körper verankern. Oberarm über Kopf, Ellenbogen gebeugt. Rumpf neutral.",
+    "execution": "Ellenbogen gegen Widerstand strecken, Oberarm bleibt möglichst neben dem Kopf. Oben 2 Sekunden halten, langsam zurück.",
+    "coachingCues": [
+      "Oberarm bleibt ruhig",
+      "Rippen unten",
+      "Ellenbogen zeigt nach vorne",
+      "kontrollierte Rückführung"
+    ],
+    "commonMistakes": [
+      "Hohlkreuz",
+      "Ellenbogen wandert weit nach außen",
+      "Schulter hochziehen",
+      "Schwung"
+    ],
+    "productionRound": 7
   },
   {
     "smartMotionCode": "E093",
@@ -338,11 +667,29 @@
     "pauseSeconds": 0,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Massageball",
+      "Wand"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E093, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E093, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Schräg von hinten; Ballposition sichtbar.",
+    "nameEn": null,
+    "startPosition": "Ball an der hinteren Schulter unterhalb des Schulterdachs positionieren. An die Wand lehnen.",
+    "execution": "Langsam kleine Suchbewegungen machen. Auf einem tolerierbaren empfindlichen Punkt 20–30 Sekunden ruhig bleiben.",
+    "coachingCues": [
+      "Druck moderat",
+      "ruhig atmen",
+      "direkt auf Muskelgewebe",
+      "Schulter entspannen"
+    ],
+    "commonMistakes": [
+      "Auf Knochen/Schultergelenk drücken",
+      "schnelle Rollbewegung",
+      "Taubheit/Kribbeln ignorieren"
+    ],
+    "productionRound": 8
   },
   {
     "smartMotionCode": "E094",
@@ -355,11 +702,30 @@
     "pauseSeconds": 0,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Weicher Massageball oder geeigneter Release-Ball",
+      "Wand"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E094, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E094, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Sehr nah von seitlich-vorne; sichere Ballposition muss eindeutig erkennbar sein.",
+    "nameEn": null,
+    "startPosition": "Arm leicht anheben. Ball nur am zugänglichen muskulären Rand der lateralen Scapula bzw. posterioren Achselfalte platzieren – nicht tief in die Achselhöhle.",
+    "execution": "Sehr sanft gegen die Wand lehnen, 15–20 Sekunden halten, ggf. Arm minimal bewegen. Kein aggressives Suchen tief in der Axilla.",
+    "coachingCues": [
+      "Sanfter Druck",
+      "nicht tief in die Achsel",
+      "kein Kribbeln/Taubheit",
+      "ruhig atmen"
+    ],
+    "commonMistakes": [
+      "Direkter Druck auf neurovaskuläre Strukturen der Axilla",
+      "harte Bälle",
+      "starke Schmerzen"
+    ],
+    "contraindicationNote": "⚠️ Vor Veröffentlichung durch qualifizierte Fachperson gegen die originale Fachquelle prüfen (Technik, Bandposition/Griff, Kontraindikationen) -- siehe Filming Guide Sicherheitsprüfung. Subscapularis Release: kein direkter Druck tief in die Achselhöhle. Take-Reminder aus dem Filming Guide: Vor Veröffentlichung Technik nochmals fachlich validieren",
+    "productionRound": 8
   },
   {
     "smartMotionCode": "E095",
@@ -372,11 +738,29 @@
     "pauseSeconds": 0,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Massageball",
+      "Wand"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E095, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E095, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Seitlich-hinten.",
+    "nameEn": null,
+    "startPosition": "Ball an der hinteren Achselfalte unterhalb des Schulterblatts auf dem Teres-major-Bereich positionieren.",
+    "execution": "Leicht gegen Wand drücken, langsam kleine Bewegungen. Empfindlichen Punkt 20–30 Sekunden halten.",
+    "coachingCues": [
+      "Ball bleibt auf Muskelgewebe",
+      "Arm entspannt",
+      "Druck dosieren",
+      "ruhig atmen"
+    ],
+    "commonMistakes": [
+      "Zu weit in die Achselhöhle",
+      "direkt auf Rippen/Knochen",
+      "Taubheit oder ausstrahlende Symptome"
+    ],
+    "productionRound": 8
   },
   {
     "smartMotionCode": "E096",
@@ -390,11 +774,30 @@
     "pauseSeconds": 0,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Powerband",
+      "stabiler Anker"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E096, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E096, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Seitlich; Bandlage am proximalen Oberarm sichtbar.",
+    "nameEn": null,
+    "startPosition": "Band gelenknah um proximalen Oberarm legen und so verankern, dass ein sanfter posteriorer Zug entsteht. Schulter in einer gut tolerierbaren Position.",
+    "execution": "Posterioren Bandzug halten und den Arm langsam in den vorgesehenen Bewegungswinkel bewegen. Kleine, kontrollierte Wiederholungen ohne Endrange-Zwang.",
+    "coachingCues": [
+      "Band am Oberarm, nicht am Hals",
+      "Schulter entspannt",
+      "nur sanfte Traktion",
+      "kein vorderes Einklemmen"
+    ],
+    "commonMistakes": [
+      "Band über Gelenkspalt/Weichteile einschneiden lassen",
+      "aggressive Bewegung",
+      "Instabilitätsgefühl"
+    ],
+    "contraindicationNote": "⚠️ Vor Veröffentlichung durch qualifizierte Fachperson gegen die originale Fachquelle prüfen (Technik, Bandposition/Griff, Kontraindikationen) -- siehe Filming Guide Sicherheitsprüfung. Shoulder/Hip Band Mobilization: Band immer gelenknah und kontrolliert; keine aggressive Traktion. Take-Reminder aus dem Filming Guide: Technik vor Veröffentlichung validieren",
+    "productionRound": 9
   },
   {
     "smartMotionCode": "E097",
@@ -408,11 +811,30 @@
     "pauseSeconds": 0,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Powerband",
+      "hoher/stabiler Anker"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E097, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E097, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Frontal-seitlich; Bandzug nach inferior sichtbar.",
+    "nameEn": null,
+    "startPosition": "Band gelenknah am proximalen Humerus platzieren, sodass es einen sanften inferioren Zug erzeugt.",
+    "execution": "Unter konstantem leichtem Zug den Arm kontrolliert in Flexion/Abduktion führen und zurück. Bewegungsweg nur symptomarm.",
+    "coachingCues": [
+      "Schulter weg vom Ohr",
+      "Zug sanft",
+      "Rippen ruhig",
+      "kein Hohlkreuz"
+    ],
+    "commonMistakes": [
+      "Aggressive Traktion",
+      "schmerzhafter Bogen erzwingen",
+      "Schulterinstabilität"
+    ],
+    "contraindicationNote": "⚠️ Vor Veröffentlichung durch qualifizierte Fachperson gegen die originale Fachquelle prüfen (Technik, Bandposition/Griff, Kontraindikationen) -- siehe Filming Guide Sicherheitsprüfung. Shoulder/Hip Band Mobilization: Band immer gelenknah und kontrolliert; keine aggressive Traktion. Take-Reminder aus dem Filming Guide: Technik vor Veröffentlichung validieren",
+    "productionRound": 9
   },
   {
     "smartMotionCode": "E098",
@@ -426,11 +848,29 @@
     "pauseSeconds": 0,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Mobilisationsgurt oder festes Handtuch"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E098, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E098, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Frontal-seitlich als Nahaufnahme.",
+    "nameEn": null,
+    "startPosition": "Gurt über den oberen Schultergürtel im Bereich der ersten Rippe führen, fern von Halsvorderseite und empfindlichen neurovaskulären Strukturen. Gegenseite hält den Gurt tief.",
+    "execution": "Sehr sanften kaudalen Zug erzeugen. Gleichzeitig Kopf nur leicht in die vorgegebene Richtung bewegen bzw. ruhig atmen. Keine aggressive Halsbewegung.",
+    "coachingCues": [
+      "Zug nach unten, nicht in den Hals",
+      "minimaler Druck",
+      "ruhig atmen",
+      "sofort stoppen bei Kribbeln/Schwindel"
+    ],
+    "commonMistakes": [
+      "Druck auf Halsvorderseite",
+      "Gefäß-/Nervenkompression",
+      "starke Seitneigung"
+    ],
+    "contraindicationNote": "⚠️ Vor Veröffentlichung durch qualifizierte Fachperson gegen die originale Fachquelle prüfen (Technik, Bandposition/Griff, Kontraindikationen) -- siehe Filming Guide Sicherheitsprüfung. First Rib Self-Mobilization: kein Druck auf Halsvorderseite, Gefäße oder Nervenstrukturen. Take-Reminder aus dem Filming Guide: Diese Technik vor Veröffentlichung zwingend fachlich validieren",
+    "productionRound": 9
   },
   {
     "smartMotionCode": "E099",
@@ -444,11 +884,29 @@
     "pauseSeconds": 0,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Matte",
+      "optional Kissen"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E099, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E099, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Von vorne/oben 30–45°.",
+    "nameEn": null,
+    "startPosition": "Seitlage, Hüfte und Knie ca. 90°, Knie übereinander. Arme vor dem Körper ausgestreckt.",
+    "execution": "Oberen Arm langsam über den Brustkorb zur anderen Seite öffnen. Blick folgt der Hand. Knie bleiben zusammen. Kontrolliert zurück.",
+    "coachingCues": [
+      "Knie bleiben übereinander",
+      "Rotation aus Brustwirbelsäule",
+      "ruhig ausatmen",
+      "Schulter nur so weit wie kontrollierbar"
+    ],
+    "commonMistakes": [
+      "Oberes Knie hebt ab",
+      "Bewegung aus LWS",
+      "Arm wird gewaltsam zum Boden gedrückt"
+    ],
+    "productionRound": 10
   },
   {
     "smartMotionCode": "E100",
@@ -462,11 +920,29 @@
     "pauseSeconds": 0,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Matte"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E100, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E100, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Seitlich schräg.",
+    "nameEn": null,
+    "startPosition": "Vierfüßler. Eine Hand an Hinterkopf oder Nacken, andere Hand stützt.",
+    "execution": "Ellenbogen kontrolliert Richtung Stützarm drehen und danach zur Decke öffnen. Becken bleibt möglichst ruhig.",
+    "coachingCues": [
+      "Hüfte bleibt über den Knien",
+      "Rotation aus BWS",
+      "Stützarm drückt Boden weg",
+      "Blick folgt Ellenbogen"
+    ],
+    "commonMistakes": [
+      "Becken rotiert stark",
+      "LWS weicht aus",
+      "Schulter hängt",
+      "Geschwindigkeit"
+    ],
+    "productionRound": 10
   },
   {
     "smartMotionCode": "E101",
@@ -480,11 +956,30 @@
     "pauseSeconds": 30,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Matte",
+      "dünnes Handtuch"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E101, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E101, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Seitlich als Nahaufnahme.",
+    "nameEn": null,
+    "startPosition": "Rückenlage, Kopf neutral. Kleines Handtuch bei Bedarf unter Hinterkopf.",
+    "execution": "Eine sehr kleine Nickbewegung ausführen, als würde ein sanftes „Ja“ gemacht. Hinterkopf bleibt am Boden. 5 Sekunden halten, lösen.",
+    "coachingCues": [
+      "Doppelkinn nur minimal",
+      "Kopf nicht anheben",
+      "Hals lang",
+      "ruhig atmen"
+    ],
+    "commonMistakes": [
+      "Kraftvolles Kinn-zur-Brust",
+      "Kopf abheben",
+      "SCM sichtbar maximal anspannen",
+      "Pressatmung"
+    ],
+    "productionRound": 10
   },
   {
     "smartMotionCode": "E102",
@@ -498,11 +993,30 @@
     "pauseSeconds": 45,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Band/Kabelzug",
+      "hoher Anker"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E102, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E102, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Frontal 30–45°.",
+    "nameEn": null,
+    "startPosition": "Halbkniestand, inneres Bein je nach gewünschter Linie vorne. Band kommt von oben/seitlich. Rippen über Becken.",
+    "execution": "Band diagonal vor den Körper in Chop-Position ziehen und dort 5–10 Sekunden isometrisch halten. Becken und Brustkorb bleiben stabil.",
+    "coachingCues": [
+      "Rippen über Becken",
+      "beide Hüften nach vorn",
+      "Arme führen, Rumpf kontrolliert",
+      "nicht ins Band zurückdrehen"
+    ],
+    "commonMistakes": [
+      "LWS-Rotation",
+      "Becken kippt",
+      "Schulterhochziehen",
+      "Band zu schwer"
+    ],
+    "productionRound": 11
   },
   {
     "smartMotionCode": "E103",
@@ -516,11 +1030,30 @@
     "pauseSeconds": 45,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Band/Kabelzug",
+      "hoher Anker"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E103, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E103, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Frontal 30–45°.",
+    "nameEn": null,
+    "startPosition": "Beidknieender Stand, Gesäß aktiv, Rumpf aufrecht. Band hoch seitlich verankert.",
+    "execution": "Band diagonal von oben nach unten über den Körper führen. Kontrolliert zurück. Hüfte bleibt gestreckt.",
+    "coachingCues": [
+      "Gesäß aktiv",
+      "Rippen ruhig",
+      "diagonal durch den Rumpf",
+      "Arme nicht allein ziehen lassen"
+    ],
+    "commonMistakes": [
+      "Hüfte beugt",
+      "Hohlkreuz",
+      "starke Seitneigung",
+      "ruckartig"
+    ],
+    "productionRound": 11
   },
   {
     "smartMotionCode": "E104",
@@ -534,11 +1067,30 @@
     "pauseSeconds": 45,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Band/Kabelzug",
+      "tiefer Anker"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E104, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E104, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Frontal 30–45°.",
+    "nameEn": null,
+    "startPosition": "Halbkniestand, Band tief seitlich verankert.",
+    "execution": "Band diagonal von tief nach hoch über den Körper führen. Rumpf kontrolliert mitrotieren oder je nach Programmlogik stabil halten; keine LWS-Überstreckung.",
+    "coachingCues": [
+      "Becken stabil",
+      "Bewegung diagonal",
+      "Rippen unten",
+      "Schulter bleibt kontrolliert"
+    ],
+    "commonMistakes": [
+      "Hohlkreuz am oberen Punkt",
+      "Knie kippt",
+      "Schwung",
+      "Schulterhochziehen"
+    ],
+    "productionRound": 11
   },
   {
     "smartMotionCode": "E105",
@@ -553,12 +1105,29 @@
     "intensity": "medium",
     "muscleGroups": [],
     "equipment": [
-      "Widerstandsband"
+      "Band",
+      "hoher Anker",
+      "Matte"
     ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E105, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E105, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Seitlich schräg.",
+    "nameEn": null,
+    "startPosition": "Rückenlage, Füße aufgestellt. Ein Bandarm über Kopf bzw. schräg oben. Gegenseitigen Fuß bewusst belasten.",
+    "execution": "Brücke aufbauen und gleichzeitig mit dem Arm der Gegenseite einen Pulldown Richtung Hüfte/Rippen ausführen. Oben kurz halten, kontrolliert lösen.",
+    "coachingCues": [
+      "Gegenseitiger Glute + Lat zusammen",
+      "Rippen unten",
+      "Becken bleibt waagerecht",
+      "nicht aus LWS strecken"
+    ],
+    "commonMistakes": [
+      "Hamstringkrampf durch zu weite Füße",
+      "Becken rotiert",
+      "Arm zieht Schulter nach vorn"
+    ],
+    "productionRound": 12
   },
   {
     "smartMotionCode": "E106",
@@ -572,11 +1141,29 @@
     "pauseSeconds": 45,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Band/Kabelzug"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E106, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E106, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Frontal schräg, sodass Beinachse und Zugarm sichtbar sind.",
+    "nameEn": null,
+    "startPosition": "Band auf Brusthöhe. Das belastete/vordere Bein arbeitet mit dem gegenüberliegenden Arm.",
+    "execution": "In Reverse Lunge zurücksteigen. Beim Hochkommen mit dem kontralateralen Arm rudern. Kontrolliert wiederholen.",
+    "coachingCues": [
+      "Frontknie über Fuß",
+      "Standbein-Glute + gegenüberliegender Lat",
+      "Becken bleibt kontrolliert",
+      "Brustkorb nicht aufdrehen"
+    ],
+    "commonMistakes": [
+      "Knie kollabiert",
+      "Rumpf rotiert unkontrolliert",
+      "Zug mit Schulterhochziehen",
+      "zu langer Schritt"
+    ],
+    "productionRound": 12
   },
   {
     "smartMotionCode": "E107",
@@ -590,11 +1177,29 @@
     "pauseSeconds": 45,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Band/Kabelzug"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E107, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E107, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Frontal schräg.",
+    "nameEn": null,
+    "startPosition": "Statische Split-Stance. Band auf Brusthöhe. Arm gegenüber dem vorderen Bein arbeitet.",
+    "execution": "In Split Squat absenken und beim Aufrichten kontralateral rudern. Beide Bewegungen bewusst koppeln.",
+    "coachingCues": [
+      "Vorderer Fuß Dreipunkt",
+      "Becken gerade",
+      "gegenüberliegender Arm zieht",
+      "langsam aufrichten"
+    ],
+    "commonMistakes": [
+      "Knie driftet",
+      "Becken dreht",
+      "Rücken überstreckt",
+      "Schulter zieht hoch"
+    ],
+    "productionRound": 12
   },
   {
     "smartMotionCode": "E108",
@@ -608,11 +1213,29 @@
     "pauseSeconds": 45,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Band/Kabelzug"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E108, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E108, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Frontal-seitlich.",
+    "nameEn": null,
+    "startPosition": "Einbeinstand. Band wird mit dem Arm gegenüber dem Standbein gehalten.",
+    "execution": "In kontrollierten Hip Hinge gehen. Aus der Hinge-Position oder beim Aufrichten kontralateral rudern. Becken bleibt möglichst horizontal.",
+    "coachingCues": [
+      "Standfuß fest",
+      "Hüfte nach hinten",
+      "gegenüberliegender Lat + Standbein-Glute",
+      "Rücken lang"
+    ],
+    "commonMistakes": [
+      "Becken öffnet",
+      "Knie kollabiert",
+      "Rumpf dreht zum Band",
+      "Gleichgewicht mit Geschwindigkeit retten"
+    ],
+    "productionRound": 13
   },
   {
     "smartMotionCode": "E109",
@@ -626,11 +1249,30 @@
     "pauseSeconds": 45,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Step/Box",
+      "Band/Kabelzug"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E109, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E109, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Frontal schräg.",
+    "nameEn": null,
+    "startPosition": "Ein Fuß auf Box. Band mit gegenüberliegendem Arm greifen.",
+    "execution": "Über das Boxbein hochsteigen und gleichzeitig kontralateral rudern. Oben stabilisieren, langsam zurück.",
+    "coachingCues": [
+      "Druck über ganzen Fuß",
+      "Knie folgt Zehen",
+      "gegenüberliegender Arm zieht",
+      "oben kurz stabil"
+    ],
+    "commonMistakes": [
+      "Vom hinteren Bein abspringen",
+      "Knie kippt",
+      "Becken dreht",
+      "Schulterhochziehen"
+    ],
+    "productionRound": 13
   },
   {
     "smartMotionCode": "E110",
@@ -644,11 +1286,30 @@
     "pauseSeconds": 45,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Band/Kabelzug",
+      "Matte"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E110, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E110, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Frontal-seitlich, gesamter Körper im Bild.",
+    "nameEn": null,
+    "startPosition": "Seitstütz auf Unterarm oder Hand. Band vor dem Körper, oberer Arm greift.",
+    "execution": "Stabile Side-Plank halten und mit oberem Arm zur Rippe rudern. Langsam strecken und wieder rudern.",
+    "coachingCues": [
+      "Körper lange Linie",
+      "Hüfte oben",
+      "Schulter weg vom Ohr",
+      "Row ohne Rumpfrotation"
+    ],
+    "commonMistakes": [
+      "Becken sinkt",
+      "Körper rollt nach hinten",
+      "Zugarm übernimmt mit Bizeps",
+      "Band zu schwer"
+    ],
+    "productionRound": 13
   },
   {
     "smartMotionCode": "E111",
@@ -662,11 +1323,29 @@
     "pauseSeconds": 45,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Band/Kabelzug"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E111, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E111, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Frontal schräg.",
+    "nameEn": null,
+    "startPosition": "Split-Stance. Band von hinten/seitlich. Arm gegenüber dem vorderen Bein drückt.",
+    "execution": "In Split Squat absenken. Beim Aufrichten kontralateral nach vorne drücken. Rumpf stabil halten.",
+    "coachingCues": [
+      "Vorderer Fuß stabil",
+      "Knie über Fuß",
+      "Press mit gegenüberliegendem Arm",
+      "Rippen über Becken"
+    ],
+    "commonMistakes": [
+      "Überrotation",
+      "Hohlkreuz",
+      "Knie kollabiert",
+      "Schulter hoch"
+    ],
+    "productionRound": 14
   },
   {
     "smartMotionCode": "E113",
@@ -680,11 +1359,30 @@
     "pauseSeconds": 45,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Step/Box",
+      "Band/Kabelzug"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E113, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E113, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Frontal schräg.",
+    "nameEn": null,
+    "startPosition": "Ein Fuß auf Step. Band kommt von hinten. Gegenüberliegender Arm hält Griff.",
+    "execution": "Über das Step-Bein hochdrücken und gleichzeitig mit dem kontralateralen Arm pressen. Oben kurz stabilisieren.",
+    "coachingCues": [
+      "Druck durchs Standbein",
+      "Knie folgt Fuß",
+      "gegenüberliegender Arm drückt",
+      "oben stabil"
+    ],
+    "commonMistakes": [
+      "Hinteres Bein springt ab",
+      "Knie kollabiert",
+      "Hohlkreuz",
+      "unkontrollierte Rotation"
+    ],
+    "productionRound": 14
   },
   {
     "smartMotionCode": "E114",
@@ -699,12 +1397,29 @@
     "intensity": "medium",
     "muscleGroups": [],
     "equipment": [
-      "Widerstandsband"
+      "Band mit hohem Anker",
+      "Matte"
     ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E114, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E114, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Seitlich schräg von oben.",
+    "nameEn": null,
+    "startPosition": "Rückenlage, Hüfte/Knie 90°. Band über Kopf greifen. Rippen kontrolliert über Becken.",
+    "execution": "Band Richtung Rippen/Hüfte ziehen und halten. Gleichzeitig ein Bein langsam strecken und zurückführen; Seiten wechseln.",
+    "coachingCues": [
+      "Rippen unten",
+      "LWS bleibt kontrolliert",
+      "Pulldown stabilisiert",
+      "Bein nur so tief wie kontrollierbar"
+    ],
+    "commonMistakes": [
+      "LWS hebt stark ab",
+      "Nacken spannt",
+      "Bein zu tief",
+      "Band zu stark"
+    ],
+    "productionRound": 15
   },
   {
     "smartMotionCode": "E115",
@@ -718,11 +1433,29 @@
     "pauseSeconds": 45,
     "intensity": "medium",
     "muscleGroups": [],
-    "equipment": [],
+    "equipment": [
+      "Matte"
+    ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E115, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E115, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Frontal leicht erhöht oder von schräg vorne.",
+    "nameEn": null,
+    "startPosition": "Bear-Plank, Knie knapp über Boden, Füße etwas breiter für Stabilität.",
+    "execution": "Eine Hand langsam zur gegenüberliegenden Schulter führen, absetzen, Seite wechseln. Becken so ruhig wie möglich.",
+    "coachingCues": [
+      "Becken bleibt wie ein Tisch",
+      "Boden wegdrücken",
+      "langsam wechseln",
+      "Knie knapp über Boden"
+    ],
+    "commonMistakes": [
+      "Becken rotiert stark",
+      "Füße zu eng",
+      "Schultern sinken",
+      "schnelle Taps"
+    ],
+    "productionRound": 15
   },
   {
     "smartMotionCode": "E116",
@@ -737,11 +1470,454 @@
     "intensity": "medium",
     "muscleGroups": [],
     "equipment": [
-      "Widerstandsband"
+      "Band/Kabelzug",
+      "Matte"
     ],
     "targetMuscles": [],
     "taggingSource": null,
     "isPublished": false,
-    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E116, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert."
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E116, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video, Ausführungstext, Coaching Cues und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert. Kamera (Filming Guide): Seitlich schräg, Bandlinie und Körperdiagonale sichtbar.",
+    "nameEn": null,
+    "startPosition": "Vierfüßler. Band vor/seitlich auf Schulterhöhe verankert. Ein Arm greift Band.",
+    "execution": "Gegenüberliegendes Bein nach hinten strecken und gleichzeitig mit dem anderen Arm rudern. Kurz stabilisieren, langsam zurück.",
+    "coachingCues": [
+      "Becken bleibt gerade",
+      "Ferse nach hinten",
+      "Row zur Rippe",
+      "Bauchspannung halten"
+    ],
+    "commonMistakes": [
+      "LWS rotiert/überstreckt",
+      "Bein zu hoch",
+      "Schulterhochziehen",
+      "Band zu stark"
+    ],
+    "productionRound": 15
+  },
+  {
+    "smartMotionCode": "E112",
+    "name": "Reverse Lunge + Contralateral Press",
+    "nameEn": null,
+    "correctivePhase": "INTEGRATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      10,
+      10
+    ],
+    "pauseSeconds": 30,
+    "intensity": "medium",
+    "muscleGroups": [],
+    "equipment": [
+      "Band/Kabelzug"
+    ],
+    "targetMuscles": [],
+    "taggingSource": null,
+    "isPublished": false,
+    "notes": "Platzhalter aus der SmartMotion-Programmspezifikation (E112, Registry Abschnitt 8) -- Name und Phase sind verbindlich, aber Video und exakte Dosierung stammen noch nicht aus der SmartMotionApproach-Produktionspipeline (siehe README). sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter aus der globalen Wochen-1-4-Dosierung (Spec Abschnitt 3), nicht exercise-spezifisch validiert.",
+    "startPosition": "Band hinter/seitlich. Arm gegenüber dem späteren vorderen Standbein hält Griff.",
+    "execution": "Mit einem Bein zurück in Reverse Lunge. Beim Zurückkehren in den Stand kontralateral nach vorne drücken.",
+    "coachingCues": [
+      "Frontbein kontrolliert",
+      "Press und Aufrichten koppeln",
+      "Becken bleibt frontal",
+      "Bauch aktiv"
+    ],
+    "commonMistakes": [
+      "Zu schneller Wechsel",
+      "Knie fällt ein",
+      "Rumpf dreht",
+      "Band zieht Schulter zurück"
+    ],
+    "contraindicationNote": null,
+    "productionRound": 14
+  },
+  {
+    "smartMotionCode": "E117",
+    "name": "SMR Unterarmstrecker",
+    "nameEn": "Forearm Extensor Release",
+    "correctivePhase": "INHIBIT",
+    "unit": "Sekunden",
+    "sets": [
+      10,
+      10
+    ],
+    "pauseSeconds": 30,
+    "intensity": "medium",
+    "muscleGroups": [
+      "Unterarm"
+    ],
+    "equipment": [
+      "Massageball auf Tisch/Wand oder zweite Hand"
+    ],
+    "targetMuscles": [],
+    "taggingSource": "manual",
+    "isPublished": false,
+    "notes": "Platzhalter aus dem SmartMotionApproach Filming Guide (E117, neue Ellenbogen-/Unterarm-Ergänzung Nr. 46, siehe 'Ergänzung – 10 neue Ellenbogen-/Unterarmübungen'). Name, Phase, Ausgangsposition, Ausführung, Coaching-Cues und 'Nicht so filmen' stammen aus dem Filming Guide; Video steht noch aus. sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter, nicht exercise-spezifisch validiert. Diese 10 Übungen tragen u. a. P21 (Tennisellenbogen) und P22 (Golferellenbogen) zur Content-Vollständigkeit. Kamera (Filming Guide): Nahaufnahme von oben/seitlich auf lateralen Unterarm.",
+    "startPosition": "Unterarm entspannt ablegen, Handfläche nach unten. Ball auf Muskelbauch der Unterarmstrecker platzieren, nicht direkt auf den lateralen Epicondylus.",
+    "execution": "Langsam Druck aufbauen und einen tolerierbaren Punkt 20–30 Sekunden halten. Optional kleine Handgelenksbewegungen.",
+    "coachingCues": [
+      "Auf Muskel, nicht auf Knochen",
+      "moderater Druck",
+      "Hand locker",
+      "kein Kribbeln"
+    ],
+    "commonMistakes": [
+      "Direkt auf Sehnenansatz drücken",
+      "aggressiv rollen",
+      "Taubheit/ausstrahlende Symptome"
+    ],
+    "contraindicationNote": null,
+    "productionRound": 16
+  },
+  {
+    "smartMotionCode": "E118",
+    "name": "SMR Unterarmbeuger & Pronatoren",
+    "nameEn": "Forearm Flexor-Pronator Release",
+    "correctivePhase": "INHIBIT",
+    "unit": "Sekunden",
+    "sets": [
+      10,
+      10
+    ],
+    "pauseSeconds": 30,
+    "intensity": "medium",
+    "muscleGroups": [
+      "Unterarm"
+    ],
+    "equipment": [
+      "Massageball auf Tisch oder zweite Hand"
+    ],
+    "targetMuscles": [],
+    "taggingSource": "manual",
+    "isPublished": false,
+    "notes": "Platzhalter aus dem SmartMotionApproach Filming Guide (E118, neue Ellenbogen-/Unterarm-Ergänzung Nr. 47, siehe 'Ergänzung – 10 neue Ellenbogen-/Unterarmübungen'). Name, Phase, Ausgangsposition, Ausführung, Coaching-Cues und 'Nicht so filmen' stammen aus dem Filming Guide; Video steht noch aus. sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter, nicht exercise-spezifisch validiert. Diese 10 Übungen tragen u. a. P21 (Tennisellenbogen) und P22 (Golferellenbogen) zur Content-Vollständigkeit. Kamera (Filming Guide): Nahaufnahme auf medialen/volaren Unterarm.",
+    "startPosition": "Unterarm mit Handfläche nach oben ablegen. Ball auf Muskelbauch der Flexor-Pronator-Gruppe, nicht direkt auf den medialen Epicondylus.",
+    "execution": "Sanften Druck aufbauen, 20–30 Sekunden halten. Optional kleine aktive Handgelenk-/Unterarmbewegung.",
+    "coachingCues": [
+      "Muskelbauch treffen",
+      "Druck dosieren",
+      "Finger locker",
+      "ruhig atmen"
+    ],
+    "commonMistakes": [
+      "Direkt auf Nerv/medialen Epicondylus",
+      "starkes Kribbeln",
+      "zu hoher Druck"
+    ],
+    "contraindicationNote": null,
+    "productionRound": 16
+  },
+  {
+    "smartMotionCode": "E119",
+    "name": "Unterarmstrecker Stretch",
+    "nameEn": "Wrist Extensor Stretch",
+    "correctivePhase": "LENGTHEN",
+    "unit": "Sekunden",
+    "sets": [
+      10,
+      10
+    ],
+    "pauseSeconds": 30,
+    "intensity": "medium",
+    "muscleGroups": [
+      "Unterarm"
+    ],
+    "equipment": [
+      "Keines"
+    ],
+    "targetMuscles": [],
+    "taggingSource": "manual",
+    "isPublished": false,
+    "notes": "Platzhalter aus dem SmartMotionApproach Filming Guide (E119, neue Ellenbogen-/Unterarm-Ergänzung Nr. 48, siehe 'Ergänzung – 10 neue Ellenbogen-/Unterarmübungen'). Name, Phase, Ausgangsposition, Ausführung, Coaching-Cues und 'Nicht so filmen' stammen aus dem Filming Guide; Video steht noch aus. sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter, nicht exercise-spezifisch validiert. Diese 10 Übungen tragen u. a. P21 (Tennisellenbogen) und P22 (Golferellenbogen) zur Content-Vollständigkeit. Kamera (Filming Guide): Seitlich nah auf Ellenbogen, Unterarm und Hand.",
+    "startPosition": "Arm nach vorne, Ellenbogen gestreckt, Unterarm proniert.",
+    "execution": "Handgelenk langsam in Flexion führen und mit der anderen Hand sanft unterstützen. 20–30 Sekunden halten.",
+    "coachingCues": [
+      "Ellenbogen lang",
+      "Schulter tief",
+      "Dehnung im oberen Unterarm",
+      "nur sanfter Zug"
+    ],
+    "commonMistakes": [
+      "Finger aggressiv ziehen",
+      "Ellenbogen beugen",
+      "Schmerz direkt am Epicondylus provozieren"
+    ],
+    "contraindicationNote": null,
+    "productionRound": 16
+  },
+  {
+    "smartMotionCode": "E120",
+    "name": "Unterarmbeuger Stretch",
+    "nameEn": "Wrist Flexor Stretch",
+    "correctivePhase": "LENGTHEN",
+    "unit": "Sekunden",
+    "sets": [
+      10,
+      10
+    ],
+    "pauseSeconds": 30,
+    "intensity": "medium",
+    "muscleGroups": [
+      "Unterarm"
+    ],
+    "equipment": [
+      "Keines"
+    ],
+    "targetMuscles": [],
+    "taggingSource": "manual",
+    "isPublished": false,
+    "notes": "Platzhalter aus dem SmartMotionApproach Filming Guide (E120, neue Ellenbogen-/Unterarm-Ergänzung Nr. 49, siehe 'Ergänzung – 10 neue Ellenbogen-/Unterarmübungen'). Name, Phase, Ausgangsposition, Ausführung, Coaching-Cues und 'Nicht so filmen' stammen aus dem Filming Guide; Video steht noch aus. sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter, nicht exercise-spezifisch validiert. Diese 10 Übungen tragen u. a. P21 (Tennisellenbogen) und P22 (Golferellenbogen) zur Content-Vollständigkeit. Kamera (Filming Guide): Seitlich nah.",
+    "startPosition": "Arm nach vorne, Ellenbogen gestreckt, Handfläche nach oben.",
+    "execution": "Handgelenk und Finger sanft in Extension führen. 20–30 Sekunden halten.",
+    "coachingCues": [
+      "Ellenbogen bleibt gestreckt",
+      "Schulter entspannt",
+      "Dehnung an Unterarmvorderseite",
+      "moderater Zug"
+    ],
+    "commonMistakes": [
+      "Überstrecken der Finger",
+      "Schmerz am medialen Ellenbogen",
+      "Schulter hochziehen"
+    ],
+    "contraindicationNote": null,
+    "productionRound": 16
+  },
+  {
+    "smartMotionCode": "E121",
+    "name": "Isometrische Handgelenkextension",
+    "nameEn": "Isometric Wrist Extension",
+    "correctivePhase": "ACTIVATE",
+    "unit": "Sekunden",
+    "sets": [
+      10,
+      10
+    ],
+    "pauseSeconds": 30,
+    "intensity": "medium",
+    "muscleGroups": [
+      "Unterarm"
+    ],
+    "equipment": [
+      "Band oder zweite Hand",
+      "Tisch"
+    ],
+    "targetMuscles": [],
+    "taggingSource": "manual",
+    "isPublished": false,
+    "notes": "Platzhalter aus dem SmartMotionApproach Filming Guide (E121, neue Ellenbogen-/Unterarm-Ergänzung Nr. 50, siehe 'Ergänzung – 10 neue Ellenbogen-/Unterarmübungen'). Name, Phase, Ausgangsposition, Ausführung, Coaching-Cues und 'Nicht so filmen' stammen aus dem Filming Guide; Video steht noch aus. sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter, nicht exercise-spezifisch validiert. Diese 10 Übungen tragen u. a. P21 (Tennisellenbogen) und P22 (Golferellenbogen) zur Content-Vollständigkeit. Kamera (Filming Guide): Nahaufnahme seitlich.",
+    "startPosition": "Unterarm auf Tisch, Hand über Kante, Handfläche nach unten. Handgelenk neutral bis leicht extendiert.",
+    "execution": "Gegen Widerstand in Extension drücken, ohne sichtbare Bewegung. 5–10 Sekunden halten, entspannen.",
+    "coachingCues": [
+      "Handgelenk bleibt ruhig",
+      "Unterarm liegt auf",
+      "moderate Spannung",
+      "Finger locker"
+    ],
+    "commonMistakes": [
+      "Maximale Kraft",
+      "Handgelenk knickt seitlich",
+      "Schulter kompensiert"
+    ],
+    "contraindicationNote": null,
+    "productionRound": 16
+  },
+  {
+    "smartMotionCode": "E122",
+    "name": "Langsame Handgelenkextension",
+    "nameEn": "Slow Wrist Extension",
+    "correctivePhase": "ACTIVATE",
+    "unit": "Sekunden",
+    "sets": [
+      10,
+      10
+    ],
+    "pauseSeconds": 30,
+    "intensity": "medium",
+    "muscleGroups": [
+      "Unterarm"
+    ],
+    "equipment": [
+      "Leichte Kurzhantel oder Band",
+      "Tisch"
+    ],
+    "targetMuscles": [],
+    "taggingSource": "manual",
+    "isPublished": false,
+    "notes": "Platzhalter aus dem SmartMotionApproach Filming Guide (E122, neue Ellenbogen-/Unterarm-Ergänzung Nr. 51, siehe 'Ergänzung – 10 neue Ellenbogen-/Unterarmübungen'). Name, Phase, Ausgangsposition, Ausführung, Coaching-Cues und 'Nicht so filmen' stammen aus dem Filming Guide; Video steht noch aus. sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter, nicht exercise-spezifisch validiert. Diese 10 Übungen tragen u. a. P21 (Tennisellenbogen) und P22 (Golferellenbogen) zur Content-Vollständigkeit. Kamera (Filming Guide): Nahaufnahme seitlich.",
+    "startPosition": "Unterarm abgestützt, Handfläche nach unten, Handgelenk über Tischkante.",
+    "execution": "Handgelenk kontrolliert anheben, oben 1–2 Sekunden halten und in etwa 3–5 Sekunden absenken. 4–6 saubere Wiederholungen filmen.",
+    "coachingCues": [
+      "Unterarm bleibt liegen",
+      "Bewegung nur im Handgelenk",
+      "langsames Absenken",
+      "neutraler Griff"
+    ],
+    "commonMistakes": [
+      "Schnelles Fallenlassen",
+      "Ellenbogen hebt ab",
+      "seitliches Abknicken",
+      "zu schweres Gewicht"
+    ],
+    "contraindicationNote": null,
+    "productionRound": 16
+  },
+  {
+    "smartMotionCode": "E123",
+    "name": "Isometrische Handgelenkflexion",
+    "nameEn": "Isometric Wrist Flexion",
+    "correctivePhase": "ACTIVATE",
+    "unit": "Sekunden",
+    "sets": [
+      10,
+      10
+    ],
+    "pauseSeconds": 30,
+    "intensity": "medium",
+    "muscleGroups": [
+      "Unterarm"
+    ],
+    "equipment": [
+      "Band oder zweite Hand",
+      "Tisch"
+    ],
+    "targetMuscles": [],
+    "taggingSource": "manual",
+    "isPublished": false,
+    "notes": "Platzhalter aus dem SmartMotionApproach Filming Guide (E123, neue Ellenbogen-/Unterarm-Ergänzung Nr. 52, siehe 'Ergänzung – 10 neue Ellenbogen-/Unterarmübungen'). Name, Phase, Ausgangsposition, Ausführung, Coaching-Cues und 'Nicht so filmen' stammen aus dem Filming Guide; Video steht noch aus. sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter, nicht exercise-spezifisch validiert. Diese 10 Übungen tragen u. a. P21 (Tennisellenbogen) und P22 (Golferellenbogen) zur Content-Vollständigkeit. Kamera (Filming Guide): Nahaufnahme seitlich.",
+    "startPosition": "Unterarm abgestützt, Handfläche nach oben, Handgelenk neutral.",
+    "execution": "Gegen Widerstand in Flexion drücken, ohne sichtbare Bewegung. 5–10 Sekunden halten.",
+    "coachingCues": [
+      "Unterarm ruhig",
+      "Handgelenk neutral",
+      "moderate Spannung",
+      "Schulter locker"
+    ],
+    "commonMistakes": [
+      "Maximale Kraft",
+      "Finger stark mitkrallen",
+      "Ellenbogen hebt ab"
+    ],
+    "contraindicationNote": null,
+    "productionRound": 16
+  },
+  {
+    "smartMotionCode": "E124",
+    "name": "Langsame Handgelenkflexion",
+    "nameEn": "Slow Wrist Flexion",
+    "correctivePhase": "ACTIVATE",
+    "unit": "Sekunden",
+    "sets": [
+      10,
+      10
+    ],
+    "pauseSeconds": 30,
+    "intensity": "medium",
+    "muscleGroups": [
+      "Unterarm"
+    ],
+    "equipment": [
+      "Leichte Kurzhantel oder Band",
+      "Tisch"
+    ],
+    "targetMuscles": [],
+    "taggingSource": "manual",
+    "isPublished": false,
+    "notes": "Platzhalter aus dem SmartMotionApproach Filming Guide (E124, neue Ellenbogen-/Unterarm-Ergänzung Nr. 53, siehe 'Ergänzung – 10 neue Ellenbogen-/Unterarmübungen'). Name, Phase, Ausgangsposition, Ausführung, Coaching-Cues und 'Nicht so filmen' stammen aus dem Filming Guide; Video steht noch aus. sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter, nicht exercise-spezifisch validiert. Diese 10 Übungen tragen u. a. P21 (Tennisellenbogen) und P22 (Golferellenbogen) zur Content-Vollständigkeit. Kamera (Filming Guide): Nahaufnahme seitlich.",
+    "startPosition": "Unterarm auf Tisch, Handfläche nach oben, Handgelenk über Kante.",
+    "execution": "Handgelenk kontrolliert beugen, oben 1–2 Sekunden halten, anschließend 3–5 Sekunden absenken.",
+    "coachingCues": [
+      "Unterarm bleibt auf",
+      "Bewegung aus Handgelenk",
+      "langsam ablassen",
+      "Griff nicht maximal quetschen"
+    ],
+    "commonMistakes": [
+      "Schwung",
+      "Finger übernehmen",
+      "seitliches Abknicken",
+      "zu hohe Last"
+    ],
+    "contraindicationNote": null,
+    "productionRound": 16
+  },
+  {
+    "smartMotionCode": "E125",
+    "name": "Widerstand gegen Pronation",
+    "nameEn": "Resisted Forearm Pronation",
+    "correctivePhase": "ACTIVATE",
+    "unit": "Sekunden",
+    "sets": [
+      10,
+      10
+    ],
+    "pauseSeconds": 30,
+    "intensity": "medium",
+    "muscleGroups": [
+      "Unterarm"
+    ],
+    "equipment": [
+      "Hammer",
+      "leichte Kurzhantel mit einseitigem Hebel oder Band"
+    ],
+    "targetMuscles": [],
+    "taggingSource": "manual",
+    "isPublished": false,
+    "notes": "Platzhalter aus dem SmartMotionApproach Filming Guide (E125, neue Ellenbogen-/Unterarm-Ergänzung Nr. 54, siehe 'Ergänzung – 10 neue Ellenbogen-/Unterarmübungen'). Name, Phase, Ausgangsposition, Ausführung, Coaching-Cues und 'Nicht so filmen' stammen aus dem Filming Guide; Video steht noch aus. sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter, nicht exercise-spezifisch validiert. Diese 10 Übungen tragen u. a. P21 (Tennisellenbogen) und P22 (Golferellenbogen) zur Content-Vollständigkeit. Kamera (Filming Guide): Von vorne/oben, Unterarm und Hand sichtbar.",
+    "startPosition": "Ellenbogen 90°, Unterarm am Tisch oder am Körper stabilisiert. Start neutral/Daumen oben.",
+    "execution": "Unterarm langsam in Pronation drehen, ohne Ellenbogen oder Schulter zu bewegen. 1–2 Sekunden halten, kontrolliert zurück.",
+    "coachingCues": [
+      "Rotation aus Unterarm",
+      "Ellenbogen bleibt 90°",
+      "Handgelenk neutral",
+      "kleiner kontrollierter Hebel"
+    ],
+    "commonMistakes": [
+      "Schulter dreht mit",
+      "Handgelenk knickt",
+      "zu langer Hebel/zu viel Gewicht"
+    ],
+    "contraindicationNote": null,
+    "productionRound": 16
+  },
+  {
+    "smartMotionCode": "E126",
+    "name": "Widerstand gegen Supination",
+    "nameEn": "Resisted Forearm Supination",
+    "correctivePhase": "ACTIVATE",
+    "unit": "Wiederholungen",
+    "sets": [
+      10,
+      10
+    ],
+    "pauseSeconds": 30,
+    "intensity": "medium",
+    "muscleGroups": [
+      "Unterarm"
+    ],
+    "equipment": [
+      "Hammer",
+      "leichte Kurzhantel mit Hebel oder Band"
+    ],
+    "targetMuscles": [],
+    "taggingSource": "manual",
+    "isPublished": false,
+    "notes": "Platzhalter aus dem SmartMotionApproach Filming Guide (E126, neue Ellenbogen-/Unterarm-Ergänzung Nr. 55, siehe 'Ergänzung – 10 neue Ellenbogen-/Unterarmübungen'). Name, Phase, Ausgangsposition, Ausführung, Coaching-Cues und 'Nicht so filmen' stammen aus dem Filming Guide; Video steht noch aus. sets/unit/pauseSeconds hier sind ein vorläufiger Platzhalter, nicht exercise-spezifisch validiert. Diese 10 Übungen tragen u. a. P21 (Tennisellenbogen) und P22 (Golferellenbogen) zur Content-Vollständigkeit. Kamera (Filming Guide): Von vorne/oben.",
+    "startPosition": "Ellenbogen 90°, Arm stabil, Start neutral/Daumen oben.",
+    "execution": "Unterarm langsam in Supination drehen. Endposition kurz halten und kontrolliert zurück.",
+    "coachingCues": [
+      "Ellenbogen bleibt am Körper",
+      "Rotation aus Unterarm",
+      "Handgelenk gerade",
+      "langsam zurück"
+    ],
+    "commonMistakes": [
+      "Schulter rotiert mit",
+      "Ellenbogen wandert",
+      "Handgelenk knickt",
+      "zu hohe Last"
+    ],
+    "contraindicationNote": null,
+    "productionRound": 16
   }
 ]
