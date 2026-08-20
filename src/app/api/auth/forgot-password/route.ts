@@ -3,6 +3,7 @@ import { getActiveProvider } from "@/lib/tenant";
 import { createPasswordResetToken, normalizeEmail } from "@/lib/auth";
 import { sendEmail } from "@/lib/email";
 import { getBranding } from "@/lib/branding";
+import { absoluteUrl } from "@/lib/baseUrl";
 
 // Always responds with the same generic success message regardless of
 // whether the email is actually registered — otherwise this endpoint
@@ -37,7 +38,7 @@ export async function POST(request: Request) {
 
     if (client) {
       const { token } = await createPasswordResetToken(client.id);
-      const resetUrl = new URL(`/reset-password?token=${token}`, request.url).toString();
+      const resetUrl = absoluteUrl(request, `/reset-password?token=${token}`);
       const branding = getBranding();
 
       await sendEmail({
