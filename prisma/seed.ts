@@ -62,6 +62,7 @@ type SmartMotionCodeMap = Record<string, { name: string; source: string }>;
 type SmartMotionStubExercise = {
   smartMotionCode: string;
   name: string;
+  nameEn?: string | null;
   correctivePhase: string;
   unit: string;
   sets: number[];
@@ -73,6 +74,17 @@ type SmartMotionStubExercise = {
   taggingSource: string | null;
   isPublished: boolean;
   notes: string;
+  // Filming Guide enrichment (see SmartMotionApproach_Filming_Guide_55_
+  // Uebungen.md, scripts/parse_filming_guide_55.py +
+  // scripts/merge_filming_guide_into_seed_data.py) — optional because the
+  // original 41-entry stub batch predates this and some future stub
+  // batches may again be added without full production detail yet.
+  startPosition?: string | null;
+  execution?: string | null;
+  coachingCues?: string[];
+  commonMistakes?: string[];
+  contraindicationNote?: string | null;
+  productionRound?: number | null;
 };
 
 type SmartMotionProductCatalogEntry = {
@@ -352,9 +364,33 @@ async function main() {
   }
 
   let smartMotionStubsCreated = 0;
+  let smartMotionStubsEnriched = 0;
   for (const stub of smartMotionStubExercisesData as SmartMotionStubExercise[]) {
     const existing = await prisma.exercise.findUnique({ where: { smartMotionCode: stub.smartMotionCode } });
-    if (existing) continue;
+    const stubFields = {
+      nameEn: stub.nameEn ?? undefined,
+      startPosition: stub.startPosition ?? undefined,
+      execution: stub.execution ?? undefined,
+      coachingCues: stub.coachingCues ?? [],
+      commonMistakes: stub.commonMistakes ?? [],
+      contraindicationNote: stub.contraindicationNote ?? undefined,
+      productionRound: stub.productionRound ?? undefined,
+    };
+    if (existing) {
+      // Re-running seed after a Filming Guide enrichment pass (see
+      // scripts/merge_filming_guide_into_seed_data.py) should update
+      // already-seeded placeholder rows with the newly-added production
+      // detail (startPosition/execution/coachingCues/commonMistakes/
+      // contraindicationNote) rather than silently skipping them —
+      // this data is coach-authored spec content, not user-editable, so
+      // overwriting on every seed run is safe/idempotent.
+      const hasNewDetail = stub.startPosition || stub.execution || (stub.coachingCues?.length ?? 0) > 0;
+      if (hasNewDetail) {
+        await prisma.exercise.update({ where: { id: existing.id }, data: stubFields });
+        smartMotionStubsEnriched++;
+      }
+      continue;
+    }
     try {
       await prisma.exercise.create({
         data: {
@@ -372,6 +408,7 @@ async function main() {
           taggingSource: stub.taggingSource ?? undefined,
           isPublished: stub.isPublished,
           notes: stub.notes,
+          ...stubFields,
         },
       });
       smartMotionStubsCreated++;
@@ -385,7 +422,9 @@ async function main() {
       throw err;
     }
   }
-  console.log(`SmartMotion exercises: ${smartMotionLinked} linked to smartMotionCode, ${smartMotionStubsCreated} placeholder(s) created.`);
+  console.log(
+    `SmartMotion exercises: ${smartMotionLinked} linked to smartMotionCode, ${smartMotionStubsCreated} placeholder(s) created, ${smartMotionStubsEnriched} existing placeholder(s) enriched with Filming Guide detail.`,
+  );
 
   const smartMotionProgramsById = new Map(
     (smartMotionProgramsData as SmartMotionProgram[]).map((p) => [p.id, p])
