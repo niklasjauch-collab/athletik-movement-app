@@ -156,6 +156,12 @@ export async function POST(request: Request, { params }: { params: Promise<{ id:
         movementScanId: scan.id,
         label: sp.label,
         priorityRank: sp.priorityRank,
+        // §36/§69: newly generated plans wait for a coach's explicit
+        // "Veröffentlichen" (see /api/admin/corrective-plans/[id]/action)
+        // before a client can see them — literal string constant, TS
+        // treats it as its own singleton type so this is immune to the
+        // enum-cast build failure documented in the P5 status notes.
+        status: "REVIEW_REQUIRED",
         items: {
           create: sp.plan.items.map((item) => ({
             exerciseId: item.exerciseId,
