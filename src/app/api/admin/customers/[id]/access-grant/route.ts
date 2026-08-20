@@ -1,6 +1,7 @@
 import { prisma } from "@/lib/db";
 import { getActiveProvider } from "@/lib/tenant";
 import { requireAdmin, AdminAuthRequiredError } from "@/lib/adminAuth";
+import { syncAccessGrantEntitlement } from "@/lib/creditLedger";
 
 // CoachAdmin briefing §8 (Beta Tester) + §9 (Freunde/Family) — "Zugang
 // verwalten." One upsert per customer (see CustomerAccessGrant's schema
@@ -58,6 +59,11 @@ export async function PUT(request: Request, { params }: { params: Promise<{ id: 
     update: data,
     create: { clientId: client.id, ...data },
   });
+
+  // P3: keep sessionsGranted/sessionsUnlimited backed by a real, usable
+  // PackageEntitlement instead of staying just recorded intent — see
+  // syncAccessGrantEntitlement's doc comment.
+  await syncAccessGrantEntitlement(client.id, grant, admin.id);
 
   return Response.json({ ok: true, grant });
 }
