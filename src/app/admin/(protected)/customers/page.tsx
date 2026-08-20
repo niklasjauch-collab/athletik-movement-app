@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { prisma } from "@/lib/db";
 import { getActiveProvider } from "@/lib/tenant";
+import { computeStatus } from "@/lib/creditLedger";
 
 export const dynamic = "force-dynamic";
 
@@ -23,10 +24,12 @@ const STATUS_BADGE: Record<string, string> = {
 // CoachAdmin briefing §3 KUNDENVERWALTUNG. Search + status/segment
 // filters are implemented server-side via searchParams (no client JS
 // needed for the core list — keeps this fast and simple, matching the
-// rest of the admin area's server-rendered pattern). "Paket"/"Rest"
-// table columns from the briefing's example are intentionally omitted
-// until the Kontingent-Ledger (P3) exists — showing a fake/empty number
-// there would be worse than not showing the column at all.
+// rest of the admin area's server-rendered pattern). The briefing's
+// example table has separate "Paket"/"Rest" columns; merged here into
+// one "Kontingent" column (which package(s) + how much is redundant at
+// this width — the customer detail page's "Kontingente" tab (P3) has
+// the full per-package breakdown). Computed via one batched query below
+// rather than N+1 calls to src/lib/creditLedger.ts's per-client helper.
 export default async function CustomersPage({
   searchParams,
 }: {
@@ -66,6 +69,26 @@ export default async function CustomersPage({
     },
     take: 200,
   });
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any -- SANDBOX-ONLY, see src/lib/db.ts
+  const clientIds = clients.map((c: any) => c.id);
+  const entitlements =
+    clientIds.length > 0
+      ? await prisma.packageEntitlement.findMany({
+          where: { clientId: { in: clientIds }, active: true },
+          include: { ledgerEntries: true },
+        })
+      : [];
+  const creditsByClient = new Map<string, { available: number; unlimited: boolean }>();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any -- SANDBOX-ONLY, see src/lib/db.ts
+  for (const ent of entitlements as any[]) {
+    const status = computeStatus(ent, ent.ledgerEntries);
+    if (!ent.unlimited && status.available <= 0) continue;
+    const existing = creditsByClient.get(ent.clientId) ?? { available: 0, unlimited: false };
+    existing.unlimited = existing.unlimited || ent.unlimited;
+    existing.available = existing.unlimited ? Infinity : existing.available + status.available;
+    creditsByClient.set(ent.clientId, existing);
+  }
 
   return (
     <main className="flex-1 px-6 py-10 max-w-5xl mx-auto">
@@ -122,6 +145,7 @@ export default async function CustomersPage({
                 <th className="px-4 py-3">Kunde</th>
                 <th className="px-4 py-3">Status</th>
                 <th className="px-4 py-3">Segment</th>
+                <th className="px-4 py-3">Kontingent</th>
                 <th className="px-4 py-3">Plan</th>
                 <th className="px-4 py-3">Kundennummer</th>
               </tr>
@@ -151,6 +175,13 @@ export default async function CustomersPage({
                       ))}
                       {c.segmentMemberships.length === 0 && <span className="text-xs text-ink-700/30">—</span>}
                     </div>
+                  </td>
+                  <td className="px-4 py-3 text-ink-700/70">
+                    {(() => {
+                      const credit = creditsByClient.get(c.id);
+                      if (!credit) return <span className="text-ink-700/30">—</span>;
+                      return credit.unlimited ? "Unbegrenzt" : `${credit.available} verfügbar`;
+                    })()}
                   </td>
                   <td className="px-4 py-3 text-ink-700/70">
                     {c.trainingPlans.length > 0 ? "vorhanden" : "kein Plan"}
