@@ -101,6 +101,16 @@ model Product {
   visibility ProductVisibility @default(ALL)
   visibleToCustomers Boolean   @default(true) // admin kill-switch independent of `active` (e.g. temporarily hide without deactivating an in-progress package)
 
+  // §13 Terminlogik für Kontingente — per-product, not global, since the
+  // briefing explicitly says these rules "dürfen zukünftig pro Produkt
+  // konfigurierbar sein". Only meaningful for products a booking can
+  // consume a credit against (COACHING_SESSION/COACHING_PACKAGE); reused
+  // by src/lib/creditLedger.ts's reservation engine once P4 (Calendly-
+  // Sync) actually starts creating Bookings against a Product/entitlement.
+  consumeCreditOnNoShow     Boolean @default(true)
+  lateCancelHours           Int?    // e.g. 24 — a cancellation within this many hours of the appointment counts as "late"; null = no late-cancel window configured
+  consumeCreditOnLateCancel Boolean @default(false)
+
   trainingProgramId String?
   trainingProgram   TrainingProgram? @relation(fields: [trainingProgramId], references: [id])
   digitalProductId  String?
@@ -114,6 +124,7 @@ model Product {
   accessRules    ProductAccessRule[]
   bookingLinks   BookingLink[]
   grantedTo      CustomerAccessGrantProduct[]
+  packageEntitlements PackageEntitlement[]
 
   @@unique([providerId, key])
   // Explicit @@map: this is a NEW model (P2) that happens to share the
@@ -248,7 +259,14 @@ model Client {
   accessGrant        CustomerAccessGrant?
   notes              CoachNote[]
 
+  // CreditBalance is superseded by packageEntitlements (P3, Runde 5 Teil 5)
+  // — kept as an untouched, no-longer-written-to model/table rather than
+  // renamed or removed, per the @@map lesson from P2: this model never had
+  // real production rows (no purchase flow ever wrote to it), but leaving
+  // its schema exactly as-is guarantees zero risk either way. seed.ts
+  // migrates any existing rows into packageEntitlements once, idempotently.
   creditBalances CreditBalance[]
+  packageEntitlements PackageEntitlement[]
   bookings       Booking[]
   orders         Order[]
   trainingPlans  TrainingPlan[]
@@ -421,8 +439,16 @@ model Booking {
   calendlyEventUri String        @unique
   status           BookingStatus @default(CONFIRMED)
   startTime        DateTime
-  linkedCreditId   String?       // which CreditBalance this booking consumed, if any
+  // Legacy/unused field — predates PackageEntitlement (P3) and was never
+  // written to by any real flow (Calendly-Sync/P4 doesn't exist yet
+  // either). Superseded by `entitlementId` below; left in place rather
+  // than removed, same reasoning as CreditBalance's doc comment above.
+  linkedCreditId   String?
+  entitlementId    String?             // which PackageEntitlement this booking reserves/consumes a credit from, if any (§13) — set once P4's Calendly-Sync creates real Bookings
+  entitlement      PackageEntitlement? @relation(fields: [entitlementId], references: [id])
   createdAt        DateTime      @default(now())
+
+  ledgerEntries CreditLedgerEntry[]
 }
 
 enum OrderType {
@@ -989,6 +1015,8 @@ model AdminUser {
 
   sessions            AdminSession[]
   passwordResetTokens AdminPasswordResetToken[]
+  grantedEntitlements PackageEntitlement[]
+  creditLedgerEntries CreditLedgerEntry[]
 
   @@unique([providerId, email])
 }
@@ -1015,6 +1043,88 @@ model AdminPasswordResetToken {
   createdAt   DateTime  @default(now())
 
   @@index([adminUserId])
+}
+
+// ============================================================
+// P3: Package Entitlements + Kontingent-Ledger (CoachAdmin briefing
+// §11-§17). Replaces CreditBalance's single mutable `creditsRemaining`
+// integer (briefing §15: "Technisch nicht einfach einen Zahlenwert
+// verändern... stattdessen ein Ledger verwenden") with an append-only
+// ledger: every PackageEntitlement's Gesamt/Verbraucht/Reserviert/
+// Verfügbar (§12) is always DERIVED by summing its CreditLedgerEntry
+// rows (src/lib/creditLedger.ts), never stored as a directly-mutated
+// column. See CreditBalance's own doc comment above for why that older
+// model stays untouched rather than being renamed/removed.
+// ============================================================
+
+enum CreditLedgerEntryType {
+  PACKAGE_PURCHASE  // entitlement created/topped up (manual grant today; Stripe purchase once P7 exists)
+  BOOKING_RESERVED  // §13: a Calendly booking reserved one credit
+  BOOKING_CANCELLED // §13: a reservation was released (on-time cancellation)
+  SESSION_COMPLETED // §13: a reservation converted into a completed, consumed credit
+  MANUAL_ADJUSTMENT // §14: Niklas manually corrected Gesamt or Verbraucht — always carries a reason
+}
+
+/// §16: "Jedes Paket muss als eigenes Entitlement erhalten bleiben" — one
+/// row per purchased/granted package, never merged into an existing row
+/// even if the client already has credits left on an older package of the
+/// same product. `unlimited` covers §9's "Freund: totalCredits =
+/// unlimited" case (e.g. Freunde & Familie grants) — when true, available
+/// is always treated as infinite regardless of the ledger sum, though the
+/// ledger still records usage for the audit trail. `productId` is
+/// optional because not every entitlement traces back to a catalog
+/// Product (e.g. a hand-migrated Altbestand grant) — `label` is always
+/// set so the admin UI has something to display either way, surviving a
+/// later Product rename the same way BookingLink/ProductPrice do.
+/// `linkedAccessGrantId`/`migratedFromCreditBalanceId` are idempotency
+/// markers for the two automatic sync paths (see creditLedger.ts and
+/// seed.ts) — both unique, so re-running either sync is always a no-op
+/// once the corresponding entitlement exists.
+model PackageEntitlement {
+  id         String   @id @default(cuid())
+  clientId   String
+  client     Client   @relation(fields: [clientId], references: [id])
+  productId  String?
+  product    Product? @relation(fields: [productId], references: [id])
+  label      String
+  unlimited  Boolean  @default(false)
+  expiresAt  DateTime? // §17 — admin-editable, no automatic expiry enforcement yet ("noch keine aggressive Automatisierung", only the data model)
+  active     Boolean  @default(true) // deactivated (not deleted) if e.g. the CustomerAccessGrant it was synced from is revoked — history is never destroyed, see §14 "keine stillen Änderungen"
+  source     String   // "manual_grant" | "access_grant_sync" | "legacy_migration" | future: "stripe_checkout"
+
+  linkedAccessGrantId        String? @unique // set only for the one entitlement kept in sync with this client's CustomerAccessGrant.sessionsGranted/sessionsUnlimited (§9)
+  migratedFromCreditBalanceId String? @unique // set only for a one-time migrated legacy CreditBalance row
+
+  createdByAdminId String?
+  createdByAdmin    AdminUser? @relation(fields: [createdByAdminId], references: [id])
+  createdAt         DateTime   @default(now())
+
+  ledgerEntries CreditLedgerEntry[]
+  bookings      Booking[] // back-relation for Booking.entitlementId — several bookings can draw from the same package over its lifetime
+}
+
+/// Append-only — rows are never edited or deleted after creation, only
+/// ever inserted (§15). Each entry only ever sets the delta field(s)
+/// relevant to its `type`; a status/total is always the SUM of a given
+/// entitlement's entries for that field, computed in
+/// src/lib/creditLedger.ts, never read from a cached column.
+model CreditLedgerEntry {
+  id            String                @id @default(cuid())
+  entitlementId String
+  entitlement   PackageEntitlement    @relation(fields: [entitlementId], references: [id])
+  type          CreditLedgerEntryType
+  totalDelta    Int                   @default(0) // PACKAGE_PURCHASE / MANUAL_ADJUSTMENT (bucket "Gesamt")
+  reservedDelta Int                   @default(0) // BOOKING_RESERVED (+1) / BOOKING_CANCELLED (-1) / SESSION_COMPLETED (-1)
+  consumedDelta Int                   @default(0) // SESSION_COMPLETED (+1) / MANUAL_ADJUSTMENT (bucket "Verbraucht")
+  reason        String?               // required by src/lib/creditLedger.ts for MANUAL_ADJUSTMENT (§14: "Jede Änderung braucht: Wert, Grund, Admin, Datum")
+  bookingId     String?
+  booking       Booking?              @relation(fields: [bookingId], references: [id])
+
+  createdByAdminId String?
+  createdByAdmin    AdminUser? @relation(fields: [createdByAdminId], references: [id])
+  createdAt         DateTime   @default(now())
+
+  @@index([entitlementId])
 }
 
 // ============================================================
