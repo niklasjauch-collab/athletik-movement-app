@@ -1042,6 +1042,14 @@ model AdminPasswordResetToken {
 enum TrainingProgramCategory {
   HALTUNG                        // "Haltung" bundle (P01-P04)
   BESCHWERDEN_RETURN_TO_MOVEMENT // "Beschwerden & Return to Movement" (P05-P22)
+
+  // @@map: renamed from `ProductCategory` alongside the Product ->
+  // TrainingProgram model rename (see that model's doc comment). Without
+  // this, `prisma db push` sees a column type change from the Postgres
+  // enum "ProductCategory" to a new enum "TrainingProgramCategory" with
+  // no cast, which it refuses to do non-destructively on the existing
+  // (mapped-back) "Product" table's 22 rows.
+  @@map("ProductCategory")
 }
 
 /// One sellable 12-week SmartMotion program (e.g. "P01 – Stabile
