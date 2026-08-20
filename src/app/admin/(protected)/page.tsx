@@ -41,6 +41,8 @@ export default async function AdminDashboardPage() {
 
   const links = [
     { href: "/admin/customers", label: "Kunden", description: "Kundenliste, Segmente, Zugang, Scan-Upload" },
+    { href: "/admin/products", label: "Produkte", description: "Preise, Sonderpreise, Sichtbarkeit" },
+    { href: "/admin/booking-links", label: "Buchungslinks", description: "Calendly-Links pro Produkt/Segment" },
     { href: "/admin/scans", label: "SmartMotionScan", description: "Manuelle Scan-Auswertung (älterer Flow)" },
     { href: "/admin/exercises", label: "Übungen", description: "Übungsbibliothek verwalten" },
     { href: "/admin/training", label: "Training", description: "Trainingseinheiten protokollieren" },
