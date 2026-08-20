@@ -2,11 +2,13 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { prisma } from "@/lib/db";
 import { getActiveProvider } from "@/lib/tenant";
+import { getClientEntitlements } from "@/lib/creditLedger";
 import { CorrectivePlanCard } from "@/components/CorrectivePlanCard";
 import UploadForm from "./UploadForm";
 import NotesPanel from "./NotesPanel";
 import SettingsPanel from "./SettingsPanel";
 import AccessGrantForm from "./AccessGrantForm";
+import EntitlementsPanel from "./EntitlementsPanel";
 
 export const dynamic = "force-dynamic";
 
@@ -78,7 +80,6 @@ export default async function CustomerDetailPage({
       accessGrant: true,
       notes: true,
       bookings: { orderBy: { startTime: "desc" }, take: 20 },
-      creditBalances: { include: { product: true } },
       trainingSessions: { orderBy: { createdAt: "desc" }, take: 20 },
       orders: { orderBy: { createdAt: "desc" }, take: 20, include: { digitalProduct: true } },
       trainingPlans: { select: { id: true } },
@@ -97,9 +98,14 @@ export default async function CustomerDetailPage({
 
   if (!client) notFound();
 
-  const [allSegments, legacyPrograms] = await Promise.all([
+  const [allSegments, legacyPrograms, entitlements, packageProducts] = await Promise.all([
     prisma.customerSegment.findMany({ where: { providerId: provider.id }, orderBy: [{ isSystemDefault: "desc" }, { name: "asc" }] }),
     prisma.legacyProgram.findMany({ where: { providerId: provider.id }, orderBy: { createdAt: "asc" } }),
+    getClientEntitlements(client.id),
+    prisma.product.findMany({
+      where: { providerId: provider.id, type: "COACHING_PACKAGE", active: true },
+      orderBy: { name: "asc" },
+    }),
   ]);
 
   const tabHref = (t: string) => `/admin/customers/${client.id}?tab=${t}`;
@@ -260,24 +266,39 @@ export default async function CustomerDetailPage({
         )}
 
         {tab === "kontingente" && (
-          <div>
-            {client.creditBalances.length === 0 ? (
-              <p className="text-sm text-ink-700/50">
-                Noch keine Kontingente. Das Ledger-basierte Kontingentsystem (Gesamt/Verbraucht/Reserviert/Verfügbar)
-                kommt mit Phase P3.
-              </p>
-            ) : (
-              <ul className="flex flex-col gap-2">
-                {/* eslint-disable-next-line @typescript-eslint/no-explicit-any -- SANDBOX-ONLY, see src/lib/db.ts */}
-                {client.creditBalances.map((cb: any) => (
-                  <li key={cb.id} className="rounded-lg border border-ink-900/10 p-3 text-sm flex justify-between">
-                    <span>{cb.product?.name ?? "—"}</span>
-                    <span className="text-ink-700/60">{cb.creditsRemaining} verbleibend</span>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
+          <EntitlementsPanel
+            clientId={client.id}
+            /* eslint-disable-next-line @typescript-eslint/no-explicit-any -- SANDBOX-ONLY, see src/lib/db.ts */
+            entitlements={entitlements.map((ent: any) => ({
+              id: ent.id,
+              label: ent.label,
+              productName: ent.product?.name ?? null,
+              unlimited: ent.unlimited,
+              active: ent.active,
+              expiresAt: ent.expiresAt ? ent.expiresAt.toISOString() : null,
+              source: ent.source,
+              createdAt: ent.createdAt.toISOString(),
+              createdByAdmin: ent.createdByAdmin ? { name: ent.createdByAdmin.name } : null,
+              status: {
+                total: ent.status.total,
+                reserved: ent.status.reserved,
+                consumed: ent.status.consumed,
+                available: ent.status.available,
+              },
+              ledgerEntries: ent.ledgerEntries.map((e: any) => ({
+                id: e.id,
+                type: e.type,
+                totalDelta: e.totalDelta,
+                reservedDelta: e.reservedDelta,
+                consumedDelta: e.consumedDelta,
+                reason: e.reason,
+                createdAt: e.createdAt.toISOString(),
+                createdByAdmin: e.createdByAdmin ? { name: e.createdByAdmin.name } : null,
+              })),
+            }))}
+            /* eslint-disable-next-line @typescript-eslint/no-explicit-any -- SANDBOX-ONLY, see src/lib/db.ts */
+            products={packageProducts.map((p: any) => ({ id: p.id, name: p.name, credits: p.credits ?? null }))}
+          />
         )}
 
         {tab === "trainingsplaene" && (
