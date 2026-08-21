@@ -92,7 +92,12 @@ export default async function CustomersPage({
 
   return (
     <main className="flex-1 px-6 py-10 max-w-5xl mx-auto">
-      <h1 className="font-serif text-3xl font-bold text-ink-900">Kunden</h1>
+      <div className="flex items-start justify-between gap-4">
+        <h1 className="font-serif text-3xl font-bold text-ink-900">Kunden</h1>
+        <Link href="/admin/customers/new" className="rounded-lg bg-ink-900 text-white px-4 py-2 text-sm font-semibold shrink-0">
+          + Kunde
+        </Link>
+      </div>
       <p className="mt-1 text-sm text-ink-700/70">
         {clients.length} Kunde{clients.length !== 1 ? "n" : ""} gefunden.{" "}
         <Link href="/admin/customers/manage" className="underline hover:text-brand-700">
