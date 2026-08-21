@@ -26,7 +26,7 @@ export default async function AppointmentDetailPage({ params }: { params: Promis
       client: true,
       product: true,
       bookingLink: true,
-      entitlement: { include: { ledgerEntries: true } },
+      entitlement: { include: { ledgerEntries: true, payments: { orderBy: { paidAt: "desc" }, take: 3 } } },
     },
   });
   if (!booking) notFound();
@@ -112,7 +112,24 @@ export default async function AppointmentDetailPage({ params }: { params: Promis
 
         <div className="rounded-xl border border-ink-900/10 p-4">
           <p className="text-xs font-semibold uppercase tracking-wide text-ink-900/40">Zahlungsstatus</p>
-          <p className="mt-1 text-ink-700/50">Kommt mit Phase P7 (Stripe/Zahlungen).</p>
+          {/* eslint-disable-next-line @typescript-eslint/no-explicit-any -- SANDBOX-ONLY, see src/lib/db.ts */}
+          {(booking.entitlement as any)?.payments?.length ? (
+            <ul className="mt-1 flex flex-col gap-1">
+              {/* eslint-disable-next-line @typescript-eslint/no-explicit-any -- SANDBOX-ONLY, see src/lib/db.ts */}
+              {(booking.entitlement as any).payments.map((p: any) => (
+                <li key={p.id}>
+                  <Link href={`/admin/payments/${p.id}`} className="text-brand-700 hover:underline">
+                    {(p.amountCents / 100).toFixed(2)} € · {new Date(p.paidAt).toLocaleDateString("de-DE")}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="mt-1 text-ink-700/50">
+              Keine direkt verknüpfte Zahlung — Zahlungen sind an Kontingente gebunden, nicht an einzelne Termine
+              (§56). Siehe Kunde → Zahlungen.
+            </p>
+          )}
         </div>
 
         <div className="rounded-xl border border-ink-900/10 p-4 sm:col-span-2">
