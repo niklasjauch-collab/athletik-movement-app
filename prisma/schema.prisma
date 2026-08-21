@@ -47,6 +47,7 @@ model Provider {
   customerSegments CustomerSegment[]
   legacyPrograms   LegacyProgram[]
   bookingLinks     BookingLink[]
+  payments         Payment[]
 }
 
 // CoachAdmin briefing §24/§56/§65 — the commercial catalog: what a
@@ -126,6 +127,7 @@ model Product {
   grantedTo      CustomerAccessGrantProduct[]
   packageEntitlements PackageEntitlement[]
   bookings       Booking[] // back-relation for Booking.productId (P4)
+  payments       Payment[] // back-relation for Payment.productId (P7)
 
   @@unique([providerId, key])
   // Explicit @@map: this is a NEW model (P2) that happens to share the
@@ -272,6 +274,7 @@ model Client {
   packageEntitlements PackageEntitlement[]
   bookings       Booking[]
   orders         Order[]
+  payments       Payment[]
   trainingPlans  TrainingPlan[]
   movementScans   MovementScan[]
   correctivePlans CorrectivePlan[]
@@ -1123,6 +1126,8 @@ model AdminUser {
   passwordResetTokens AdminPasswordResetToken[]
   grantedEntitlements PackageEntitlement[]
   creditLedgerEntries CreditLedgerEntry[]
+  recordedPayments    Payment[]
+  processedRefunds    Refund[]
 
   @@unique([providerId, email])
 }
@@ -1207,6 +1212,7 @@ model PackageEntitlement {
 
   ledgerEntries CreditLedgerEntry[]
   bookings      Booking[] // back-relation for Booking.entitlementId — several bookings can draw from the same package over its lifetime
+  payments      Payment[] // back-relation for Payment.entitlementId (P7) — the entitlement a manual/Stripe purchase created or topped up
 }
 
 /// Append-only — rows are never edited or deleted after creation, only
@@ -1231,6 +1237,109 @@ model CreditLedgerEntry {
   createdAt         DateTime   @default(now())
 
   @@index([entitlementId])
+}
+
+// ============================================================
+// P7 (Runde 5 Teil 9): Zahlungen (CoachAdmin briefing §28-§31)
+// ============================================================
+//
+// §29 "Stripe bleibt Source of Truth für Zahlungsabwicklung. Die App
+// bleibt Source of Truth für Kundenzugang/Produkte/Pakete/Entitlements/
+// Kontingente" — Payment is deliberately a MIRROR of what Stripe (or a
+// manual sale) did, not a payment-processing engine itself. It never
+// moves money; it only records that a payment happened and, via
+// `entitlementId`, which PackageEntitlement (if any) that payment
+// granted — reusing P3's createManualEntitlement() rather than a second,
+// competing "what does this customer own" concept.
+enum PaymentMethod {
+  STRIPE
+  BANK_TRANSFER // §30 Banküberweisung
+  CASH          // §30 Barzahlung
+  EXTERNAL_INVOICE // §30 Rechnung extern
+  GOODWILL      // §30 Kulanz
+  FREE          // §30 kostenlos / §27 Complimentary
+}
+
+// §28's exact status list.
+enum PaymentStatus {
+  PAID
+  PENDING
+  FAILED
+  REFUNDED
+  PARTIALLY_REFUNDED
+  COMPLIMENTARY
+  MANUAL
+}
+
+model Payment {
+  id         String   @id @default(cuid())
+  providerId String
+  provider   Provider @relation(fields: [providerId], references: [id])
+  clientId   String
+  client     Client   @relation(fields: [clientId], references: [id])
+
+  productId String?
+  product   Product? @relation(fields: [productId], references: [id])
+
+  // Set once a manual sale (§30) or a Stripe checkout.session.completed
+  // webhook (§29, not yet live — see src/app/api/webhooks/stripe) creates
+  // an entitlement for this payment. Nullable: a COMPLIMENTARY/FREE
+  // payment, or one for a non-entitlement product (e.g. a one-off digital
+  // plan handled via the existing Order model), may have none.
+  entitlementId String?
+  entitlement   PackageEntitlement? @relation(fields: [entitlementId], references: [id])
+
+  listPriceCents Int // §28 "Listenpreis"
+  discountCents  Int @default(0) // §28 "Rabatt"
+  amountCents    Int // §28 "tatsächlich bezahlt" — the number Analytics/Umsatz sums
+  currency       String @default("EUR")
+
+  method PaymentMethod
+  status PaymentStatus @default(PAID)
+
+  stripePaymentId String? @unique // Stripe PaymentIntent/Checkout Session id — idempotency key for the webhook
+  note            String? // §30 "Notiz", also used for the Kulanz/manual-sale reason
+
+  paidAt DateTime @default(now()) // §28 "Datum" — settable independent of createdAt for a backfilled/manual entry
+
+  createdByAdminId String?
+  createdByAdmin    AdminUser? @relation(fields: [createdByAdminId], references: [id])
+  createdAt         DateTime   @default(now())
+
+  refunds Refund[]
+
+  @@index([providerId])
+  @@index([clientId])
+}
+
+/// §31 Refunds — deliberately NOT a status flip on Payment alone: every
+/// refund is its own row (so a partially-refunded payment can be
+/// refunded again later, and the full history — who refunded how much,
+/// when, why — survives). `keepAccess` is the §31-required admin
+/// decision ("Zugang behalten" vs. "Zugang entfernen"); when access is
+/// removed and the payment has a linked entitlement, src/lib/payments.ts
+/// deactivates that entitlement (setEntitlementActive(false)) rather
+/// than deleting/rewriting its ledger — §31's own example ("15er Paket,
+/// 5 genutzt, Refund Restpaket, Historie der fünf Sessions bleibt
+/// bestehen") is satisfied by that existing P3 primitive: `active:false`
+/// hides it from "verfügbare Kontingente" going forward, but every past
+/// CreditLedgerEntry (including the 5 consumed sessions) stays intact.
+model Refund {
+  id        String  @id @default(cuid())
+  paymentId String
+  payment   Payment @relation(fields: [paymentId], references: [id])
+
+  amountCents Int
+  keepAccess  Boolean // true = Zugang behalten, false = Zugang entfernen
+  reason      String
+
+  stripeRefundId String?
+
+  refundedByAdminId String?
+  refundedByAdmin    AdminUser? @relation(fields: [refundedByAdminId], references: [id])
+  refundedAt         DateTime   @default(now())
+
+  @@index([paymentId])
 }
 
 // ============================================================
