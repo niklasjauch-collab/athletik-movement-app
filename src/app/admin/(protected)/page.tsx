@@ -2,6 +2,7 @@ import Link from "next/link";
 import { prisma } from "@/lib/db";
 import { getActiveProvider } from "@/lib/tenant";
 import { getCurrentAdmin } from "@/lib/adminAuth";
+import { getRevenueCents } from "@/lib/payments";
 
 // Hits the database directly without calling cookies()/headers() itself
 // in its render path (getCurrentAdmin does, via the layout guard, but
@@ -10,15 +11,14 @@ import { getCurrentAdmin } from "@/lib/adminAuth";
 export const dynamic = "force-dynamic";
 
 // CoachAdmin briefing §2 ADMIN DASHBOARD — this is still a partial
-// implementation of that section, not the full thing: real "Termine
-// heute/diese Woche" and "Umsatz" KPIs need the Appointment (P4) and
-// Payment (P7) models, and the "Offene Aufgaben"/Review-Queue widget
-// needs several later phases' data (P3-P8) to compute from. What's
-// wired up for real right now: Aktive Kunden, SmartMotionScans (total +
-// this month), and a simple "Kunden ohne Trainingsplan" flag (one of the
-// briefing's example Offene-Aufgaben items) computed from data that
-// already exists. The rest of §2 is a later-phase follow-up, not
-// skipped by oversight.
+// implementation of that section, not the full thing: a real "Diese
+// Woche"-KPI and the full §60 Review-Queue widget (with all 7 categories)
+// are P8 work. What's wired up for real right now: Aktive Kunden, Termine
+// heute (P4), SmartMotionScans (total + this month), Umsatz diesen Monat
+// (P7, via src/lib/payments.ts's getRevenueCents()), and the "Offene
+// Aufgaben" box (Kunden ohne Trainingsplan, unmatched Termine, Scans ohne
+// Plan/Review). The rest of §2/§60 is P8's follow-up, not skipped by
+// oversight.
 export default async function AdminDashboardPage() {
   const admin = await getCurrentAdmin();
   const provider = await getActiveProvider();
@@ -80,6 +80,13 @@ export default async function AdminDashboardPage() {
   ]);
   const scansNeedingAttention = scansWithoutPlan + scansWithUnpublishedPlan;
 
+  // §2 "Umsatz" KPI — now real (P7, Runde 5 Teil 9), computed via
+  // src/lib/payments.ts's getRevenueCents() so Analytics (P8) sums the
+  // exact same way (§66 single-source-of-truth).
+  const nextMonth = new Date(startOfMonth);
+  nextMonth.setMonth(nextMonth.getMonth() + 1);
+  const revenueThisMonthCents = await getRevenueCents(provider.id, startOfMonth, nextMonth);
+
   const links = [
     { href: "/admin/customers", label: "Kunden", description: "Kundenliste, Segmente, Zugang, Scan-Upload" },
     { href: "/admin/plans", label: "Trainingspläne", description: "Templates, Kundenpläne, Shop-Pläne, Plan Builder" },
@@ -87,6 +94,7 @@ export default async function AdminDashboardPage() {
     { href: "/admin/products", label: "Produkte", description: "Preise, Sonderpreise, Sichtbarkeit" },
     { href: "/admin/booking-links", label: "Buchungslinks", description: "Calendly-Links pro Produkt/Segment" },
     { href: "/admin/scans", label: "SmartMotionScan", description: "Alle Scans, Planstatus, Review & Veröffentlichen" },
+    { href: "/admin/payments", label: "Zahlungen", description: "Zahlungsübersicht, manuelle Zahlungen, Refunds" },
     { href: "/admin/exercises", label: "Übungen", description: "Übungsbibliothek verwalten" },
     { href: "/admin/training", label: "Training", description: "Trainingseinheiten protokollieren" },
     { href: "/admin/progress", label: "Fortschritt", description: "Verlauf je Kunde" },
@@ -98,7 +106,7 @@ export default async function AdminDashboardPage() {
       <h1 className="font-serif text-3xl font-bold text-ink-900">Hallo {admin?.name?.split(" ")[0] ?? "Coach"}!</h1>
       <p className="mt-2 text-ink-700/80">Coach-Bereich — hier siehst du nur Verwaltungsfunktionen, keine Kundenansicht.</p>
 
-      <div className="mt-8 grid gap-4 sm:grid-cols-4">
+      <div className="mt-8 grid gap-4 sm:grid-cols-3 lg:grid-cols-5">
         <div className="rounded-xl border border-ink-900/10 bg-white/50 p-6">
           <p className="text-xs font-semibold uppercase tracking-widest text-brand-600">Aktive Kunden</p>
           <p className="mt-2 font-serif text-3xl font-bold text-ink-900">{activeClientCount}</p>
@@ -119,6 +127,15 @@ export default async function AdminDashboardPage() {
         <div className="rounded-xl border border-ink-900/10 bg-white/50 p-6">
           <p className="text-xs font-semibold uppercase tracking-widest text-brand-600">Unbearbeitet</p>
           <p className="mt-2 font-serif text-3xl font-bold text-ink-900">{pendingScanCount}</p>
+        </div>
+        <div className="rounded-xl border border-ink-900/10 bg-white/50 p-6">
+          <p className="text-xs font-semibold uppercase tracking-widest text-brand-600">Umsatz</p>
+          <p className="mt-2 font-serif text-3xl font-bold text-ink-900">
+            {(revenueThisMonthCents / 100).toLocaleString("de-DE", { style: "currency", currency: "EUR" })}
+          </p>
+          <Link href="/admin/payments" className="text-xs text-ink-700/50 hover:underline">
+            diesen Monat · ansehen
+          </Link>
         </div>
       </div>
 
