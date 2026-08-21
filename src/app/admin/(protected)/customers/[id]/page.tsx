@@ -10,6 +10,7 @@ import NotesPanel from "./NotesPanel";
 import SettingsPanel from "./SettingsPanel";
 import AccessGrantForm from "./AccessGrantForm";
 import EntitlementsPanel from "./EntitlementsPanel";
+import PaymentPanel from "./PaymentPanel";
 
 export const dynamic = "force-dynamic";
 
@@ -92,6 +93,7 @@ export default async function CustomerDetailPage({
       bookings: { orderBy: { startTime: "desc" }, take: 20, include: { product: { select: { id: true, name: true } } } },
       trainingSessions: { orderBy: { createdAt: "desc" }, take: 20 },
       orders: { orderBy: { createdAt: "desc" }, take: 20, include: { digitalProduct: true } },
+      payments: { orderBy: { paidAt: "desc" }, take: 50, include: { product: { select: { name: true } } } },
       trainingPlans: {
         orderBy: { updatedAt: "desc" },
         include: { assignedFromTemplate: { select: { id: true, title: true } }, _count: { select: { items: true } } },
@@ -111,13 +113,21 @@ export default async function CustomerDetailPage({
 
   if (!client) notFound();
 
-  const [allSegments, legacyPrograms, entitlements, packageProducts] = await Promise.all([
+  const [allSegments, legacyPrograms, entitlements, packageProducts, sellableProducts] = await Promise.all([
     prisma.customerSegment.findMany({ where: { providerId: provider.id }, orderBy: [{ isSystemDefault: "desc" }, { name: "asc" }] }),
     prisma.legacyProgram.findMany({ where: { providerId: provider.id }, orderBy: { createdAt: "asc" } }),
     getClientEntitlements(client.id),
     prisma.product.findMany({
       where: { providerId: provider.id, type: "COACHING_PACKAGE", active: true },
       orderBy: { name: "asc" },
+    }),
+    // P7 payment form's product dropdown — every active, purchasable
+    // product, not just COACHING_PACKAGE (a coach can also record a
+    // manual payment for a single session or a SmartMotionScan).
+    prisma.product.findMany({
+      where: { providerId: provider.id, active: true },
+      orderBy: { name: "asc" },
+      select: { id: true, name: true, priceCents: true, credits: true },
     }),
   ]);
 
@@ -471,22 +481,38 @@ export default async function CustomerDetailPage({
         )}
 
         {tab === "zahlungen" && (
-          <div>
-            {client.orders.length === 0 ? (
-              <p className="text-sm text-ink-700/50">
-                Noch keine Zahlungen. Die vollständige Zahlungsübersicht (Stripe-Spiegel, manuelle Zahlungen, Refunds)
-                kommt mit Phase P7.
-              </p>
-            ) : (
-              <ul className="flex flex-col gap-2">
-                {/* eslint-disable-next-line @typescript-eslint/no-explicit-any -- SANDBOX-ONLY, see src/lib/db.ts */}
-                {client.orders.map((o: any) => (
-                  <li key={o.id} className="rounded-lg border border-ink-900/10 p-3 text-sm flex justify-between">
-                    <span>{o.digitalProduct?.title ?? o.type}</span>
-                    <span className="text-ink-700/60">{(o.amountCents / 100).toFixed(2)} €</span>
-                  </li>
-                ))}
-              </ul>
+          <div className="flex flex-col gap-6">
+            <PaymentPanel
+              clientId={client.id}
+              /* eslint-disable-next-line @typescript-eslint/no-explicit-any -- SANDBOX-ONLY, see src/lib/db.ts */
+              payments={client.payments.map((p: any) => ({
+                id: p.id,
+                productName: p.product?.name ?? null,
+                listPriceCents: p.listPriceCents,
+                discountCents: p.discountCents,
+                amountCents: p.amountCents,
+                method: p.method,
+                status: p.status,
+                note: p.note,
+                paidAt: p.paidAt.toISOString(),
+              }))}
+              products={sellableProducts}
+            />
+            {client.orders.length > 0 && (
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-widest text-ink-900/40">
+                  Digitale Produkte (Alt-Bestellungen)
+                </p>
+                <ul className="mt-2 flex flex-col gap-2">
+                  {/* eslint-disable-next-line @typescript-eslint/no-explicit-any -- SANDBOX-ONLY, see src/lib/db.ts */}
+                  {client.orders.map((o: any) => (
+                    <li key={o.id} className="rounded-lg border border-ink-900/10 p-3 text-sm flex justify-between">
+                      <span>{o.digitalProduct?.title ?? o.type}</span>
+                      <span className="text-ink-700/60">{(o.amountCents / 100).toFixed(2)} €</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             )}
           </div>
         )}
