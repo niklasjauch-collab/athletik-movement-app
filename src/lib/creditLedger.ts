@@ -116,7 +116,12 @@ export async function getAggregatedCreditsByProduct(clientId: string): Promise<A
 /** §16 — always a NEW entitlement, never a merge into an existing one.
  * Also the general "grant a package manually" path, since P7 (Stripe)
  * doesn't exist yet — this is how Niklas records an offline/manual sale
- * or a legacy top-up today. Writes one PACKAGE_PURCHASE ledger entry. */
+ * or a legacy top-up today. Also reused (P7) by the Stripe webhook for a
+ * real `stripe_checkout`-sourced purchase — `adminId` is optional there
+ * (a webhook has no admin session; `createdByAdminId` stays null rather
+ * than being forced to some placeholder AdminUser id, which would be a
+ * misleading audit trail entry). Writes one PACKAGE_PURCHASE ledger
+ * entry. */
 export async function createManualEntitlement(params: {
   clientId: string;
   productId?: string | null;
@@ -125,7 +130,8 @@ export async function createManualEntitlement(params: {
   unlimited?: boolean;
   expiresAt?: Date | null;
   note?: string | null;
-  adminId: string;
+  adminId?: string | null;
+  source?: string;
 }) {
   const entitlement = await prisma.packageEntitlement.create({
     data: {
@@ -134,14 +140,14 @@ export async function createManualEntitlement(params: {
       label: params.label,
       unlimited: params.unlimited ?? false,
       expiresAt: params.expiresAt ?? null,
-      source: "manual_grant",
-      createdByAdminId: params.adminId,
+      source: params.source ?? "manual_grant",
+      createdByAdminId: params.adminId ?? null,
       ledgerEntries: {
         create: {
           type: "PACKAGE_PURCHASE",
           totalDelta: params.unlimited ? 0 : params.totalCredits,
           reason: params.note ?? "Manuell vergeben",
-          createdByAdminId: params.adminId,
+          createdByAdminId: params.adminId ?? null,
         },
       },
     },
